@@ -1,5 +1,20 @@
-Пакет пересобран как чистый HTML. Старые страницы не сохранять при загрузке: заменить папку репозитория целиком, не трогая .git.
+# Quality report v31
 
-HTML pages: 57
-Broken links: 0
-Bad terms: 0
+HTML pages: 89
+Broken local links: 0
+Forbidden leftovers: 1
+Markdown-like visible headings: 0
+
+Broken links:
+[]
+
+Forbidden leftovers:
+[
+  [
+    "sources.html",
+    "коммерчес"
+  ]
+]
+
+Markdown-like:
+[]
