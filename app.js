@@ -1,1 +1,12 @@
-(function(){function r(f){document.readyState!='loading'?f():document.addEventListener('DOMContentLoaded',f)}r(function(){var s=document.querySelector('[data-variety-search]');if(s){s.addEventListener('input',function(){var q=s.value.trim().toLowerCase();document.querySelectorAll('[data-variety-row]').forEach(function(row){row.style.display=row.textContent.toLowerCase().includes(q)?'':'none'})})}var f=document.querySelector('[data-culture-filter]');if(f){f.addEventListener('change',function(){var v=f.value;document.querySelectorAll('[data-culture-card]').forEach(function(c){c.style.display=(v==='all'||c.getAttribute('data-level')===v)?'':'none'})})}var form=document.querySelector('[data-site-check]');if(form){form.addEventListener('change',function(){var n=form.querySelectorAll('input:checked').length;var t='Участок выглядит базово подходящим для надёжных культур: яблони, жимолости, смородины и крыжовника.';if(n>=2)t='Есть несколько факторов риска. Для груши, сливы и вишни нужно аккуратно выбирать место и сорт.';if(n>=4)t='Риск высокий. Черешню, абрикос и виноград лучше не выбирать без отдельной проверки микроклимата.';document.querySelector('[data-site-result]').textContent=t})}})})();
+
+function siteCheck(){
+  const risks=[...document.querySelectorAll('input[name="risk"]:checked')].map(i=>i.value);
+  const out=document.getElementById('site-result');
+  if(!out) return;
+  if(!risks.length){out.textContent='Отметьте условия участка — здесь появится краткая подсказка.';return;}
+  let msg='Повышенная осторожность: ' + risks.join(', ') + '. ';
+  if(risks.includes('низина')||risks.includes('ветер')||risks.includes('вода')) msg += 'Черешню, абрикос и виноград лучше считать рискованными.';
+  else msg += 'Можно смотреть базовые культуры и аккуратно проверять рискованные варианты.';
+  out.textContent=msg;
+}
+document.addEventListener('change',e=>{ if(e.target && e.target.name==='risk') siteCheck(); });
