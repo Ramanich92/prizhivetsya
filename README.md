@@ -1,13 +1,20 @@
-# Приживётся? — pre-domain MVP v9
+# Приживётся? — public v10
 
-Откройте `index.html` или запустите локальный сервер:
+Статический сайт для GitHub Pages.
 
-```bash
-python3 -m http.server 8000
-```
+## Что изменено в v10
 
-Ключевые страницы: `index.html`, `region-moskovskaya-oblast.html`, `lead-form.html`, `deploy.html`, `domain-ready.html`, `quality-report.html`.
+- Главная страница очищена от технических блоков.
+- Верхнее меню стало пользовательским: регион, культуры, сорта, план сада, источники, о проекте.
+- Служебные страницы оставлены в проекте, но убраны из основной навигации.
+- Сайт готов для повторной загрузки в GitHub Pages.
 
-# Приживётся? — pre-domain v8
+## Как обновить GitHub Pages
 
-Откройте `index.html`. Новое в v8: форма `lead-form.html`, локальные заявки `leads.html`, инструкция `forms-setup.html`.
+1. Распакуйте архив.
+2. Откройте папку `prizhivetsya_public_v10`.
+3. Загрузите содержимое папки в репозиторий `prizhivetsya` через Add file → Upload files.
+4. Нажмите Commit changes.
+5. Подождите обновления GitHub Pages.
+
+В корне репозитория должен лежать `index.html`.
