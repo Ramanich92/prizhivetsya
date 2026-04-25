@@ -1,0 +1,8 @@
+v20 validation report
+
+HTML files: 81
+Broken local links: 0
+Commercial/technical blocked hits: 1
+Note: remaining 'Публикации' in sources.html is normal editorial wording, not 'Публикация' deploy page.
+
+Generated package: v20 information expanded.
