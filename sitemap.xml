@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ramanich92.github.io/prizhivetsya/404.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/about.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/crops/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/crops/chereshnya.html</loc></url>
@@ -24,14 +23,14 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/plan-sada.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pricing.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/region-moskovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/source-audit.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/sources.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/subzones.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subzones/sever-podmoskovya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subzones/vostok-podmoskovya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subzones/yug-podmoskovya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subzones/zapad-podmoskovya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/subzones.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/thank-you.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/chereshnya-bryanskaya-rozovaya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/chereshnya-chermashnaya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/chereshnya-fatezh.html</loc></url>
@@ -67,4 +66,5 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-morena.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-silginka.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-yugana.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties.html</loc></url>
 </urlset>
