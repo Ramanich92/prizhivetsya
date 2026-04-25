@@ -39,21 +39,21 @@
       consent:Boolean(form.querySelector('[name="consent"]')?.checked)
     };
     if(form.querySelector('[name="consent"]')&&!payload.consent){alert('Перед отправкой нужно согласие с условиями и обработкой данных.');return;}
-    function formatLead(p){return `Заявка на план сада\n\nДата: ${p.createdAt}\nРегион: ${p.region}\nНаселённый пункт: ${p.location}\nЧто хочет посадить: ${p.crops}\nУсловия участка: ${p.siteConditions}\nБюджет/формат: ${p.budget}\nКонтакты: ${p.contacts}\nИсточник: ${p.sourcePage}\n`;}
+    function formatLead(p){return `Обратная связь по участку\n\nДата: ${p.createdAt}\nРегион: ${p.region}\nНаселённый пункт: ${p.location}\nЧто хочет посадить: ${p.crops}\nУсловия участка: ${p.siteConditions}\nБюджет/формат: ${p.budget}\nКонтакты: ${p.contacts}\nИсточник: ${p.sourcePage}\n`;}
     if((cfg.FORM_MODE||'local')==='tally'&&cfg.TALLY_FORM_URL){location.href=cfg.TALLY_FORM_URL;return;}
     if((cfg.FORM_MODE||'local')==='formspree'&&cfg.FORMSPREE_ENDPOINT){
       try{const res=await fetch(cfg.FORMSPREE_ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'}}); if(res.ok){location.href='thank-you.html';return;} alert('Форма не отправилась. Проверьте endpoint Formspree.');}catch(err){alert('Не удалось отправить форму: '+err.message);} return;
     }
-    const mailto=`mailto:${cfg.OWNER_EMAIL||''}?subject=${encodeURIComponent('Заявка на план сада — Приживётся?')}&body=${encodeURIComponent(formatLead(payload))}`;
+    const mailto=`mailto:${cfg.OWNER_EMAIL||''}?subject=${encodeURIComponent('Обратная связь по участку — Приживётся?')}&body=${encodeURIComponent(formatLead(payload))}`;
     if((cfg.FORM_MODE||'local')==='mailto'){location.href=mailto;return;}
     const leads=JSON.parse(localStorage.getItem('prizhivetsya_leads')||'[]'); leads.push(payload); localStorage.setItem('prizhivetsya_leads',JSON.stringify(leads));
     const box=form.querySelector('[data-form-result]')||document.querySelector('[data-form-result]');
-    if(box){box.innerHTML=`<div class="ok"><b>Заявка сохранена локально.</b><p>Для теста она лежит в браузере. Можно <a href="${mailto}">отправить её письмом</a> или открыть <a href="leads.html">локальные заявки</a>.</p></div>`;} else {alert('Заявка сохранена локально. Откройте leads.html.');}
+    if(box){box.innerHTML=`<div class="ok"><b>Обратная связь сохранена в демо-режиме.</b><p>Сейчас форма не отправляет данные владельцу сайта: обратная связь сохранена только в вашем браузере. После подключения Tally/Formspree/email этот блок станет реальной отправкой.</p></div>`;} else {alert('Обратная связь сохранена в демо-режиме. После подключения формы она будет отправляться владельцу сайта.');}
     form.reset();
   }));
-  function renderLocalLeads(){const el=document.querySelector('[data-local-leads]');if(!el)return;const leads=JSON.parse(localStorage.getItem('prizhivetsya_leads')||'[]');if(!leads.length){el.innerHTML='<div class="notice">Пока нет локальных заявок. Оставьте тестовую заявку через форму.</div>';return;}el.innerHTML='<div class="tableWrap"><table class="table"><thead><tr><th>Дата</th><th>Место</th><th>Что посадить</th><th>Контакты</th><th>Страница</th></tr></thead><tbody>'+leads.map(l=>`<tr><td>${esc(l.createdAt)}</td><td>${esc(l.location||l.region)}</td><td>${esc(l.crops)}</td><td>${esc(l.contacts)}</td><td>${esc(l.sourcePage)}</td></tr>`).join('')+'</tbody></table></div>';}
+  function renderLocalLeads(){const el=document.querySelector('[data-local-leads]');if(!el)return;const leads=JSON.parse(localStorage.getItem('prizhivetsya_leads')||'[]');if(!leads.length){el.innerHTML='<div class="notice">Пока нет локальных обращений. Форма обратной связи сейчас отключена.</div>';return;}el.innerHTML='<div class="tableWrap"><table class="table"><thead><tr><th>Дата</th><th>Место</th><th>Что посадить</th><th>Контакты</th><th>Страница</th></tr></thead><tbody>'+leads.map(l=>`<tr><td>${esc(l.createdAt)}</td><td>${esc(l.location||l.region)}</td><td>${esc(l.crops)}</td><td>${esc(l.contacts)}</td><td>${esc(l.sourcePage)}</td></tr>`).join('')+'</tbody></table></div>';}
   document.querySelector('[data-export-leads]')?.addEventListener('click',()=>{const leads=JSON.parse(localStorage.getItem('prizhivetsya_leads')||'[]');const cols=['createdAt','region','location','crops','siteConditions','budget','contacts','sourcePage'];const csv=[cols.join(';')].concat(leads.map(l=>cols.map(c=>'"'+String(l[c]||'').replaceAll('"','""')+'"').join(';'))).join('\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='prizhivetsya-leads.csv';a.click();URL.revokeObjectURL(a.href);});
-  document.querySelector('[data-clear-leads]')?.addEventListener('click',()=>{if(confirm('Удалить локальные заявки из браузера?')){localStorage.removeItem('prizhivetsya_leads');location.reload();}});
+  document.querySelector('[data-clear-leads]')?.addEventListener('click',()=>{if(confirm('Удалить локальные обращения из браузера?')){localStorage.removeItem('prizhivetsya_leads');location.reload();}});
   renderLocalLeads();}
   renderStats();renderCrops();renderTable();renderQuestions();renderVarieties();renderVerified();setup();applyFilters();
 })();

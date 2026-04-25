@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /
-
-# На этапе теста на GitHub Pages индексацию лучше закрыть.
-# После покупки домена и финальной проверки можно заменить на Allow.
+Allow: /
+Sitemap: https://ramanich92.github.io/prizhivetsya/sitemap.xml

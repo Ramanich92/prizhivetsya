@@ -1,8 +1,0 @@
-Короткий вариант через терминал:
-
-git clone https://github.com/ramanich92/prizhivetsya.git
-cd prizhivetsya
-# удалить всё, кроме .git, затем скопировать сюда содержимое папки prizhivetsya_public_v11_clean
-git add -A
-git commit -m "Clean public MVP files"
-git push
