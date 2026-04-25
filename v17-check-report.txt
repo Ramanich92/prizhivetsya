@@ -1,0 +1,10 @@
+Prizhivetsya v17 information core check
+Generated: 2026-04-25T19:56:59
+HTML files: 74
+Total files: 95
+
+Broken local links:
+OK
+
+Unwanted public/commercial/tracking strings:
+OK
