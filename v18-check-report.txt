@@ -1,0 +1,9 @@
+# v18 check report
+
+HTML files: 76
+Files total: 91
+Internal link errors: 0
+Flagged legacy/commercial strings: 0
+
+Internal links: OK
+Public focus: free informational reference project.
