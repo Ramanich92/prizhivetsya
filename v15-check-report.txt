@@ -1,3 +1,0 @@
-v15 link check
-HTML files: 70
-OK: no broken local href links found.
