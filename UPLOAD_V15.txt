@@ -1,0 +1,10 @@
+Как обновить GitHub Pages
+
+1. Распакуйте архив.
+2. Откройте папку prizhivetsya_public_v15_information.
+3. Выделите всё содержимое внутри папки.
+4. GitHub → Add file → Upload files.
+5. Перетащите файлы и нажмите Commit changes.
+
+Если старые коммерческие файлы всё ещё есть в репозитории, удалите их отдельно:
+plan-sada.html, pricing.html, lead-form.html, thank-you.html, config.js, legal/refund.html.

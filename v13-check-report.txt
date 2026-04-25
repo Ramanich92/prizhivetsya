@@ -1,9 +1,0 @@
-# v13 check report
-
-HTML files: 63
-Total files: 79
-Missing local links: 0
-Monetization-related visible leftovers: 0
-
-Removed from package: plan page, pricing page, lead form, thank-you page, refund page, form config.
-Navigation now: Московская область / Культуры / Сорта / Проверка участка / Источники / О проекте.
