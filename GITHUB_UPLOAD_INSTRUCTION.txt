@@ -1,0 +1,3 @@
+GitHub web upload version: fewer than 100 files.
+Upload the CONTENTS of this folder to the repository root.
+index.html must be in the root of the repository.
