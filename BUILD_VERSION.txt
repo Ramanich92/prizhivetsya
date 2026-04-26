@@ -1,2 +1,2 @@
-Приживётся — v51 editorial clean
+Приживётся — v52 public cleanup sync
 Дата сборки: 2026-04-26

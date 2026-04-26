@@ -1,1 +1,0 @@
-OBSOLETE: текущая проверка — V51_DEPLOY_TEST.txt
