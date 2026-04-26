@@ -4,31 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Что посадить на участке по региону — Приживётся</title>
-  <meta name="description" content="Региональный справочник по плодовым деревьям, ягодникам, сортам и рискам выращивания: выберите область, сравните культуры и проверьте условия участка.">
+  <meta name="description" content="Региональный справочник по плодовым деревьям, ягодникам, сортам и рискам выращивания. 8 регионов, 12 культур, матрицы и чек-листы.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="На главную"><span class="brand-mark">✓</span><span>Приживётся</span></a>
-  <nav class="topnav" aria-label="Основная навигация"><a class="active" href="index.html">Главная</a><a class="" href="regions.html">Регионы</a><a class="" href="knowledge.html">База знаний</a><a class="" href="crops/index.html">Культуры</a><a class="" href="varieties/index.html">Сорта</a><a class="" href="site-check.html">Проверка участка</a><a class="" href="methodology.html">Методика</a><a class="" href="sources.html">Источники</a><a class="" href="about.html">О проекте</a></nav>
+  <nav class="topnav" aria-label="Основная навигация">
+    <a class="active" href="index.html">Главная</a>
+    <a class="" href="regions.html">Регионы</a>
+    <a class="" href="culture-matrix.html">Матрица</a>
+    <a class="" href="crops/index.html">Культуры</a>
+    <a class="" href="varieties/index.html">Сорта</a>
+    <a class="" href="knowledge.html">База знаний</a>
+    <a class="" href="site-check.html">Проверка участка</a>
+    <a class="" href="sources.html">Источники</a>
+    <a class="" href="about.html">О проекте</a>
+  </nav>
 </header>
 <main>
+
 <section class="hero hero-home">
   <div class="container hero-card">
     <div class="panel hero-main-panel">
-      <span class="kicker">Региональный справочник для сада</span>
+      <span class="kicker">Региональный справочник для сада · v33</span>
       <h1>Что посадить на участке</h1>
-      <p class="lead">Приживётся показывает, какие плодовые деревья и ягодники подходят конкретному региону, какие требуют осторожности, а какие лучше считать экспериментом до проверки сорта и условий участка.</p>
+      <p class="lead">Выберите регион, сравните культуры и проверьте риски до покупки саженца. Сайт больше не строится вокруг одной Московской области: в первом наборе уже 8 регионов, а для каждого дана своя матрица культур.</p>
       <div class="btn-row"><a class="btn primary" href="regions.html">Выбрать регион</a><a class="btn" href="culture-matrix.html">Сравнить культуры</a><a class="btn" href="site-check.html">Проверить участок</a></div>
     </div>
     <div class="panel dark hero-summary-panel">
-      <span class="kicker">В базе на старте</span>
-      <h2>Сначала регион, потом культура и сорт</h2>
-      <p>Главная ведёт к выбору области или края, а дальше — к матрице культур, карточкам сортов и проверке условий участка.</p>
+      <span class="kicker">Как читать сайт</span>
+      <h2>Сначала регион, затем культура, потом сорт</h2>
+      <p>Оценка “надёжно” не обещает урожай. Она означает, что культура разумна для региона при нормальном выборе сорта, места и ухода.</p>
       <div class="stats">
-        <div class="stat"><strong>8</strong><span>регионов в базе</span></div>
-        <div class="stat"><strong>12</strong><span>культур в матрицах</span></div>
+        <div class="stat"><strong>8</strong><span>регионов</span></div>
+        <div class="stat"><strong>12</strong><span>культур</span></div>
         <div class="stat"><strong>37</strong><span>сортов-кандидатов</span></div>
         <div class="stat"><strong>5</strong><span>уровней риска</span></div>
       </div>
@@ -37,99 +49,88 @@
 </section>
 <section class="section"><div class="container section-head">
   <span class="kicker">Регионы</span>
-  <h2>Выберите область или край</h2>
-  <p class="muted wide">На каждой региональной странице есть матрица культур, особенности зоны и переходы к карточкам растений.</p>
-  <div class="grid cols-4 region-grid">
-    <a class="card region-card" href="regions/moskovskaya-oblast.html">
-      <span class="chip">Центральный регион допуска</span>
-      <h3>Московская область</h3>
-      <p>Подмосковье — хороший регион для яблони, жимолости, смородины, крыжовника и части сортов груши. Слива и вишня возможны при выборе сорта. Черешня, абрикос и виноград требуют тёплого места и оценки риска.</p>
-      <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/leningradskaya-oblast.html">
-      <span class="chip">Северо-Западный регион допуска</span>
-      <h3>Ленинградская область</h3>
-      <p>Для Ленинградской области особенно важны зимостойкость, короткое лето, влажность и риск болезней. Ставка — на яблоню, жимолость, смородину, крыжовник и осторожно подобранные груши.</p>
-      <div class="mini-stats"><span><strong>3</strong> надёжно</span><span><strong>7</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/krasnodarskiy-kray.html">
-      <span class="chip">Северо-Кавказский регион допуска</span>
-      <h3>Краснодарский край</h3>
-      <p>В Краснодарском крае шире набор плодовых культур: черешня, абрикос, персик и виноград становятся обычнее. Но появляются другие риски: жара, засуха, болезни, возвратные заморозки и несоответствие сорта зоне края.</p>
-      <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>3</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/rostovskaya-oblast.html">
-      <span class="chip">Северо-Кавказский регион допуска</span>
-      <h3>Ростовская область</h3>
-      <p>В Ростовской области перспективны виноград, абрикос, черешня, слива и часть сортов груши. Для ягодников важны жара, суховеи и полив. Риск часто связан не с зимостойкостью, а с засухой и возвратными заморозками.</p>
-      <div class="mini-stats"><span><strong>1</strong> надёжно</span><span><strong>3</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/respublika-tatarstan.html">
-      <span class="chip">Средневолжский регион допуска</span>
-      <h3>Республика Татарстан</h3>
-      <p>Татарстан — регион с континентальным климатом: надёжны яблоня, жимолость, смородина, крыжовник. Груша, слива и вишня требуют проверенных сортов. Черешня, абрикос и виноград — осторожно.</p>
-      <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/sverdlovskaya-oblast.html">
-      <span class="chip">Волго-Вятский / уральский по фактической садовой логике</span>
-      <h3>Свердловская область</h3>
-      <p>Здесь ценность справочника особенно высока: важно не покупать случайные сорта из южного ассортимента. Основа — зимостойкие яблони, жимолость, смородина, крыжовник и регионально проверенные формы.</p>
-      <div class="mini-stats"><span><strong>4</strong> надёжно</span><span><strong>7</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/bashkortostan.html">
-      <span class="chip">Уральский регион допуска</span>
-      <h3>Республика Башкортостан</h3>
-      <p>Башкортостан неоднороден: в одних районах условия ближе к средней полосе, в других — более континентальные. Надёжная база — яблоня, жимолость, смородина и крыжовник; косточковые требуют аккуратного выбора.</p>
-      <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> с риском</span></div>
-    </a>
-    <a class="card region-card" href="regions/nizhegorodskaya-oblast.html">
-      <span class="chip">Волго-Вятский регион допуска</span>
-      <h3>Нижегородская область</h3>
-      <p>Для Нижегородской области логика близка к северной части средней полосы: яблоня, жимолость, смородина и крыжовник — база, груша, слива и вишня возможны при правильном сорте.</p>
-      <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> с риском</span></div>
-    </a>
-  </div>
+  <h2>Выберите область, край или республику</h2>
+  <p class="muted wide">Региональная страница показывает не просто список “можно / нельзя”, а причины: климатические ограничения, подзоны, рискованные культуры и чек-лист перед покупкой.</p>
+  <div class="grid cols-4 region-grid"><a class="card region-card region-card-wide" href="regions/moskovskaya-oblast.html">
+  <div class="region-card-top"><span class="chip">Центральный регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Московская область</h3>
+  <p>Московская область — умеренно надёжный регион для яблони, жимолости, смородины, крыжовника, малины и части сортов груши. Слива и вишня зависят от сорта, места и болезней. Черешня, абрикос и виноград остаются культурами с повышенной долей риска.</p>
+  <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Яблоня, Жимолость, Смородина чёрная, Крыжовник</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/leningradskaya-oblast.html">
+  <div class="region-card-top"><span class="chip">Северо-Западный регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Ленинградская область</h3>
+  <p>Ленинградская область требует ставки на зимостойкие и ранние культуры. Надёжная база — яблоня, жимолость и чёрная смородина; крыжовник и малина возможны при хорошем месте. Груша, слива и вишня требуют осторожности, а южные косточковые лучше считать экспериментом.</p>
+  <div class="mini-stats"><span><strong>3</strong> надёжно</span><span><strong>7</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Яблоня, Жимолость, Смородина чёрная</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/krasnodarskiy-kray.html">
+  <div class="region-card-top"><span class="chip">Северо-Кавказский регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Краснодарский край</h3>
+  <p>Краснодарский край даёт широкий набор плодовых культур: черешня, абрикос, персик, слива и виноград здесь выглядят сильнее, чем в средней полосе. Но внутри края условия резко различаются: Черноморская зона, предгорья и север края требуют разных решений.</p>
+  <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>3</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Слива, Черешня, Абрикос, Виноград</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/rostovskaya-oblast.html">
+  <div class="region-card-top"><span class="chip">Северо-Кавказский регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Ростовская область</h3>
+  <p>Ростовская область перспективна для винограда, абрикоса, черешни, сливы, персика и части груш, но стабильность часто ограничивают суховеи, засуха, морозы без снега и возвратные заморозки.</p>
+  <div class="mini-stats"><span><strong>1</strong> надёжно</span><span><strong>3</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Виноград</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/respublika-tatarstan.html">
+  <div class="region-card-top"><span class="chip">Средневолжский регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Республика Татарстан</h3>
+  <p>Татарстан — континентальный регион, где надёжнее выглядят яблоня, жимолость, смородина, крыжовник и малина. Груша, слива и вишня возможны, но требуют проверенных сортов и хорошего места. Черешня, абрикос и виноград — зона осторожных экспериментов.</p>
+  <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Яблоня, Жимолость, Смородина чёрная, Крыжовник</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/sverdlovskaya-oblast.html">
+  <div class="region-card-top"><span class="chip">Волго-Вятский / уральский по фактической садовой логике</span><span class="badge level-suitable">v33</span></div>
+  <h3>Свердловская область</h3>
+  <p>Свердловская область — регион, где особенно важно отсекать южный ассортимент. Основа сада — зимостойкая яблоня, жимолость, смородина и крыжовник; малина возможна при уходе. Груша, слива и вишня требуют осторожности, а черешня, абрикос и персик не подходят как обычный выбор.</p>
+  <div class="mini-stats"><span><strong>4</strong> надёжно</span><span><strong>7</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Яблоня, Жимолость, Смородина чёрная, Крыжовник</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/bashkortostan.html">
+  <div class="region-card-top"><span class="chip">Уральский регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Республика Башкортостан</h3>
+  <p>Башкортостан неоднороден: в одних районах условия ближе к средней полосе, в других — к более континентальному Уралу. База — яблоня, жимолость, смородина, крыжовник и малина. Косточковые и виноград требуют аккуратного выбора места и сорта.</p>
+  <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Яблоня, Жимолость, Смородина чёрная, Крыжовник</p>
+</a>
+<a class="card region-card region-card-wide" href="regions/nizhegorodskaya-oblast.html">
+  <div class="region-card-top"><span class="chip">Волго-Вятский регион допуска</span><span class="badge level-suitable">v33</span></div>
+  <h3>Нижегородская область</h3>
+  <p>Нижегородская область близка к северной части средней полосы: надёжная база — яблоня, жимолость, смородина, крыжовник и малина. Груша, слива и вишня возможны при правильном сорте. Черешня, абрикос и виноград требуют тёплого микроклимата.</p>
+  <div class="mini-stats"><span><strong>5</strong> надёжно</span><span><strong>4</strong> риск/эксперимент</span></div>
+  <p class="muted"><strong>База:</strong> Яблоня, Жимолость, Смородина чёрная, Крыжовник</p>
+</a></div>
 </div></section>
 <section class="section"><div class="container">
-  <div class="section-head-row"><div><span class="kicker">Быстрое сравнение</span><h2>Одна культура — разные риски по регионам</h2></div><a class="btn" href="culture-matrix.html">Полная матрица</a></div>
-  <div class="table-wrap matrix-preview"><table><thead><tr><th>Культура</th><th>Московская область</th><th>Ленинградская область</th><th>Краснодарский край</th><th>Ростовская область</th><th>Республика Татарстан</th><th>Свердловская область</th><th>Республика Башкортостан</th><th>Нижегородская область</th></tr></thead><tbody><tr><td><a href="crops/yablonya.html">Яблоня</a></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td></tr><tr><td><a href="crops/grusha.html">Груша</a></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td></tr><tr><td><a href="crops/chereshnya.html">Черешня</a></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-risky">Можно с риском</span></td></tr><tr><td><a href="crops/abrikos.html">Абрикос</a></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-high-risk">Высокий риск</span></td></tr><tr><td><a href="crops/vinograd.html">Виноград</a></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-risky">Можно с риском</span></td></tr><tr><td><a href="crops/persik.html">Персик</a></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td></tr></tbody></table></div>
+  <div class="section-head-row"><div><span class="kicker">Быстрое сравнение</span><h2>Одна культура — разные риски</h2></div><a class="btn" href="culture-matrix.html">Полная матрица</a></div>
+  <div class="table-wrap matrix-preview"><table><thead><tr><th>Культура</th><th>Московская область</th><th>Ленинградская область</th><th>Краснодарский край</th><th>Ростовская область</th><th>Республика Татарстан</th><th>Свердловская область</th><th>Республика Башкортостан</th><th>Нижегородская область</th></tr></thead><tbody><tr><td><a href="crops/yablonya.html">Яблоня</a></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td></tr><tr><td><a href="crops/grusha.html">Груша</a></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td></tr><tr><td><a href="crops/zhimolost.html">Жимолость</a></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td></tr><tr><td><a href="crops/smorodina-chernaya.html">Смородина чёрная</a></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td></tr><tr><td><a href="crops/kryzhovnik.html">Крыжовник</a></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td></tr><tr><td><a href="crops/malina.html">Малина</a></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td></tr><tr><td><a href="crops/sliva.html">Слива</a></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td></tr><tr><td><a href="crops/vishnya.html">Вишня</a></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-suitable">Можно</span></td></tr><tr><td><a href="crops/chereshnya.html">Черешня</a></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-risky">Можно с риском</span></td></tr><tr><td><a href="crops/abrikos.html">Абрикос</a></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-high-risk">Высокий риск</span></td></tr><tr><td><a href="crops/vinograd.html">Виноград</a></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-high-risk">Высокий риск</span></td><td><span class="badge level-risky">Можно с риском</span></td><td><span class="badge level-risky">Можно с риском</span></td></tr><tr><td><a href="crops/persik.html">Персик</a></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-reliable">Надёжно</span></td><td><span class="badge level-suitable">Можно</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td><td><span class="badge level-not-recommended">Не рекомендовано</span></td></tr></tbody></table></div>
+</div></section>
+<section class="section"><div class="container grid cols-3">
+  <div class="card"><h3>Юг — не всегда проще</h3><p>Краснодарский край и Ростовская область дают больше тепла, но добавляют жару, засуху, болезни и риск цветения под заморозки.</p></div>
+  <div class="card"><h3>Север — не только мороз</h3><p>Ленинградская и Свердловская области ограничивают выбор коротким летом, влажностью, ветром и слабым вызреванием теплолюбивых культур.</p></div>
+  <div class="card"><h3>Средняя полоса — не универсальна</h3><p>Даже для Москвы, Татарстана, Башкортостана и Нижегородской области нельзя переносить сортовые рекомендации без учёта участка.</p></div>
 </div></section>
 <section class="section"><div class="container">
-  <span class="kicker">Как пользоваться</span>
-  <h2>Короткий маршрут</h2>
-  <div class="grid cols-4">
-    <a class="card step-card" href="regions.html"><span class="step-num">1</span><h3>Регион</h3><p>Начните с области: климат и зона допуска задают базовый уровень риска.</p></a>
-    <a class="card step-card" href="crops/index.html"><span class="step-num">2</span><h3>Культура</h3><p>Сравните яблоню, грушу, косточковые, виноград и ягодники.</p></a>
-    <a class="card step-card" href="varieties/index.html"><span class="step-num">3</span><h3>Сорт</h3><p>Проверьте сорт-кандидат, источник описания, опылители и ограничения.</p></a>
-    <a class="card step-card" href="site-check.html"><span class="step-num">4</span><h3>Участок</h3><p>Сверьте низину, ветер, воду, солнце, почву и готовность к уходу.</p></a>
-  </div>
-</div></section>
-<section class="section"><div class="container">
-  <span class="kicker">Региональная логика</span>
-  <h2>Почему нельзя дать один список для всей России</h2>
+  <div class="section-head-row"><div><span class="kicker">База знаний</span><h2>Что проверить перед покупкой</h2></div><a class="btn" href="knowledge.html">Все материалы</a></div>
   <div class="grid cols-3">
-    <div class="callout tall"><strong>Север и Северо-Запад</strong><p>Главные ограничения — короткое лето, влажность, зимостойкость и болезни. Теплолюбивые культуры чаще остаются экспериментом.</p></div>
-    <div class="callout tall"><strong>Средняя полоса и Поволжье</strong><p>Базовые культуры устойчивее, но груша, слива, вишня, черешня, абрикос и виноград требуют сорта и места.</p></div>
-    <div class="callout tall"><strong>Юг и сухие зоны</strong><p>Ассортимент шире, зато важнее жара, засуха, полив, болезни, возвратные заморозки и точная зона края или области.</p></div>
-  </div>
-</div></section>
-<section class="section"><div class="container">
-  <span class="kicker">База знаний</span>
-  <h2>Что читать перед покупкой саженца</h2>
-  <div class="grid cols-3">
-    <a class="card" href="methodology.html"><h3>Методика оценки</h3><p>Как формируются уровни “надёжно”, “можно”, “с риском”.</p></a>
-    <a class="card" href="risk-levels.html"><h3>Уровни риска</h3><p>Что означают статусы культур и почему их нельзя читать как гарантию.</p></a>
+    <a class="card" href="methodology.html"><h3>Методика</h3><p>Как формируются уровни риска и почему они не являются гарантией результата.</p></a>
     <a class="card" href="pollinators.html"><h3>Опылители</h3><p>Почему один саженец черешни, сливы или жимолости часто даёт слабый результат.</p></a>
-    <a class="card" href="winter-hardiness.html"><h3>Зимостойкость</h3><p>Почему “морозостойкий” — недостаточно точное слово.</p></a>
-    <a class="card" href="choose-sapling.html"><h3>Выбор саженца</h3><p>Что проверить до покупки: сорт, подвой, корни, документы, происхождение.</p></a>
-    <a class="card" href="common-mistakes.html"><h3>Ошибки покупки</h3><p>Типичные причины разочарования после посадки.</p></a>
+    <a class="card" href="choose-sapling.html"><h3>Выбор саженца</h3><p>Что спросить у продавца: сорт, подвой, возраст, происхождение и документы.</p></a>
   </div>
 </div></section>
+
 </main>
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><strong>Приживётся</strong><p>Информационный справочник по плодовым культурам, сортам и рискам выращивания по регионам.</p></div>
-    <div><a href="sources.html">Источники</a><a href="methodology.html">Методика</a><a href="site-map.html">Карта сайта</a></div>
+    <div><strong>Приживётся</strong><p>Региональный справочник по плодовым культурам, сортам и рискам выращивания.</p></div>
+    <div><a href="sources.html">Источники</a><a href="methodology.html">Методика</a><a href="data-status.html">Статус данных</a><a href="site-map.html">Карта сайта</a></div>
   </div>
 </footer>
 </body>

@@ -1,16 +1,10 @@
-# Quality report v32
+# Quality report — v33
 
-HTML pages: 89
-Broken local links: 0
-Homepage/region legacy leftovers: 0
+- HTML pages checked: 90
+- Local links checked: 2502
+- External links found: 10
+- Broken local links: 0
+- Sitemap entries: 85
 
-Broken links:
-[]
 
-Homepage/region legacy leftovers:
-[]
-
-Manual notes:
-- Главная больше не содержит московский пилотный CTA.
-- Старые московские адреса оставлены noindex-редиректами.
-- sitemap.xml исключает 404 и legacy/noindex-страницы.
+No broken local links found.
