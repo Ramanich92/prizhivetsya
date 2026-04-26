@@ -1,0 +1,17 @@
+{
+  "version": "v42",
+  "title": "protection_layer",
+  "generated_at": "2026-04-26T11:25:11.151Z",
+  "expected": [
+    "index.html",
+    "protection.html",
+    "garden-health-check.html",
+    "diseases/index.html",
+    "diseases/crops/yablonya.html",
+    "diseases/regions/moskovskaya-oblast.html",
+    "pests.html",
+    "protection-calendar.html",
+    "version.html"
+  ],
+  "note": "Если на проде разные страницы показывают разные версии, удалите старые файлы публикации и залейте содержимое архива заново в корень GitHub Pages."
+}

@@ -180,3 +180,105 @@ document.addEventListener('DOMContentLoaded', function(){
   factors.forEach(el => el.addEventListener('change', render));
   render();
 });
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  const root=document.querySelector('[data-spacing-planner]');
+  if(!root) return;
+  const node=document.getElementById('spacing-data');
+  if(!node) return;
+  const data=JSON.parse(node.textContent);
+  const crop=root.querySelector('[data-spacing-crop]');
+  const form=root.querySelector('[data-spacing-form]');
+  const count=root.querySelector('[data-spacing-count]');
+  const mode=root.querySelector('[data-spacing-mode]');
+  const out=root.querySelector('[data-spacing-result]');
+  const factors=Array.from(root.querySelectorAll('[data-spacing-factor]'));
+  function checked(id){ const el=root.querySelector('[data-spacing-factor="'+id+'"]'); return el && el.checked; }
+  function fillForms(){
+    const sp=data.spacing[crop.value];
+    form.innerHTML=sp.forms.map(f=>'<option value="'+f[0]+'">'+f[1]+'</option>').join('');
+  }
+  function currentForm(){
+    const sp=data.spacing[crop.value];
+    return sp.forms.find(f=>f[0]===form.value)||sp.forms[0];
+  }
+  function render(){
+    const c=crop.value, sp=data.spacing[c], f=currentForm();
+    const n=Math.max(1, Math.min(50, parseInt(count.value||sp.defaultCount,10)));
+    if(String(n)!==count.value) count.value=n;
+    const inRow=Number(f[2]), between=Number(f[3]);
+    const rowLength = mode.value==='wall' ? (n*inRow + 0.8).toFixed(1) : ((n-1)*inRow + 1.5).toFixed(1);
+    const rows = mode.value==='block' ? Math.ceil(Math.sqrt(n)) : 1;
+    const cols = mode.value==='block' ? Math.ceil(n/rows) : n;
+    const blockWidth = mode.value==='block' ? ((cols-1)*inRow + 1.5).toFixed(1) : rowLength;
+    const blockDepth = mode.value==='block' ? ((rows-1)*between + 1.5).toFixed(1) : (mode.value==='wall' ? '1.2–2.0' : between.toFixed(1));
+    const area = mode.value==='wall' ? 'полоса примерно '+rowLength+' м × 1.2–2.0 м' : 'примерно '+blockWidth+' м × '+blockDepth+' м';
+    const warns=[];
+    sp.warnings.forEach(x=>warns.push(x));
+    if(checked('small') && ['apple','pear','plum','sweet_cherry','apricot','peach'].includes(c)) warns.push('на маленьком участке обязательно уточнить подвой и итоговую высоту');
+    if(checked('wet') && ['apple','pear','plum','sour_cherry','sweet_cherry','apricot','peach'].includes(c)) warns.push('сырость повышает риск корневых проблем и болезней, особенно у косточковых');
+    if(checked('shade') && ['grape','sweet_cherry','apricot','peach','pear'].includes(c)) warns.push('тень резко снижает смысл посадки теплолюбивой культуры');
+    if(checked('noPollinator') && ['honeysuckle','sweet_cherry','plum','pear'].includes(c)) warns.push('нет места для опылителя — пересмотрите количество и схему');
+    if(checked('noIrrigation') && ['blackcurrant','raspberry','honeysuckle','gooseberry','grape'].includes(c)) warns.push('без полива нужна более осторожная схема и мульча');
+    if(checked('fence')) warns.push('оставьте доступ для обрезки, сбора и проветривания, не сажайте вплотную к забору');
+    const warnHtml=[...new Set(warns)].map(x=>'<li>'+x+'</li>').join('');
+    out.innerHTML='<h3>'+data.crops[c].name+': '+n+' шт.</h3>'+
+      '<div class="result-badges"><span class="badge level-suitable">форма: '+f[1]+'</span><span class="badge level-reliable">в ряду: '+inRow+' м</span><span class="badge level-reliable">между рядами: '+between+' м</span></div>'+
+      '<div class="check-grid"><div class="card"><h3>Сколько места заложить</h3><p><strong>'+area+'</strong></p><p>Длина ряда: около '+rowLength+' м. Для блока: '+cols+' × '+rows+' растений.</p></div>'+
+      '<div class="card"><h3>Опыление</h3><p>'+sp.pollinator+'</p></div>'+
+      '<div class="card"><h3>Предупреждения</h3><ul>'+warnHtml+'</ul></div>'+
+      '<div class="card"><h3>Следующий шаг</h3><p><a class="inline-link" href="crops/'+data.crops[c].slug+'.html">Открыть культуру</a> → <a class="inline-link" href="guides.html">связки регион+культура</a> → <a class="inline-link" href="site-check.html">проверка участка</a>.</p></div></div>';
+  }
+  crop.addEventListener('change', function(){ fillForms(); render(); });
+  form.addEventListener('change', render);
+  count.addEventListener('input', render);
+  mode.addEventListener('change', render);
+  factors.forEach(x=>x.addEventListener('change', render));
+  fillForms();
+  count.value=data.spacing[crop.value].defaultCount || 2;
+  render();
+});
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  const root=document.querySelector('[data-season-planner]');
+  if(!root) return;
+  const node=document.getElementById('season-planner-data');
+  if(!node) return;
+  const data=JSON.parse(node.textContent);
+  const region=root.querySelector('[data-season-region]');
+  const crop=root.querySelector('[data-season-crop]');
+  const month=root.querySelector('[data-season-month]');
+  const out=root.querySelector('[data-season-result]');
+  const factors=Array.from(root.querySelectorAll('[data-season-factor]'));
+  function checked(id){ const el=root.querySelector('[data-season-factor="'+id+'"]'); return el && el.checked; }
+  function seasonKey(m){ const s=(data.months.find(x=>x.id===m)||data.months[0]).season; return s==='весна'?'spring':s==='лето'?'summer':s==='осень'?'autumn':'winter'; }
+  function render(){
+    const r=region.value, c=crop.value, mId=month.value;
+    const m=data.months.find(x=>x.id===mId)||data.months[0];
+    const reg=data.regions[r], cr=data.crops[c];
+    const levelKey=(reg.matrix&&reg.matrix[c])||'suitable';
+    const level=Array.isArray(data.levels[levelKey])?{label:data.levels[levelKey][0],cls:data.levels[levelKey][1],text:data.levels[levelKey][2]}:data.levels[levelKey];
+    const g=cr.group, sKey=seasonKey(mId);
+    const cropTasks=(data.cropSeason[g]&&data.cropSeason[g][sKey])||[];
+    const warnings=[];
+    warnings.push(reg.adjust.risk);
+    if((mId==='mar'||mId==='apr'||mId==='may')) warnings.push(reg.adjust.early);
+    if((mId==='sep'||mId==='oct'||mId==='nov')) warnings.push(reg.adjust.late);
+    if(checked('lowland')) warnings.push('низина усиливает заморозки, сырость и задержку прогрева почвы');
+    if(checked('wet')) warnings.push('сырость требует осторожности с косточковыми и посадкой в тяжёлую почву');
+    if(checked('noIrrigation')) warnings.push('без полива новые посадки, ягодники и южные участки читаются строже');
+    if(checked('warmWall')) warnings.push('тёплая стена может помочь вызреванию, но повышает риск раннего старта и ожогов');
+    const baseList=m.base.map(x=>'<li>'+x+'</li>').join('');
+    const cropList=cropTasks.map(x=>'<li>'+x+'</li>').join('');
+    const avoidList=m.avoid.map(x=>'<li>'+x+'</li>').join('');
+    const warnList=[...new Set(warnings)].map(x=>'<li>'+x+'</li>').join('');
+    const note=(data.notes[r]&&data.notes[r][c])||'';
+    out.innerHTML='<h3>'+reg.name+' · '+cr.name+' · '+m.name+'</h3><div class="result-badges"><span class="badge '+level.cls+'">Региональный статус: '+level.label+'</span><span class="badge level-suitable">'+m.window+'</span></div><p>'+note+'</p><div class="check-grid"><div class="card"><h3>Работы месяца</h3><ul>'+baseList+'</ul></div><div class="card"><h3>Для культуры</h3><ul>'+cropList+'</ul></div><div class="card"><h3>Чего избегать</h3><ul>'+avoidList+'</ul></div><div class="card"><h3>Поправки</h3><ul>'+warnList+'</ul></div></div><p class="data-note"><strong>Следующий шаг:</strong> <a class="inline-link" href="calendar/regions/'+r+'.html">календарь региона</a> → <a class="inline-link" href="calendar/crops/'+cr.slug+'.html">календарь культуры</a> → <a class="inline-link" href="guides/'+r+'/'+cr.slug+'.html">связка регион+культура</a>.</p>';
+  }
+  [region,crop,month].forEach(el=>el.addEventListener('change', render));
+  const btn=root.querySelector('[data-season-run]'); if(btn) btn.addEventListener('click', render);
+  factors.forEach(el=>el.addEventListener('change', render));
+  render();
+});

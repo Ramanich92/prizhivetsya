@@ -1,11 +1,11 @@
-# Quality report v39
+# Quality report v42
 
-- HTML pages: 235
-- Local links checked: 10908
+- HTML files: 324
+- Local links checked: 18853
 - Broken local links: 0
-- Sitemap pages: 234
-- Legacy markers found: 0
+- Sitemap pages: 323
+- Old markers found: 0
 
 No broken local links found.
 
-No legacy markers found.
+No old version markers found.
