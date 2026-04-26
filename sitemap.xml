@@ -28,6 +28,8 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/months/oct.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/months/sep.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/chelyabinskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/leningradskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/moskovskaya-oblast.html</loc></url>
@@ -35,6 +37,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/catalog-red-flags.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/choose-sapling.html</loc></url>
@@ -75,6 +78,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/crops/zhimolost.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/leningradskaya-oblast.html</loc></url>
@@ -83,6 +87,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/regions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/do-not-buy.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/documents-label.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/drainage.html</loc></url>
@@ -109,6 +114,19 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/bashkortostan/vishnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/bashkortostan/yablonya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/bashkortostan/zhimolost.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/abrikos.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/chereshnya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/grusha.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/index.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/kryzhovnik.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/malina.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/persik.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/sliva.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/smorodina-chernaya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/vinograd.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/vishnya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/yablonya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/chelyabinskaya-oblast/zhimolost.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/krasnodarskiy-kray/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/krasnodarskiy-kray/chereshnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/krasnodarskiy-kray/grusha.html</loc></url>
@@ -200,12 +218,26 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/sverdlovskaya-oblast/vishnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/sverdlovskaya-oblast/yablonya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/sverdlovskaya-oblast/zhimolost.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/abrikos.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/chereshnya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/grusha.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/index.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/kryzhovnik.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/malina.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/persik.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/sliva.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/smorodina-chernaya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/vinograd.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/vishnya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/yablonya.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/zhimolost.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/knowledge.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/layout-mistakes.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/legal-checklist.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/localities/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/leningradskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/moskovskaya-oblast.html</loc></url>
@@ -213,6 +245,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/localities/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/methodology.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/microclimate.html</loc></url>
@@ -254,6 +287,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/crops/yablonya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/crops/zhimolost.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/leningradskaya-oblast.html</loc></url>
@@ -262,11 +296,13 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/raised-beds.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/region-moskovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regional-roadmap.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/regions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/leningradskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/moskovskaya-oblast.html</loc></url>
@@ -274,6 +310,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/regions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/risk-levels.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/rootstocks.html</loc></url>
@@ -318,6 +355,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/crops/yablonya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/crops/zhimolost.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/leningradskaya-oblast.html</loc></url>
@@ -326,6 +364,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil-acidity.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil-check.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil-mistakes.html</loc></url>
@@ -335,6 +374,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/spring-planting.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/start.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/leningradskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/moskovskaya-oblast.html</loc></url>
@@ -342,6 +382,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/terms.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/trust.html</loc></url>
@@ -364,6 +405,8 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/kryzhovnik-russkiy-zheltyy.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/kryzhovnik-severnyy-kapitan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/bashkortostan.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/chelyabinskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/leningradskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/moskovskaya-oblast.html</loc></url>
@@ -371,6 +414,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/sverdlovskaya-oblast.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/regions/yaroslavskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/sliva-evraziya-21.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/sliva-pamyat-timiryazeva.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/sliva-skoroplodnaya.html</loc></url>
