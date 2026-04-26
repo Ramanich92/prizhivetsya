@@ -1,20 +1,16 @@
-# Quality report v31
+# Quality report v32
 
 HTML pages: 89
 Broken local links: 0
-Forbidden leftovers: 1
-Markdown-like visible headings: 0
+Homepage/region legacy leftovers: 0
 
 Broken links:
 []
 
-Forbidden leftovers:
-[
-  [
-    "sources.html",
-    "коммерчес"
-  ]
-]
-
-Markdown-like:
+Homepage/region legacy leftovers:
 []
+
+Manual notes:
+- Главная больше не содержит московский пилотный CTA.
+- Старые московские адреса оставлены noindex-редиректами.
+- sitemap.xml исключает 404 и legacy/noindex-страницы.
