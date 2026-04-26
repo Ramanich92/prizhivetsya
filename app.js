@@ -282,3 +282,5 @@ document.addEventListener('DOMContentLoaded', function(){
   factors.forEach(el=>el.addEventListener('change', render));
   render();
 });
+
+document.addEventListener('DOMContentLoaded',()=>{const r=document.querySelector('[data-nursery-checker]');if(!r)return;const o=r.querySelector('[data-nursery-result]');const names=['named','region','rootstock','roots','bark','label','seller'];function c(k){let e=r.querySelector('[data-nursery="'+k+'"]');return e&&e.checked}function render(){let n=names.filter(c).length;let level=n>=6?'Можно рассматривать к покупке':n>=4?'Только после уточнений':'Не покупать без проверки';o.innerHTML='<div class="card"><div class="nursery-score">'+n+'/7</div><h2>'+level+'</h2><p>Если нет названия сорта, регионального объяснения, подвоя или нормальных корней — покупку лучше отложить.</p></div>'}r.querySelectorAll('input').forEach(e=>e.addEventListener('change',render));render()});
