@@ -1,6 +1,0 @@
-V71_DEPLOY_TEST_OK
-version=v71
-regions=10
-subregions=42
-region_crop_guides=120
-build=owner-action-ready-content-baseline
