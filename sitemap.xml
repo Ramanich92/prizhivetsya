@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ramanich92.github.io/prizhivetsya/404.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/about.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/autumn-planting.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar.html</loc></url>
@@ -59,7 +58,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/crops/zhimolost.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/culture-matrix.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/data-status.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/deployment-check.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/disclaimer.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/disease-risks.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/diseases/crops/abrikos.html</loc></url>
@@ -231,7 +229,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/vishnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/yablonya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/zhimolost.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/index.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/knowledge.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/layout-mistakes.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities.html</loc></url>
@@ -335,7 +333,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/wet-lowland.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/season-calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/season-planner.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/service.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/site-check.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/site-map.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil-acidity.html</loc></url>
@@ -435,7 +432,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-silginka.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-yugana.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/variety-filter.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/version.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/water-management.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/watering-calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/winter-hardiness.html</loc></url>

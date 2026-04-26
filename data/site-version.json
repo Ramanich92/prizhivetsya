@@ -1,16 +1,18 @@
 {
-  "version": "v59",
-  "build": "public-legal-contact-cleanup",
+  "version": "v60",
+  "build": "domain-public-launch-prep",
   "date": "2026-04-26",
-  "status": "public-facing cleanup; contacts/privacy/terms polished; internal audit/checklist HTML removed from release archive",
+  "status": "domain/public launch prep; sitemap cleaned; service pages noindexed; deploy markdown removed; 10-region layer retained",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V59_DEPLOY_TEST.txt",
+    "V60_DEPLOY_TEST.txt",
     "version.html",
     "deployment-check.html",
     "data/site-version.json",
+    "robots.txt",
+    "sitemap.xml",
     "index.html",
     "regions.html",
     "purchase.html",
@@ -22,16 +24,14 @@
     "contacts.html",
     "privacy.html",
     "terms.html",
-    "disclaimer.html",
-    "sitemap.xml",
-    "robots.txt"
+    "disclaimer.html"
   ],
   "notes": [
-    "v59 is a full release package, not a small hotfix.",
-    "Contacts page no longer uses placeholder fields or invented email/requisites.",
-    "Privacy and terms pages are rewritten as public-facing texts for the current static site state.",
-    "Internal audit/checklist HTML pages were removed from the archive and from public navigation.",
-    "Sitemap and public links were regenerated after cleanup.",
-    "The canonical base remains GitHub Pages until the final domain is chosen."
+    "v60 is a full release package, not a small hotfix.",
+    "Canonical and OG base remains GitHub Pages until the final domain is chosen.",
+    "After domain selection, replace canonical/og:url and robots sitemap base in one sweep, then regenerate sitemap.xml.",
+    "Root Markdown release notes/checklists were removed from the deployable archive to reduce public service surface.",
+    "version.html and deployment-check.html stay available for manual deploy checks but are marked noindex and excluded from sitemap.xml.",
+    "The public 10-region layer is preserved across purchase, soil, calendar, first-garden, do-not-buy and garden-health-check pages."
   ]
 }

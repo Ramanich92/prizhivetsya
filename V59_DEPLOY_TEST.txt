@@ -1,6 +1,0 @@
-V59_DEPLOY_TEST_OK
-version: v59
-regions: 10
-subregions: 42
-region_crop_guides: 120
-public_html: internal audit/checklist pages removed
