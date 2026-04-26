@@ -3,6 +3,6 @@ Allow: /
 Disallow: /data/
 Disallow: /version.html
 Disallow: /deployment-check.html
-Disallow: /V60_DEPLOY_TEST.txt
+Disallow: /V69_DEPLOY_TEST.txt
 Disallow: /*.md$
 Sitemap: https://ramanich92.github.io/prizhivetsya/sitemap.xml

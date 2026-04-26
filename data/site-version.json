@@ -1,37 +1,25 @@
 {
-  "version": "v60",
-  "build": "domain-public-launch-prep",
+  "version": "v69",
+  "build": "clean-recovery-from-v60",
   "date": "2026-04-26",
-  "status": "domain/public launch prep; sitemap cleaned; service pages noindexed; deploy markdown removed; 10-region layer retained",
+  "status": "clean recovery from confirmed loading v60 baseline; no v64/v67 bulk patches",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V60_DEPLOY_TEST.txt",
+    "V69_DEPLOY_TEST.txt",
     "version.html",
     "deployment-check.html",
     "data/site-version.json",
     "robots.txt",
     "sitemap.xml",
     "index.html",
-    "regions.html",
     "purchase.html",
-    "soil.html",
-    "calendar.html",
-    "first-garden.html",
-    "do-not-buy.html",
-    "garden-health-check.html",
-    "contacts.html",
-    "privacy.html",
-    "terms.html",
-    "disclaimer.html"
+    "soil.html"
   ],
   "notes": [
-    "v60 is a full release package, not a small hotfix.",
-    "Canonical and OG base remains GitHub Pages until the final domain is chosen.",
-    "After domain selection, replace canonical/og:url and robots sitemap base in one sweep, then regenerate sitemap.xml.",
-    "Root Markdown release notes/checklists were removed from the deployable archive to reduce public service surface.",
-    "version.html and deployment-check.html stay available for manual deploy checks but are marked noindex and excluded from sitemap.xml.",
-    "The public 10-region layer is preserved across purchase, soil, calendar, first-garden, do-not-buy and garden-health-check pages."
+    "Clean recovery build based on the confirmed loading v60 baseline.",
+    "Use a clean deploy: delete old files first or remove stale V67/V68 markers and risky leftovers.",
+    "Canonical and OG base remains GitHub Pages until the final domain is chosen."
   ]
 }
