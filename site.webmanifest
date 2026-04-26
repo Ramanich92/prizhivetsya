@@ -1,0 +1,9 @@
+{
+  "name": "Приживётся",
+  "short_name": "Приживётся",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8f5ef",
+  "theme_color": "#416b43",
+  "description": "Региональный справочник по плодовым культурам и участку."
+}

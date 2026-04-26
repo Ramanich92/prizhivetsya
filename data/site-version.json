@@ -1,14 +1,22 @@
 {
-  "version": "v53",
-  "build": "two-regions-yaroslavl-chelyabinsk",
+  "version": "v54",
+  "build": "seo-release-qa",
   "date": "2026-04-26",
-  "status": "public content expansion",
+  "status": "prelaunch SEO and editorial QA layer",
   "regions": 10,
-  "subregions": 42,
-  "localities": 54,
   "region_crop_guides": 120,
-  "added": [
-    "Ярославская область",
-    "Челябинская область"
+  "added_pages": [
+    "source-status.html",
+    "launch-checklist.html",
+    "editorial-review.html",
+    "content-debt.html",
+    "release-notes.html"
+  ],
+  "expected_checks": [
+    "V54_DEPLOY_TEST.txt",
+    "version.html",
+    "data/site-version.json",
+    "regions/yaroslavskaya-oblast.html",
+    "regions/chelyabinskaya-oblast.html"
   ]
 }
