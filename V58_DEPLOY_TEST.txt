@@ -1,0 +1,5 @@
+V58_DEPLOY_TEST_OK
+build=release-coherence-legal-domain-ready
+regions=10
+subregions=42
+region_crop_guides=120

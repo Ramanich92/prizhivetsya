@@ -1,25 +1,38 @@
 {
-  "version": "v57",
-  "build": "visible-10-regions-fix",
+  "version": "v58",
+  "build": "release-coherence-legal-domain-ready",
   "date": "2026-04-26",
-  "status": "visible overview pages synchronized with 10-region layer",
+  "status": "single full release package; deploy/version pages synchronized; public 10-region layer rechecked",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V57_DEPLOY_TEST.txt",
+    "V58_DEPLOY_TEST.txt",
     "version.html",
+    "deployment-check.html",
     "data/site-version.json",
-    "site-map.html",
-    "old-version-audit.html",
+    "index.html",
+    "regions.html",
+    "purchase.html",
+    "soil.html",
+    "calendar.html",
+    "first-garden.html",
+    "do-not-buy.html",
+    "garden-health-check.html",
+    "contacts.html",
+    "privacy.html",
+    "terms.html",
     "launch-checklist.html",
     "legal-checklist.html",
-    "contacts.html"
+    "sitemap.xml",
+    "robots.txt"
   ],
   "notes": [
-    "Исправлены видимые 8-регионные блоки на purchase.html и soil.html.",
-    "Расширены до 10 регионов также calendar.html, first-garden.html, do-not-buy.html и селектор региона в garden-health-check.html.",
-    "Добавлена проверка старого счётчика с учётом HTML-разметки: <strong>8</strong><span>регионов</span>.",
-    "После деплоя проверьте /purchase.html, /soil.html, /calendar.html, /first-garden.html, /do-not-buy.html, /garden-health-check.html и /V57_DEPLOY_TEST.txt."
+    "Собрана полноценная v58 без точечных hotfix-пакетов: один архив для чистого наката.",
+    "Служебные страницы version.html и deployment-check.html синхронизированы с v58.",
+    "Старые deploy-маркеры V54–V57 удалены из архива v58, чтобы не путать проверку.",
+    "Публичные обзорные страницы покупки, почвы, календаря, первого сада и антисписка проверены на 10 регионов.",
+    "Контактные и юридические страницы оставлены без выдуманных реквизитов: перед доменом нужно подставить реальные канал связи, владельца проекта и набор подключённых сервисов.",
+    "После деплоя проверяйте /V58_DEPLOY_TEST.txt, /data/site-version.json, /version.html, /deployment-check.html, /purchase.html и /soil.html."
   ]
 }

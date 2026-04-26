@@ -1,31 +1,44 @@
-# QUALITY REPORT — v57
+# QUALITY REPORT — v58
 
-- Файлов всего: 467
+- Файлов всего: 466
 - HTML-страниц: 448
 - Страниц в sitemap: 448
-- Canonical meta: 443 / 448
-- Description meta: 443 / 448
+- Canonical meta: 448 / 448
+- Description meta: 448 / 448
 - OpenGraph title/description: 448 / 448
 - Регионов: 10
 - Подзон: 42
 - Связок регион+культура: 120
-- Карточек регионов на `purchase.html`: 10
-- Карточек регионов на `soil.html`: 10
-- Карточек регионов на `calendar.html`: 10
-- Карточек регионов на `first-garden.html`: 10
-- Карточек регионов на `do-not-buy.html`: 10
-- Региональных option в `garden-health-check.html`: 10
-- Локальных ссылок проверено: 21922
+- Строк сортов-кандидатов в `varieties/index.html`: 37
+- Локальных ссылок проверено: 21923
 - Битых локальных ссылок: 0
 - Битых якорей: 0
-- Старый публичный маркер “8 регионов” в HTML-страницах: 0
-- Старый HTML-маркер `<strong>8</strong><span>регионов</span>`: 0
+- Старый публичный маркер “8 регионов” в HTML: 0
+- Старые публичные маркеры v56/V56 в HTML: 0
+- Старые публичные маркеры v57/V57 в HTML: 0
+- Deploy-маркер v58: есть
+- Старые deploy-маркеры V54–V57 в архиве: 0
 
-## Проверенные страницы
+## Проверка 10 регионов
 
-- `purchase.html`: 10 регионов.
-- `soil.html`: 10 регионов.
-- `calendar.html`: 10 регионов.
-- `first-garden.html`: 10 регионов.
-- `do-not-buy.html`: 10 регионов.
-- `garden-health-check.html`: 10 регионов в селекторе и JS-картах.
+- `index.html`: 10 / 10
+- `regions.html`: 10 / 10
+- `purchase.html`: 10 / 10
+- `soil.html`: 10 / 10
+- `calendar.html`: 10 / 10
+- `first-garden.html`: 10 / 10
+- `do-not-buy.html`: 10 / 10
+- `protection.html`: 10 / 10
+- `garden-health-check.html`: 10 / 10
+
+## Контактные и юридические страницы
+
+- `contacts.html`: заготовка контактов без выдуманного email.
+- `privacy.html`: политика конфиденциальности требует заполнения владельца, сервисов и сроков хранения после выбора формы/аналитики.
+- `terms.html`: условия использования и ограничение ответственности оформлены как базовый текст.
+- `legal-checklist.html`: явно фиксирует, что реквизиты и владелец не выдумываются.
+- `DOMAIN_MIGRATION_CHECKLIST.md`: чек-лист переноса canonical/OG/sitemap/robots на домен.
+
+## Страницы с осознанными заготовками
+
+- contacts.html; corrections.html; feedback.html; privacy.html; varieties/index.html
