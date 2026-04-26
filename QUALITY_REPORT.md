@@ -1,7 +1,8 @@
-# Quality report — v44
+# Quality report — v47
 
-- HTML pages: 352
-- Sitemap pages: 352
-- Local links checked: 18009
+- HTML pages: 362
+- Sitemap pages: 362
+- Local links checked: 18300
 - Broken local links: 0
 
+No broken local links found.
