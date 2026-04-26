@@ -1,5 +1,0 @@
-V69_DEPLOY_TEST_OK
-clean recovery build from known-working v69 baseline
-10 regions
-42 subzones
-120 region+culture pairs
