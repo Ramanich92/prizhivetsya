@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function(){
         '<div class="card"><h3>Что изменило оценку</h3><ul>'+impacts+'</ul></div>'+
         '<div class="card"><h3>Региональные фильтры</h3><ul>'+filters+'</ul></div>'+
         '<div class="card"><h3>Как читать результат</h3><p>'+level.text+'</p><p>'+data.routes[r]+'</p></div>'+
-        '<div class="card"><h3>Следующий шаг</h3><p><a class="inline-link" href="regions/'+r+'.html">Открыть регион</a> → <a class="inline-link" href="crops/'+data.crops[c].slug+'.html">культура</a> → <a class="inline-link" href="varieties/regions/'+r+'.html">сорта региона</a>.</p></div>'+
+        '<div class="card"><h3>Следующий шаг</h3><p><a class="inline-link" href="guides/'+r+'/'+data.crops[c].slug+'.html">Открыть связку регион+культура</a> → <a class="inline-link" href="varieties/regions/'+r+'.html">сорта региона</a> → <a class="inline-link" href="corrections.html">уточнить данные</a>.</p></div>'+
       '</div>';
   }
   region.addEventListener('change', function(){ fillSubregions(); fillLocalities(); render(); });
@@ -99,5 +99,84 @@ document.addEventListener('DOMContentLoaded', function(){
   factors.forEach(f => f.addEventListener('change', render));
   fillSubregions();
   fillLocalities();
+  render();
+});
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  const root = document.querySelector('[data-garden-planner]');
+  if(!root) return;
+  const dataNode = document.getElementById('garden-planner-data');
+  if(!dataNode) return;
+  const data = JSON.parse(dataNode.textContent);
+  const region = root.querySelector('[data-planner-region]');
+  const scenario = root.querySelector('[data-planner-scenario]');
+  const ambition = root.querySelector('[data-planner-ambition]');
+  const out = root.querySelector('[data-planner-result]');
+  const factors = Array.from(root.querySelectorAll('[data-planner-factor]'));
+  const pollinatorCrops = new Set(['plum','sweet_cherry','honeysuckle','pear']);
+  const waterSensitive = new Set(['blackcurrant','raspberry','gooseberry','honeysuckle']);
+  const wetSensitive = new Set(['apple','pear','plum','sour_cherry','sweet_cherry','apricot','peach']);
+  const warmCrops = new Set(['sweet_cherry','apricot','grape','peach']);
+  function checked(id){ const el=root.querySelector('[data-planner-factor="'+id+'"]'); return el && el.checked; }
+  function cropLink(c){ return '<a href="crops/'+data.crops[c].slug+'.html">'+data.crops[c].name+'</a>'; }
+  function baseRank(regionKey, cropKey){
+    const levelKey = data.regions[regionKey].matrix[cropKey] || 'suitable';
+    return data.rank[levelKey] || 3;
+  }
+  function penalty(cropKey){
+    let p=0, reasons=[];
+    if(checked('lowland') && warmCrops.has(cropKey)){ p++; reasons.push('низина делает теплолюбивые культуры строже'); }
+    if(checked('wet') && wetSensitive.has(cropKey)){ p++; reasons.push('сырость опасна для деревьев и косточковых'); }
+    if(checked('small') && ['apple','pear','plum','sweet_cherry','apricot','peach'].includes(cropKey)){ p++; reasons.push('на маленьком участке важны размер и подвой'); }
+    if(checked('noIrrigation') && waterSensitive.has(cropKey)){ p++; reasons.push('без полива ягодники и малина теряют стабильность'); }
+    if(checked('noPollinators') && pollinatorCrops.has(cropKey)){ p++; reasons.push('нет места для опылителя'); }
+    if(checked('noCare') && ['plum','sour_cherry','sweet_cherry','apricot','grape','peach'].includes(cropKey)){ p++; reasons.push('культура требует защиты, формировки или профилактики'); }
+    return {p: Math.min(2,p), reasons};
+  }
+  function ambitionShift(){
+    if(ambition.value === 'safe') return 0;
+    if(ambition.value === 'balanced') return -1;
+    return -2;
+  }
+  function scenarioById(id){ return data.scenarios.find(s => s.id === id) || data.scenarios[0]; }
+  function pushUnique(arr, value){ if(arr.indexOf(value) === -1) arr.push(value); }
+  function render(){
+    const r=region.value;
+    const sc=scenarioById(scenario.value);
+    const start=[], check=[], hold=[];
+    const all=[];
+    ['best','careful','avoid'].forEach(k => (sc[k]||[]).forEach(c => pushUnique(all,c)));
+    Object.keys(data.crops).forEach(c => { if(all.indexOf(c)===-1 && baseRank(r,c)<=2) all.push(c); });
+    const reasonMap={};
+    all.forEach(c => {
+      const base=baseRank(r,c);
+      const pen=penalty(c);
+      const scenarioPenalty = (sc.avoid||[]).indexOf(c)>=0 ? 2 : ((sc.careful||[]).indexOf(c)>=0 ? 1 : 0);
+      let finalRank = Math.max(1, Math.min(5, base + pen.p + scenarioPenalty + ambitionShift()));
+      if(ambition.value === 'safe' && warmCrops.has(c) && base>=3) finalRank = Math.max(finalRank,4);
+      const reasons=[];
+      reasons.push('региональный уровень: '+data.levels[data.regions[r].matrix[c] || 'suitable'].label);
+      if(scenarioPenalty===1) reasons.push('сценарий требует проверки');
+      if(scenarioPenalty===2) reasons.push('сценарий советует отложить');
+      pen.reasons.forEach(x=>reasons.push(x));
+      reasonMap[c]=reasons;
+      if(finalRank<=2) start.push(c); else if(finalRank===3) check.push(c); else hold.push(c);
+    });
+    function col(title, arr, cls){
+      const items = arr.length ? arr.map(c => '<div class="basket-item">'+cropLink(c)+'<span class="badge '+cls+'">'+data.crops[c].name+'</span></div>').join('') : '<p class="muted">Нет культур в этой корзине для выбранных условий.</p>';
+      const reasons = arr.slice(0,4).map(c => '<li><strong>'+data.crops[c].name+':</strong> '+reasonMap[c].join('; ')+'</li>').join('');
+      return '<div class="basket-column"><h4>'+title+'</h4><div class="basket-list">'+items+'</div>'+(reasons?'<ul class="reason-list">'+reasons+'</ul>':'')+'</div>';
+    }
+    out.innerHTML = '<h3>'+data.regions[r].name+' · '+sc.title+'</h3><p>'+sc.summary+'</p>'+
+      '<div class="planner-basket">'+
+      col('Можно начинать', start, 'level-reliable')+
+      col('Только после проверки', check, 'level-risky')+
+      col('Не первая покупка', hold, 'level-not-recommended')+
+      '</div>'+
+      '<div class="scenario-note"><strong>Маршрут:</strong> откройте страницу региона, затем сценарий, культуру и сортовой маршрут. Проверка участка нужна до покупки, а не после посадки.</div>';
+  }
+  [region,scenario,ambition].forEach(el => el.addEventListener('change', render));
+  factors.forEach(el => el.addEventListener('change', render));
   render();
 });
