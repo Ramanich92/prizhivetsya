@@ -1,15 +1,20 @@
 {
-  "version": "v47",
-  "layer": "prelaunch_stabilization",
-  "generated_at": "2026-04-26T13:19:38Z",
-  "html_pages": 362,
-  "sitemap_pages": 362,
-  "local_links_checked": 18300,
-  "broken_local_links": 0,
-  "fixes": [
-    "homepage hero width constrained with .hero-inner",
-    "v45 editorial stabilization",
-    "v46 trust and data-status pages",
-    "v47 prelaunch legal/contact drafts"
+  "version": "v48",
+  "label": "v48 soil restore + prelaunch polish",
+  "date": "2026-04-26",
+  "expected_pages": [
+    "index.html",
+    "version.html",
+    "deployment-check.html",
+    "soil.html",
+    "soil-check.html",
+    "purchase.html",
+    "feedback.html"
+  ],
+  "notes": [
+    "Возвращён почвенный слой поверх предзапусковой v47",
+    "Упрощена навигация",
+    "Добавлена служебная проверка заливки",
+    "Герой главной ограничен общей шириной контейнера"
   ]
 }

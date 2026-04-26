@@ -1,8 +1,10 @@
-# Quality report — v47
+# QUALITY REPORT — v48
 
-- HTML pages: 362
-- Sitemap pages: 362
-- Local links checked: 18300
-- Broken local links: 0
+- HTML-страниц: 397
+- Локальных ссылок проверено: 21946
+- Битых локальных ссылок: 0
+- Страниц в sitemap: 397
+- Почвенный слой: OK
+- Служебная проверка: OK
+- Остаточные старые маркеры в HTML: 0
 
-No broken local links found.
