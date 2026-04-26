@@ -1,36 +1,27 @@
 {
-  "version": "v70",
-  "build": "stable-public-baseline",
-  "date": "2026-04-26",
-  "status": "stable public baseline; no v64 JSON-LD/a11y bulk patch and no v67 wide copy sweep",
+  "version": "v71",
+  "build": "owner-action-ready-content-baseline",
+  "date": "2026-04-27",
+  "status": "stable public baseline; visible launch wording cleaned; no JSON-LD, no bulk a11y, no app.js changes",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V69_DEPLOY_TEST.txt",
+    "V71_DEPLOY_TEST.txt",
     "version.html",
     "deployment-check.html",
     "data/site-version.json",
-    "robots.txt",
-    "sitemap.xml",
     "index.html",
     "purchase.html",
-    "soil.html"
-  ],
-  "notes": [
-    "Based on the confirmed loading v70 public baseline baseline.",
-    "Restores safe social preview/PWA assets from the stable v63 line.",
-    "Cleans visible public baseline wording and incomplete regional copy without changing app.js."
-  ],
-  "region_culture_pairs": 120,
-  "checks": [
-    "version.html",
-    "deployment-check.html",
-    "data/site-version.json",
-    "V70_DEPLOY_TEST.txt",
-    "purchase.html",
     "soil.html",
-    "site.webmanifest",
-    "assets/og-image.png"
+    "contacts.html",
+    "privacy.html",
+    "terms.html"
+  ],
+  "owner_actions_remaining": [
+    "choose production domain",
+    "connect permanent project email",
+    "add legal owner details only if publication model requires them",
+    "replace GitHub Pages canonicals with production domain after domain is ready"
   ]
 }
