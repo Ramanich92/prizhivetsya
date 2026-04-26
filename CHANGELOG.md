@@ -1,26 +1,22 @@
-# CHANGELOG
+# Changelog
 
-## v58 — release-coherence-legal-domain-ready — 2026-04-26
+## v59 — public legal/contact cleanup
+- Reworked contacts/privacy/terms/disclaimer into public-facing pages.
+- Removed internal audit/checklist HTML pages from release archive and public navigation.
+- Updated site map, knowledge page, source status and data status wording.
+- Synchronized version markers and deployment checks to v59.
+- Regenerated sitemap after cleanup.
+- Rechecked 10-region public blocks and local links.
 
-- Собрана полноценная v58 вместо частного hotfix-пакета.
-- Служебные страницы `version.html` и `deployment-check.html` синхронизированы с v58.
-- Добавлен `V58_DEPLOY_TEST.txt`; старые deploy-маркеры V54–V57 удалены из архива.
-- Повторно проверены публичные обзорные страницы с региональными блоками: покупка, почва, календарь, первый сад, антисписок и диагностика сада.
-- Юридические/контактные страницы оставлены без фейковых реквизитов; добавлены заметки для подготовки домена и реальных контактов.
-- Добавлены `V58_DEPLOY_NOTES.md` и `DOMAIN_MIGRATION_CHECKLIST.md`.
+## v58 — full release coherence
+- Synchronized service/version pages.
+- Added full release deploy marker.
+- Rechecked 10-region visible pages after v57.
+- Kept legal/contact pages without invented requisites.
 
-## v57 — visible-10-regions-fix — 2026-04-26
+## v57 — visible 10-region fix
+- Fixed visible 8-region blocks in purchase, soil, calendar, first garden, do-not-buy and garden health check.
 
-- Исправлен пропущенный старый счётчик на `purchase.html`: было 8 регионов, стало 10.
-- На `purchase.html` и `soil.html` добавлены Ярославская и Челябинская области.
-- Заодно расширены до 10 регионов обзорные блоки на `calendar.html`, `first-garden.html`, `do-not-buy.html`.
-- В `garden-health-check.html` добавлены Ярославская и Челябинская области в селектор и JS-профили.
-- Расширена контрольная проверка старых маркеров: теперь ловит `8 регионов`, даже если число и слово разделены HTML-тегами.
-
-## v56 — prod-check-text-legal-domain-cleanup — 2026-04-26
-- Проверен прод: текущий публичный слой отстаёт от v55/v56 и показывает старые 8 регионов.
-- Исправлены остатки “8 регионов” в публичных страницах v55.
-- В `protection.html` добавлены карточки Ярославской и Челябинской областей.
-- Исправлены SEO/OG недочёты 404 и service.
-- Уточнены контакты, privacy, terms, legal-checklist, launch-checklist и prelaunch.
-- Обновлены служебные маркеры версии и отчёт качества.
+## v56 — cleanup after expansion to 10 regions
+- Synced public text after expansion.
+- Added domain/legal preparation notes.

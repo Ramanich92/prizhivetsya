@@ -1,13 +1,13 @@
 {
-  "version": "v58",
-  "build": "release-coherence-legal-domain-ready",
+  "version": "v59",
+  "build": "public-legal-contact-cleanup",
   "date": "2026-04-26",
-  "status": "single full release package; deploy/version pages synchronized; public 10-region layer rechecked",
+  "status": "public-facing cleanup; contacts/privacy/terms polished; internal audit/checklist HTML removed from release archive",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V58_DEPLOY_TEST.txt",
+    "V59_DEPLOY_TEST.txt",
     "version.html",
     "deployment-check.html",
     "data/site-version.json",
@@ -22,17 +22,16 @@
     "contacts.html",
     "privacy.html",
     "terms.html",
-    "launch-checklist.html",
-    "legal-checklist.html",
+    "disclaimer.html",
     "sitemap.xml",
     "robots.txt"
   ],
   "notes": [
-    "Собрана полноценная v58 без точечных hotfix-пакетов: один архив для чистого наката.",
-    "Служебные страницы version.html и deployment-check.html синхронизированы с v58.",
-    "Старые deploy-маркеры V54–V57 удалены из архива v58, чтобы не путать проверку.",
-    "Публичные обзорные страницы покупки, почвы, календаря, первого сада и антисписка проверены на 10 регионов.",
-    "Контактные и юридические страницы оставлены без выдуманных реквизитов: перед доменом нужно подставить реальные канал связи, владельца проекта и набор подключённых сервисов.",
-    "После деплоя проверяйте /V58_DEPLOY_TEST.txt, /data/site-version.json, /version.html, /deployment-check.html, /purchase.html и /soil.html."
+    "v59 is a full release package, not a small hotfix.",
+    "Contacts page no longer uses placeholder fields or invented email/requisites.",
+    "Privacy and terms pages are rewritten as public-facing texts for the current static site state.",
+    "Internal audit/checklist HTML pages were removed from the archive and from public navigation.",
+    "Sitemap and public links were regenerated after cleanup.",
+    "The canonical base remains GitHub Pages until the final domain is chosen."
   ]
 }

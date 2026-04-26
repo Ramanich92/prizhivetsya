@@ -3,6 +3,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/404.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/about.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/autumn-planting.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/crops/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/crops/chereshnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/crops/grusha.html</loc></url>
@@ -38,13 +39,10 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/sverdlovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/calendar/regions/yaroslavskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/catalog-red-flags.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/choose-sapling.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/common-mistakes.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/contacts.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/content-audit.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/content-debt.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/corrections.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/crops/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/crops/chereshnya.html</loc></url>
@@ -93,7 +91,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/documents-label.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/drainage.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/editorial-policy.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/editorial-review.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/feedback.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/fertility.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/first-garden.html</loc></url>
@@ -103,6 +100,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/garden-sanitation.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/glossary.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/gossreestr-guide.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/guides.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/bashkortostan/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/bashkortostan/chereshnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/bashkortostan/grusha.html</loc></url>
@@ -233,12 +231,10 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/vishnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/yablonya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/guides/yaroslavskaya-oblast/zhimolost.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/guides.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/index.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/knowledge.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/launch-checklist.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/layout-mistakes.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/legal-checklist.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/localities.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/bashkortostan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/krasnodarskiy-kray.html</loc></url>
@@ -249,7 +245,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/sverdlovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/localities/yaroslavskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/localities.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/methodology.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/microclimate.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/moscow-do-not-buy.html</loc></url>
@@ -258,7 +253,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/mulching.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/nursery-check.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/oks-zks.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/old-version-audit.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/pests.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pests/aphids.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pests/cherry_fly.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pests/codling_moth.html</loc></url>
@@ -267,16 +262,15 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/pests/mildew_family.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pests/raspberry_beetle.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pests/rodents_hares.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/pests.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/planting-distance.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/planting-hole.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pollination-planner.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pollinators.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/prelaunch.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/privacy.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/protection-calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/protection.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pruning-calendar.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/purchase.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/crops/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/crops/chereshnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/crops/grusha.html</loc></url>
@@ -301,10 +295,10 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/sverdlovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/purchase/regions/yaroslavskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/purchase.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/raised-beds.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/region-moskovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regional-roadmap.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/regions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/bashkortostan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/krasnodarskiy-kray.html</loc></url>
@@ -315,12 +309,11 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/sverdlovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/yaroslavskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/regions.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/release-notes.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/risk-levels.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/rootstocks.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/safe-protection.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/sapling-quality.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios/berries-first.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios/catalog-audit.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios/dry-no-irrigation.html</loc></url>
@@ -331,7 +324,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios/stone-fruit-risk.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios/warm-wall-experiment.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios/wet-soil.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/scenarios.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/schemes.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/berry-strip.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/cold-region-safe.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/first-garden-6-sotok.html</loc></url>
@@ -340,12 +333,15 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/stone-fruit-corner.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/warm-wall.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/schemes/wet-lowland.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/schemes.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/season-calendar.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/season-planner.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/service.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/site-check.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/site-map.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/soil-acidity.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/soil-check.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/soil-mistakes.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/soil.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/crops/abrikos.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/crops/chereshnya.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/crops/grusha.html</loc></url>
@@ -370,15 +366,12 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/sverdlovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/soil/regions/yaroslavskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/soil-acidity.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/soil-check.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/soil-mistakes.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/soil.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/source-status.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/sources.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/spacing-planner.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/spring-planting.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/start.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/subregions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/bashkortostan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/chelyabinskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/krasnodarskiy-kray.html</loc></url>
@@ -389,9 +382,9 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/sverdlovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/subregions/yaroslavskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/subregions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/terms.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/trust.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/abrikos-alesha.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/abrikos-lel.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/chereshnya-bryanskaya-rozovaya.html</loc></url>
@@ -441,7 +434,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-bakcharskiy-velikan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-silginka.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-yugana.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/varieties.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/variety-filter.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/version.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/water-management.html</loc></url>
