@@ -1,0 +1,14 @@
+{
+  "version": "v52",
+  "build": "public-cleanup-sync",
+  "date": "2026-04-26",
+  "status": "editorial cleanup and deployment synchronization",
+  "expected_checks": [
+    "version.html",
+    "deployment-check.html",
+    "data/site-version.json",
+    "V52_DEPLOY_TEST.txt",
+    "index.html"
+  ],
+  "note": "Пользовательские страницы не должны показывать старые v48/v50 маркеры."
+}
