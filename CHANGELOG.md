@@ -1,7 +1,9 @@
-# Changelog
+# CHANGELOG
 
-## v55
-- Cleanup после расширения до 10 регионов.
-- Убраны старые публичные формулировки про v53/v54.
-- Пересобраны site-map.html, sitemap.xml, version.html, deployment-check.html.
-- Добавлена old-version-audit.html.
+## v56 — prod-check-text-legal-domain-cleanup — 2026-04-26
+- Проверен прод: текущий публичный слой отстаёт от v55/v56 и показывает старые 8 регионов.
+- Исправлены остатки “8 регионов” в публичных страницах v55.
+- В `protection.html` добавлены карточки Ярославской и Челябинской областей.
+- Исправлены SEO/OG недочёты 404 и service.
+- Уточнены контакты, privacy, terms, legal-checklist, launch-checklist и prelaunch.
+- Обновлены служебные маркеры версии и отчёт качества.

@@ -1,21 +1,25 @@
 {
-  "version": "v55",
-  "build": "cleanup-after-10-regions",
+  "version": "v56",
+  "build": "prod-check-text-legal-domain-cleanup",
   "date": "2026-04-26",
-  "status": "cleanup and synchronization after regional expansion",
+  "status": "production check, text cleanup, contact/legal/domain preparation",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V55_DEPLOY_TEST.txt",
+    "V56_DEPLOY_TEST.txt",
     "version.html",
     "data/site-version.json",
     "site-map.html",
-    "old-version-audit.html"
+    "old-version-audit.html",
+    "launch-checklist.html",
+    "legal-checklist.html",
+    "contacts.html"
   ],
   "notes": [
-    "Главная не должна содержать публичную фразу 'В v53 добавлены...'",
-    "Карта сайта должна показывать 10 регионов",
-    "Старые публичные маркеры v35/v44/v50 должны быть удалены"
+    "Прод сейчас нужно сверить с v56: публичные страницы должны показывать 10 регионов.",
+    "Исправлены оставшиеся публичные формулировки про 8 регионов.",
+    "Контакты и юридические страницы подготовлены как заполняемые предзапусковые шаблоны без выдуманных реквизитов.",
+    "После подключения домена нужно заменить canonical, OG URL и sitemap на основной домен."
   ]
 }
