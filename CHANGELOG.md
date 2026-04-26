@@ -1,7 +1,7 @@
 # Changelog
 
-## v54
-- Добавлен предзапусковый QA-слой.
-- Добавлены canonical, OpenGraph и Twitter meta на HTML-страницы.
-- Добавлены source-status.html, launch-checklist.html, editorial-review.html, content-debt.html, release-notes.html.
-- Обновлены version.html, deployment-check.html, data/site-version.json, sitemap.xml и robots.txt.
+## v55
+- Cleanup после расширения до 10 регионов.
+- Убраны старые публичные формулировки про v53/v54.
+- Пересобраны site-map.html, sitemap.xml, version.html, deployment-check.html.
+- Добавлена old-version-audit.html.

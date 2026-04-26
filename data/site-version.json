@@ -1,22 +1,21 @@
 {
-  "version": "v54",
-  "build": "seo-release-qa",
+  "version": "v55",
+  "build": "cleanup-after-10-regions",
   "date": "2026-04-26",
-  "status": "prelaunch SEO and editorial QA layer",
+  "status": "cleanup and synchronization after regional expansion",
   "regions": 10,
+  "subregions": 42,
   "region_crop_guides": 120,
-  "added_pages": [
-    "source-status.html",
-    "launch-checklist.html",
-    "editorial-review.html",
-    "content-debt.html",
-    "release-notes.html"
-  ],
   "expected_checks": [
-    "V54_DEPLOY_TEST.txt",
+    "V55_DEPLOY_TEST.txt",
     "version.html",
     "data/site-version.json",
-    "regions/yaroslavskaya-oblast.html",
-    "regions/chelyabinskaya-oblast.html"
+    "site-map.html",
+    "old-version-audit.html"
+  ],
+  "notes": [
+    "Главная не должна содержать публичную фразу 'В v53 добавлены...'",
+    "Карта сайта должна показывать 10 регионов",
+    "Старые публичные маркеры v35/v44/v50 должны быть удалены"
   ]
 }
