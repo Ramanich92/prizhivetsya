@@ -1,1 +1,1 @@
-v56 prod-check-text-legal-domain-cleanup 2026-04-26
+v57 visible-10-regions-fix 2026-04-26

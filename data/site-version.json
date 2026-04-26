@@ -1,13 +1,13 @@
 {
-  "version": "v56",
-  "build": "prod-check-text-legal-domain-cleanup",
+  "version": "v57",
+  "build": "visible-10-regions-fix",
   "date": "2026-04-26",
-  "status": "production check, text cleanup, contact/legal/domain preparation",
+  "status": "visible overview pages synchronized with 10-region layer",
   "regions": 10,
   "subregions": 42,
   "region_crop_guides": 120,
   "expected_checks": [
-    "V56_DEPLOY_TEST.txt",
+    "V57_DEPLOY_TEST.txt",
     "version.html",
     "data/site-version.json",
     "site-map.html",
@@ -17,9 +17,9 @@
     "contacts.html"
   ],
   "notes": [
-    "Прод сейчас нужно сверить с v56: публичные страницы должны показывать 10 регионов.",
-    "Исправлены оставшиеся публичные формулировки про 8 регионов.",
-    "Контакты и юридические страницы подготовлены как заполняемые предзапусковые шаблоны без выдуманных реквизитов.",
-    "После подключения домена нужно заменить canonical, OG URL и sitemap на основной домен."
+    "Исправлены видимые 8-регионные блоки на purchase.html и soil.html.",
+    "Расширены до 10 регионов также calendar.html, first-garden.html, do-not-buy.html и селектор региона в garden-health-check.html.",
+    "Добавлена проверка старого счётчика с учётом HTML-разметки: <strong>8</strong><span>регионов</span>.",
+    "После деплоя проверьте /purchase.html, /soil.html, /calendar.html, /first-garden.html, /do-not-buy.html, /garden-health-check.html и /V57_DEPLOY_TEST.txt."
   ]
 }
