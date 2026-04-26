@@ -96,3 +96,7 @@
   .stats{grid-template-columns:1fr}
   .btn-row .btn{width:100%}
 }
+
+
+/* v51 editorial clean */
+.placeholder{display:inline-block;color:#6f5a13;background:#fff7d6;border:1px dashed #d8b94e;border-radius:10px;padding:3px 8px;font-weight:800}.contact-panel{border:1px solid var(--line);background:#fffef7;border-radius:24px;padding:22px;margin:22px 0}.topnav a.active{background:#e6f5e9;color:#0b6e3b}.site-footer a{overflow-wrap:anywhere}

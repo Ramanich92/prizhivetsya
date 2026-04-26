@@ -1,2 +1,1 @@
-V50_DEPLOY_TEST_OK
-Этот файл нужен только для проверки заливки.
+OBSOLETE: текущая проверка — V51_DEPLOY_TEST.txt
