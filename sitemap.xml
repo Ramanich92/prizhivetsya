@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ramanich92.github.io/prizhivetsya/404.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/about.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/choose-sapling.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/common-mistakes.html</loc></url>
@@ -21,6 +20,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/culture-matrix.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/data-status.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/disease-risks.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/do-not-buy.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/editorial-policy.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/first-garden.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/glossary.html</loc></url>
@@ -31,6 +31,7 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/microclimate.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/pollinators.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regional-roadmap.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/regions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/bashkortostan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/krasnodarskiy-kray.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/leningradskaya-oblast.html</loc></url>
@@ -39,7 +40,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/respublika-tatarstan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/rostovskaya-oblast.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/regions/sverdlovskaya-oblast.html</loc></url>
-  <url><loc>https://ramanich92.github.io/prizhivetsya/regions.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/risk-levels.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/rootstocks.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/season-calendar.html</loc></url>
@@ -92,5 +92,6 @@
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-bakcharskiy-velikan.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-silginka.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/varieties/zhimolost-yugana.html</loc></url>
+  <url><loc>https://ramanich92.github.io/prizhivetsya/variety-filter.html</loc></url>
   <url><loc>https://ramanich92.github.io/prizhivetsya/winter-hardiness.html</loc></url>
 </urlset>

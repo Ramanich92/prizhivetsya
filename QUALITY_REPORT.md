@@ -1,4 +1,4 @@
-QUALITY REPORT v34
+QUALITY REPORT v35
 
 HTML pages: 98
 Sitemap pages: 93
