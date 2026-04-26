@@ -1,4 +1,34 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Проверка заливки сайта — Приживётся</title><meta name="description" content="Служебная страница для проверки версии после публикации на GitHub Pages."><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html" aria-label="На главную"><span class="brand-mark">✓</span><span>Приживётся</span></a><nav class="topnav" aria-label="Основная навигация"><a class="" href="index.html">Главная</a><a class="" href="regions.html">Регионы</a><a class="" href="guides.html">Связки</a><a class="" href="scenarios.html">Сценарии</a><a class="" href="schemes.html">Схемы</a><a class="" href="calendar.html">Календарь</a><a class="" href="protection.html">Защита</a><a class="" href="soil.html">Почва</a><a class="" href="purchase.html">Покупка</a><a class="active" href="knowledge.html">База знаний</a><a class="more-link" href="site-check.html">Проверка</a></nav></header><main>
-<section class="page-hero"><div class="container"><span class="kicker">Служебная проверка</span><h1>Проверка заливки</h1><p>Эта страница нужна, чтобы быстро понять, какая версия реально открывается на GitHub Pages и не смешались ли старые файлы с новой сборкой.</p></div></section>
-<section class="section"><div class="container two-col"><div><h2>Ожидаемая версия</h2><div class="launch-banner"><strong>v48</strong><p>В этой сборке главная, version.html, JSON версии и служебная проверка должны быть синхронизированы как v49. Если главная показывает старую версию, index.html не перезаписался или отдается из кеша.</p></div><table class="release-table"><tbody><tr><td>Главная</td><td><a href="index.html">index.html</a></td></tr><tr><td>Версия</td><td><a href="version.html">version.html</a></td></tr><tr><td>JSON версии</td><td><a href="data/site-version.json">data/site-version.json</a></td></tr><tr><td>Почва</td><td><a href="soil.html">soil.html</a></td></tr><tr><td>Покупка</td><td><a href="purchase.html">purchase.html</a></td></tr><tr><td>Обратная связь</td><td><a href="feedback.html">feedback.html</a></td></tr></tbody></table></div><aside class="card toc-card"><h3>Если версия смешалась</h3><ol><li>Удалить старые файлы из папки публикации.</li><li>Распаковать архив в корень, где лежит index.html.</li><li>Проверить, что новые папки data, soil, purchase, calendar, guides на месте.</li><li>Открыть эту страницу и version.html в режиме инкогнито.</li></ol></aside></div></section>
-</main><footer class="site-footer"><div class="container footer-grid"><div><strong>Приживётся</strong><p>Региональный справочник по плодовым культурам, участкам, почве, схемам посадки, календарю, защите сада и покупке саженцев.</p><p class="fineprint">Перед покупкой проверяйте регион, подзону, участок, сорт, подвой, документы и местную практику.</p></div><div class="footer-links"><a href="start.html">Как пользоваться</a><a href="regions.html">Регионы</a><a href="guides.html">Связки</a><a href="soil.html">Почва</a><a href="purchase.html">Покупка</a><a href="site-check.html">Проверка участка</a><a href="sources.html">Источники</a><a href="methodology.html">Методика</a><a href="data-status.html">Статус данных</a><a href="trust.html">Доверие</a><a href="prelaunch.html">Перед запуском</a><a href="content-audit.html">Вычитка</a><a href="contacts.html">Контакты</a><a href="feedback.html">Обратная связь</a><a href="legal-checklist.html">Юридический чек-лист</a><a href="disclaimer.html">Ограничения</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a><a href="deployment-check.html">Проверка заливки</a><a href="version.html">Версия</a><a href="site-map.html">Карта сайта</a></div></div></footer><script src="app.js" defer></script></body></html>
+<!doctype html><html lang="ru"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Проверка заливки сайта — Приживётся</title>
+  <link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="logo">✓</span><span>Приживётся</span></a><nav><a href="index.html">Главная</a><a href="version.html">Версия</a><a href="deployment-check.html">Проверка заливки</a><a href="deploy-v50.html">Диагностика v50</a><a href="site-map.html">Карта сайта</a></nav></div></header>
+
+<main>
+<section class="article article-wide">
+  <span class="kicker">Служебная проверка</span>
+  <h1>Проверка заливки v50</h1>
+  <p class="lead">Ожидаемая версия: <strong>v50</strong>. Эта сборка нужна, чтобы поймать ситуацию, когда одни файлы обновляются, а <code>index.html</code> остаётся старым.</p>
+</section>
+<section class="section">
+  <div class="container route-grid">
+    <div class="route-card"><h2>Что должно открываться</h2><ul>
+      <li><a href="index.html">index.html</a> — на первом экране должен быть бейдж “v50”.</li>
+      <li><a href="index-v50.html">index-v50.html</a> — проверочный дубль главной.</li>
+      <li><a href="version.html">version.html</a> — должен показывать v50.</li>
+      <li><a href="data/site-version.json">data/site-version.json</a> — JSON должен содержать "version": "v50".</li>
+      <li><a href="BUILD_VERSION.txt">BUILD_VERSION.txt</a> и <a href="V50_DEPLOY_TEST.txt">V50_DEPLOY_TEST.txt</a> — маркеры корня.</li>
+    </ul></div>
+    <div class="route-card"><h2>Если снова смесь версий</h2><ol>
+      <li>В репозитории открыть корневой <code>index.html</code> и проверить, есть ли там текст <code>v50</code>.</li>
+      <li>Проверить, что архив не распакован как папка внутри репозитория.</li>
+      <li>Удалить старые файлы публикации и залить содержимое архива в корень.</li>
+      <li>Дождаться завершения GitHub Pages workflow/deploy.</li>
+      <li>Открыть <code>index.html?check=v50</code> и <code>version.html?check=v50</code>.</li>
+    </ol></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><strong>Приживётся</strong><p>Региональный справочник по плодовым культурам, участкам, почве, схемам посадки, календарю, защите сада и покупке саженцев.</p><p>Сборка v50 deploy-fix.</p><nav><a href="index.html">Главная</a><a href="version.html">Версия</a><a href="deployment-check.html">Проверка заливки</a><a href="data/site-version.json">JSON версии</a><a href="BUILD_VERSION.txt">BUILD_VERSION</a><a href="V50_DEPLOY_TEST.txt">V50_DEPLOY_TEST</a></nav></div></footer></body></html>

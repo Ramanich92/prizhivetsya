@@ -1,1 +1,26 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Версия сайта — Приживётся</title><meta name="description" content="Служебная страница версии сайта Приживётся."><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html" aria-label="На главную"><span class="brand-mark">✓</span><span>Приживётся</span></a><nav class="topnav" aria-label="Основная навигация"><a class="" href="index.html">Главная</a><a class="" href="regions.html">Регионы</a><a class="" href="guides.html">Связки</a><a class="" href="scenarios.html">Сценарии</a><a class="" href="schemes.html">Схемы</a><a class="" href="calendar.html">Календарь</a><a class="" href="protection.html">Защита</a><a class="" href="soil.html">Почва</a><a class="" href="purchase.html">Покупка</a><a class="" href="knowledge.html">База знаний</a><a class="more-link" href="site-check.html">Проверка</a></nav></header><main><section class="page-hero"><div class="container"><span class="kicker">Версия</span><h1 class="page-title">v49</h1><p class="lead">Стабилизационная сборка: главная и служебные страницы синхронизированы, убраны черновые метки из пользовательских страниц, сохранены разделы почвы, покупки, защиты, календаря и связок.</p></div></section><section class="section"><div class="container grid cols-3"><div class="card"><h3>Что проверить</h3><p>Главная должна открываться без широкой hero-секции и без видимой метки v47/v48 в первом экране.</p><a class="btn" href="index.html">Главная</a></div><div class="card"><h3>Служебные файлы</h3><p>JSON версии и проверка заливки должны показывать v49.</p><a class="btn" href="deployment-check.html">Проверка заливки</a></div><div class="card"><h3>Следующий этап</h3><p>Не расширение, а вычитка, контакты, юридические страницы, источники и финальные формулировки.</p><a class="btn" href="prelaunch.html">Перед запуском</a></div></div></section></main><footer class="site-footer"><div class="container footer-grid"><div><strong>Приживётся</strong><p>Региональный справочник по плодовым культурам, участкам, почве, схемам посадки, календарю, защите сада и покупке саженцев.</p><p class="fineprint">Перед покупкой проверяйте регион, подзону, участок, сорт, подвой, документы и местную практику.</p></div><div class="footer-links"><a href="start.html">Как пользоваться</a><a href="regions.html">Регионы</a><a href="guides.html">Связки</a><a href="soil.html">Почва</a><a href="purchase.html">Покупка</a><a href="site-check.html">Проверка участка</a><a href="sources.html">Источники</a><a href="methodology.html">Методика</a><a href="data-status.html">Статус данных</a><a href="trust.html">Доверие</a><a href="prelaunch.html">Перед запуском</a><a href="content-audit.html">Вычитка</a><a href="contacts.html">Контакты</a><a href="feedback.html">Обратная связь</a><a href="legal-checklist.html">Юридический чек-лист</a><a href="disclaimer.html">Ограничения</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a><a href="deployment-check.html">Проверка заливки</a><a href="version.html">Версия</a><a href="site-map.html">Карта сайта</a></div></div></footer><script src="app.js" defer></script></body></html>
+<!doctype html><html lang="ru"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Версия сайта — Приживётся</title>
+  <link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="logo">✓</span><span>Приживётся</span></a><nav><a href="index.html">Главная</a><a href="version.html">Версия</a><a href="deployment-check.html">Проверка заливки</a><a href="deploy-v50.html">Диагностика v50</a><a href="site-map.html">Карта сайта</a></nav></div></header>
+
+<main>
+<section class="article article-wide">
+  <span class="kicker">Служебная страница</span>
+  <h1>v50</h1>
+  <p class="lead">Техническая сборка для синхронизации заливки. Если эта страница показывает v50, а главная нет — проблема не в архиве, а в перезаписи или кеше <code>index.html</code>.</p>
+</section>
+<section class="section">
+  <div class="container grid cols-3">
+    <a class="card" href="index.html"><h3>index.html</h3><p>Основная главная.</p></a>
+    <a class="card" href="index-v50.html"><h3>index-v50.html</h3><p>Проверочный дубль главной.</p></a>
+    <a class="card" href="deployment-check.html"><h3>Проверка заливки</h3><p>Что должно открываться после публикации.</p></a>
+    <a class="card" href="data/site-version.json"><h3>site-version.json</h3><p>Служебная версия в JSON.</p></a>
+    <a class="card" href="BUILD_VERSION.txt"><h3>BUILD_VERSION.txt</h3><p>Маркер корня публикации.</p></a>
+    <a class="card" href="V50_DEPLOY_TEST.txt"><h3>V50_DEPLOY_TEST.txt</h3><p>Простейший файл проверки.</p></a>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><strong>Приживётся</strong><p>Региональный справочник по плодовым культурам, участкам, почве, схемам посадки, календарю, защите сада и покупке саженцев.</p><p>Сборка v50 deploy-fix.</p><nav><a href="index.html">Главная</a><a href="version.html">Версия</a><a href="deployment-check.html">Проверка заливки</a><a href="data/site-version.json">JSON версии</a><a href="BUILD_VERSION.txt">BUILD_VERSION</a><a href="V50_DEPLOY_TEST.txt">V50_DEPLOY_TEST</a></nav></div></footer></body></html>

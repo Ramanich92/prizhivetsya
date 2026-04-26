@@ -1,3 +1,3 @@
-prizhivetsya v49
-stabilization + deployment sync
-2026-04-26
+Приживётся — v50 deploy-fix
+Дата сборки: 2026-04-26
+Если этот файл не открывается на GitHub Pages, архив не распакован в корень публикации.
