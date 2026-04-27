@@ -1373,3 +1373,25 @@ a{color:inherit}
     width:100%;
   }
 }
+
+
+/* --- v95: cleaner Belgorod zone page --- */
+.belgorod-v93-content{
+  padding-bottom:26px;
+}
+.belgorod-v93-hero{
+  margin-bottom:-52px;
+}
+.belgorod-v93-hero + .clean-table-card{
+  margin-top:0;
+}
+.clean-notes,
+.zone-page-nav{
+  display:none !important;
+}
+@media(max-width:1180px){
+  .belgorod-v93-hero{margin-bottom:-34px}
+}
+@media(max-width:720px){
+  .belgorod-v93-hero{margin-bottom:-22px}
+}
