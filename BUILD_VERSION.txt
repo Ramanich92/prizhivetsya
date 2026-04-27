@@ -1,1 +1,2 @@
-v73-locality-picker-draft — 2026-04-27: homepage locality search + 83-subject draft data layer
+v74-region-picker-only
+2026-04-27: homepage concept reset; only locality/region selection on index.html.

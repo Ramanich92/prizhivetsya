@@ -1,0 +1,2 @@
+v74-region-picker-only
+Homepage simplified to the locality/region picker only. Lower content blocks, header and footer removed from index.html; other site pages kept.
