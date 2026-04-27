@@ -183,3 +183,131 @@
     }catch(err){}
   });
 })();
+
+
+(function(){
+  function normalizeTableText(str){
+    return String(str || '').toLowerCase().replace(/ё/g,'е').replace(/\s+/g,' ').trim();
+  }
+  function escapeTableHtml(str){
+    return String(str || '').replace(/[&<>"']/g, function(ch){
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];
+    });
+  }
+  var recommendationRank = {'Надежно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
+  var monthRank = {'февраль':1,'март':2,'апрель':3,'май':4,'июнь':5,'июль':6,'август':7,'сентябрь':8,'октябрь':9,'ноябрь':10};
+  function timingRank(text){
+    var s = normalizeTableText(text);
+    var best = 99;
+    Object.keys(monthRank).forEach(function(month){
+      if(s.indexOf(month) !== -1) best = Math.min(best, monthRank[month]);
+    });
+    return best;
+  }
+  function renderCultureTable(root){
+    var jsonNode = root.querySelector('[data-culture-json]');
+    var tbody = root.querySelector('[data-culture-body]');
+    if(!jsonNode || !tbody) return;
+    var items = [];
+    try{ items = JSON.parse(jsonNode.textContent || '[]'); }catch(err){ items = []; }
+    var search = root.querySelector('[data-filter-search]');
+    var rec = root.querySelector('[data-filter-recommendation]');
+    var cat = root.querySelector('[data-filter-category]');
+    var method = root.querySelector('[data-filter-method]');
+    var sort = root.querySelector('[data-filter-sort]');
+    var count = root.querySelector('[data-culture-count]');
+    var empty = root.querySelector('[data-culture-empty]');
+    var chips = Array.prototype.slice.call(document.querySelectorAll('[data-quick-recommendation]'));
+
+    function uniqueValues(key){
+      var values = [];
+      items.forEach(function(item){
+        if(item[key] && values.indexOf(item[key]) === -1) values.push(item[key]);
+      });
+      return values.sort(function(a,b){ return a.localeCompare(b, 'ru'); });
+    }
+    function fillSelect(select, label, key){
+      if(!select) return;
+      select.innerHTML = '<option value="">'+label+'</option>' + uniqueValues(key).map(function(value){
+        return '<option value="'+escapeTableHtml(value)+'">'+escapeTableHtml(value)+'</option>';
+      }).join('');
+    }
+    function updateQuickState(){
+      var current = rec ? rec.value : '';
+      chips.forEach(function(chip){
+        chip.classList.toggle('is-active', chip.getAttribute('data-quick-recommendation') === current && current !== '');
+      });
+    }
+    function getList(){
+      var list = items.slice();
+      var query = normalizeTableText(search && search.value);
+      var recommendation = (rec && rec.value) || '';
+      var category = (cat && cat.value) || '';
+      var methodValue = (method && method.value) || '';
+      if(query){
+        list = list.filter(function(item){
+          return [item.name, item.category, item.note, item.place, item.method, item.timing].some(function(value){
+            return normalizeTableText(value).indexOf(query) !== -1;
+          });
+        });
+      }
+      if(recommendation){ list = list.filter(function(item){ return item.recommendation === recommendation; }); }
+      if(category){ list = list.filter(function(item){ return item.category === category; }); }
+      if(methodValue){ list = list.filter(function(item){ return item.method === methodValue; }); }
+      var sortValue = (sort && sort.value) || 'alpha-asc';
+      list.sort(function(a,b){
+        if(sortValue === 'alpha-desc') return b.name.localeCompare(a.name, 'ru');
+        if(sortValue === 'recommendation'){
+          var diff = (recommendationRank[a.recommendation] || 99) - (recommendationRank[b.recommendation] || 99);
+          return diff || a.name.localeCompare(b.name, 'ru');
+        }
+        if(sortValue === 'category'){
+          return a.category.localeCompare(b.category, 'ru') || a.name.localeCompare(b.name, 'ru');
+        }
+        if(sortValue === 'timing'){
+          return timingRank(a.timing) - timingRank(b.timing) || a.name.localeCompare(b.name, 'ru');
+        }
+        return a.name.localeCompare(b.name, 'ru');
+      });
+      return list;
+    }
+    function rowHtml(item){
+      return '<tr>'+
+        '<td><strong>'+escapeTableHtml(item.name)+'</strong><small>'+escapeTableHtml(item.group || '')+'</small></td>'+
+        '<td><span class="category-badge">'+escapeTableHtml(item.category)+'</span></td>'+
+        '<td><span class="rec-badge" data-rec="'+escapeTableHtml(item.recommendation)+'">'+escapeTableHtml(item.recommendation)+'</span></td>'+
+        '<td><span class="place-badge">'+escapeTableHtml(item.place)+'</span><span class="method-badge">'+escapeTableHtml(item.method || '')+'</span></td>'+
+        '<td class="timing-cell">'+escapeTableHtml(item.timing || '')+'</td>'+
+        '<td>'+escapeTableHtml(item.note)+'</td>'+
+      '</tr>';
+    }
+    function render(){
+      var list = getList();
+      tbody.innerHTML = list.map(rowHtml).join('');
+      if(count) count.textContent = 'Показано ' + list.length + ' из ' + items.length + ' культур';
+      if(empty) empty.hidden = list.length !== 0;
+      updateQuickState();
+    }
+    fillSelect(cat, 'Все категории', 'category');
+    fillSelect(method, 'Все варианты', 'method');
+    if(search) search.addEventListener('input', render);
+    if(rec) rec.addEventListener('change', render);
+    if(cat) cat.addEventListener('change', render);
+    if(method) method.addEventListener('change', render);
+    if(sort) sort.addEventListener('change', render);
+    chips.forEach(function(chip){
+      chip.addEventListener('click', function(){
+        var value = chip.getAttribute('data-quick-recommendation');
+        if(!rec) return;
+        rec.value = rec.value === value ? '' : value;
+        render();
+        var table = root.querySelector('.table-scroll');
+        if(table) table.scrollIntoView({behavior:'smooth', block:'nearest'});
+      });
+    });
+    render();
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('[data-culture-table]').forEach(renderCultureTable);
+  });
+})();
