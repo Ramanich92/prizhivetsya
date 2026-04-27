@@ -210,6 +210,7 @@
     if(!jsonNode || !tbody) return;
     var items = [];
     try{ items = JSON.parse(jsonNode.textContent || '[]'); }catch(err){ items = []; }
+
     var search = root.querySelector('[data-filter-search]');
     var rec = root.querySelector('[data-filter-recommendation]');
     var cat = root.querySelector('[data-filter-category]');
@@ -217,7 +218,7 @@
     var sort = root.querySelector('[data-filter-sort]');
     var count = root.querySelector('[data-culture-count]');
     var empty = root.querySelector('[data-culture-empty]');
-    var chips = Array.prototype.slice.call(document.querySelectorAll('[data-quick-recommendation]'));
+    var chips = Array.prototype.slice.call(root.querySelectorAll('[data-quick-recommendation]'));
 
     function uniqueValues(key){
       var values = [];
@@ -244,6 +245,7 @@
       var recommendation = (rec && rec.value) || '';
       var category = (cat && cat.value) || '';
       var methodValue = (method && method.value) || '';
+
       if(query){
         list = list.filter(function(item){
           return [item.name, item.category, item.note, item.place, item.method, item.timing].some(function(value){
@@ -251,9 +253,10 @@
           });
         });
       }
-      if(recommendation){ list = list.filter(function(item){ return item.recommendation === recommendation; }); }
-      if(category){ list = list.filter(function(item){ return item.category === category; }); }
-      if(methodValue){ list = list.filter(function(item){ return item.method === methodValue; }); }
+      if(recommendation) list = list.filter(function(item){ return item.recommendation === recommendation; });
+      if(category) list = list.filter(function(item){ return item.category === category; });
+      if(methodValue) list = list.filter(function(item){ return item.method === methodValue; });
+
       var sortValue = (sort && sort.value) || 'alpha-asc';
       list.sort(function(a,b){
         if(sortValue === 'alpha-desc') return b.name.localeCompare(a.name, 'ru');
@@ -261,12 +264,8 @@
           var diff = (recommendationRank[a.recommendation] || 99) - (recommendationRank[b.recommendation] || 99);
           return diff || a.name.localeCompare(b.name, 'ru');
         }
-        if(sortValue === 'category'){
-          return a.category.localeCompare(b.category, 'ru') || a.name.localeCompare(b.name, 'ru');
-        }
-        if(sortValue === 'timing'){
-          return timingRank(a.timing) - timingRank(b.timing) || a.name.localeCompare(b.name, 'ru');
-        }
+        if(sortValue === 'category') return a.category.localeCompare(b.category, 'ru') || a.name.localeCompare(b.name, 'ru');
+        if(sortValue === 'timing') return timingRank(a.timing) - timingRank(b.timing) || a.name.localeCompare(b.name, 'ru');
         return a.name.localeCompare(b.name, 'ru');
       });
       return list;
@@ -288,21 +287,20 @@
       if(empty) empty.hidden = list.length !== 0;
       updateQuickState();
     }
-    fillSelect(cat, 'Все категории', 'category');
-    fillSelect(method, 'Все варианты', 'method');
-    if(search) search.addEventListener('input', render);
-    if(rec) rec.addEventListener('change', render);
-    if(cat) cat.addEventListener('change', render);
-    if(method) method.addEventListener('change', render);
-    if(sort) sort.addEventListener('change', render);
+
+    fillSelect(cat, 'Все', 'category');
+    fillSelect(method, 'Все', 'method');
+
+    [search, rec, cat, method, sort].forEach(function(control){
+      if(!control) return;
+      control.addEventListener(control.tagName === 'INPUT' ? 'input' : 'change', render);
+    });
     chips.forEach(function(chip){
       chip.addEventListener('click', function(){
         var value = chip.getAttribute('data-quick-recommendation');
         if(!rec) return;
         rec.value = rec.value === value ? '' : value;
         render();
-        var table = root.querySelector('.table-scroll');
-        if(table) table.scrollIntoView({behavior:'smooth', block:'nearest'});
       });
     });
     render();

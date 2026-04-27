@@ -1,1 +1,1 @@
-v81-belogorod-calendar-filters
+v82-belogorod-clean-region-page
