@@ -1,3 +1,1 @@
-v72
-legal/privacy public copy cleanup
-base: stable public line
+v73-locality-picker-draft — 2026-04-27: homepage locality search + 83-subject draft data layer

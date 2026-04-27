@@ -284,3 +284,201 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 document.addEventListener('DOMContentLoaded',()=>{const r=document.querySelector('[data-nursery-checker]');if(!r)return;const o=r.querySelector('[data-nursery-result]');const names=['named','region','rootstock','roots','bark','label','seller'];function c(k){let e=r.querySelector('[data-nursery="'+k+'"]');return e&&e.checked}function render(){let n=names.filter(c).length;let level=n>=6?'Можно рассматривать к покупке':n>=4?'Только после уточнений':'Не покупать без проверки';o.innerHTML='<div class="card"><div class="nursery-score">'+n+'/7</div><h2>'+level+'</h2><p>Если нет названия сорта, регионального объяснения, подвоя или нормальных корней — покупку лучше отложить.</p></div>'}r.querySelectorAll('input').forEach(e=>e.addEventListener('change',render));render()});
+
+/* v73 locality picker */
+(function(){
+  function normalizeText(value){
+    return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
+  }
+  function escapeHtml(value){
+    return String(value || '').replace(/[&<>"]/g, function(ch){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]); });
+  }
+  function getAllSubjects(data){
+    return (data.districts || []).flatMap(function(d){
+      return (d.subjects || []).map(function(s){ return Object.assign({ federalDistrictId:d.id, federalDistrictName:d.name, federalDistrictShort:d.short }, s); });
+    });
+  }
+  function findDistrict(data, id){ return (data.districts || []).find(function(d){ return d.id === id; }) || null; }
+  function findSubject(data, subjectId){
+    for(const d of data.districts || []){
+      const subject = (d.subjects || []).find(function(s){ return s.id === subjectId; });
+      if(subject) return Object.assign({ federalDistrictId:d.id, federalDistrictName:d.name, federalDistrictShort:d.short }, subject);
+    }
+    return null;
+  }
+  function findZone(subject, zoneId){ return subject && (subject.zones || []).find(function(z){ return z.id === zoneId; }) || null; }
+  function makeLocationUrl(subject, zone, place){
+    const params = new URLSearchParams();
+    if(subject && subject.federalDistrictId) params.set('district', subject.federalDistrictId);
+    if(subject && subject.id) params.set('subject', subject.id);
+    if(zone && zone.id) params.set('zone', zone.id);
+    if(place) params.set('place', place);
+    return 'location-result.html?' + params.toString();
+  }
+  function buildSearchIndex(data){
+    const index = [];
+    for(const d of data.districts || []){
+      for(const subject of d.subjects || []){
+        const s = Object.assign({ federalDistrictId:d.id, federalDistrictName:d.name, federalDistrictShort:d.short }, subject);
+        index.push({ type:'subject', title:subject.name, subtitle:d.name, subject:s, zone:(subject.zones || [])[0] || null, place:'', tokens:normalizeText([subject.name,d.name,d.short].join(' ')) });
+        for(const zone of subject.zones || []){
+          index.push({ type:'zone', title:zone.name + ' · ' + subject.name, subtitle:d.short + ' · зона / подрегион', subject:s, zone:zone, place:'', tokens:normalizeText([zone.name,subject.name,d.name,d.short].join(' ')) });
+          for(const place of zone.places || []){
+            index.push({ type:'place', title:place, subtitle:subject.name + ' · ' + zone.name, subject:s, zone:zone, place:place, tokens:normalizeText([place,zone.name,subject.name,d.name,d.short].join(' ')) });
+          }
+        }
+      }
+    }
+    return index;
+  }
+  async function loadLocationData(url){
+    const response = await fetch(url || 'data/location-data.json', { cache:'no-store' });
+    if(!response.ok) throw new Error('location data load failed');
+    return response.json();
+  }
+
+  document.addEventListener('DOMContentLoaded', async function(){
+    const root = document.querySelector('[data-locality-picker]');
+    if(!root) return;
+    const url = root.getAttribute('data-location-data-url') || 'data/location-data.json';
+    const search = root.querySelector('[data-lp-search]');
+    const suggestions = root.querySelector('[data-lp-suggestions]');
+    const popular = root.querySelector('[data-lp-popular]');
+    const districtSelect = root.querySelector('[data-lp-district]');
+    const subjectSelect = root.querySelector('[data-lp-subject]');
+    const zoneSelect = root.querySelector('[data-lp-zone]');
+    const choice = root.querySelector('[data-lp-choice]');
+    const openSelected = root.querySelector('[data-lp-open-selected]');
+    const openManual = root.querySelector('[data-lp-open-manual]');
+    let data, index, selected = null;
+    try{
+      data = await loadLocationData(url);
+      index = buildSearchIndex(data);
+    }catch(err){
+      if(suggestions) suggestions.innerHTML = '<div class="locality-empty">Не удалось загрузить базу местностей. Проверьте файл <strong>data/location-data.json</strong>.</div>';
+      return;
+    }
+    function renderDistricts(){
+      districtSelect.innerHTML = (data.districts || []).map(function(d){ return '<option value="'+escapeHtml(d.id)+'">'+escapeHtml(d.name)+'</option>'; }).join('');
+    }
+    function renderSubjects(){
+      const district = findDistrict(data, districtSelect.value) || (data.districts || [])[0];
+      subjectSelect.innerHTML = (district.subjects || []).map(function(s){ return '<option value="'+escapeHtml(s.id)+'">'+escapeHtml(s.name)+'</option>'; }).join('');
+      renderZones();
+    }
+    function renderZones(){
+      const subject = findSubject(data, subjectSelect.value);
+      zoneSelect.innerHTML = ((subject && subject.zones) || []).map(function(z){ return '<option value="'+escapeHtml(z.id)+'">'+escapeHtml(z.name)+'</option>'; }).join('');
+      renderChoice();
+    }
+    function getManualSelection(){
+      const subject = findSubject(data, subjectSelect.value);
+      const zone = findZone(subject, zoneSelect.value) || ((subject && subject.zones) || [])[0] || null;
+      return { subject, zone, place:'' };
+    }
+    function renderChoice(){
+      const current = selected || getManualSelection();
+      if(!current.subject){ choice.innerHTML = ''; return; }
+      choice.innerHTML = '<strong>'+escapeHtml(current.place || current.subject.name)+'</strong><span>'+escapeHtml(current.subject.federalDistrictName)+' · '+escapeHtml(current.subject.name)+' · '+escapeHtml(current.zone ? current.zone.name : 'зона не выбрана')+'</span>';
+    }
+    function setManualFromItem(item){
+      if(!item || !item.subject) return;
+      districtSelect.value = item.subject.federalDistrictId;
+      renderSubjects();
+      subjectSelect.value = item.subject.id;
+      renderZones();
+      if(item.zone) zoneSelect.value = item.zone.id;
+      selected = item;
+      renderChoice();
+    }
+    function renderSuggestions(list){
+      if(!suggestions) return;
+      if(!list.length){ suggestions.innerHTML = '<div class="locality-empty">Пока такой местности нет в базе. Выберите субъект и ближайшую зону вручную — потом добавим точный населённый пункт.</div>'; return; }
+      suggestions.innerHTML = list.map(function(item, idx){
+        return '<button class="locality-suggestion" type="button" data-lp-result="'+idx+'"><strong>'+escapeHtml(item.title)+'</strong><span>'+escapeHtml(item.subtitle)+'</span></button>';
+      }).join('');
+      suggestions.__currentResults = list;
+    }
+    function searchItems(query){
+      const q = normalizeText(query);
+      if(q.length < 2) return [];
+      return index.filter(function(item){ return item.tokens.includes(q); }).slice(0, 10);
+    }
+    function renderPopular(){
+      if(!popular) return;
+      const names = ['Клин','Ейск','Бийск','Минусинск','Сочи','Казань','Екатеринбург'];
+      const items = names.map(function(name){ return index.find(function(item){ return item.type === 'place' && normalizeText(item.title) === normalizeText(name); }); }).filter(Boolean);
+      popular.innerHTML = items.map(function(item, idx){ return '<button class="btn" type="button" data-lp-popular-item="'+idx+'">'+escapeHtml(item.title)+'</button>'; }).join('');
+      popular.__currentResults = items;
+    }
+    renderDistricts();
+    renderSubjects();
+    renderPopular();
+    renderChoice();
+    search.addEventListener('input', function(){ selected = null; renderSuggestions(searchItems(search.value)); });
+    suggestions.addEventListener('click', function(e){
+      const btn = e.target.closest('[data-lp-result]');
+      if(!btn) return;
+      const item = suggestions.__currentResults[Number(btn.getAttribute('data-lp-result'))];
+      selected = item;
+      search.value = item.title;
+      setManualFromItem(item);
+      suggestions.innerHTML = '';
+    });
+    popular.addEventListener('click', function(e){
+      const btn = e.target.closest('[data-lp-popular-item]');
+      if(!btn) return;
+      const item = popular.__currentResults[Number(btn.getAttribute('data-lp-popular-item'))];
+      selected = item;
+      search.value = item.title;
+      setManualFromItem(item);
+    });
+    districtSelect.addEventListener('change', function(){ selected = null; renderSubjects(); });
+    subjectSelect.addEventListener('change', function(){ selected = null; renderZones(); });
+    zoneSelect.addEventListener('change', function(){ selected = null; renderChoice(); });
+    openSelected.addEventListener('click', function(){
+      const item = selected || searchItems(search.value)[0] || getManualSelection();
+      if(item && item.subject) window.location.href = makeLocationUrl(item.subject, item.zone, item.place);
+    });
+    openManual.addEventListener('click', function(){
+      const item = selected || getManualSelection();
+      if(item && item.subject) window.location.href = makeLocationUrl(item.subject, item.zone, item.place);
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', async function(){
+    const root = document.querySelector('[data-location-result]');
+    if(!root) return;
+    const out = root.querySelector('[data-location-result-output]');
+    const url = root.getAttribute('data-location-data-url') || 'data/location-data.json';
+    try{
+      const data = await loadLocationData(url);
+      const params = new URLSearchParams(window.location.search);
+      let subject = findSubject(data, params.get('subject'));
+      if(!subject){
+        const firstDistrict = (data.districts || [])[0];
+        subject = firstDistrict && firstDistrict.subjects && firstDistrict.subjects[0] ? Object.assign({ federalDistrictId:firstDistrict.id, federalDistrictName:firstDistrict.name, federalDistrictShort:firstDistrict.short }, firstDistrict.subjects[0]) : null;
+      }
+      const zone = findZone(subject, params.get('zone')) || ((subject && subject.zones) || [])[0] || null;
+      const place = params.get('place') || '';
+      if(!subject || !zone){
+        out.innerHTML = '<div class="warning"><strong>Местность не найдена.</strong><p>Вернитесь на главную и выберите субъект вручную.</p></div>';
+        return;
+      }
+      const title = place || subject.name;
+      const existingPage = subject.page ? '<a class="btn" href="'+escapeHtml(subject.page)+'">Открыть старую подробную страницу региона</a>' : '';
+      const places = zone.places && zone.places.length ? '<p><strong>Ориентиры:</strong> '+zone.places.map(escapeHtml).join(', ')+'</p>' : '<p><strong>Ориентиры:</strong> будут добавлены позже.</p>';
+      out.innerHTML = '<span class="draft-badge">Каркас местности</span>'+
+        '<h1>'+escapeHtml(title)+'</h1>'+
+        '<p class="lead">Мы уже определили субъект и рабочую садовую зону. Списки культур по уровням пока оставлены пустыми — их можно заполнять постепенно, не меняя логику выбора.</p>'+
+        '<div class="location-breadcrumbs"><span>'+escapeHtml(subject.federalDistrictName)+'</span><span>'+escapeHtml(subject.name)+'</span><span>'+escapeHtml(zone.name)+'</span></div>'+
+        '<div class="location-meta-grid"><div class="card"><h3>Субъект РФ</h3><p>'+escapeHtml(subject.name)+'</p></div><div class="card"><h3>Зона / подрегион</h3><p>'+escapeHtml(zone.name)+'</p>'+places+'</div><div class="card"><h3>Статус данных</h3><p>'+(subject.status === 'detailed' ? 'Есть старая подробная региональная страница. Новый слой местностей подключён как вход на сайт.' : 'Создан черновой каркас. Культуры, сорта и уточнения будут добавлены позже.')+'</p></div></div>'+
+        '<section class="location-result-panel"><h2>Культуры по уровням</h2><div class="culture-level-grid"><div class="culture-level"><h3>Хорошо приживается</h3><p>Будет заполнено.</p></div><div class="culture-level"><h3>Можно</h3><p>Будет заполнено.</p></div><div class="culture-level"><h3>С укрытием / уходом</h3><p>Будет заполнено.</p></div><div class="culture-level"><h3>Рискованно</h3><p>Будет заполнено.</p></div><div class="culture-level"><h3>Не рекомендовано</h3><p>Будет заполнено.</p></div></div></section>'+
+        '<div class="btn-row"><a class="btn primary" href="index.html">Выбрать другую местность</a>'+existingPage+'<a class="btn" href="site-check.html">Проверить участок</a></div>'+
+        '<p class="data-source-note">Слой v73: '+escapeHtml(data.scope || '')+'</p>';
+      document.title = escapeHtml(title) + ' — Приживётся';
+    }catch(err){
+      out.innerHTML = '<div class="warning"><strong>Не удалось загрузить базу местностей.</strong><p>Проверьте файл data/location-data.json.</p></div>';
+    }
+  });
+})();
