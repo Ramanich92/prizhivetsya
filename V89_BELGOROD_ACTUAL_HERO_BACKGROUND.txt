@@ -1,0 +1,1 @@
+Fixed previous mistake: the north forest-steppe page now replaces clean-hero with an actual image-backed hero block containing the generated background inline.\n
