@@ -3,44 +3,76 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Что приживётся именно у вас? — приживется.ру</title>
- <meta name="description" content="Выбор региона, субъекта РФ и ближайшей садовой зоны.">
+ <title>приживется.ру — что посадить в вашем регионе</title>
+ <meta name="description" content="Справочник культур по регионам России. Выберите регион, город или район и узнайте, что лучше растёт в вашем климате.">
  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
  <link rel="stylesheet" href="styles.css">
  <link rel="manifest" href="site.webmanifest">
  <link rel="apple-touch-icon" href="assets/icon-192.png">
- <meta name="theme-color" content="#416b43">
+ <meta name="theme-color" content="#16362a">
  <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/index.html">
  <meta property="og:type" content="website">
  <meta property="og:site_name" content="приживется.ру">
- <meta property="og:title" content="Что приживётся именно у вас? — приживется.ру">
- <meta property="og:description" content="Выберите регион и ближайшую садовую зону. Остальные разделы сняты, региональные карточки будут наполняться постепенно.">
+ <meta property="og:title" content="приживется.ру — что посадить в вашем регионе">
+ <meta property="og:description" content="Выбор региона, субъекта РФ и природной зоны. Региональные карточки будут постепенно наполняться культурами и практическими заметками.">
  <meta property="og:url" content="https://ramanich92.github.io/prizhivetsya/index.html">
  <meta property="og:image" content="https://ramanich92.github.io/prizhivetsya/assets/og-image.png">
  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="home-locality-only">
-<header class="site-header"><a class="brand" href="index.html" aria-label="На главную"><span class="brand-mark">✓</span><span>приживется.ру</span></a><nav class="topnav" aria-label="Основная навигация"><a class="active" href="index.html">Главная</a></nav></header>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="assets/logo.svg" alt="приживется.ру"></a>
+    <nav class="topnav" aria-label="Основная навигация"><a class="active" href="index.html">Главная</a></nav>
+  </div>
+</header>
 <main>
 <section class="hero hero-locality" data-locality-picker data-location-data-url="data/location-data.json">
   <div class="hero-inner locality-hero-grid">
     <div class="panel hero-main-panel locality-main-panel">
       <span class="kicker">Выбор региона</span>
       <h1>Что приживётся именно у вас?</h1>
-      <p class="lead">Введите город, район, посёлок или выберите субъект вручную. Сейчас оставлен только каркас: главная и плейсхолдеры регионов.</p>
+      <p class="lead">Справочник культур по регионам России. Выберите регион, город или район — и узнайте, что лучше растёт в вашем климате.</p>
       <div class="locality-search" role="search">
         <label for="locality-search-input">Найти местность</label>
         <div class="locality-search-row">
-          <input id="locality-search-input" type="search" data-lp-search placeholder="Введите город, район или посёлок" autocomplete="off">
-          <button class="btn primary" type="button" data-lp-open-selected>Открыть</button>
+          <div class="search-control">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <input id="locality-search-input" type="search" data-lp-search placeholder="Введите регион, город или район" autocomplete="off">
+          </div>
+          <button class="btn primary" type="button" data-lp-open-selected>Подобрать</button>
         </div>
         <div class="locality-suggestions" data-lp-suggestions aria-live="polite"></div>
+      </div>
+      <div class="hero-card-art" aria-hidden="true">
+        <svg viewBox="0 0 420 420" role="presentation">
+          <path class="art-map" d="M236 41c35 7 65 32 82 63 18 31 22 68 8 101-15 35-47 61-82 76-34 15-70 18-103 2-35-16-61-52-65-90-4-39 15-80 46-107 31-28 75-52 114-45Z"/>
+          <path class="art-field" d="M42 304c72-34 143-48 215-42 55 5 100 22 137 51"/>
+          <path class="art-field" d="M18 341c82-40 159-57 231-51 56 4 105 22 147 54"/>
+          <g class="art-pin">
+            <path d="M238 261s-56-55-56-99a56 56 0 1 1 112 0c0 44-56 99-56 99Z"/>
+            <circle cx="238" cy="161" r="18"/>
+          </g>
+          <g class="art-sprout">
+            <path d="M237 142c-3-39-22-66-58-82"/>
+            <path d="M239 143c16-35 43-55 80-60"/>
+            <path d="M229 105c-34 1-58-14-72-46 36-2 60 13 72 46Z"/>
+            <path d="M251 107c37-10 66-2 87 24-36 12-65 4-87-24Z"/>
+          </g>
+          <g class="art-roots">
+            <path d="M238 260c-2 38-1 68-13 100"/>
+            <path d="M238 286c-22 18-41 37-56 61"/>
+            <path d="M238 299c22 15 40 34 54 58"/>
+            <path d="M224 334c-18 4-33 13-45 27"/>
+            <path d="M250 330c17 3 32 12 45 27"/>
+          </g>
+        </svg>
       </div>
     </div>
     <aside class="panel locality-manual-panel" aria-label="Ручной выбор региона">
       <span class="kicker">Ручной выбор</span>
       <h2>Не нашли в поиске?</h2>
-      <p>Выберите федеральный округ, субъект и ближайшую зону. Кнопка ведёт на плейсхолдер выбранного региона.</p>
+      <p>Выберите федеральный округ, субъект и природную зону.</p>
       <div class="locality-form">
         <label>Федеральный округ<select data-lp-district></select></label>
         <label>Субъект РФ<select data-lp-subject></select></label>
@@ -52,7 +84,12 @@
   </div>
 </section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>приживется.ру</strong><p>Сейчас сайт оставлен как каркас выбора региона: сначала выбираем местность, затем постепенно наполняем региональные карточки.</p><p class="fineprint">Данные по культурам, сортам и рискам будут добавляться по регионам, без возврата старых разделов.</p></div></div></footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a class="footer-brand" href="index.html" aria-label="приживется.ру"><img src="assets/logo.svg" alt="приживется.ру"></a>
+    <p>Справочник по регионам и культурам России</p>
+  </div>
+</footer>
 <script src="app.js" defer></script>
 </body>
 </html>

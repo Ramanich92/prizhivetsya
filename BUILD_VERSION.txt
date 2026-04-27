@@ -1,3 +1,5 @@
-v76-prizhivetsya-ru
-Дата: 2026-04-27
-Сборка: название изменено на приживется.ру; на главной убраны подсказки городов; в футере удалена нижняя ссылка.
+v77_visual_homepage
+- Main page updated to botanical visual concept
+- Minimalist sprout wordmark selected
+- Header width aligned with content
+- Footer simplified

@@ -4,9 +4,9 @@
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f8f5ef",
-  "theme_color": "#416b43",
-  "description": "Каркас выбора региона для проекта «приживется.ру».",
+  "background_color": "#fbfdf8",
+  "theme_color": "#16362a",
+  "description": "Справочник культур по регионам России.",
   "icons": [
     {
       "src": "assets/icon-192.png",

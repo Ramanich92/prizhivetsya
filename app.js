@@ -1,7 +1,7 @@
-/* v76: renamed to приживется.ру; homepage city hints removed */
+/* v77: botanical homepage + locality picker + region placeholders */
 (function(){
   function normalizeText(value){
-    return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/s+/g,' ').trim();
+    return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
   }
   function escapeHtml(value){
     return String(value || '').replace(/[&<>"]/g, function(ch){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]); });
@@ -59,6 +59,8 @@
     const choice = root.querySelector('[data-lp-choice]');
     const openSelected = root.querySelector('[data-lp-open-selected]');
     const openManual = root.querySelector('[data-lp-open-manual]');
+    if(!search || !districtSelect || !subjectSelect || !zoneSelect || !choice) return;
+
     let data, index, selected = null;
     try{
       data = await loadLocationData(url);
@@ -88,7 +90,7 @@
     function renderChoice(){
       const current = selected || getManualSelection();
       if(!current.subject){ choice.innerHTML = ''; return; }
-      choice.innerHTML = '<strong>'+escapeHtml(current.place || current.subject.name)+'</strong><span>'+escapeHtml(current.subject.federalDistrictName)+' · '+escapeHtml(current.subject.name)+' · '+escapeHtml(current.zone ? current.zone.name : 'зона не выбрана')+'</span>';
+      choice.innerHTML = '<div><strong>'+escapeHtml(current.place || current.subject.name)+'</strong><span>'+escapeHtml(current.subject.federalDistrictName)+' · '+escapeHtml(current.subject.name)+' · '+escapeHtml(current.zone ? current.zone.name : 'зона не выбрана')+'</span></div>';
     }
     function setManualFromItem(item){
       if(!item || !item.subject) return;
@@ -125,15 +127,17 @@
     renderPopular();
     renderChoice();
     search.addEventListener('input', function(){ selected = null; renderSuggestions(searchItems(search.value)); });
-    suggestions.addEventListener('click', function(e){
-      const btn = e.target.closest('[data-lp-result]');
-      if(!btn) return;
-      const item = suggestions.__currentResults[Number(btn.getAttribute('data-lp-result'))];
-      selected = item;
-      search.value = item.title;
-      setManualFromItem(item);
-      suggestions.innerHTML = '';
-    });
+    if(suggestions){
+      suggestions.addEventListener('click', function(e){
+        const btn = e.target.closest('[data-lp-result]');
+        if(!btn) return;
+        const item = suggestions.__currentResults[Number(btn.getAttribute('data-lp-result'))];
+        selected = item;
+        search.value = item.title;
+        setManualFromItem(item);
+        suggestions.innerHTML = '';
+      });
+    }
     if(popular){
       popular.addEventListener('click', function(e){
         const btn = e.target.closest('[data-lp-popular-item]');
@@ -147,14 +151,18 @@
     districtSelect.addEventListener('change', function(){ selected = null; renderSubjects(); });
     subjectSelect.addEventListener('change', function(){ selected = null; renderZones(); });
     zoneSelect.addEventListener('change', function(){ selected = null; renderChoice(); });
-    openSelected.addEventListener('click', function(){
-      const item = selected || searchItems(search.value)[0] || getManualSelection();
-      if(item && item.subject) window.location.href = makeLocationUrl(item.subject, item.zone, item.place);
-    });
-    openManual.addEventListener('click', function(){
-      const item = selected || getManualSelection();
-      if(item && item.subject) window.location.href = makeLocationUrl(item.subject, item.zone, item.place);
-    });
+    if(openSelected){
+      openSelected.addEventListener('click', function(){
+        const item = selected || searchItems(search.value)[0] || getManualSelection();
+        if(item && item.subject) window.location.href = makeLocationUrl(item.subject, item.zone, item.place);
+      });
+    }
+    if(openManual){
+      openManual.addEventListener('click', function(){
+        const item = selected || getManualSelection();
+        if(item && item.subject) window.location.href = makeLocationUrl(item.subject, item.zone, item.place);
+      });
+    }
   });
 
   document.addEventListener('DOMContentLoaded', async function(){
