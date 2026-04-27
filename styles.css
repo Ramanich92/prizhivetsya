@@ -1100,3 +1100,101 @@ a{color:inherit}
   .belgorod-v90-visual img{min-height:260px}
   .clean-filters{grid-template-columns:1fr}
 }
+
+
+/* --- v91: Belgorod hero with full background behind text --- */
+.belgorod-v91-hero{
+  position:relative;
+  min-height:430px;
+  overflow:hidden;
+  border-radius:0 0 34px 34px;
+  border:1px solid rgba(204,219,208,.76);
+  box-shadow:0 18px 44px rgba(17,52,36,.07);
+  margin-bottom:-74px;
+  background:#e9f1e6;
+}
+.belgorod-v91-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  transform:scale(1.01);
+}
+.belgorod-v91-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:
+    linear-gradient(90deg, rgba(15,32,23,.56) 0%, rgba(15,32,23,.34) 34%, rgba(15,32,23,.08) 62%, rgba(15,32,23,.06) 100%),
+    linear-gradient(180deg, rgba(255,254,250,.06) 0%, rgba(255,254,250,.22) 100%);
+}
+.belgorod-v91-content{
+  position:relative;
+  z-index:2;
+  max-width:780px;
+  padding:46px 48px 124px;
+  color:#fffefa;
+}
+.belgorod-v91-content h1{
+  margin:0 0 14px;
+  font-size:clamp(38px,4.9vw,68px);
+  line-height:.98;
+  letter-spacing:-.062em;
+  color:#fffefa;
+  text-shadow:0 10px 24px rgba(0,0,0,.18);
+}
+.belgorod-v91-content .lead{
+  max-width:700px;
+  color:rgba(255,254,250,.96);
+  text-shadow:0 4px 18px rgba(0,0,0,.15);
+}
+.belgorod-v91-content .kicker{
+  color:rgba(255,254,250,.92);
+}
+.belgorod-v91-content .clean-tags span{
+  background:rgba(255,254,250,.14);
+  border-color:rgba(255,254,250,.22);
+  color:#fffefa;
+  backdrop-filter:blur(10px);
+}
+.belgorod-v91-hero + .clean-table-card{
+  position:relative;
+  z-index:3;
+  width:calc(100% - 72px);
+  margin-left:auto;
+  margin-right:auto;
+}
+.build-chip{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  z-index:9999;
+  border:1px solid #d7e5dc;
+  background:rgba(255,254,250,.88);
+  color:#5a6c61;
+  border-radius:999px;
+  padding:5px 9px;
+  font-size:11px;
+  font-weight:900;
+  pointer-events:none;
+}
+.clean-filters{
+  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
+}
+@media(max-width:1180px){
+  .belgorod-v91-hero{margin-bottom:-46px}
+  .belgorod-v91-content{padding:34px 32px 94px}
+  .belgorod-v91-hero + .clean-table-card{width:calc(100% - 32px)}
+  .clean-filters{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .belgorod-v91-hero{min-height:450px;margin-bottom:-30px;border-radius:0 0 24px 24px}
+  .belgorod-v91-content{padding:26px 20px 70px}
+  .belgorod-v91-content h1{font-size:clamp(34px,11vw,52px)}
+  .belgorod-v91-hero + .clean-table-card{width:100%}
+  .clean-filters{grid-template-columns:1fr}
+}
