@@ -810,3 +810,45 @@ a{color:inherit}
     linear-gradient(90deg, rgba(255,254,250,.92) 0%, rgba(255,254,250,.70) 45%, rgba(255,254,250,.22) 100%),
     linear-gradient(180deg, rgba(255,254,250,.06) 0%, rgba(255,254,250,.44) 100%);
 }
+
+
+/* --- v86: forced cache-busted generated background + deployment marker --- */
+.build-chip{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  z-index:999;
+  border:1px solid #d7e5dc;
+  background:rgba(255,254,250,.8);
+  color:#6b7b71;
+  border-radius:999px;
+  padding:4px 8px;
+  font-size:11px;
+  font-weight:800;
+  pointer-events:none;
+}
+.belgorod-photo-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  transform:scale(1.01);
+}
+.belgorod-photo-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(255,254,250,.20), rgba(255,254,250,.02));
+}
+.belgorod-landmark-hero::after{
+  background:
+    linear-gradient(90deg, rgba(255,254,250,.92) 0%, rgba(255,254,250,.70) 45%, rgba(255,254,250,.22) 100%),
+    linear-gradient(180deg, rgba(255,254,250,.06) 0%, rgba(255,254,250,.44) 100%);
+}
+.clean-filters{
+  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
+}
+@media(max-width:1180px){.clean-filters{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.clean-filters{grid-template-columns:1fr}}

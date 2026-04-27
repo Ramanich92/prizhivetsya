@@ -1,1 +1,1 @@
-v85-belogorod-real-generated-background\n
+v86-belogorod-force-visual-cache-bust

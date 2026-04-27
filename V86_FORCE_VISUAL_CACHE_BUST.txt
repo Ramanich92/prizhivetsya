@@ -1,0 +1,1 @@
+Force cache-busted CSS/JS and background image on Belgorod north forest-steppe page. Added visible v86 marker for deployment verification.
