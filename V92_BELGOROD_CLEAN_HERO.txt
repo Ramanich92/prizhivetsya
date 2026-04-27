@@ -1,0 +1,1 @@
+Belgorod north page: removed screenshot-like image; replaced hero with a clean decorative SVG background and text on a separate layer.
