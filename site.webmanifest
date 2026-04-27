@@ -1,12 +1,12 @@
 {
-  "name": "Приживётся",
-  "short_name": "Приживётся",
+  "name": "приживется.ру",
+  "short_name": "приживется.ру",
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f8f5ef",
   "theme_color": "#416b43",
-  "description": "Каркас выбора региона для проекта «Приживётся».",
+  "description": "Каркас выбора региона для проекта «приживется.ру».",
   "icons": [
     {
       "src": "assets/icon-192.png",

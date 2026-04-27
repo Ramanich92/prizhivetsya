@@ -1,4 +1,4 @@
-/* v75: locality picker + region placeholders only */
+/* v76: renamed to приживется.ру; homepage city hints removed */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/s+/g,' ').trim();
@@ -134,14 +134,16 @@
       setManualFromItem(item);
       suggestions.innerHTML = '';
     });
-    popular.addEventListener('click', function(e){
-      const btn = e.target.closest('[data-lp-popular-item]');
-      if(!btn) return;
-      const item = popular.__currentResults[Number(btn.getAttribute('data-lp-popular-item'))];
-      selected = item;
-      search.value = item.title;
-      setManualFromItem(item);
-    });
+    if(popular){
+      popular.addEventListener('click', function(e){
+        const btn = e.target.closest('[data-lp-popular-item]');
+        if(!btn) return;
+        const item = popular.__currentResults[Number(btn.getAttribute('data-lp-popular-item'))];
+        selected = item;
+        search.value = item.title;
+        setManualFromItem(item);
+      });
+    }
     districtSelect.addEventListener('change', function(){ selected = null; renderSubjects(); });
     subjectSelect.addEventListener('change', function(){ selected = null; renderZones(); });
     zoneSelect.addEventListener('change', function(){ selected = null; renderChoice(); });
