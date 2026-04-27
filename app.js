@@ -215,7 +215,6 @@
     var rec = root.querySelector('[data-filter-recommendation]');
     var cat = root.querySelector('[data-filter-category]');
     var method = root.querySelector('[data-filter-method]');
-    var sort = root.querySelector('[data-filter-sort]');
     var count = root.querySelector('[data-culture-count]');
     var empty = root.querySelector('[data-culture-empty]');
     var chips = Array.prototype.slice.call(root.querySelectorAll('[data-quick-recommendation]'));
@@ -256,17 +255,9 @@
       if(recommendation) list = list.filter(function(item){ return item.recommendation === recommendation; });
       if(category) list = list.filter(function(item){ return item.category === category; });
       if(methodValue) list = list.filter(function(item){ return item.method === methodValue; });
-
-      var sortValue = (sort && sort.value) || 'alpha-asc';
       list.sort(function(a,b){
-        if(sortValue === 'alpha-desc') return b.name.localeCompare(a.name, 'ru');
-        if(sortValue === 'recommendation'){
-          var diff = (recommendationRank[a.recommendation] || 99) - (recommendationRank[b.recommendation] || 99);
-          return diff || a.name.localeCompare(b.name, 'ru');
-        }
-        if(sortValue === 'category') return a.category.localeCompare(b.category, 'ru') || a.name.localeCompare(b.name, 'ru');
-        if(sortValue === 'timing') return timingRank(a.timing) - timingRank(b.timing) || a.name.localeCompare(b.name, 'ru');
-        return a.name.localeCompare(b.name, 'ru');
+        var diff = (recommendationRank[a.recommendation] || 99) - (recommendationRank[b.recommendation] || 99);
+        return diff || a.name.localeCompare(b.name, 'ru');
       });
       return list;
     }
@@ -275,7 +266,7 @@
         '<td><strong>'+escapeTableHtml(item.name)+'</strong><small>'+escapeTableHtml(item.group || '')+'</small></td>'+
         '<td><span class="category-badge">'+escapeTableHtml(item.category)+'</span></td>'+
         '<td><span class="rec-badge" data-rec="'+escapeTableHtml(item.recommendation)+'">'+escapeTableHtml(item.recommendation)+'</span></td>'+
-        '<td><span class="place-badge">'+escapeTableHtml(item.place)+'</span><span class="method-badge">'+escapeTableHtml(item.method || '')+'</span></td>'+
+        '<td><span class="place-badge">'+escapeTableHtml(item.place)+'</span></td>'+
         '<td class="timing-cell">'+escapeTableHtml(item.timing || '')+'</td>'+
         '<td>'+escapeTableHtml(item.note)+'</td>'+
       '</tr>';
@@ -291,7 +282,7 @@
     fillSelect(cat, 'Все', 'category');
     fillSelect(method, 'Все', 'method');
 
-    [search, rec, cat, method, sort].forEach(function(control){
+    [search, rec, cat, method].forEach(function(control){
       if(!control) return;
       control.addEventListener(control.tagName === 'INPUT' ? 'input' : 'change', render);
     });

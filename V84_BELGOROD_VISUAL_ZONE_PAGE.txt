@@ -1,0 +1,1 @@
+North forest-steppe page updated with recognizable Prokhorovka Field hero, removed sort dropdown, and fixed duplicated place/method badges.
