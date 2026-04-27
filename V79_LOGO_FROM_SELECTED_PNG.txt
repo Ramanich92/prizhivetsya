@@ -1,0 +1,1 @@
+Header and footer logo now use the cropped transparent PNG from the selected first minimalistic image generation, not rebuilt SVG text.

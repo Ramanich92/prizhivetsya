@@ -1,1 +1,1 @@
-v78-fix-logo-no-gap
+v79-logo-from-selected-png
