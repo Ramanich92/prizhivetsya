@@ -1,1 +1,0 @@
-Belgorod overview page: removed middle explanatory section, removed hero chips, improved hero text color/contrast, simplified zone card copy.

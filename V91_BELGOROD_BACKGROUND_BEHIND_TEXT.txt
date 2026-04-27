@@ -1,1 +1,0 @@
-Belgorod north page updated: image is now behind the text in one full hero block, not split into two columns.\n

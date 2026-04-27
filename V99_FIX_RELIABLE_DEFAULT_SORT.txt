@@ -1,1 +1,0 @@
-Fixed JS recommendation sort bug: rank 0 for Надежно was previously treated as 99 due to || fallback.

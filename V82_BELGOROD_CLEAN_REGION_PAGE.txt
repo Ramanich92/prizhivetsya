@@ -1,1 +1,0 @@
-Redesigned Belgorod region page: compact hero, cleaner table, static fallback rows, improved filters.

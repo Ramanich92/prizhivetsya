@@ -1,1 +1,0 @@
-Removed hero tags, bottom notes, and zone nav pills from Belgorod north page. Static and dynamic table order now starts with Надежно, then Рекомендовано, С укрытием, Рискованно.

@@ -194,7 +194,7 @@
       return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];
     });
   }
-  var recommendationRank = {'Надежно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
+  var recommendationRank = {'Надежно':0,'Надёжно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
   function recommendationOrder(value){
     return Object.prototype.hasOwnProperty.call(recommendationRank, value) ? recommendationRank[value] : 99;
   }

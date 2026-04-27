@@ -1,1 +1,0 @@
-Sorted all Belgorod zone tables and culture JSON by recommendation rank: Надежно, Рекомендовано, С укрытием / уходом, Рискованно. JS default order also enforces this.

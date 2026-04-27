@@ -1,1 +1,0 @@
-Hero image compressed from PNG to optimized JPG and resized for faster loading.

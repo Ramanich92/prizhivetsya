@@ -1,1 +1,0 @@
-Added planting timing column and growing method filter to Belgorod region page.

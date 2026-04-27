@@ -1,1 +1,0 @@
-Removed any remaining hero pills and fixed the Belgorod overview H1 so "в" is not left alone on its own line.

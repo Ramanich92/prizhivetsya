@@ -1,1 +1,0 @@
-Added full pages for Belgorod central zone and south steppe zone with generated hero images, culture tables, filters, and cleaner overview text.
