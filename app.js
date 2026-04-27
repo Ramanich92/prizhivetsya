@@ -195,6 +195,9 @@
     });
   }
   var recommendationRank = {'Надежно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
+  function recommendationOrder(value){
+    return Object.prototype.hasOwnProperty.call(recommendationRank, value) ? recommendationRank[value] : 99;
+  }
   var monthRank = {'февраль':1,'март':2,'апрель':3,'май':4,'июнь':5,'июль':6,'август':7,'сентябрь':8,'октябрь':9,'ноябрь':10};
   function timingRank(text){
     var s = normalizeTableText(text);
@@ -256,7 +259,7 @@
       if(category) list = list.filter(function(item){ return item.category === category; });
       if(methodValue) list = list.filter(function(item){ return item.method === methodValue; });
       list.sort(function(a,b){
-        var diff = (recommendationRank[a.recommendation] || 99) - (recommendationRank[b.recommendation] || 99);
+        var diff = recommendationOrder(a.recommendation) - recommendationOrder(b.recommendation);
         return diff || a.name.localeCompare(b.name, 'ru');
       });
       return list;
