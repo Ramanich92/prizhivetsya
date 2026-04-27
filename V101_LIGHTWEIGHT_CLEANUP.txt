@@ -1,0 +1,1 @@
+Removed unused experimental images, optimized logo PNG, minified location data JSON, and stripped old CSS blocks for deleted image experiments.

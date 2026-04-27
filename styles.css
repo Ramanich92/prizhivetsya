@@ -795,484 +795,6 @@ a{color:inherit}
 }
 
 
-/* --- v85: actual generated Belgorod background image in the zone hero --- */
-.belgorod-photo-bg{
-  position:absolute;
-  inset:0;
-  z-index:0;
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.20), rgba(255,254,250,.02)),
-    url("assets/belgorod-prokhorovka-bg.png") center/cover no-repeat;
-  transform:scale(1.01);
-}
-.belgorod-landmark-hero::after{
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.92) 0%, rgba(255,254,250,.70) 45%, rgba(255,254,250,.22) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.06) 0%, rgba(255,254,250,.44) 100%);
-}
-
-
-/* --- v86: forced cache-busted generated background + deployment marker --- */
-.build-chip{
-  position:fixed;
-  right:10px;
-  bottom:10px;
-  z-index:999;
-  border:1px solid #d7e5dc;
-  background:rgba(255,254,250,.8);
-  color:#6b7b71;
-  border-radius:999px;
-  padding:4px 8px;
-  font-size:11px;
-  font-weight:800;
-  pointer-events:none;
-}
-.belgorod-photo-bg{
-  position:absolute;
-  inset:0;
-  z-index:0;
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  transform:scale(1.01);
-}
-.belgorod-photo-bg::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg, rgba(255,254,250,.20), rgba(255,254,250,.02));
-}
-.belgorod-landmark-hero::after{
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.92) 0%, rgba(255,254,250,.70) 45%, rgba(255,254,250,.22) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.06) 0%, rgba(255,254,250,.44) 100%);
-}
-.clean-filters{
-  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
-}
-@media(max-width:1180px){.clean-filters{grid-template-columns:1fr 1fr}}
-@media(max-width:720px){.clean-filters{grid-template-columns:1fr}}
-
-
-/* --- v87: hardwired IMG hero background for Belgorod north page --- */
-.belgorod-photo-img{
-  position:absolute;
-  inset:0;
-  z-index:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transform:scale(1.01);
-}
-.belgorod-photo-bg{display:none !important;}
-.belgorod-landmark-hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:1;
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.88) 0%, rgba(255,254,250,.70) 42%, rgba(255,254,250,.18) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.04) 0%, rgba(255,254,250,.36) 100%);
-}
-
-
-/* --- v88: inline image hero; cannot fail due to asset path/cache --- */
-.build-chip{
-  position:fixed;
-  right:10px;
-  bottom:10px;
-  z-index:9999;
-  border:1px solid #d7e5dc;
-  background:rgba(255,254,250,.88);
-  color:#5a6c61;
-  border-radius:999px;
-  padding:5px 9px;
-  font-size:11px;
-  font-weight:900;
-  pointer-events:none;
-}
-.belgorod-photo-img{
-  position:absolute !important;
-  inset:0 !important;
-  z-index:0 !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:cover !important;
-  display:block !important;
-  transform:scale(1.01);
-}
-.belgorod-photo-bg,
-.belgorod-landmark-bg{display:none !important;}
-.belgorod-landmark-hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:1;
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.86) 0%, rgba(255,254,250,.66) 42%, rgba(255,254,250,.12) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.02) 0%, rgba(255,254,250,.30) 100%);
-}
-.clean-filters{
-  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
-}
-@media(max-width:1180px){.clean-filters{grid-template-columns:1fr 1fr}}
-@media(max-width:720px){.clean-filters{grid-template-columns:1fr}}
-
-
-/* --- v89: actual hero image replacing old clean-hero block --- */
-.belgorod-actual-hero{
-  position:relative;
-  min-height:460px;
-  margin-bottom:-74px;
-  border-radius:0 0 34px 34px;
-  overflow:hidden;
-  border:1px solid rgba(204,219,208,.72);
-  box-shadow:0 18px 44px rgba(17,52,36,.07);
-  background:#eaf3e8;
-}
-.belgorod-actual-hero .belgorod-photo-img{
-  position:absolute !important;
-  inset:0 !important;
-  z-index:0 !important;
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:cover !important;
-  object-position:center !important;
-  transform:scale(1.01);
-}
-.belgorod-actual-hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:1;
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.90) 0%, rgba(255,254,250,.68) 44%, rgba(255,254,250,.18) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.03) 0%, rgba(255,254,250,.34) 100%);
-}
-.belgorod-actual-hero .belgorod-landmark-content{
-  position:relative;
-  z-index:2;
-  display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
-  gap:24px;
-  align-items:start;
-  padding:46px 48px 132px;
-}
-.belgorod-actual-hero h1{
-  margin:0 0 14px;
-  max-width:980px;
-  font-size:clamp(38px,4.9vw,68px);
-  line-height:.98;
-  letter-spacing:-.062em;
-  color:#0d281d;
-}
-.belgorod-actual-hero .lead{
-  max-width:760px;
-  color:#3f5147;
-}
-.belgorod-actual-hero .btn{
-  background:rgba(255,255,255,.88);
-  border-color:#d5e4d8;
-  box-shadow:0 12px 26px rgba(17,52,36,.08);
-  width:auto;
-}
-.belgorod-actual-hero + .clean-table-card{
-  position:relative;
-  z-index:3;
-  width:calc(100% - 72px);
-  margin-left:auto;
-  margin-right:auto;
-}
-.build-chip{
-  position:fixed;
-  right:10px;
-  bottom:10px;
-  z-index:9999;
-  border:1px solid #d7e5dc;
-  background:rgba(255,254,250,.88);
-  color:#5a6c61;
-  border-radius:999px;
-  padding:5px 9px;
-  font-size:11px;
-  font-weight:900;
-  pointer-events:none;
-}
-@media(max-width:1180px){
-  .belgorod-actual-hero{margin-bottom:-46px}
-  .belgorod-actual-hero .belgorod-landmark-content{grid-template-columns:1fr;padding:34px 32px 96px}
-  .belgorod-actual-hero + .clean-table-card{width:calc(100% - 32px)}
-}
-@media(max-width:720px){
-  .belgorod-actual-hero{min-height:520px;margin-bottom:-30px;border-radius:0 0 24px 24px}
-  .belgorod-actual-hero .belgorod-landmark-content{padding:26px 20px 76px}
-  .belgorod-actual-hero h1{font-size:clamp(34px,11vw,52px)}
-  .belgorod-actual-hero + .clean-table-card{width:100%}
-}
-
-
-/* --- v90: visible two-column Belgorod visual block --- */
-.belgorod-v90-hero{
-  display:grid;
-  grid-template-columns:minmax(0,0.92fr) minmax(420px,1.08fr);
-  gap:26px;
-  align-items:stretch;
-  margin-bottom:18px;
-}
-.belgorod-v90-copy,
-.belgorod-v90-visual{
-  border:1px solid rgba(204,219,208,.86);
-  background:rgba(255,254,250,.92);
-  box-shadow:0 18px 44px rgba(17,52,36,.065);
-  border-radius:30px;
-  overflow:hidden;
-}
-.belgorod-v90-copy{
-  padding:34px;
-}
-.belgorod-v90-copy h1{
-  margin:0 0 14px;
-  font-size:clamp(38px,4.6vw,64px);
-  line-height:.98;
-  letter-spacing:-.062em;
-  color:#0d281d;
-}
-.belgorod-v90-copy .lead{
-  max-width:760px;
-  color:#42564b;
-}
-.belgorod-v90-visual{
-  min-height:360px;
-  position:relative;
-  background:#eaf3e8;
-}
-.belgorod-v90-visual img{
-  width:100%;
-  height:100%;
-  min-height:360px;
-  object-fit:cover;
-  object-position:center;
-  display:block;
-}
-.belgorod-v90-visual::after{
-  content:"Прохоровское поле · Белгородская область";
-  position:absolute;
-  left:18px;
-  bottom:18px;
-  z-index:2;
-  border:1px solid rgba(255,255,255,.55);
-  background:rgba(255,254,250,.82);
-  backdrop-filter:blur(10px);
-  color:#284233;
-  border-radius:999px;
-  padding:8px 12px;
-  font-size:13px;
-  font-weight:900;
-}
-.build-chip{
-  position:fixed;
-  right:10px;
-  bottom:10px;
-  z-index:9999;
-  border:1px solid #d7e5dc;
-  background:rgba(255,254,250,.88);
-  color:#5a6c61;
-  border-radius:999px;
-  padding:5px 9px;
-  font-size:11px;
-  font-weight:900;
-  pointer-events:none;
-}
-.clean-filters{
-  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
-}
-@media(max-width:1180px){
-  .belgorod-v90-hero{grid-template-columns:1fr}
-  .belgorod-v90-visual{min-height:320px}
-  .belgorod-v90-visual img{min-height:320px}
-  .clean-filters{grid-template-columns:1fr 1fr}
-}
-@media(max-width:720px){
-  .belgorod-v90-copy{padding:22px}
-  .belgorod-v90-copy h1{font-size:clamp(34px,11vw,52px)}
-  .belgorod-v90-visual{min-height:260px}
-  .belgorod-v90-visual img{min-height:260px}
-  .clean-filters{grid-template-columns:1fr}
-}
-
-
-/* --- v91: Belgorod hero with full background behind text --- */
-.belgorod-v91-hero{
-  position:relative;
-  min-height:430px;
-  overflow:hidden;
-  border-radius:0 0 34px 34px;
-  border:1px solid rgba(204,219,208,.76);
-  box-shadow:0 18px 44px rgba(17,52,36,.07);
-  margin-bottom:-74px;
-  background:#e9f1e6;
-}
-.belgorod-v91-bg{
-  position:absolute;
-  inset:0;
-  z-index:0;
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:cover;
-  object-position:center;
-  transform:scale(1.01);
-}
-.belgorod-v91-overlay{
-  position:absolute;
-  inset:0;
-  z-index:1;
-  background:
-    linear-gradient(90deg, rgba(15,32,23,.56) 0%, rgba(15,32,23,.34) 34%, rgba(15,32,23,.08) 62%, rgba(15,32,23,.06) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.06) 0%, rgba(255,254,250,.22) 100%);
-}
-.belgorod-v91-content{
-  position:relative;
-  z-index:2;
-  max-width:780px;
-  padding:46px 48px 124px;
-  color:#fffefa;
-}
-.belgorod-v91-content h1{
-  margin:0 0 14px;
-  font-size:clamp(38px,4.9vw,68px);
-  line-height:.98;
-  letter-spacing:-.062em;
-  color:#fffefa;
-  text-shadow:0 10px 24px rgba(0,0,0,.18);
-}
-.belgorod-v91-content .lead{
-  max-width:700px;
-  color:rgba(255,254,250,.96);
-  text-shadow:0 4px 18px rgba(0,0,0,.15);
-}
-.belgorod-v91-content .kicker{
-  color:rgba(255,254,250,.92);
-}
-.belgorod-v91-content .clean-tags span{
-  background:rgba(255,254,250,.14);
-  border-color:rgba(255,254,250,.22);
-  color:#fffefa;
-  backdrop-filter:blur(10px);
-}
-.belgorod-v91-hero + .clean-table-card{
-  position:relative;
-  z-index:3;
-  width:calc(100% - 72px);
-  margin-left:auto;
-  margin-right:auto;
-}
-.build-chip{
-  position:fixed;
-  right:10px;
-  bottom:10px;
-  z-index:9999;
-  border:1px solid #d7e5dc;
-  background:rgba(255,254,250,.88);
-  color:#5a6c61;
-  border-radius:999px;
-  padding:5px 9px;
-  font-size:11px;
-  font-weight:900;
-  pointer-events:none;
-}
-.clean-filters{
-  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
-}
-@media(max-width:1180px){
-  .belgorod-v91-hero{margin-bottom:-46px}
-  .belgorod-v91-content{padding:34px 32px 94px}
-  .belgorod-v91-hero + .clean-table-card{width:calc(100% - 32px)}
-  .clean-filters{grid-template-columns:1fr 1fr}
-}
-@media(max-width:720px){
-  .belgorod-v91-hero{min-height:450px;margin-bottom:-30px;border-radius:0 0 24px 24px}
-  .belgorod-v91-content{padding:26px 20px 70px}
-  .belgorod-v91-content h1{font-size:clamp(34px,11vw,52px)}
-  .belgorod-v91-hero + .clean-table-card{width:100%}
-  .clean-filters{grid-template-columns:1fr}
-}
-
-
-/* --- v92: cleaner hero without text baked into image --- */
-.belgorod-v92-hero{
-  position:relative;
-  min-height:460px;
-  overflow:hidden;
-  border-radius:0 0 36px 36px;
-  border:1px solid rgba(204,219,208,.78);
-  box-shadow:0 18px 44px rgba(17,52,36,.07);
-  margin-bottom:-76px;
-  background:#ebf2e6;
-}
-.belgorod-v92-scene{
-  position:absolute;
-  inset:0;
-  z-index:0;
-}
-.belgorod-v92-scene svg{
-  display:block;
-  width:100%;
-  height:100%;
-}
-.belgorod-v92-overlay{
-  position:absolute;
-  inset:0;
-  z-index:1;
-  background:
-    linear-gradient(90deg, rgba(255,254,250,.90) 0%, rgba(255,254,250,.80) 28%, rgba(255,254,250,.42) 52%, rgba(255,254,250,.10) 76%, rgba(255,254,250,.06) 100%),
-    linear-gradient(180deg, rgba(255,254,250,.08) 0%, rgba(255,254,250,.18) 100%);
-}
-.belgorod-v92-content{
-  position:relative;
-  z-index:2;
-  max-width:760px;
-  padding:48px 48px 128px;
-}
-.belgorod-v92-content h1{
-  margin:0 0 14px;
-  font-size:clamp(40px,5vw,72px);
-  line-height:.97;
-  letter-spacing:-.065em;
-  color:#0d281d;
-}
-.belgorod-v92-content .lead{
-  max-width:700px;
-  font-size:clamp(18px,1.45vw,22px);
-  color:#41564b;
-}
-.belgorod-v92-content .clean-tags span{
-  background:rgba(255,254,250,.66);
-  border-color:#d9e6dc;
-  color:#355344;
-  backdrop-filter:blur(8px);
-}
-.belgorod-v92-hero + .clean-table-card{
-  position:relative;
-  z-index:3;
-  width:calc(100% - 72px);
-  margin-left:auto;
-  margin-right:auto;
-}
-@media(max-width:1180px){
-  .belgorod-v92-hero{margin-bottom:-46px}
-  .belgorod-v92-content{padding:34px 32px 94px;max-width:680px}
-  .belgorod-v92-hero + .clean-table-card{width:calc(100% - 32px)}
-}
-@media(max-width:720px){
-  .belgorod-v92-hero{min-height:430px;margin-bottom:-30px;border-radius:0 0 24px 24px}
-  .belgorod-v92-content{padding:26px 20px 72px}
-  .belgorod-v92-content h1{font-size:clamp(34px,11vw,54px)}
-  .belgorod-v92-hero + .clean-table-card{width:100%}
-}
-
-
 /* --- v93: recognizable Belgorod hero with real background image --- */
 .belgorod-v93-hero{
   position:relative;
@@ -1549,5 +1071,82 @@ a{color:inherit}
   .belgorod-overview-intro__card,
   .belgorod-overview-facts{
     border-radius:22px;
+  }
+}
+
+
+/* --- v102: cleaner Belgorod overview text and color --- */
+.belgorod-overview-hero-v100{
+  min-height:460px;
+}
+.belgorod-overview-hero-v100__shade{
+  background:
+    linear-gradient(90deg, rgba(247,243,235,.82) 0%, rgba(247,243,235,.64) 33%, rgba(247,243,235,.22) 58%, rgba(247,243,235,.08) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 100%);
+}
+.belgorod-overview-hero-v100__content{
+  max-width:640px;
+  margin:38px 0 38px 38px;
+  padding:28px 30px;
+  border-radius:28px;
+  background:rgba(255,252,245,.74);
+  border:1px solid rgba(255,255,255,.56);
+  box-shadow:0 18px 44px rgba(17,52,36,.10);
+  backdrop-filter:blur(10px);
+}
+.belgorod-overview-hero-v100__content .kicker{
+  color:#0f6f40;
+}
+.belgorod-overview-hero-v100__content h1{
+  max-width:12ch;
+  color:#0b241a;
+}
+.belgorod-overview-hero-v100__content .lead{
+  color:#31473a;
+}
+.belgorod-overview-intro,
+.region-overview-pills{
+  display:none !important;
+}
+.zone-links-grid--v100{
+  margin-top:20px;
+}
+.zone-links-grid--v100 .zone-link-card{
+  min-height:230px;
+}
+@media (max-width: 900px){
+  .belgorod-overview-hero-v100{
+    min-height:420px;
+  }
+  .belgorod-overview-hero-v100__content{
+    margin:24px 20px;
+    padding:24px;
+  }
+}
+@media (max-width: 720px){
+  .belgorod-overview-hero-v100{
+    min-height:380px;
+  }
+  .belgorod-overview-hero-v100__content{
+    margin:16px;
+    padding:20px;
+    border-radius:22px;
+  }
+}
+
+
+/* --- v103: Belgorod overview heading fix --- */
+.belgorod-overview-hero-v100__content h1{
+  max-width: 13ch;
+}
+.belgorod-overview-hero-v100__content h1 br{
+  display:block;
+}
+.region-overview-pills{
+  display:none !important;
+}
+@media (max-width: 720px){
+  .belgorod-overview-hero-v100__content h1{
+    max-width: 11ch;
   }
 }
