@@ -1,0 +1,5339 @@
+{
+  "version": "v75-regions-placeholders-only",
+  "updated": "2026-04-27",
+  "status": "draft-region-placeholders",
+  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; зоны являются рабочим садовым каркасом, не официальным районированием.",
+  "subjectCount": 83,
+  "zoneCount": 283,
+  "districts": [
+    {
+      "id": "cfo",
+      "name": "Центральный федеральный округ",
+      "short": "ЦФО",
+      "subjects": [
+        {
+          "id": "belgorodskaya-oblast",
+          "name": "Белгородская область",
+          "zones": [
+            {
+              "id": "belgorodskaya-oblast-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Белгород",
+                "Старый Оскол"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "belgorodskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Губкин",
+                "Короча"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "belgorodskaya-oblast-zone-3",
+              "name": "южная степная зона",
+              "places": [
+                "Валуйки",
+                "Алексеевка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/belgorodskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "bryanskaya-oblast",
+          "name": "Брянская область",
+          "zones": [
+            {
+              "id": "bryanskaya-oblast-zone-1",
+              "name": "северо-западное Полесье",
+              "places": [
+                "Клинцы",
+                "Новозыбков"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "bryanskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Брянск",
+                "Дятьково"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "bryanskaya-oblast-zone-3",
+              "name": "юго-восточная зона",
+              "places": [
+                "Севск",
+                "Суземка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/bryanskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "vladimirskaya-oblast",
+          "name": "Владимирская область",
+          "zones": [
+            {
+              "id": "vladimirskaya-oblast-zone-1",
+              "name": "северная лесная зона",
+              "places": [
+                "Александров",
+                "Киржач"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "vladimirskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Владимир",
+                "Ковров"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "vladimirskaya-oblast-zone-3",
+              "name": "южное Ополье",
+              "places": [
+                "Суздаль",
+                "Юрьев-Польский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/vladimirskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "voronezhskaya-oblast",
+          "name": "Воронежская область",
+          "zones": [
+            {
+              "id": "voronezhskaya-oblast-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Борисоглебск",
+                "Анна"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "voronezhskaya-oblast-zone-2",
+              "name": "центральная чернозёмная зона",
+              "places": [
+                "Воронеж",
+                "Семилуки"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "voronezhskaya-oblast-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Россошь",
+                "Богучар"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/voronezhskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "ivanovskaya-oblast",
+          "name": "Ивановская область",
+          "zones": [
+            {
+              "id": "ivanovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Кинешма",
+                "Заволжск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ivanovskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Иваново",
+                "Шуя"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ivanovskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Южа",
+                "Палех"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/ivanovskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "kaluzhskaya-oblast",
+          "name": "Калужская область",
+          "zones": [
+            {
+              "id": "kaluzhskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Обнинск",
+                "Боровск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kaluzhskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Калуга",
+                "Малоярославец"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kaluzhskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Козельск",
+                "Сухиничи"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/kaluzhskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "kostromskaya-oblast",
+          "name": "Костромская область",
+          "zones": [
+            {
+              "id": "kostromskaya-oblast-zone-1",
+              "name": "юго-западная зона",
+              "places": [
+                "Кострома",
+                "Нерехта"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kostromskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Галич",
+                "Судиславль"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kostromskaya-oblast-zone-3",
+              "name": "северо-восточная таёжная зона",
+              "places": [
+                "Шарья",
+                "Мантурово"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/kostromskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "kurskaya-oblast",
+          "name": "Курская область",
+          "zones": [
+            {
+              "id": "kurskaya-oblast-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Железногорск",
+                "Фатеж"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kurskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Курск",
+                "Курчатов"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kurskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Суджа",
+                "Обоянь"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/kurskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "lipetskaya-oblast",
+          "name": "Липецкая область",
+          "zones": [
+            {
+              "id": "lipetskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Елец",
+                "Данков"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "lipetskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Липецк",
+                "Грязи"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "lipetskaya-oblast-zone-3",
+              "name": "южная лесостепь",
+              "places": [
+                "Усмань",
+                "Добринка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/lipetskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "moskovskaya-oblast",
+          "name": "Московская область",
+          "zones": [
+            {
+              "id": "mo-north-west",
+              "name": "север и северо-запад",
+              "places": [
+                "Клин",
+                "Дмитров",
+                "Талдом",
+                "Сергиев Посад",
+                "Волоколамск",
+                "Можайск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "mo-central",
+              "name": "центр и ближнее Подмосковье",
+              "places": [
+                "Мытищи",
+                "Пушкино",
+                "Одинцово",
+                "Красногорск",
+                "Подольск",
+                "Балашиха"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "mo-east",
+              "name": "восток и песчаные зоны",
+              "places": [
+                "Ногинск",
+                "Орехово-Зуево",
+                "Шатура",
+                "Егорьевск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "mo-south",
+              "name": "юг и юго-восток",
+              "places": [
+                "Коломна",
+                "Кашира",
+                "Ступино",
+                "Серпухов",
+                "Луховицы"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/moskovskaya-oblast.html",
+          "status": "detailed"
+        },
+        {
+          "id": "moskva",
+          "name": "Москва",
+          "zones": [
+            {
+              "id": "moskva-zone-1",
+              "name": "городская зона",
+              "places": [
+                "Москва"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "moskva-zone-2",
+              "name": "Новая Москва и пригородный пояс",
+              "places": [
+                "Троицк",
+                "Щербинка",
+                "Московский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/moskva.html",
+          "status": "draft"
+        },
+        {
+          "id": "orlovskaya-oblast",
+          "name": "Орловская область",
+          "zones": [
+            {
+              "id": "orlovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Болхов",
+                "Мценск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "orlovskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Орёл",
+                "Ливны"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "orlovskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Кромы",
+                "Дмитровск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/orlovskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "ryazanskaya-oblast",
+          "name": "Рязанская область",
+          "zones": [
+            {
+              "id": "ryazanskaya-oblast-zone-1",
+              "name": "северная лесная зона",
+              "places": [
+                "Касимов",
+                "Спас-Клепики"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ryazanskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Рязань",
+                "Рыбное"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ryazanskaya-oblast-zone-3",
+              "name": "южная лесостепь",
+              "places": [
+                "Скопин",
+                "Сасово"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/ryazanskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "smolenskaya-oblast",
+          "name": "Смоленская область",
+          "zones": [
+            {
+              "id": "smolenskaya-oblast-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Велиж",
+                "Демидов"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "smolenskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Смоленск",
+                "Ярцево"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "smolenskaya-oblast-zone-3",
+              "name": "восточная зона",
+              "places": [
+                "Вязьма",
+                "Гагарин"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/smolenskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "tambovskaya-oblast",
+          "name": "Тамбовская область",
+          "zones": [
+            {
+              "id": "tambovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Моршанск",
+                "Мичуринск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tambovskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Тамбов",
+                "Рассказово"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tambovskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Уварово",
+                "Жердевка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/tambovskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "tverskaya-oblast",
+          "name": "Тверская область",
+          "zones": [
+            {
+              "id": "tverskaya-oblast-zone-1",
+              "name": "Валдайская зона",
+              "places": [
+                "Осташков",
+                "Бологое"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tverskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Тверь",
+                "Торжок"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tverskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Ржев",
+                "Зубцов"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tverskaya-oblast-zone-4",
+              "name": "северная лесная зона",
+              "places": [
+                "Весьегонск",
+                "Бежецк"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/tverskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "tulskaya-oblast",
+          "name": "Тульская область",
+          "zones": [
+            {
+              "id": "tulskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Алексин",
+                "Ясногорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tulskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Тула",
+                "Щёкино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tulskaya-oblast-zone-3",
+              "name": "южная лесостепь",
+              "places": [
+                "Ефремов",
+                "Новомосковск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/tulskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "yaroslavskaya-oblast",
+          "name": "Ярославская область",
+          "zones": [
+            {
+              "id": "yaroslavskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Пошехонье",
+                "Любим"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "yaroslavskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Ярославль",
+                "Рыбинск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "yaroslavskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Ростов",
+                "Переславль-Залесский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "cfo",
+          "page": "regions/yaroslavskaya-oblast.html",
+          "status": "detailed"
+        }
+      ]
+    },
+    {
+      "id": "szfo",
+      "name": "Северо-Западный федеральный округ",
+      "short": "СЗФО",
+      "subjects": [
+        {
+          "id": "respublika-kareliya",
+          "name": "Республика Карелия",
+          "zones": [
+            {
+              "id": "respublika-kareliya-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Кемь",
+                "Беломорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-kareliya-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Петрозаводск",
+                "Кондопога"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-kareliya-zone-3",
+              "name": "южное Приладожье",
+              "places": [
+                "Сортавала",
+                "Олонец"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/respublika-kareliya.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-komi",
+          "name": "Республика Коми",
+          "zones": [
+            {
+              "id": "respublika-komi-zone-1",
+              "name": "северная тундрово-таёжная зона",
+              "places": [
+                "Воркута",
+                "Инта"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-komi-zone-2",
+              "name": "центральная тайга",
+              "places": [
+                "Ухта",
+                "Печора"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-komi-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Сыктывкар",
+                "Усинск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/respublika-komi.html",
+          "status": "draft"
+        },
+        {
+          "id": "arhangelskaya-oblast",
+          "name": "Архангельская область",
+          "zones": [
+            {
+              "id": "arhangelskaya-oblast-zone-1",
+              "name": "побережье Белого моря",
+              "places": [
+                "Северодвинск",
+                "Онега"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "arhangelskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Архангельск",
+                "Холмогоры"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "arhangelskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Котлас",
+                "Вельск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "arhangelskaya-oblast-zone-4",
+              "name": "северная зона",
+              "places": [
+                "Мезень",
+                "Пинега"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/arhangelskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "nenetskiy-avtonomnyy-okrug",
+          "name": "Ненецкий автономный округ",
+          "zones": [
+            {
+              "id": "nenetskiy-avtonomnyy-okrug-zone-1",
+              "name": "тундровая зона",
+              "places": [
+                "Нарьян-Мар"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "nenetskiy-avtonomnyy-okrug-zone-2",
+              "name": "прибрежная зона",
+              "places": [
+                "Индига",
+                "Амдерма"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "nenetskiy-avtonomnyy-okrug-zone-3",
+              "name": "южная лесотундра",
+              "places": [
+                "Хорей-Вер"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/nenetskiy-avtonomnyy-okrug.html",
+          "status": "draft"
+        },
+        {
+          "id": "vologodskaya-oblast",
+          "name": "Вологодская область",
+          "zones": [
+            {
+              "id": "vologodskaya-oblast-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Череповец",
+                "Белозерск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "vologodskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Вологда",
+                "Грязовец"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "vologodskaya-oblast-zone-3",
+              "name": "восточная зона",
+              "places": [
+                "Великий Устюг",
+                "Тотьма"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/vologodskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "kaliningradskaya-oblast",
+          "name": "Калининградская область",
+          "zones": [
+            {
+              "id": "kaliningradskaya-oblast-zone-1",
+              "name": "морское побережье",
+              "places": [
+                "Балтийск",
+                "Светлогорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kaliningradskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Калининград",
+                "Гурьевск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kaliningradskaya-oblast-zone-3",
+              "name": "восточная зона",
+              "places": [
+                "Гусев",
+                "Черняховск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/kaliningradskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "leningradskaya-oblast",
+          "name": "Ленинградская область",
+          "zones": [
+            {
+              "id": "leningradskaya-oblast-zone-1",
+              "name": "побережье Финского залива",
+              "places": [
+                "Сосновый Бор",
+                "Выборг"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "leningradskaya-oblast-zone-2",
+              "name": "северная зона",
+              "places": [
+                "Приозерск",
+                "Сортавала рядом"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "leningradskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Гатчина",
+                "Луга"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "leningradskaya-oblast-zone-4",
+              "name": "восточная зона",
+              "places": [
+                "Тихвин",
+                "Кириши"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/leningradskaya-oblast.html",
+          "status": "detailed"
+        },
+        {
+          "id": "murmanskaya-oblast",
+          "name": "Мурманская область",
+          "zones": [
+            {
+              "id": "murmanskaya-oblast-zone-1",
+              "name": "побережье",
+              "places": [
+                "Мурманск",
+                "Североморск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "murmanskaya-oblast-zone-2",
+              "name": "центральная Кольская зона",
+              "places": [
+                "Апатиты",
+                "Кировск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "murmanskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Кандалакша",
+                "Полярные Зори"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/murmanskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "novgorodskaya-oblast",
+          "name": "Новгородская область",
+          "zones": [
+            {
+              "id": "novgorodskaya-oblast-zone-1",
+              "name": "Валдайская зона",
+              "places": [
+                "Валдай",
+                "Окуловка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "novgorodskaya-oblast-zone-2",
+              "name": "Приильменье",
+              "places": [
+                "Великий Новгород",
+                "Старая Русса"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "novgorodskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Холм",
+                "Поддорье"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/novgorodskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "pskovskaya-oblast",
+          "name": "Псковская область",
+          "zones": [
+            {
+              "id": "pskovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Гдов",
+                "Порхов"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "pskovskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Псков",
+                "Остров"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "pskovskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Великие Луки",
+                "Невель"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/pskovskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "sankt-peterburg",
+          "name": "Санкт-Петербург",
+          "zones": [
+            {
+              "id": "sankt-peterburg-zone-1",
+              "name": "городская зона",
+              "places": [
+                "Санкт-Петербург"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sankt-peterburg-zone-2",
+              "name": "пригородная зона",
+              "places": [
+                "Пушкин",
+                "Павловск",
+                "Колпино",
+                "Кронштадт"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "szfo",
+          "page": "regions/sankt-peterburg.html",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "yfo",
+      "name": "Южный федеральный округ",
+      "short": "ЮФО",
+      "subjects": [
+        {
+          "id": "respublika-adygeya",
+          "name": "Республика Адыгея",
+          "zones": [
+            {
+              "id": "respublika-adygeya-zone-1",
+              "name": "равнинная зона",
+              "places": [
+                "Майкоп",
+                "Адыгейск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-adygeya-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Каменномостский",
+                "Хаджох"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-adygeya-zone-3",
+              "name": "горная зона",
+              "places": [
+                "Гузерипль"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "yfo",
+          "page": "regions/respublika-adygeya.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-kalmykiya",
+          "name": "Республика Калмыкия",
+          "zones": [
+            {
+              "id": "respublika-kalmykiya-zone-1",
+              "name": "западная сухостепная зона",
+              "places": [
+                "Городовиковск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-kalmykiya-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Элиста"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-kalmykiya-zone-3",
+              "name": "восточная зона",
+              "places": [
+                "Яшкуль"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-kalmykiya-zone-4",
+              "name": "Прикаспийская низменность",
+              "places": [
+                "Лагань"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "yfo",
+          "page": "regions/respublika-kalmykiya.html",
+          "status": "draft"
+        },
+        {
+          "id": "krasnodarskiy-kray",
+          "name": "Краснодарский край",
+          "zones": [
+            {
+              "id": "krasnodarskiy-kray-zone-1",
+              "name": "Черноморское побережье",
+              "places": [
+                "Сочи",
+                "Туапсе",
+                "Геленджик",
+                "Новороссийск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnodarskiy-kray-zone-2",
+              "name": "Азово-Таманская зона",
+              "places": [
+                "Ейск",
+                "Темрюк",
+                "Тамань"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnodarskiy-kray-zone-3",
+              "name": "Прикубанская равнина",
+              "places": [
+                "Краснодар",
+                "Усть-Лабинск",
+                "Кореновск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnodarskiy-kray-zone-4",
+              "name": "северная степная зона",
+              "places": [
+                "Кущёвская",
+                "Тихорецк"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnodarskiy-kray-zone-5",
+              "name": "предгорья Кавказа",
+              "places": [
+                "Апшеронск",
+                "Горячий Ключ"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "yfo",
+          "page": "regions/krasnodarskiy-kray.html",
+          "status": "detailed"
+        },
+        {
+          "id": "astrahanskaya-oblast",
+          "name": "Астраханская область",
+          "zones": [
+            {
+              "id": "astrahanskaya-oblast-zone-1",
+              "name": "Волго-Ахтубинская пойма",
+              "places": [
+                "Ахтубинск",
+                "Харабали"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "astrahanskaya-oblast-zone-2",
+              "name": "дельта Волги",
+              "places": [
+                "Астрахань",
+                "Камызяк"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "astrahanskaya-oblast-zone-3",
+              "name": "полупустынная зона",
+              "places": [
+                "Енотаевка",
+                "Лиман"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "yfo",
+          "page": "regions/astrahanskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "volgogradskaya-oblast",
+          "name": "Волгоградская область",
+          "zones": [
+            {
+              "id": "volgogradskaya-oblast-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Урюпинск",
+                "Михайловка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "volgogradskaya-oblast-zone-2",
+              "name": "центральная степь",
+              "places": [
+                "Волгоград",
+                "Камышин"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "volgogradskaya-oblast-zone-3",
+              "name": "южная сухая степь",
+              "places": [
+                "Котельниково",
+                "Палласовка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "volgogradskaya-oblast-zone-4",
+              "name": "Волго-Донская зона",
+              "places": [
+                "Калач-на-Дону",
+                "Суровикино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "yfo",
+          "page": "regions/volgogradskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "rostovskaya-oblast",
+          "name": "Ростовская область",
+          "zones": [
+            {
+              "id": "rostovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Миллерово",
+                "Шолоховский район"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "rostovskaya-oblast-zone-2",
+              "name": "центральная степная зона",
+              "places": [
+                "Ростов-на-Дону",
+                "Новочеркасск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "rostovskaya-oblast-zone-3",
+              "name": "Приазовье",
+              "places": [
+                "Таганрог",
+                "Азов",
+                "Ейск рядом"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "rostovskaya-oblast-zone-4",
+              "name": "восточная сухая степь",
+              "places": [
+                "Волгодонск",
+                "Сальск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "yfo",
+          "page": "regions/rostovskaya-oblast.html",
+          "status": "detailed"
+        }
+      ]
+    },
+    {
+      "id": "skfo",
+      "name": "Северо-Кавказский федеральный округ",
+      "short": "СКФО",
+      "subjects": [
+        {
+          "id": "respublika-dagestan",
+          "name": "Республика Дагестан",
+          "zones": [
+            {
+              "id": "respublika-dagestan-zone-1",
+              "name": "приморская низменность",
+              "places": [
+                "Махачкала",
+                "Дербент",
+                "Каспийск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-dagestan-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Буйнакск",
+                "Хасавюрт"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-dagestan-zone-3",
+              "name": "горные долины",
+              "places": [
+                "Гуниб",
+                "Ботлих"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-dagestan-zone-4",
+              "name": "высокогорье",
+              "places": [
+                "Ахты",
+                "Цунта"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/respublika-dagestan.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-ingushetiya",
+          "name": "Республика Ингушетия",
+          "zones": [
+            {
+              "id": "respublika-ingushetiya-zone-1",
+              "name": "равнинная зона",
+              "places": [
+                "Назрань",
+                "Малгобек"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-ingushetiya-zone-2",
+              "name": "предгорная зона",
+              "places": [
+                "Сунжа"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-ingushetiya-zone-3",
+              "name": "горная зона",
+              "places": [
+                "Джейрах"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/respublika-ingushetiya.html",
+          "status": "draft"
+        },
+        {
+          "id": "kabardino-balkarskaya-respublika",
+          "name": "Кабардино-Балкарская Республика",
+          "zones": [
+            {
+              "id": "kabardino-balkarskaya-respublika-zone-1",
+              "name": "степная равнина",
+              "places": [
+                "Прохладный",
+                "Майский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kabardino-balkarskaya-respublika-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Нальчик",
+                "Баксан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kabardino-balkarskaya-respublika-zone-3",
+              "name": "горные долины",
+              "places": [
+                "Чегем",
+                "Тырныауз"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kabardino-balkarskaya-respublika-zone-4",
+              "name": "высокогорье",
+              "places": [
+                "Эльбрус"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/kabardino-balkarskaya-respublika.html",
+          "status": "draft"
+        },
+        {
+          "id": "karachaevo-cherkesskaya-respublika",
+          "name": "Карачаево-Черкесская Республика",
+          "zones": [
+            {
+              "id": "karachaevo-cherkesskaya-respublika-zone-1",
+              "name": "равнинная зона",
+              "places": [
+                "Черкесск",
+                "Адыге-Хабль"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "karachaevo-cherkesskaya-respublika-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Усть-Джегута"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "karachaevo-cherkesskaya-respublika-zone-3",
+              "name": "горные долины",
+              "places": [
+                "Карачаевск",
+                "Теберда"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "karachaevo-cherkesskaya-respublika-zone-4",
+              "name": "высокогорье",
+              "places": [
+                "Домбай"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/karachaevo-cherkesskaya-respublika.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-severnaya-osetiya-alaniya",
+          "name": "Республика Северная Осетия — Алания",
+          "zones": [
+            {
+              "id": "respublika-severnaya-osetiya-alaniya-zone-1",
+              "name": "равнинная зона",
+              "places": [
+                "Моздок"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-severnaya-osetiya-alaniya-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Владикавказ",
+                "Беслан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-severnaya-osetiya-alaniya-zone-3",
+              "name": "горные долины",
+              "places": [
+                "Алагир",
+                "Дигорa"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-severnaya-osetiya-alaniya-zone-4",
+              "name": "высокогорье",
+              "places": [
+                "Цей"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/respublika-severnaya-osetiya-alaniya.html",
+          "status": "draft"
+        },
+        {
+          "id": "chechenskaya-respublika",
+          "name": "Чеченская Республика",
+          "zones": [
+            {
+              "id": "chechenskaya-respublika-zone-1",
+              "name": "Терско-Сунженская равнина",
+              "places": [
+                "Грозный",
+                "Гудермес"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chechenskaya-respublika-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Урус-Мартан",
+                "Шали"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chechenskaya-respublika-zone-3",
+              "name": "горная зона",
+              "places": [
+                "Итум-Кали",
+                "Шатой"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/chechenskaya-respublika.html",
+          "status": "draft"
+        },
+        {
+          "id": "stavropolskiy-kray",
+          "name": "Ставропольский край",
+          "zones": [
+            {
+              "id": "stavropolskiy-kray-zone-1",
+              "name": "северо-восточная сухая степь",
+              "places": [
+                "Нефтекумск",
+                "Будённовск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "stavropolskiy-kray-zone-2",
+              "name": "центральная возвышенность",
+              "places": [
+                "Ставрополь",
+                "Изобильный"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "stavropolskiy-kray-zone-3",
+              "name": "западная зона",
+              "places": [
+                "Невинномысск",
+                "Кочубеевское"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "stavropolskiy-kray-zone-4",
+              "name": "предгорья Кавказских Минеральных Вод",
+              "places": [
+                "Пятигорск",
+                "Кисловодск",
+                "Ессентуки"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "skfo",
+          "page": "regions/stavropolskiy-kray.html",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "pfo",
+      "name": "Приволжский федеральный округ",
+      "short": "ПФО",
+      "subjects": [
+        {
+          "id": "bashkortostan",
+          "name": "Республика Башкортостан",
+          "zones": [
+            {
+              "id": "bashkortostan-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Белебей",
+                "Октябрьский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "bashkortostan-zone-2",
+              "name": "Предуралье",
+              "places": [
+                "Уфа",
+                "Стерлитамак"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "bashkortostan-zone-3",
+              "name": "горный Урал",
+              "places": [
+                "Белорецк",
+                "Учалы"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "bashkortostan-zone-4",
+              "name": "Зауральская степь",
+              "places": [
+                "Сибай",
+                "Баймак"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/bashkortostan.html",
+          "status": "detailed"
+        },
+        {
+          "id": "respublika-mariy-el",
+          "name": "Республика Марий Эл",
+          "zones": [
+            {
+              "id": "respublika-mariy-el-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Козьмодемьянск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-mariy-el-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Йошкар-Ола",
+                "Волжск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-mariy-el-zone-3",
+              "name": "восточная лесная зона",
+              "places": [
+                "Звенигово",
+                "Морки"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/respublika-mariy-el.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-mordoviya",
+          "name": "Республика Мордовия",
+          "zones": [
+            {
+              "id": "respublika-mordoviya-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Темников",
+                "Краснослободск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-mordoviya-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Саранск",
+                "Рузаевка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-mordoviya-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Ковылкино",
+                "Ардатов"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/respublika-mordoviya.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-tatarstan",
+          "name": "Республика Татарстан",
+          "zones": [
+            {
+              "id": "respublika-tatarstan-zone-1",
+              "name": "Предкамье",
+              "places": [
+                "Чистополь",
+                "Елабуга"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-tatarstan-zone-2",
+              "name": "Закамье",
+              "places": [
+                "Альметьевск",
+                "Бугульма"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-tatarstan-zone-3",
+              "name": "Предволжье",
+              "places": [
+                "Тетюши",
+                "Буинск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-tatarstan-zone-4",
+              "name": "Казанская зона",
+              "places": [
+                "Казань",
+                "Зеленодольск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/respublika-tatarstan.html",
+          "status": "detailed"
+        },
+        {
+          "id": "udmurtskaya-respublika",
+          "name": "Удмуртская Республика",
+          "zones": [
+            {
+              "id": "udmurtskaya-respublika-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Глазов",
+                "Балезино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "udmurtskaya-respublika-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Ижевск",
+                "Воткинск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "udmurtskaya-respublika-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Сарапул",
+                "Можга"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/udmurtskaya-respublika.html",
+          "status": "draft"
+        },
+        {
+          "id": "chuvashskaya-respublika",
+          "name": "Чувашская Республика",
+          "zones": [
+            {
+              "id": "chuvashskaya-respublika-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Шумерля",
+                "Ядрин"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chuvashskaya-respublika-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Чебоксары",
+                "Новочебоксарск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chuvashskaya-respublika-zone-3",
+              "name": "южное Присурье",
+              "places": [
+                "Алатырь",
+                "Канаш"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/chuvashskaya-respublika.html",
+          "status": "draft"
+        },
+        {
+          "id": "permskiy-kray",
+          "name": "Пермский край",
+          "zones": [
+            {
+              "id": "permskiy-kray-zone-1",
+              "name": "северная тайга",
+              "places": [
+                "Соликамск",
+                "Чердынь"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "permskiy-kray-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Пермь",
+                "Краснокамск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "permskiy-kray-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Кунгур",
+                "Чайковский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "permskiy-kray-zone-4",
+              "name": "горный восток",
+              "places": [
+                "Лысьва",
+                "Губаха"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/permskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "kirovskaya-oblast",
+          "name": "Кировская область",
+          "zones": [
+            {
+              "id": "kirovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Луза",
+                "Мураши"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kirovskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Киров",
+                "Слободской"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kirovskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Вятские Поляны",
+                "Уржум"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/kirovskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "nizhegorodskaya-oblast",
+          "name": "Нижегородская область",
+          "zones": [
+            {
+              "id": "nizhegorodskaya-oblast-zone-1",
+              "name": "Заволжье",
+              "places": [
+                "Бор",
+                "Семёнов"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "nizhegorodskaya-oblast-zone-2",
+              "name": "Правобережье",
+              "places": [
+                "Нижний Новгород",
+                "Арзамас"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "nizhegorodskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Сергач",
+                "Починки"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/nizhegorodskaya-oblast.html",
+          "status": "detailed"
+        },
+        {
+          "id": "orenburgskaya-oblast",
+          "name": "Оренбургская область",
+          "zones": [
+            {
+              "id": "orenburgskaya-oblast-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Бузулук",
+                "Бугуруслан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "orenburgskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Оренбург",
+                "Соль-Илецк"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "orenburgskaya-oblast-zone-3",
+              "name": "восточная зона",
+              "places": [
+                "Орск",
+                "Новотроицк"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "orenburgskaya-oblast-zone-4",
+              "name": "южная степь",
+              "places": [
+                "Акбулак",
+                "Домбаровский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/orenburgskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "penzenskaya-oblast",
+          "name": "Пензенская область",
+          "zones": [
+            {
+              "id": "penzenskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Нижний Ломов",
+                "Никольск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "penzenskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Пенза",
+                "Заречный"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "penzenskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Кузнецк",
+                "Сердобск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/penzenskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "samarskaya-oblast",
+          "name": "Самарская область",
+          "zones": [
+            {
+              "id": "samarskaya-oblast-zone-1",
+              "name": "волжская зона",
+              "places": [
+                "Самара",
+                "Тольятти"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "samarskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Сызрань",
+                "Новокуйбышевск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "samarskaya-oblast-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Чапаевск",
+                "Безенчук"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "samarskaya-oblast-zone-4",
+              "name": "юго-восточная сухая зона",
+              "places": [
+                "Большая Черниговка",
+                "Пестравка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/samarskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "saratovskaya-oblast",
+          "name": "Саратовская область",
+          "zones": [
+            {
+              "id": "saratovskaya-oblast-zone-1",
+              "name": "Правобережье",
+              "places": [
+                "Саратов",
+                "Вольск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "saratovskaya-oblast-zone-2",
+              "name": "Левобережье",
+              "places": [
+                "Энгельс",
+                "Маркс"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "saratovskaya-oblast-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Хвалынск",
+                "Балаково"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "saratovskaya-oblast-zone-4",
+              "name": "южная сухостепная зона",
+              "places": [
+                "Красный Кут",
+                "Питерка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/saratovskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "ulyanovskaya-oblast",
+          "name": "Ульяновская область",
+          "zones": [
+            {
+              "id": "ulyanovskaya-oblast-zone-1",
+              "name": "Правобережье",
+              "places": [
+                "Ульяновск",
+                "Инза"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ulyanovskaya-oblast-zone-2",
+              "name": "Левобережье",
+              "places": [
+                "Димитровград",
+                "Новая Малыкла"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ulyanovskaya-oblast-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Сурское",
+                "Карсун"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "ulyanovskaya-oblast-zone-4",
+              "name": "южная зона",
+              "places": [
+                "Николаевка",
+                "Павловка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "pfo",
+          "page": "regions/ulyanovskaya-oblast.html",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "urfo",
+      "name": "Уральский федеральный округ",
+      "short": "УрФО",
+      "subjects": [
+        {
+          "id": "kurganskaya-oblast",
+          "name": "Курганская область",
+          "zones": [
+            {
+              "id": "kurganskaya-oblast-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Шадринск",
+                "Далматово"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kurganskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Курган",
+                "Кетовский район"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kurganskaya-oblast-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Целинное",
+                "Макушино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "urfo",
+          "page": "regions/kurganskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "sverdlovskaya-oblast",
+          "name": "Свердловская область",
+          "zones": [
+            {
+              "id": "sverdlovskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Серов",
+                "Краснотурьинск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sverdlovskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Екатеринбург",
+                "Нижний Тагил"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sverdlovskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Каменск-Уральский",
+                "Красноуфимск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sverdlovskaya-oblast-zone-4",
+              "name": "горный Урал",
+              "places": [
+                "Первоуральск",
+                "Качканар"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "urfo",
+          "page": "regions/sverdlovskaya-oblast.html",
+          "status": "detailed"
+        },
+        {
+          "id": "tyumenskaya-oblast",
+          "name": "Тюменская область",
+          "zones": [
+            {
+              "id": "tyumenskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Тобольск",
+                "Уват"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tyumenskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Тюмень",
+                "Ялуторовск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tyumenskaya-oblast-zone-3",
+              "name": "южная лесостепь",
+              "places": [
+                "Ишим",
+                "Заводоуковск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "urfo",
+          "page": "regions/tyumenskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "chelyabinskaya-oblast",
+          "name": "Челябинская область",
+          "zones": [
+            {
+              "id": "chelyabinskaya-oblast-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Кыштым",
+                "Касли"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chelyabinskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Челябинск",
+                "Копейск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chelyabinskaya-oblast-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Магнитогорск",
+                "Троицк"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chelyabinskaya-oblast-zone-4",
+              "name": "горный запад",
+              "places": [
+                "Златоуст",
+                "Миасс",
+                "Сатка"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "urfo",
+          "page": "regions/chelyabinskaya-oblast.html",
+          "status": "detailed"
+        },
+        {
+          "id": "hanty-mansiyskiy-avtonomnyy-okrug-yugra",
+          "name": "Ханты-Мансийский автономный округ — Югра",
+          "zones": [
+            {
+              "id": "hanty-mansiyskiy-avtonomnyy-okrug-yugra-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Белоярский",
+                "Нягань"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "hanty-mansiyskiy-avtonomnyy-okrug-yugra-zone-2",
+              "name": "центральная таёжная зона",
+              "places": [
+                "Сургут",
+                "Нефтеюганск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "hanty-mansiyskiy-avtonomnyy-okrug-yugra-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Ханты-Мансийск",
+                "Урай"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "urfo",
+          "page": "regions/hanty-mansiyskiy-avtonomnyy-okrug-yugra.html",
+          "status": "draft"
+        },
+        {
+          "id": "yamalo-nenetskiy-avtonomnyy-okrug",
+          "name": "Ямало-Ненецкий автономный округ",
+          "zones": [
+            {
+              "id": "yamalo-nenetskiy-avtonomnyy-okrug-zone-1",
+              "name": "арктическая зона",
+              "places": [
+                "Сабетта",
+                "Новый Порт"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "yamalo-nenetskiy-avtonomnyy-okrug-zone-2",
+              "name": "тундра",
+              "places": [
+                "Салехард",
+                "Надым"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "yamalo-nenetskiy-avtonomnyy-okrug-zone-3",
+              "name": "лесотундра",
+              "places": [
+                "Ноябрьск",
+                "Муравленко"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "urfo",
+          "page": "regions/yamalo-nenetskiy-avtonomnyy-okrug.html",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "sfo",
+      "name": "Сибирский федеральный округ",
+      "short": "СФО",
+      "subjects": [
+        {
+          "id": "respublika-altay",
+          "name": "Республика Алтай",
+          "zones": [
+            {
+              "id": "respublika-altay-zone-1",
+              "name": "северные предгорья",
+              "places": [
+                "Майма",
+                "Горно-Алтайск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-altay-zone-2",
+              "name": "центральные долины",
+              "places": [
+                "Онгудай",
+                "Усть-Кан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-altay-zone-3",
+              "name": "горная зона",
+              "places": [
+                "Чемал",
+                "Турочак"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-altay-zone-4",
+              "name": "высокогорье",
+              "places": [
+                "Кош-Агач",
+                "Улаган"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/respublika-altay.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-tyva",
+          "name": "Республика Тыва",
+          "zones": [
+            {
+              "id": "respublika-tyva-zone-1",
+              "name": "степные котловины",
+              "places": [
+                "Кызыл",
+                "Чадан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-tyva-zone-2",
+              "name": "горные долины",
+              "places": [
+                "Ак-Довурак",
+                "Туран"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-tyva-zone-3",
+              "name": "высокогорье",
+              "places": [
+                "Монгун-Тайга"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/respublika-tyva.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-hakasiya",
+          "name": "Республика Хакасия",
+          "zones": [
+            {
+              "id": "respublika-hakasiya-zone-1",
+              "name": "степные котловины",
+              "places": [
+                "Абакан",
+                "Черногорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-hakasiya-zone-2",
+              "name": "предгорья",
+              "places": [
+                "Саяногорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-hakasiya-zone-3",
+              "name": "горно-таёжная зона",
+              "places": [
+                "Абаза",
+                "Таштып"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/respublika-hakasiya.html",
+          "status": "draft"
+        },
+        {
+          "id": "altayskiy-kray",
+          "name": "Алтайский край",
+          "zones": [
+            {
+              "id": "altayskiy-kray-zone-1",
+              "name": "северная лесостепь",
+              "places": [
+                "Бийск",
+                "Заринск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "altayskiy-kray-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Барнаул",
+                "Новоалтайск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "altayskiy-kray-zone-3",
+              "name": "предгорья",
+              "places": [
+                "Белокуриха",
+                "Смоленское"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "altayskiy-kray-zone-4",
+              "name": "южная сухая степь",
+              "places": [
+                "Рубцовск",
+                "Кулунда"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/altayskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "krasnoyarskiy-kray",
+          "name": "Красноярский край",
+          "zones": [
+            {
+              "id": "krasnoyarskiy-kray-zone-1",
+              "name": "северная арктическая зона",
+              "places": [
+                "Норильск",
+                "Диксон"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnoyarskiy-kray-zone-2",
+              "name": "центральная тайга",
+              "places": [
+                "Енисейск",
+                "Лесосибирск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnoyarskiy-kray-zone-3",
+              "name": "Енисейская долина",
+              "places": [
+                "Красноярск",
+                "Дивногорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "krasnoyarskiy-kray-zone-4",
+              "name": "южная лесостепь",
+              "places": [
+                "Минусинск",
+                "Ачинск",
+                "Канск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/krasnoyarskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "irkutskaya-oblast",
+          "name": "Иркутская область",
+          "zones": [
+            {
+              "id": "irkutskaya-oblast-zone-1",
+              "name": "Приангарье",
+              "places": [
+                "Иркутск",
+                "Ангарск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "irkutskaya-oblast-zone-2",
+              "name": "Байкальская зона",
+              "places": [
+                "Слюдянка",
+                "Байкальск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "irkutskaya-oblast-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Братск",
+                "Усть-Кут"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "irkutskaya-oblast-zone-4",
+              "name": "южная лесостепь",
+              "places": [
+                "Черемхово",
+                "Усолье-Сибирское"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/irkutskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "kemerovskaya-oblast-kuzbass",
+          "name": "Кемеровская область — Кузбасс",
+          "zones": [
+            {
+              "id": "kemerovskaya-oblast-kuzbass-zone-1",
+              "name": "Кузнецкая котловина",
+              "places": [
+                "Новокузнецк",
+                "Прокопьевск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kemerovskaya-oblast-kuzbass-zone-2",
+              "name": "северная зона",
+              "places": [
+                "Кемерово",
+                "Юрга"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kemerovskaya-oblast-kuzbass-zone-3",
+              "name": "Горная Шория",
+              "places": [
+                "Таштагол",
+                "Шерегеш"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kemerovskaya-oblast-kuzbass-zone-4",
+              "name": "Кузнецкий Алатау",
+              "places": [
+                "Междуреченск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/kemerovskaya-oblast-kuzbass.html",
+          "status": "draft"
+        },
+        {
+          "id": "novosibirskaya-oblast",
+          "name": "Новосибирская область",
+          "zones": [
+            {
+              "id": "novosibirskaya-oblast-zone-1",
+              "name": "северная лесная зона",
+              "places": [
+                "Колывань",
+                "Куйбышев"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "novosibirskaya-oblast-zone-2",
+              "name": "центральная лесостепь",
+              "places": [
+                "Новосибирск",
+                "Бердск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "novosibirskaya-oblast-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Карасук",
+                "Ордынское"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/novosibirskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "omskaya-oblast",
+          "name": "Омская область",
+          "zones": [
+            {
+              "id": "omskaya-oblast-zone-1",
+              "name": "северная лесная зона",
+              "places": [
+                "Тара",
+                "Большеречье"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "omskaya-oblast-zone-2",
+              "name": "центральная лесостепь",
+              "places": [
+                "Омск",
+                "Калачинск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "omskaya-oblast-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Исилькуль",
+                "Черлак"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/omskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "tomskaya-oblast",
+          "name": "Томская область",
+          "zones": [
+            {
+              "id": "tomskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Стрежевой",
+                "Колпашево"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tomskaya-oblast-zone-2",
+              "name": "центральная таёжная зона",
+              "places": [
+                "Томск",
+                "Асино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "tomskaya-oblast-zone-3",
+              "name": "южная зона",
+              "places": [
+                "Северск",
+                "Кожевниково"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "sfo",
+          "page": "regions/tomskaya-oblast.html",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "id": "dfo",
+      "name": "Дальневосточный федеральный округ",
+      "short": "ДФО",
+      "subjects": [
+        {
+          "id": "respublika-buryatiya",
+          "name": "Республика Бурятия",
+          "zones": [
+            {
+              "id": "respublika-buryatiya-zone-1",
+              "name": "Прибайкалье",
+              "places": [
+                "Северобайкальск",
+                "Бабушкин"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-buryatiya-zone-2",
+              "name": "Селенгинская степь",
+              "places": [
+                "Улан-Удэ",
+                "Гусиноозёрск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-buryatiya-zone-3",
+              "name": "горные районы",
+              "places": [
+                "Закаменск",
+                "Кяхта"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-buryatiya-zone-4",
+              "name": "северная зона",
+              "places": [
+                "Таксимо"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/respublika-buryatiya.html",
+          "status": "draft"
+        },
+        {
+          "id": "respublika-saha-yakutiya",
+          "name": "Республика Саха — Якутия",
+          "zones": [
+            {
+              "id": "respublika-saha-yakutiya-zone-1",
+              "name": "арктическая зона",
+              "places": [
+                "Тикси",
+                "Черский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-saha-yakutiya-zone-2",
+              "name": "северная тайга",
+              "places": [
+                "Верхоянск",
+                "Среднеколымск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-saha-yakutiya-zone-3",
+              "name": "центральная Якутия",
+              "places": [
+                "Якутск",
+                "Намцы"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "respublika-saha-yakutiya-zone-4",
+              "name": "южная зона",
+              "places": [
+                "Нерюнгри",
+                "Алдан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/respublika-saha-yakutiya.html",
+          "status": "draft"
+        },
+        {
+          "id": "zabaykalskiy-kray",
+          "name": "Забайкальский край",
+          "zones": [
+            {
+              "id": "zabaykalskiy-kray-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Петровск-Забайкальский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "zabaykalskiy-kray-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Чита",
+                "Карымское"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "zabaykalskiy-kray-zone-3",
+              "name": "южная степь",
+              "places": [
+                "Борзя",
+                "Краснокаменск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "zabaykalskiy-kray-zone-4",
+              "name": "горные районы",
+              "places": [
+                "Могоча",
+                "Хилок"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/zabaykalskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "kamchatskiy-kray",
+          "name": "Камчатский край",
+          "zones": [
+            {
+              "id": "kamchatskiy-kray-zone-1",
+              "name": "побережье",
+              "places": [
+                "Петропавловск-Камчатский",
+                "Елизово"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kamchatskiy-kray-zone-2",
+              "name": "центральная долина",
+              "places": [
+                "Мильково"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kamchatskiy-kray-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Палана",
+                "Тигиль"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "kamchatskiy-kray-zone-4",
+              "name": "горные районы",
+              "places": [
+                "Эссо"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/kamchatskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "primorskiy-kray",
+          "name": "Приморский край",
+          "zones": [
+            {
+              "id": "primorskiy-kray-zone-1",
+              "name": "южное Приморье",
+              "places": [
+                "Владивосток",
+                "Уссурийск",
+                "Артём"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "primorskiy-kray-zone-2",
+              "name": "побережье",
+              "places": [
+                "Находка",
+                "Ливадия"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "primorskiy-kray-zone-3",
+              "name": "центральная зона",
+              "places": [
+                "Спасск-Дальний",
+                "Арсеньев"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "primorskiy-kray-zone-4",
+              "name": "северная зона",
+              "places": [
+                "Дальнереченск",
+                "Лесозаводск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "primorskiy-kray-zone-5",
+              "name": "горные районы",
+              "places": [
+                "Чугуевка",
+                "Кавалерово"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/primorskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "habarovskiy-kray",
+          "name": "Хабаровский край",
+          "zones": [
+            {
+              "id": "habarovskiy-kray-zone-1",
+              "name": "южная Амурская долина",
+              "places": [
+                "Хабаровск",
+                "Вяземский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "habarovskiy-kray-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Комсомольск-на-Амуре",
+                "Амурск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "habarovskiy-kray-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Николаевск-на-Амуре"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "habarovskiy-kray-zone-4",
+              "name": "побережье",
+              "places": [
+                "Советская Гавань",
+                "Ванино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/habarovskiy-kray.html",
+          "status": "draft"
+        },
+        {
+          "id": "amurskaya-oblast",
+          "name": "Амурская область",
+          "zones": [
+            {
+              "id": "amurskaya-oblast-zone-1",
+              "name": "северная зона",
+              "places": [
+                "Тында",
+                "Зея"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "amurskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Свободный",
+                "Шимановск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "amurskaya-oblast-zone-3",
+              "name": "южная Амурская долина",
+              "places": [
+                "Благовещенск",
+                "Белогорск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/amurskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "magadanskaya-oblast",
+          "name": "Магаданская область",
+          "zones": [
+            {
+              "id": "magadanskaya-oblast-zone-1",
+              "name": "побережье",
+              "places": [
+                "Магадан",
+                "Ола"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "magadanskaya-oblast-zone-2",
+              "name": "внутренние долины",
+              "places": [
+                "Сусуман",
+                "Ягодное"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "magadanskaya-oblast-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Омсукчан",
+                "Среднекан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/magadanskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "sahalinskaya-oblast",
+          "name": "Сахалинская область",
+          "zones": [
+            {
+              "id": "sahalinskaya-oblast-zone-1",
+              "name": "южная островная зона",
+              "places": [
+                "Южно-Сахалинск",
+                "Корсаков"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sahalinskaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Поронайск",
+                "Макаров"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sahalinskaya-oblast-zone-3",
+              "name": "северная зона",
+              "places": [
+                "Оха",
+                "Александровск-Сахалинский"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "sahalinskaya-oblast-zone-4",
+              "name": "прибрежная зона",
+              "places": [
+                "Холмск",
+                "Невельск"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/sahalinskaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "evreyskaya-avtonomnaya-oblast",
+          "name": "Еврейская автономная область",
+          "zones": [
+            {
+              "id": "evreyskaya-avtonomnaya-oblast-zone-1",
+              "name": "западная зона",
+              "places": [
+                "Облучье"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "evreyskaya-avtonomnaya-oblast-zone-2",
+              "name": "центральная зона",
+              "places": [
+                "Биробиджан"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "evreyskaya-avtonomnaya-oblast-zone-3",
+              "name": "восточная Амурская зона",
+              "places": [
+                "Ленинское",
+                "Амурзет"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/evreyskaya-avtonomnaya-oblast.html",
+          "status": "draft"
+        },
+        {
+          "id": "chukotskiy-avtonomnyy-okrug",
+          "name": "Чукотский автономный округ",
+          "zones": [
+            {
+              "id": "chukotskiy-avtonomnyy-okrug-zone-1",
+              "name": "арктическое побережье",
+              "places": [
+                "Певек",
+                "Мыс Шмидта"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chukotskiy-avtonomnyy-okrug-zone-2",
+              "name": "континентальная зона",
+              "places": [
+                "Билибино"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            },
+            {
+              "id": "chukotskiy-avtonomnyy-okrug-zone-3",
+              "name": "юго-восточное побережье",
+              "places": [
+                "Анадырь",
+                "Провидения"
+              ],
+              "crops": {
+                "reliable": [],
+                "possible": [],
+                "cover": [],
+                "risky": [],
+                "notRecommended": []
+              },
+              "summary": "Каркас зоны создан. Культуры и точные рекомендации будут добавлены позже."
+            }
+          ],
+          "federalDistrictId": "dfo",
+          "page": "regions/chukotskiy-avtonomnyy-okrug.html",
+          "status": "draft"
+        }
+      ]
+    }
+  ]
+}
