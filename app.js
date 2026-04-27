@@ -1,4 +1,4 @@
-/* v106: locality picker + detailed CFO regions */
+/* v107: locality picker + detailed CFO regions */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
