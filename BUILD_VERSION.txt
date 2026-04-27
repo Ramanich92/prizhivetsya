@@ -1,5 +1,0 @@
-v77_visual_homepage
-- Main page updated to botanical visual concept
-- Minimalist sprout wordmark selected
-- Header width aligned with content
-- Footer simplified

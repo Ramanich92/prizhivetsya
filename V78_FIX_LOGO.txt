@@ -1,0 +1,1 @@
+Fixed header/footer logo: removed visual gap before .ру and aligned with approved minimal logo direction.
