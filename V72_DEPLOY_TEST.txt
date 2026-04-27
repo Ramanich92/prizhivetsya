@@ -1,0 +1,7 @@
+V72_DEPLOY_TEST_OK
+version: v72
+base: stable public line
+scope: privacy, contacts, feedback, legal public copy cleanup
+regions: 10
+subregions: 42
+region_crop_pairs: 120

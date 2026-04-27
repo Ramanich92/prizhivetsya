@@ -1,0 +1,29 @@
+{
+  "version": "v72",
+  "build": "owner-action-ready-content-baseline",
+  "date": "2026-04-27",
+  "status": "stable-public-baseline",
+  "regions": 10,
+  "subregions": 42,
+  "region_crop_guides": 120,
+  "expected_checks": [
+    "V72_DEPLOY_TEST.txt",
+    "version.html",
+    "deployment-check.html",
+    "data/site-version.json",
+    "index.html",
+    "purchase.html",
+    "soil.html",
+    "contacts.html",
+    "privacy.html",
+    "terms.html"
+  ],
+  "owner_actions_remaining": [
+    "choose production domain",
+    "connect permanent project email",
+    "add legal owner details only if publication model requires them",
+    "replace GitHub Pages canonicals with production domain after domain is ready"
+  ],
+  "label": "v72 legal/privacy public copy",
+  "region_crop_pairs": 120
+}
