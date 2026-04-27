@@ -1,1 +1,1 @@
-v82-belogorod-clean-region-page
+v83-belogorod-separate-zones
