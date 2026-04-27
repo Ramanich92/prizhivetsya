@@ -1,1 +1,1 @@
-v104-yaroslavl-region
+v105-yaroslavl-hero-fix
