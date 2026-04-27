@@ -1,0 +1,1 @@
+Cleaned technical/design wording from Belgorod north forest-steppe page, removed helper nav/tags/notes, kept user-facing copy only.

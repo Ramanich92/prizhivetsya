@@ -1395,3 +1395,26 @@ a{color:inherit}
 @media(max-width:720px){
   .belgorod-v93-hero{margin-bottom:-22px}
 }
+
+
+/* --- v96: remove technical helper text and leftover helper UI --- */
+.clean-tags,
+.clean-notes,
+.zone-page-nav{
+  display:none !important;
+}
+.clean-table-head h2{
+  margin-top:0;
+}
+.belgorod-v93-content{
+  padding-bottom:26px;
+}
+.belgorod-v93-hero{
+  margin-bottom:-52px;
+}
+@media(max-width:1180px){
+  .belgorod-v93-hero{margin-bottom:-34px}
+}
+@media(max-width:720px){
+  .belgorod-v93-hero{margin-bottom:-22px}
+}
