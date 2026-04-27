@@ -1,0 +1,1 @@
+Belgorod north forest-steppe hero now uses a real IMG element for the generated background to avoid CSS/background path issues. Added v87 marker.

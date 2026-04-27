@@ -1,1 +1,1 @@
-v86-belogorod-force-visual-cache-bust
+v87-belogorod-img-background-hardwired
