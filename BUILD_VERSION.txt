@@ -1,2 +1,3 @@
-v74-region-picker-only
-2026-04-27: homepage concept reset; only locality/region selection on index.html.
+v75-regions-placeholders-only
+Дата: 2026-04-27
+Сборка: главная + 83 региональных плейсхолдера; старые разделы удалены.

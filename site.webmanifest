@@ -6,7 +6,7 @@
   "display": "standalone",
   "background_color": "#f8f5ef",
   "theme_color": "#416b43",
-  "description": "Региональный справочник по плодовым культурам, участку, почве, сортам и покупке саженцев.",
+  "description": "Каркас выбора региона для проекта «Приживётся».",
   "icons": [
     {
       "src": "assets/icon-192.png",

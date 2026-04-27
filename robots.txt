@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /data/
-Disallow: /version.html
-Disallow: /deployment-check.html
-Disallow: /V72_DEPLOY_TEST.txt
-Disallow: /*.md$
 Sitemap: https://ramanich92.github.io/prizhivetsya/sitemap.xml

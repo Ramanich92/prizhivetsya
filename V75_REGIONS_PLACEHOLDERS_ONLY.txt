@@ -1,0 +1,5 @@
+v75-regions-placeholders-only
+
+Сохранены верх и низ проекта: header и footer.
+Удалены старые разделы сайта.
+Оставлены index.html и плейсхолдеры regions/*.html для 83 субъектов РФ из data/location-data.json.
