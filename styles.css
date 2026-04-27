@@ -875,3 +875,46 @@ a{color:inherit}
     linear-gradient(90deg, rgba(255,254,250,.88) 0%, rgba(255,254,250,.70) 42%, rgba(255,254,250,.18) 100%),
     linear-gradient(180deg, rgba(255,254,250,.04) 0%, rgba(255,254,250,.36) 100%);
 }
+
+
+/* --- v88: inline image hero; cannot fail due to asset path/cache --- */
+.build-chip{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  z-index:9999;
+  border:1px solid #d7e5dc;
+  background:rgba(255,254,250,.88);
+  color:#5a6c61;
+  border-radius:999px;
+  padding:5px 9px;
+  font-size:11px;
+  font-weight:900;
+  pointer-events:none;
+}
+.belgorod-photo-img{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  display:block !important;
+  transform:scale(1.01);
+}
+.belgorod-photo-bg,
+.belgorod-landmark-bg{display:none !important;}
+.belgorod-landmark-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:
+    linear-gradient(90deg, rgba(255,254,250,.86) 0%, rgba(255,254,250,.66) 42%, rgba(255,254,250,.12) 100%),
+    linear-gradient(180deg, rgba(255,254,250,.02) 0%, rgba(255,254,250,.30) 100%);
+}
+.clean-filters{
+  grid-template-columns:minmax(260px,1.35fr) repeat(3,minmax(160px,.5fr));
+}
+@media(max-width:1180px){.clean-filters{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.clean-filters{grid-template-columns:1fr}}

@@ -1,0 +1,1 @@
+Belgorod north forest-steppe background is embedded directly as a base64 data URI in the HTML. If v88 marker is visible, the background cannot be missing due to file path/cache.
