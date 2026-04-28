@@ -1,8 +1,8 @@
 {
-  "version": "v130-no-assets-cultures",
+  "version": "v132-no-assets-calendar",
   "updated": "2026-04-28",
-  "status": "all-regions-expanded-no-assets-culture-pages-build",
-  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; добавлены паспорта зон, сравнение зон региона, пояснение рекомендаций и fallback для сборки без assets. Добавлен раздел страниц отдельных культур с агрегированными рекомендациями по зонам.",
+  "status": "all-regions-expanded-no-assets-culture-pages-planner-calendar-build",
+  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; добавлены паспорта зон, сравнение зон региона, пояснение рекомендаций, fallback без assets, страницы культур, подбор растений и календарь работ по природно-садовым зонам.",
   "subjectCount": 83,
   "zoneCount": 283,
   "districts": [
@@ -16100,5 +16100,8 @@
   ],
   "searchPlaceAliasCount": 1334,
   "searchPlaceAliasMinimumPerSubject": 16,
-  "cultureCount": 61
+  "cultureCount": 61,
+  "plannerRecordCount": 27216,
+  "calendarZoneCount": 283,
+  "calendarTaskCount": 8816
 }
