@@ -233,6 +233,7 @@
     var count = root.querySelector('[data-culture-count]');
     var empty = root.querySelector('[data-culture-empty]');
     var chips = Array.prototype.slice.call(root.querySelectorAll('[data-quick-recommendation]'));
+    var itemLabel = root.getAttribute('data-item-label') || 'культур';
 
     function uniqueValues(key){
       var values = [];
@@ -348,15 +349,15 @@
           bindVarietyToggles(body);
           totalShown += rows.length;
           var sectionCounter = root.querySelector('[data-culture-section-count="'+key+'"]');
-          if(sectionCounter) sectionCounter.textContent = 'Показано ' + rows.length + ' из ' + totalRows + ' культур';
+          if(sectionCounter) sectionCounter.textContent = 'Показано ' + rows.length + ' из ' + totalRows + ' ' + itemLabel;
           if(wrap) wrap.hidden = rows.length === 0 && list.length !== 0;
         });
-        if(count) count.textContent = 'Показано ' + totalShown + ' из ' + items.length + ' культур';
+        if(count) count.textContent = 'Показано ' + totalShown + ' из ' + items.length + ' ' + itemLabel;
         if(empty) empty.hidden = totalShown !== 0;
       }else if(singleBody){
         singleBody.innerHTML = list.map(function(item, index){ return rowHtml(item, index, 'all'); }).join('');
         bindVarietyToggles(singleBody);
-        if(count) count.textContent = 'Показано ' + list.length + ' из ' + items.length + ' культур';
+        if(count) count.textContent = 'Показано ' + list.length + ' из ' + items.length + ' ' + itemLabel;
         if(empty) empty.hidden = list.length !== 0;
       }
       updateQuickState();
