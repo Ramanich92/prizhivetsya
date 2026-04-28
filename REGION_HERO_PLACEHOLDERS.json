@@ -1,0 +1,2564 @@
+[
+  {
+    "page": "regions/altayskiy-kray-centralnaya-zona.html",
+    "asset": "assets/altayskiy-kray-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/altayskiy-kray-predgorya.html",
+    "asset": "assets/altayskiy-kray-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/altayskiy-kray-severnaya-lesostep.html",
+    "asset": "assets/altayskiy-kray-severnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/altayskiy-kray-yuzhnaya-suhaya-step.html",
+    "asset": "assets/altayskiy-kray-yuzhnaya-suhaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/altayskiy-kray.html",
+    "asset": "assets/altayskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/amurskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/amurskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/amurskaya-oblast-severnaya-zona.html",
+    "asset": "assets/amurskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/amurskaya-oblast-yuzhnaya-amurskaya-dolina.html",
+    "asset": "assets/amurskaya-oblast-yuzhnaya-amurskaya-dolina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/amurskaya-oblast.html",
+    "asset": "assets/amurskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/arhangelskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/arhangelskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/arhangelskaya-oblast-poberezhe-belogo-morya.html",
+    "asset": "assets/arhangelskaya-oblast-poberezhe-belogo-morya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/arhangelskaya-oblast-severnaya-zona.html",
+    "asset": "assets/arhangelskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/arhangelskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/arhangelskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/arhangelskaya-oblast.html",
+    "asset": "assets/arhangelskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/astrahanskaya-oblast-delta-volgi.html",
+    "asset": "assets/astrahanskaya-oblast-delta-volgi-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/astrahanskaya-oblast-polupustynnaya-zona.html",
+    "asset": "assets/astrahanskaya-oblast-polupustynnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/astrahanskaya-oblast-volgo-ahtubinskaya-poyma.html",
+    "asset": "assets/astrahanskaya-oblast-volgo-ahtubinskaya-poyma-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/astrahanskaya-oblast.html",
+    "asset": "assets/astrahanskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/bashkortostan-gornyy-ural.html",
+    "asset": "assets/bashkortostan-gornyy-ural-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bashkortostan-predurale.html",
+    "asset": "assets/bashkortostan-predurale-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bashkortostan-zapadnaya-zona.html",
+    "asset": "assets/bashkortostan-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bashkortostan-zauralskaya-step.html",
+    "asset": "assets/bashkortostan-zauralskaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bashkortostan.html",
+    "asset": "assets/bashkortostan-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/belgorodskaya-oblast-central.html",
+    "asset": "assets/belgorodskaya-oblast-central-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/belgorodskaya-oblast-north-forest-steppe.html",
+    "asset": "assets/belgorodskaya-oblast-north-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/belgorodskaya-oblast-south-steppe.html",
+    "asset": "assets/belgorodskaya-oblast-south-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/belgorodskaya-oblast.html",
+    "asset": "assets/belgorodskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/bryanskaya-oblast-central-desna.html",
+    "asset": "assets/bryanskaya-oblast-central-desna-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bryanskaya-oblast-northwest-polesye.html",
+    "asset": "assets/bryanskaya-oblast-northwest-polesye-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bryanskaya-oblast-southeast-forest-steppe.html",
+    "asset": "assets/bryanskaya-oblast-southeast-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/bryanskaya-oblast.html",
+    "asset": "assets/bryanskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/chechenskaya-respublika-gornaya-zona.html",
+    "asset": "assets/chechenskaya-respublika-gornaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chechenskaya-respublika-predgorya.html",
+    "asset": "assets/chechenskaya-respublika-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chechenskaya-respublika-tersko-sunzhenskaya-ravnina.html",
+    "asset": "assets/chechenskaya-respublika-tersko-sunzhenskaya-ravnina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chechenskaya-respublika.html",
+    "asset": "assets/chechenskaya-respublika-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/chelyabinskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/chelyabinskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chelyabinskaya-oblast-gornyy-zapad.html",
+    "asset": "assets/chelyabinskaya-oblast-gornyy-zapad-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chelyabinskaya-oblast-severnaya-lesostep.html",
+    "asset": "assets/chelyabinskaya-oblast-severnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chelyabinskaya-oblast-yuzhnaya-step.html",
+    "asset": "assets/chelyabinskaya-oblast-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chelyabinskaya-oblast.html",
+    "asset": "assets/chelyabinskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/chukotskiy-avtonomnyy-okrug-arkticheskoe-poberezhe.html",
+    "asset": "assets/chukotskiy-avtonomnyy-okrug-arkticheskoe-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chukotskiy-avtonomnyy-okrug-kontinentalnaya-zona.html",
+    "asset": "assets/chukotskiy-avtonomnyy-okrug-kontinentalnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chukotskiy-avtonomnyy-okrug-yugo-vostochnoe-poberezhe.html",
+    "asset": "assets/chukotskiy-avtonomnyy-okrug-yugo-vostochnoe-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chukotskiy-avtonomnyy-okrug.html",
+    "asset": "assets/chukotskiy-avtonomnyy-okrug-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/chuvashskaya-respublika-centralnaya-zona.html",
+    "asset": "assets/chuvashskaya-respublika-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chuvashskaya-respublika-severnaya-zona.html",
+    "asset": "assets/chuvashskaya-respublika-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chuvashskaya-respublika-yuzhnoe-prisure.html",
+    "asset": "assets/chuvashskaya-respublika-yuzhnoe-prisure-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/chuvashskaya-respublika.html",
+    "asset": "assets/chuvashskaya-respublika-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/evreyskaya-avtonomnaya-oblast-centralnaya-zona.html",
+    "asset": "assets/evreyskaya-avtonomnaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/evreyskaya-avtonomnaya-oblast-vostochnaya-amurskaya-zona.html",
+    "asset": "assets/evreyskaya-avtonomnaya-oblast-vostochnaya-amurskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/evreyskaya-avtonomnaya-oblast-zapadnaya-zona.html",
+    "asset": "assets/evreyskaya-avtonomnaya-oblast-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/evreyskaya-avtonomnaya-oblast.html",
+    "asset": "assets/evreyskaya-avtonomnaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/habarovskiy-kray-centralnaya-zona.html",
+    "asset": "assets/habarovskiy-kray-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/habarovskiy-kray-poberezhe.html",
+    "asset": "assets/habarovskiy-kray-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/habarovskiy-kray-severnaya-zona.html",
+    "asset": "assets/habarovskiy-kray-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/habarovskiy-kray-yuzhnaya-amurskaya-dolina.html",
+    "asset": "assets/habarovskiy-kray-yuzhnaya-amurskaya-dolina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/habarovskiy-kray.html",
+    "asset": "assets/habarovskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/hanty-mansiyskiy-avtonomnyy-okrug-yugra-centralnaya-taezhnaya-zona.html",
+    "asset": "assets/hanty-mansiyskiy-avtonomnyy-okrug-yugra-centralnaya-taezhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/hanty-mansiyskiy-avtonomnyy-okrug-yugra-severnaya-zona.html",
+    "asset": "assets/hanty-mansiyskiy-avtonomnyy-okrug-yugra-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/hanty-mansiyskiy-avtonomnyy-okrug-yugra-yuzhnaya-zona.html",
+    "asset": "assets/hanty-mansiyskiy-avtonomnyy-okrug-yugra-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/hanty-mansiyskiy-avtonomnyy-okrug-yugra.html",
+    "asset": "assets/hanty-mansiyskiy-avtonomnyy-okrug-yugra-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/irkutskaya-oblast-baykalskaya-zona.html",
+    "asset": "assets/irkutskaya-oblast-baykalskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/irkutskaya-oblast-priangare.html",
+    "asset": "assets/irkutskaya-oblast-priangare-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/irkutskaya-oblast-severnaya-zona.html",
+    "asset": "assets/irkutskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/irkutskaya-oblast-yuzhnaya-lesostep.html",
+    "asset": "assets/irkutskaya-oblast-yuzhnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/irkutskaya-oblast.html",
+    "asset": "assets/irkutskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/ivanovskaya-oblast-central-volga-textile.html",
+    "asset": "assets/ivanovskaya-oblast-central-volga-textile-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ivanovskaya-oblast-northwest-forests.html",
+    "asset": "assets/ivanovskaya-oblast-northwest-forests-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ivanovskaya-oblast-southeast-nerl.html",
+    "asset": "assets/ivanovskaya-oblast-southeast-nerl-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ivanovskaya-oblast.html",
+    "asset": "assets/ivanovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kabardino-balkarskaya-respublika-gornye-doliny.html",
+    "asset": "assets/kabardino-balkarskaya-respublika-gornye-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kabardino-balkarskaya-respublika-predgorya.html",
+    "asset": "assets/kabardino-balkarskaya-respublika-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kabardino-balkarskaya-respublika-stepnaya-ravnina.html",
+    "asset": "assets/kabardino-balkarskaya-respublika-stepnaya-ravnina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kabardino-balkarskaya-respublika-vysokogore.html",
+    "asset": "assets/kabardino-balkarskaya-respublika-vysokogore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kabardino-balkarskaya-respublika.html",
+    "asset": "assets/kabardino-balkarskaya-respublika-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kaliningradskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/kaliningradskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kaliningradskaya-oblast-morskoe-poberezhe.html",
+    "asset": "assets/kaliningradskaya-oblast-morskoe-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kaliningradskaya-oblast-vostochnaya-zona.html",
+    "asset": "assets/kaliningradskaya-oblast-vostochnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kaliningradskaya-oblast.html",
+    "asset": "assets/kaliningradskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kaluzhskaya-oblast-central-kaluga.html",
+    "asset": "assets/kaluzhskaya-oblast-central-kaluga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kaluzhskaya-oblast-northeast-oka.html",
+    "asset": "assets/kaluzhskaya-oblast-northeast-oka-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kaluzhskaya-oblast-south-ugra.html",
+    "asset": "assets/kaluzhskaya-oblast-south-ugra-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kaluzhskaya-oblast.html",
+    "asset": "assets/kaluzhskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kamchatskiy-kray-centralnaya-dolina.html",
+    "asset": "assets/kamchatskiy-kray-centralnaya-dolina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kamchatskiy-kray-gornye-rayony.html",
+    "asset": "assets/kamchatskiy-kray-gornye-rayony-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kamchatskiy-kray-poberezhe.html",
+    "asset": "assets/kamchatskiy-kray-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kamchatskiy-kray-severnaya-zona.html",
+    "asset": "assets/kamchatskiy-kray-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kamchatskiy-kray.html",
+    "asset": "assets/kamchatskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/karachaevo-cherkesskaya-respublika-gornye-doliny.html",
+    "asset": "assets/karachaevo-cherkesskaya-respublika-gornye-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/karachaevo-cherkesskaya-respublika-predgorya.html",
+    "asset": "assets/karachaevo-cherkesskaya-respublika-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/karachaevo-cherkesskaya-respublika-ravninnaya-zona.html",
+    "asset": "assets/karachaevo-cherkesskaya-respublika-ravninnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/karachaevo-cherkesskaya-respublika-vysokogore.html",
+    "asset": "assets/karachaevo-cherkesskaya-respublika-vysokogore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/karachaevo-cherkesskaya-respublika.html",
+    "asset": "assets/karachaevo-cherkesskaya-respublika-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kemerovskaya-oblast-kuzbass-gornaya-shoriya.html",
+    "asset": "assets/kemerovskaya-oblast-kuzbass-gornaya-shoriya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kemerovskaya-oblast-kuzbass-kuzneckaya-kotlovina.html",
+    "asset": "assets/kemerovskaya-oblast-kuzbass-kuzneckaya-kotlovina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kemerovskaya-oblast-kuzbass-kuzneckiy-alatau.html",
+    "asset": "assets/kemerovskaya-oblast-kuzbass-kuzneckiy-alatau-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kemerovskaya-oblast-kuzbass-severnaya-zona.html",
+    "asset": "assets/kemerovskaya-oblast-kuzbass-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kemerovskaya-oblast-kuzbass.html",
+    "asset": "assets/kemerovskaya-oblast-kuzbass-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kirovskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/kirovskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kirovskaya-oblast-severnaya-zona.html",
+    "asset": "assets/kirovskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kirovskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/kirovskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kirovskaya-oblast.html",
+    "asset": "assets/kirovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kostromskaya-oblast-central-volga.html",
+    "asset": "assets/kostromskaya-oblast-central-volga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kostromskaya-oblast-northeast-taiga.html",
+    "asset": "assets/kostromskaya-oblast-northeast-taiga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kostromskaya-oblast-southwest-forests.html",
+    "asset": "assets/kostromskaya-oblast-southwest-forests-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kostromskaya-oblast.html",
+    "asset": "assets/kostromskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/krasnodarskiy-kray-azovo-tamanskaya-zona.html",
+    "asset": "assets/krasnodarskiy-kray-azovo-tamanskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnodarskiy-kray-chernomorskoe-poberezhe.html",
+    "asset": "assets/krasnodarskiy-kray-chernomorskoe-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnodarskiy-kray-predgorya-kavkaza.html",
+    "asset": "assets/krasnodarskiy-kray-predgorya-kavkaza-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnodarskiy-kray-prikubanskaya-ravnina.html",
+    "asset": "assets/krasnodarskiy-kray-prikubanskaya-ravnina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnodarskiy-kray-severnaya-stepnaya-zona.html",
+    "asset": "assets/krasnodarskiy-kray-severnaya-stepnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnodarskiy-kray.html",
+    "asset": "assets/krasnodarskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/krasnoyarskiy-kray-centralnaya-tayga.html",
+    "asset": "assets/krasnoyarskiy-kray-centralnaya-tayga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnoyarskiy-kray-eniseyskaya-dolina.html",
+    "asset": "assets/krasnoyarskiy-kray-eniseyskaya-dolina-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnoyarskiy-kray-severnaya-arkticheskaya-zona.html",
+    "asset": "assets/krasnoyarskiy-kray-severnaya-arkticheskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnoyarskiy-kray-yuzhnaya-lesostep.html",
+    "asset": "assets/krasnoyarskiy-kray-yuzhnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/krasnoyarskiy-kray.html",
+    "asset": "assets/krasnoyarskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kurganskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/kurganskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kurganskaya-oblast-severnaya-lesostep.html",
+    "asset": "assets/kurganskaya-oblast-severnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kurganskaya-oblast-yuzhnaya-step.html",
+    "asset": "assets/kurganskaya-oblast-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kurganskaya-oblast.html",
+    "asset": "assets/kurganskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/kurskaya-oblast-central-forest-steppe.html",
+    "asset": "assets/kurskaya-oblast-central-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kurskaya-oblast-northwest-forest-steppe.html",
+    "asset": "assets/kurskaya-oblast-northwest-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kurskaya-oblast-south-black-earth.html",
+    "asset": "assets/kurskaya-oblast-south-black-earth-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/kurskaya-oblast.html",
+    "asset": "assets/kurskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/leningradskaya-oblast-poberezhe-finskogo-zaliva.html",
+    "asset": "assets/leningradskaya-oblast-poberezhe-finskogo-zaliva-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/leningradskaya-oblast-severnaya-zona.html",
+    "asset": "assets/leningradskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/leningradskaya-oblast-vostochnaya-zona.html",
+    "asset": "assets/leningradskaya-oblast-vostochnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/leningradskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/leningradskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/leningradskaya-oblast.html",
+    "asset": "assets/leningradskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/lipetskaya-oblast-central-black-earth.html",
+    "asset": "assets/lipetskaya-oblast-central-black-earth-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/lipetskaya-oblast-north-forest-steppe.html",
+    "asset": "assets/lipetskaya-oblast-north-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/lipetskaya-oblast-south-steppe.html",
+    "asset": "assets/lipetskaya-oblast-south-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/lipetskaya-oblast.html",
+    "asset": "assets/lipetskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/magadanskaya-oblast-poberezhe.html",
+    "asset": "assets/magadanskaya-oblast-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/magadanskaya-oblast-severnaya-zona.html",
+    "asset": "assets/magadanskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/magadanskaya-oblast-vnutrennie-doliny.html",
+    "asset": "assets/magadanskaya-oblast-vnutrennie-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/magadanskaya-oblast.html",
+    "asset": "assets/magadanskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/moskovskaya-oblast-central-belt.html",
+    "asset": "assets/moskovskaya-oblast-central-belt-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/moskovskaya-oblast-east-sands.html",
+    "asset": "assets/moskovskaya-oblast-east-sands-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/moskovskaya-oblast-northwest.html",
+    "asset": "assets/moskovskaya-oblast-northwest-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/moskovskaya-oblast-south.html",
+    "asset": "assets/moskovskaya-oblast-south-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/moskovskaya-oblast.html",
+    "asset": "assets/moskovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/moskva-new-moscow-garden-belt.html",
+    "asset": "assets/moskva-new-moscow-garden-belt-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/moskva-urban-zone.html",
+    "asset": "assets/moskva-urban-zone-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/moskva.html",
+    "asset": "assets/moskva-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/murmanskaya-oblast-centralnaya-kolskaya-zona.html",
+    "asset": "assets/murmanskaya-oblast-centralnaya-kolskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/murmanskaya-oblast-poberezhe.html",
+    "asset": "assets/murmanskaya-oblast-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/murmanskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/murmanskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/murmanskaya-oblast.html",
+    "asset": "assets/murmanskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/nenetskiy-avtonomnyy-okrug-pribrezhnaya-zona.html",
+    "asset": "assets/nenetskiy-avtonomnyy-okrug-pribrezhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/nenetskiy-avtonomnyy-okrug-tundrovaya-zona.html",
+    "asset": "assets/nenetskiy-avtonomnyy-okrug-tundrovaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/nenetskiy-avtonomnyy-okrug-yuzhnaya-lesotundra.html",
+    "asset": "assets/nenetskiy-avtonomnyy-okrug-yuzhnaya-lesotundra-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/nenetskiy-avtonomnyy-okrug.html",
+    "asset": "assets/nenetskiy-avtonomnyy-okrug-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/nizhegorodskaya-oblast-pravoberezhe.html",
+    "asset": "assets/nizhegorodskaya-oblast-pravoberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/nizhegorodskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/nizhegorodskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/nizhegorodskaya-oblast-zavolzhe.html",
+    "asset": "assets/nizhegorodskaya-oblast-zavolzhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/nizhegorodskaya-oblast.html",
+    "asset": "assets/nizhegorodskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/novgorodskaya-oblast-priilmene.html",
+    "asset": "assets/novgorodskaya-oblast-priilmene-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/novgorodskaya-oblast-valdayskaya-zona.html",
+    "asset": "assets/novgorodskaya-oblast-valdayskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/novgorodskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/novgorodskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/novgorodskaya-oblast.html",
+    "asset": "assets/novgorodskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/novosibirskaya-oblast-centralnaya-lesostep.html",
+    "asset": "assets/novosibirskaya-oblast-centralnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/novosibirskaya-oblast-severnaya-lesnaya-zona.html",
+    "asset": "assets/novosibirskaya-oblast-severnaya-lesnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/novosibirskaya-oblast-yuzhnaya-step.html",
+    "asset": "assets/novosibirskaya-oblast-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/novosibirskaya-oblast.html",
+    "asset": "assets/novosibirskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/omskaya-oblast-centralnaya-lesostep.html",
+    "asset": "assets/omskaya-oblast-centralnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/omskaya-oblast-severnaya-lesnaya-zona.html",
+    "asset": "assets/omskaya-oblast-severnaya-lesnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/omskaya-oblast-yuzhnaya-step.html",
+    "asset": "assets/omskaya-oblast-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/omskaya-oblast.html",
+    "asset": "assets/omskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/orenburgskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/orenburgskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orenburgskaya-oblast-vostochnaya-zona.html",
+    "asset": "assets/orenburgskaya-oblast-vostochnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orenburgskaya-oblast-yuzhnaya-step.html",
+    "asset": "assets/orenburgskaya-oblast-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orenburgskaya-oblast-zapadnaya-zona.html",
+    "asset": "assets/orenburgskaya-oblast-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orenburgskaya-oblast.html",
+    "asset": "assets/orenburgskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/orlovskaya-oblast-central-forest-steppe.html",
+    "asset": "assets/orlovskaya-oblast-central-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orlovskaya-oblast-northwest.html",
+    "asset": "assets/orlovskaya-oblast-northwest-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orlovskaya-oblast-southeast-black-earth.html",
+    "asset": "assets/orlovskaya-oblast-southeast-black-earth-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/orlovskaya-oblast.html",
+    "asset": "assets/orlovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/penzenskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/penzenskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/penzenskaya-oblast-severnaya-zona.html",
+    "asset": "assets/penzenskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/penzenskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/penzenskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/penzenskaya-oblast.html",
+    "asset": "assets/penzenskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/permskiy-kray-centralnaya-zona.html",
+    "asset": "assets/permskiy-kray-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/permskiy-kray-gornyy-vostok.html",
+    "asset": "assets/permskiy-kray-gornyy-vostok-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/permskiy-kray-severnaya-tayga.html",
+    "asset": "assets/permskiy-kray-severnaya-tayga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/permskiy-kray-yuzhnaya-zona.html",
+    "asset": "assets/permskiy-kray-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/permskiy-kray.html",
+    "asset": "assets/permskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/primorskiy-kray-centralnaya-zona.html",
+    "asset": "assets/primorskiy-kray-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/primorskiy-kray-gornye-rayony.html",
+    "asset": "assets/primorskiy-kray-gornye-rayony-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/primorskiy-kray-poberezhe.html",
+    "asset": "assets/primorskiy-kray-poberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/primorskiy-kray-severnaya-zona.html",
+    "asset": "assets/primorskiy-kray-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/primorskiy-kray-yuzhnoe-primore.html",
+    "asset": "assets/primorskiy-kray-yuzhnoe-primore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/primorskiy-kray.html",
+    "asset": "assets/primorskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/pskovskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/pskovskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/pskovskaya-oblast-severnaya-zona.html",
+    "asset": "assets/pskovskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/pskovskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/pskovskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/pskovskaya-oblast.html",
+    "asset": "assets/pskovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-adygeya-gornaya-zona.html",
+    "asset": "assets/respublika-adygeya-gornaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-adygeya-predgorya.html",
+    "asset": "assets/respublika-adygeya-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-adygeya-ravninnaya-zona.html",
+    "asset": "assets/respublika-adygeya-ravninnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-adygeya.html",
+    "asset": "assets/respublika-adygeya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-altay-centralnye-doliny.html",
+    "asset": "assets/respublika-altay-centralnye-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-altay-gornaya-zona.html",
+    "asset": "assets/respublika-altay-gornaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-altay-severnye-predgorya.html",
+    "asset": "assets/respublika-altay-severnye-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-altay-vysokogore.html",
+    "asset": "assets/respublika-altay-vysokogore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-altay.html",
+    "asset": "assets/respublika-altay-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-buryatiya-gornye-rayony.html",
+    "asset": "assets/respublika-buryatiya-gornye-rayony-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-buryatiya-pribaykale.html",
+    "asset": "assets/respublika-buryatiya-pribaykale-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-buryatiya-selenginskaya-step.html",
+    "asset": "assets/respublika-buryatiya-selenginskaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-buryatiya-severnaya-zona.html",
+    "asset": "assets/respublika-buryatiya-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-buryatiya.html",
+    "asset": "assets/respublika-buryatiya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-dagestan-gornye-doliny.html",
+    "asset": "assets/respublika-dagestan-gornye-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-dagestan-predgorya.html",
+    "asset": "assets/respublika-dagestan-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-dagestan-primorskaya-nizmennost.html",
+    "asset": "assets/respublika-dagestan-primorskaya-nizmennost-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-dagestan-vysokogore.html",
+    "asset": "assets/respublika-dagestan-vysokogore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-dagestan.html",
+    "asset": "assets/respublika-dagestan-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-hakasiya-gorno-taezhnaya-zona.html",
+    "asset": "assets/respublika-hakasiya-gorno-taezhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-hakasiya-predgorya.html",
+    "asset": "assets/respublika-hakasiya-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-hakasiya-stepnye-kotloviny.html",
+    "asset": "assets/respublika-hakasiya-stepnye-kotloviny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-hakasiya.html",
+    "asset": "assets/respublika-hakasiya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-ingushetiya-gornaya-zona.html",
+    "asset": "assets/respublika-ingushetiya-gornaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-ingushetiya-predgornaya-zona.html",
+    "asset": "assets/respublika-ingushetiya-predgornaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-ingushetiya-ravninnaya-zona.html",
+    "asset": "assets/respublika-ingushetiya-ravninnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-ingushetiya.html",
+    "asset": "assets/respublika-ingushetiya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-kalmykiya-centralnaya-zona.html",
+    "asset": "assets/respublika-kalmykiya-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kalmykiya-prikaspiyskaya-nizmennost.html",
+    "asset": "assets/respublika-kalmykiya-prikaspiyskaya-nizmennost-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kalmykiya-vostochnaya-zona.html",
+    "asset": "assets/respublika-kalmykiya-vostochnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kalmykiya-zapadnaya-suhostepnaya-zona.html",
+    "asset": "assets/respublika-kalmykiya-zapadnaya-suhostepnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kalmykiya.html",
+    "asset": "assets/respublika-kalmykiya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-kareliya-centralnaya-zona.html",
+    "asset": "assets/respublika-kareliya-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kareliya-severnaya-zona.html",
+    "asset": "assets/respublika-kareliya-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kareliya-yuzhnoe-priladozhe.html",
+    "asset": "assets/respublika-kareliya-yuzhnoe-priladozhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-kareliya.html",
+    "asset": "assets/respublika-kareliya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-komi-centralnaya-tayga.html",
+    "asset": "assets/respublika-komi-centralnaya-tayga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-komi-severnaya-tundrovo-taezhnaya-zona.html",
+    "asset": "assets/respublika-komi-severnaya-tundrovo-taezhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-komi-yuzhnaya-zona.html",
+    "asset": "assets/respublika-komi-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-komi.html",
+    "asset": "assets/respublika-komi-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-mariy-el-centralnaya-zona.html",
+    "asset": "assets/respublika-mariy-el-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-mariy-el-vostochnaya-lesnaya-zona.html",
+    "asset": "assets/respublika-mariy-el-vostochnaya-lesnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-mariy-el-zapadnaya-zona.html",
+    "asset": "assets/respublika-mariy-el-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-mariy-el.html",
+    "asset": "assets/respublika-mariy-el-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-mordoviya-centralnaya-zona.html",
+    "asset": "assets/respublika-mordoviya-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-mordoviya-severnaya-zona.html",
+    "asset": "assets/respublika-mordoviya-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-mordoviya-yuzhnaya-zona.html",
+    "asset": "assets/respublika-mordoviya-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-mordoviya.html",
+    "asset": "assets/respublika-mordoviya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-saha-yakutiya-arkticheskaya-zona.html",
+    "asset": "assets/respublika-saha-yakutiya-arkticheskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-saha-yakutiya-centralnaya-yakutiya.html",
+    "asset": "assets/respublika-saha-yakutiya-centralnaya-yakutiya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-saha-yakutiya-severnaya-tayga.html",
+    "asset": "assets/respublika-saha-yakutiya-severnaya-tayga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-saha-yakutiya-yuzhnaya-zona.html",
+    "asset": "assets/respublika-saha-yakutiya-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-saha-yakutiya.html",
+    "asset": "assets/respublika-saha-yakutiya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-severnaya-osetiya-alaniya-gornye-doliny.html",
+    "asset": "assets/respublika-severnaya-osetiya-alaniya-gornye-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-severnaya-osetiya-alaniya-predgorya.html",
+    "asset": "assets/respublika-severnaya-osetiya-alaniya-predgorya-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-severnaya-osetiya-alaniya-ravninnaya-zona.html",
+    "asset": "assets/respublika-severnaya-osetiya-alaniya-ravninnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-severnaya-osetiya-alaniya-vysokogore.html",
+    "asset": "assets/respublika-severnaya-osetiya-alaniya-vysokogore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-severnaya-osetiya-alaniya.html",
+    "asset": "assets/respublika-severnaya-osetiya-alaniya-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-tatarstan-kazanskaya-zona.html",
+    "asset": "assets/respublika-tatarstan-kazanskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tatarstan-predkame.html",
+    "asset": "assets/respublika-tatarstan-predkame-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tatarstan-predvolzhe.html",
+    "asset": "assets/respublika-tatarstan-predvolzhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tatarstan-zakame.html",
+    "asset": "assets/respublika-tatarstan-zakame-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tatarstan.html",
+    "asset": "assets/respublika-tatarstan-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/respublika-tyva-gornye-doliny.html",
+    "asset": "assets/respublika-tyva-gornye-doliny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tyva-stepnye-kotloviny.html",
+    "asset": "assets/respublika-tyva-stepnye-kotloviny-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tyva-vysokogore.html",
+    "asset": "assets/respublika-tyva-vysokogore-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/respublika-tyva.html",
+    "asset": "assets/respublika-tyva-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/rostovskaya-oblast-centralnaya-stepnaya-zona.html",
+    "asset": "assets/rostovskaya-oblast-centralnaya-stepnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/rostovskaya-oblast-priazove.html",
+    "asset": "assets/rostovskaya-oblast-priazove-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/rostovskaya-oblast-severnaya-zona.html",
+    "asset": "assets/rostovskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/rostovskaya-oblast-vostochnaya-suhaya-step.html",
+    "asset": "assets/rostovskaya-oblast-vostochnaya-suhaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/rostovskaya-oblast.html",
+    "asset": "assets/rostovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/ryazanskaya-oblast-central-oka.html",
+    "asset": "assets/ryazanskaya-oblast-central-oka-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ryazanskaya-oblast-north-meshchera.html",
+    "asset": "assets/ryazanskaya-oblast-north-meshchera-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ryazanskaya-oblast-south-forest-steppe.html",
+    "asset": "assets/ryazanskaya-oblast-south-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ryazanskaya-oblast.html",
+    "asset": "assets/ryazanskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/sahalinskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/sahalinskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sahalinskaya-oblast-pribrezhnaya-zona.html",
+    "asset": "assets/sahalinskaya-oblast-pribrezhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sahalinskaya-oblast-severnaya-zona.html",
+    "asset": "assets/sahalinskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sahalinskaya-oblast-yuzhnaya-ostrovnaya-zona.html",
+    "asset": "assets/sahalinskaya-oblast-yuzhnaya-ostrovnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sahalinskaya-oblast.html",
+    "asset": "assets/sahalinskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/samarskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/samarskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/samarskaya-oblast-volzhskaya-zona.html",
+    "asset": "assets/samarskaya-oblast-volzhskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/samarskaya-oblast-yugo-vostochnaya-suhaya-zona.html",
+    "asset": "assets/samarskaya-oblast-yugo-vostochnaya-suhaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/samarskaya-oblast-yuzhnaya-step.html",
+    "asset": "assets/samarskaya-oblast-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/samarskaya-oblast.html",
+    "asset": "assets/samarskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/sankt-peterburg-gorodskaya-zona.html",
+    "asset": "assets/sankt-peterburg-gorodskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sankt-peterburg-prigorodnaya-zona.html",
+    "asset": "assets/sankt-peterburg-prigorodnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sankt-peterburg.html",
+    "asset": "assets/sankt-peterburg-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/saratovskaya-oblast-levoberezhe.html",
+    "asset": "assets/saratovskaya-oblast-levoberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/saratovskaya-oblast-pravoberezhe.html",
+    "asset": "assets/saratovskaya-oblast-pravoberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/saratovskaya-oblast-severnaya-zona.html",
+    "asset": "assets/saratovskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/saratovskaya-oblast-yuzhnaya-suhostepnaya-zona.html",
+    "asset": "assets/saratovskaya-oblast-yuzhnaya-suhostepnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/saratovskaya-oblast.html",
+    "asset": "assets/saratovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/smolenskaya-oblast-central.html",
+    "asset": "assets/smolenskaya-oblast-central-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/smolenskaya-oblast-southeast-transition.html",
+    "asset": "assets/smolenskaya-oblast-southeast-transition-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/smolenskaya-oblast-west-moist-forests.html",
+    "asset": "assets/smolenskaya-oblast-west-moist-forests-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/smolenskaya-oblast.html",
+    "asset": "assets/smolenskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/stavropolskiy-kray-centralnaya-vozvyshennost.html",
+    "asset": "assets/stavropolskiy-kray-centralnaya-vozvyshennost-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/stavropolskiy-kray-predgorya-kavkazskih-mineralnyh-vod.html",
+    "asset": "assets/stavropolskiy-kray-predgorya-kavkazskih-mineralnyh-vod-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/stavropolskiy-kray-severo-vostochnaya-suhaya-step.html",
+    "asset": "assets/stavropolskiy-kray-severo-vostochnaya-suhaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/stavropolskiy-kray-zapadnaya-zona.html",
+    "asset": "assets/stavropolskiy-kray-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/stavropolskiy-kray.html",
+    "asset": "assets/stavropolskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/sverdlovskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/sverdlovskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sverdlovskaya-oblast-gornyy-ural.html",
+    "asset": "assets/sverdlovskaya-oblast-gornyy-ural-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sverdlovskaya-oblast-severnaya-zona.html",
+    "asset": "assets/sverdlovskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sverdlovskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/sverdlovskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/sverdlovskaya-oblast.html",
+    "asset": "assets/sverdlovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/tambovskaya-oblast-central-black-earth.html",
+    "asset": "assets/tambovskaya-oblast-central-black-earth-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tambovskaya-oblast-north-forest-steppe.html",
+    "asset": "assets/tambovskaya-oblast-north-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tambovskaya-oblast-south-dry-steppe.html",
+    "asset": "assets/tambovskaya-oblast-south-dry-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tambovskaya-oblast.html",
+    "asset": "assets/tambovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/tomskaya-oblast-centralnaya-taezhnaya-zona.html",
+    "asset": "assets/tomskaya-oblast-centralnaya-taezhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tomskaya-oblast-severnaya-zona.html",
+    "asset": "assets/tomskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tomskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/tomskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tomskaya-oblast.html",
+    "asset": "assets/tomskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/tulskaya-oblast-central-zaseka.html",
+    "asset": "assets/tulskaya-oblast-central-zaseka-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tulskaya-oblast-north-oka.html",
+    "asset": "assets/tulskaya-oblast-north-oka-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tulskaya-oblast-south-forest-steppe.html",
+    "asset": "assets/tulskaya-oblast-south-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tulskaya-oblast.html",
+    "asset": "assets/tulskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/tverskaya-oblast-central-volga.html",
+    "asset": "assets/tverskaya-oblast-central-volga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tverskaya-oblast-east-forests.html",
+    "asset": "assets/tverskaya-oblast-east-forests-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tverskaya-oblast-northwest-valday.html",
+    "asset": "assets/tverskaya-oblast-northwest-valday-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tverskaya-oblast-south-transition.html",
+    "asset": "assets/tverskaya-oblast-south-transition-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tverskaya-oblast.html",
+    "asset": "assets/tverskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/tyumenskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/tyumenskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tyumenskaya-oblast-severnaya-zona.html",
+    "asset": "assets/tyumenskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tyumenskaya-oblast-yuzhnaya-lesostep.html",
+    "asset": "assets/tyumenskaya-oblast-yuzhnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/tyumenskaya-oblast.html",
+    "asset": "assets/tyumenskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/udmurtskaya-respublika-centralnaya-zona.html",
+    "asset": "assets/udmurtskaya-respublika-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/udmurtskaya-respublika-severnaya-zona.html",
+    "asset": "assets/udmurtskaya-respublika-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/udmurtskaya-respublika-yuzhnaya-zona.html",
+    "asset": "assets/udmurtskaya-respublika-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/udmurtskaya-respublika.html",
+    "asset": "assets/udmurtskaya-respublika-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/ulyanovskaya-oblast-levoberezhe.html",
+    "asset": "assets/ulyanovskaya-oblast-levoberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ulyanovskaya-oblast-pravoberezhe.html",
+    "asset": "assets/ulyanovskaya-oblast-pravoberezhe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ulyanovskaya-oblast-severnaya-zona.html",
+    "asset": "assets/ulyanovskaya-oblast-severnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ulyanovskaya-oblast-yuzhnaya-zona.html",
+    "asset": "assets/ulyanovskaya-oblast-yuzhnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/ulyanovskaya-oblast.html",
+    "asset": "assets/ulyanovskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/vladimirskaya-oblast-central-klyazma.html",
+    "asset": "assets/vladimirskaya-oblast-central-klyazma-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/vladimirskaya-oblast-north-forests.html",
+    "asset": "assets/vladimirskaya-oblast-north-forests-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/vladimirskaya-oblast-south-opolye.html",
+    "asset": "assets/vladimirskaya-oblast-south-opolye-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/vladimirskaya-oblast.html",
+    "asset": "assets/vladimirskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/volgogradskaya-oblast-centralnaya-step.html",
+    "asset": "assets/volgogradskaya-oblast-centralnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/volgogradskaya-oblast-severnaya-lesostep.html",
+    "asset": "assets/volgogradskaya-oblast-severnaya-lesostep-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/volgogradskaya-oblast-volgo-donskaya-zona.html",
+    "asset": "assets/volgogradskaya-oblast-volgo-donskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/volgogradskaya-oblast-yuzhnaya-suhaya-step.html",
+    "asset": "assets/volgogradskaya-oblast-yuzhnaya-suhaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/volgogradskaya-oblast.html",
+    "asset": "assets/volgogradskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/vologodskaya-oblast-centralnaya-zona.html",
+    "asset": "assets/vologodskaya-oblast-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/vologodskaya-oblast-vostochnaya-zona.html",
+    "asset": "assets/vologodskaya-oblast-vostochnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/vologodskaya-oblast-zapadnaya-zona.html",
+    "asset": "assets/vologodskaya-oblast-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/vologodskaya-oblast.html",
+    "asset": "assets/vologodskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/voronezhskaya-oblast-central-don.html",
+    "asset": "assets/voronezhskaya-oblast-central-don-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/voronezhskaya-oblast-north-forest-steppe.html",
+    "asset": "assets/voronezhskaya-oblast-north-forest-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/voronezhskaya-oblast-south-steppe.html",
+    "asset": "assets/voronezhskaya-oblast-south-steppe-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/voronezhskaya-oblast.html",
+    "asset": "assets/voronezhskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/yamalo-nenetskiy-avtonomnyy-okrug-arkticheskaya-zona.html",
+    "asset": "assets/yamalo-nenetskiy-avtonomnyy-okrug-arkticheskaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/yamalo-nenetskiy-avtonomnyy-okrug-lesotundra.html",
+    "asset": "assets/yamalo-nenetskiy-avtonomnyy-okrug-lesotundra-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/yamalo-nenetskiy-avtonomnyy-okrug-tundra.html",
+    "asset": "assets/yamalo-nenetskiy-avtonomnyy-okrug-tundra-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/yamalo-nenetskiy-avtonomnyy-okrug.html",
+    "asset": "assets/yamalo-nenetskiy-avtonomnyy-okrug-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/yaroslavskaya-oblast-central-volga.html",
+    "asset": "assets/yaroslavskaya-oblast-central-volga-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/yaroslavskaya-oblast-northwest-forests.html",
+    "asset": "assets/yaroslavskaya-oblast-northwest-forests-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/yaroslavskaya-oblast-south-opolye.html",
+    "asset": "assets/yaroslavskaya-oblast-south-opolye-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/yaroslavskaya-oblast.html",
+    "asset": "assets/yaroslavskaya-oblast-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  },
+  {
+    "page": "regions/zabaykalskiy-kray-centralnaya-zona.html",
+    "asset": "assets/zabaykalskiy-kray-centralnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/zabaykalskiy-kray-gornye-rayony.html",
+    "asset": "assets/zabaykalskiy-kray-gornye-rayony-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/zabaykalskiy-kray-yuzhnaya-step.html",
+    "asset": "assets/zabaykalskiy-kray-yuzhnaya-step-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/zabaykalskiy-kray-zapadnaya-zona.html",
+    "asset": "assets/zabaykalskiy-kray-zapadnaya-zona-hero.jpg",
+    "width": 1360,
+    "height": 765,
+    "kind": "zone"
+  },
+  {
+    "page": "regions/zabaykalskiy-kray.html",
+    "asset": "assets/zabaykalskiy-kray-hero.jpg",
+    "width": 1440,
+    "height": 810,
+    "kind": "overview"
+  }
+]
