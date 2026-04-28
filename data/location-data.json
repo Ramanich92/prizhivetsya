@@ -1,7 +1,7 @@
 {
-  "version": "v132-no-assets-calendar",
+  "version": "v133-no-assets-planting-list",
   "updated": "2026-04-28",
-  "status": "all-regions-expanded-no-assets-culture-pages-planner-calendar-build",
+  "status": "all-regions-expanded-no-assets-culture-pages-planner-calendar-planting-list-build",
   "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; добавлены паспорта зон, сравнение зон региона, пояснение рекомендаций, fallback без assets, страницы культур, подбор растений и календарь работ по природно-садовым зонам.",
   "subjectCount": 83,
   "zoneCount": 283,
