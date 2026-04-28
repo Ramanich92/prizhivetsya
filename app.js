@@ -1,4 +1,4 @@
-/* v123: locality picker + split tables + audit polish */
+/* v124: locality picker + split tables + Yaroslavl all-zone guides */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -236,7 +236,7 @@
     var itemLabel = root.getAttribute('data-item-label') || 'позиций';
 
     function formatShown(current, total){
-      return 'Показано ' + current + ' из ' + total + ' ' + itemLabel;
+      return 'Показано ' + current + ' из ' + total;
     }
 
     function uniqueValues(key){

@@ -1,1 +1,1 @@
-v123 — Yaroslavl UX audit fixes: count labels, variant search, notes cleanup, climate cards, refreshed heroes
+v124 — Yaroslavl all zones: split guide pages for northwest and south zones
