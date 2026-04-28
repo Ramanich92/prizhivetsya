@@ -1,3 +1,1 @@
-v127-no-assets-cfo-expanded
-updated=2026-04-28
-notes=ЦФО расширен по структуре Ярославской области; финальный ZIP собирается без папки assets.
+v128-no-assets-all-regions
