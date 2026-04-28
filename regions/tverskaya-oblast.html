@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Тверская область — приживется.ру</title>
+ <meta name="description" content="Тверская область: обзор региона и переход к природным зонам с рекомендациями по культурам.">
+ <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../styles.css?v=113">
+ <link rel="apple-touch-icon" href="../assets/icon-192.png">
+ <meta name="theme-color" content="#416b43">
+ <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/regions/tverskaya-oblast.html">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="приживется.ру">
+ <meta property="og:title" content="Тверская область">
+ <meta property="og:description" content="Тверская область: обзор региона и переход к природным зонам с рекомендациями по культурам.">
+</head>
+<body class="region-tver region-clean" data-build="v113">
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="../index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="../assets/logo-wordmark.png" alt="приживется.ру"></a><nav class="topnav" aria-label="Основная навигация"><a href="../index.html">Главная</a></nav></div></header>
+<main class="region-overview-main">
+  <section class="region-overview-wrap">
+    <div class="crumbs"><a href="../index.html">Главная</a> / Тверская область</div>
+
+    <section class="region-photo-hero">
+      <img class="region-photo-hero__bg" src="../assets/tverskaya-oblast-hero.jpg" alt="" loading="eager" decoding="async" fetchpriority="high" width="1440" height="810">
+      <div class="region-photo-hero__shade"></div>
+      <div class="region-photo-hero__content">
+        <span class="kicker">Тверская область</span>
+        <h1>Что посадить<br>в Тверской области</h1>
+        <p class="lead">Тверская область неоднородна: северо-западные озёра и Валдай прохладнее, центр мягче, восток лесистый, а юг ближе к подмосковным условиям.</p>
+      </div>
+    </section>
+
+    <section class="zone-links-grid zone-links-grid--v100">
+      <a class="zone-link-card is-active" href="tverskaya-oblast-northwest-valday.html">
+        <strong>Северо-западные озёра и Валдай</strong>
+        <p>Прохладная и влажная зона у озёр: надёжны корнеплоды, капуста, зелень, жимолость и смородина.</p>
+        <div class="zone-meta"><span>Осташков</span><span>Бологое</span><span>Вышний Волочёк</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="tverskaya-oblast-central-volga.html">
+        <strong>Центральная волжская зона</strong>
+        <p>Умеренная зона для огорода и зимостойкого сада; теплицы заметно расширяют набор культур.</p>
+        <div class="zone-meta"><span>Тверь</span><span>Конаково</span><span>Торжок</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="tverskaya-oblast-east-forests.html">
+        <strong>Восточные леса</strong>
+        <p>Лесистые и местами влажные участки: хороши ягоды, капустные, картофель и яблоня на сухих солнечных местах.</p>
+        <div class="zone-meta"><span>Кашин</span><span>Калязин</span><span>Кимры</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="tverskaya-oblast-south-transition.html">
+        <strong>Южная переходная зона</strong>
+        <p>Более тёплая часть области: лучше удаются яблоня, вишня, тыква, огурец и томаты под защитой.</p>
+        <div class="zone-meta"><span>Ржев</span><span>Зубцов</span><span>Старица</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+    </section>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><a class="footer-brand" href="../index.html" aria-label="приживется.ру"><img src="../assets/logo-wordmark.png" alt="приживется.ру"></a><p>Справочник по регионам и культурам России</p></div></footer>
+<script>
+(function(){
+   var params=new URLSearchParams(window.location.search);
+   var zone=params.get('zone');
+   var place=params.get('place');
+   var map={
+     'tverskaya-oblast-zone-1':'tverskaya-oblast-northwest-valday.html',
+     'tverskaya-oblast-zone-2':'tverskaya-oblast-central-volga.html',
+     'tverskaya-oblast-zone-3':'tverskaya-oblast-east-forests.html',
+     'tverskaya-oblast-zone-4':'tverskaya-oblast-south-transition.html'
+   };
+   if(zone && map[zone]){
+     var url=map[zone];
+     if(place) url += '?place=' + encodeURIComponent(place);
+     window.location.replace(url);
+   }
+})();
+</script>
+</body>
+</html>

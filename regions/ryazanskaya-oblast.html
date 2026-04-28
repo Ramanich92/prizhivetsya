@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Рязанская область — приживется.ру</title>
+ <meta name="description" content="Рязанская область: обзор региона и переход к природным зонам с рекомендациями по культурам.">
+ <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../styles.css?v=113">
+ <link rel="apple-touch-icon" href="../assets/icon-192.png">
+ <meta name="theme-color" content="#416b43">
+ <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/regions/ryazanskaya-oblast.html">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="приживется.ру">
+ <meta property="og:title" content="Рязанская область">
+ <meta property="og:description" content="Рязанская область: обзор региона и переход к природным зонам с рекомендациями по культурам.">
+</head>
+<body class="region-ryazan region-clean" data-build="v113">
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="../index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="../assets/logo-wordmark.png" alt="приживется.ру"></a><nav class="topnav" aria-label="Основная навигация"><a href="../index.html">Главная</a></nav></div></header>
+<main class="region-overview-main">
+  <section class="region-overview-wrap">
+    <div class="crumbs"><a href="../index.html">Главная</a> / Рязанская область</div>
+
+    <section class="region-photo-hero">
+      <img class="region-photo-hero__bg" src="../assets/ryazanskaya-oblast-hero.jpg" alt="" loading="eager" decoding="async" fetchpriority="high" width="1440" height="810">
+      <div class="region-photo-hero__shade"></div>
+      <div class="region-photo-hero__content">
+        <span class="kicker">Рязанская область</span>
+        <h1>Что посадить<br>в Рязанской области</h1>
+        <p class="lead">Главные различия — мещёрские леса и пески на севере, ока-донская центральная зона и более тёплая южная лесостепь.</p>
+      </div>
+    </section>
+
+    <section class="zone-links-grid zone-links-grid--v100">
+      <a class="zone-link-card is-active" href="ryazanskaya-oblast-north-meshchera.html">
+        <strong>Северная Мещёра</strong>
+        <p>Лесная и влажная зона с песчаными участками: сильны картофель, ягоды, кислые гряды и культуры короткого сезона.</p>
+        <div class="zone-meta"><span>Касимов</span><span>Спас-Клепики</span><span>Рыбное</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="ryazanskaya-oblast-central-oka.html">
+        <strong>Центральная ока-донская зона</strong>
+        <p>Сбалансированная зона для овощей, ягод и плодового сада; на низинах важно избегать заморозков и застоя воды.</p>
+        <div class="zone-meta"><span>Рязань</span><span>Скопин</span><span>Пронск</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="ryazanskaya-oblast-south-forest-steppe.html">
+        <strong>Южная лесостепь</strong>
+        <p>Более тёплая и сухая часть: перспективны томаты, тыквы, кукуруза и ранний виноград при поливе.</p>
+        <div class="zone-meta"><span>Михайлов</span><span>Сараи</span><span>Милославское</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+    </section>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><a class="footer-brand" href="../index.html" aria-label="приживется.ру"><img src="../assets/logo-wordmark.png" alt="приживется.ру"></a><p>Справочник по регионам и культурам России</p></div></footer>
+<script>
+(function(){
+   var params=new URLSearchParams(window.location.search);
+   var zone=params.get('zone');
+   var place=params.get('place');
+   var map={
+     'ryazanskaya-oblast-zone-1':'ryazanskaya-oblast-north-meshchera.html',
+     'ryazanskaya-oblast-zone-2':'ryazanskaya-oblast-central-oka.html',
+     'ryazanskaya-oblast-zone-3':'ryazanskaya-oblast-south-forest-steppe.html'
+   };
+   if(zone && map[zone]){
+     var url=map[zone];
+     if(place) url += '?place=' + encodeURIComponent(place);
+     window.location.replace(url);
+   }
+})();
+</script>
+</body>
+</html>

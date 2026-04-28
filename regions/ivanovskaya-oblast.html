@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Ивановская область — приживется.ру</title>
+ <meta name="description" content="Ивановская область: обзор региона и переход к природным зонам с рекомендациями по культурам.">
+ <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../styles.css?v=113">
+ <link rel="apple-touch-icon" href="../assets/icon-192.png">
+ <meta name="theme-color" content="#416b43">
+ <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/regions/ivanovskaya-oblast.html">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="приживется.ру">
+ <meta property="og:title" content="Ивановская область">
+ <meta property="og:description" content="Ивановская область: обзор региона и переход к природным зонам с рекомендациями по культурам.">
+</head>
+<body class="region-ivanovo region-clean" data-build="v113">
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="../index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="../assets/logo-wordmark.png" alt="приживется.ру"></a><nav class="topnav" aria-label="Основная навигация"><a href="../index.html">Главная</a></nav></div></header>
+<main class="region-overview-main">
+  <section class="region-overview-wrap">
+    <div class="crumbs"><a href="../index.html">Главная</a> / Ивановская область</div>
+
+    <section class="region-photo-hero">
+      <img class="region-photo-hero__bg" src="../assets/ivanovskaya-oblast-hero.jpg" alt="" loading="eager" decoding="async" fetchpriority="high" width="1440" height="810">
+      <div class="region-photo-hero__shade"></div>
+      <div class="region-photo-hero__content">
+        <span class="kicker">Ивановская область</span>
+        <h1>Что посадить<br>в Ивановской области</h1>
+        <p class="lead">Для садовода область делится на влажные северо-западные леса, центральную текстильно-волжскую зону и юго-восточные суглинки.</p>
+      </div>
+    </section>
+
+    <section class="zone-links-grid zone-links-grid--v100">
+      <a class="zone-link-card is-active" href="ivanovskaya-oblast-northwest-forests.html">
+        <strong>Северо-западные леса и Верхняя Волга</strong>
+        <p>Влажнее и прохладнее, с влиянием Волги: ставка на ягодники, капусту, картофель, зелень и кислые гряды.</p>
+        <div class="zone-meta"><span>Кинешма</span><span>Юрьевец</span><span>Заволжск</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="ivanovskaya-oblast-central-volga-textile.html">
+        <strong>Центральная текстильно-волжская зона</strong>
+        <p>Умеренная зона для базового огорода, ягодников и небольшого плодового сада с акцентом на зимостойкие сорта.</p>
+        <div class="zone-meta"><span>Иваново</span><span>Шуя</span><span>Кохма</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+      <a class="zone-link-card is-active" href="ivanovskaya-oblast-southeast-nerl.html">
+        <strong>Юго-восточные суглинки и Нерль</strong>
+        <p>Чуть теплее и суше: хорошо подходят корнеплоды, яблоня, вишня и тёплые гряды с аккуратным поливом.</p>
+        <div class="zone-meta"><span>Тейково</span><span>Гаврилов Посад</span><span>Ильинское-Хованское</span></div>
+        <span class="zone-cta">Открыть страницу зоны →</span>
+      </a>
+    </section>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><a class="footer-brand" href="../index.html" aria-label="приживется.ру"><img src="../assets/logo-wordmark.png" alt="приживется.ру"></a><p>Справочник по регионам и культурам России</p></div></footer>
+<script>
+(function(){
+   var params=new URLSearchParams(window.location.search);
+   var zone=params.get('zone');
+   var place=params.get('place');
+   var map={
+     'ivanovskaya-oblast-zone-1':'ivanovskaya-oblast-northwest-forests.html',
+     'ivanovskaya-oblast-zone-2':'ivanovskaya-oblast-central-volga-textile.html',
+     'ivanovskaya-oblast-zone-3':'ivanovskaya-oblast-southeast-nerl.html'
+   };
+   if(zone && map[zone]){
+     var url=map[zone];
+     if(place) url += '?place=' + encodeURIComponent(place);
+     window.location.replace(url);
+   }
+})();
+</script>
+</body>
+</html>
