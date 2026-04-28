@@ -1,4 +1,4 @@
-/* v129: UX polish, no-assets fallback and table filtering */
+/* v130: UX polish, culture pages, no-assets fallback and table filtering */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -190,6 +190,41 @@
       note.innerHTML = '<strong>Вы выбрали:</strong> '+escapeHtml(place || (subject ? subject.name : 'регион'))+(zone ? '<span>'+escapeHtml(zone.name)+'</span>' : '');
     }catch(err){}
   });
+
+  function pluralRu(n, one, few, many){
+    n = Math.abs(Number(n) || 0) % 100;
+    var n1 = n % 10;
+    if(n > 10 && n < 20) return many;
+    if(n1 === 1) return one;
+    if(n1 >= 2 && n1 <= 4) return few;
+    return many;
+  }
+  function initCultureIndex(){
+    var root = document.querySelector('[data-culture-index]');
+    if(!root) return;
+    var search = root.querySelector('[data-culture-search]');
+    var category = root.querySelector('[data-culture-category]');
+    var count = root.querySelector('[data-culture-count]');
+    var cards = Array.prototype.slice.call(root.querySelectorAll('[data-culture-card]'));
+    function apply(){
+      var q = normalizeText(search && search.value);
+      var cat = category && category.value;
+      var visible = 0;
+      cards.forEach(function(card){
+        var hay = normalizeText((card.getAttribute('data-name') || '') + ' ' + (card.getAttribute('data-category') || '') + ' ' + card.textContent);
+        var ok = (!q || hay.indexOf(q) !== -1) && (!cat || card.getAttribute('data-category') === cat);
+        card.classList.toggle('culture-hidden', !ok);
+        if(ok) visible += 1;
+      });
+      if(count) count.textContent = visible + ' ' + pluralRu(visible, 'культура', 'культуры', 'культур');
+    }
+    if(search) search.addEventListener('input', apply);
+    if(category) category.addEventListener('change', apply);
+    apply();
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initCultureIndex);
+  else initCultureIndex();
+
 })();
 
 
@@ -450,7 +485,7 @@
   });
 })();
 
-/* v129: fallback when image assets are added later or absent in no-assets builds */
+/* v130: fallback when image assets are added later or absent in no-assets builds */
 (function(){
   function markMissingImage(img){
     img.classList.add('is-missing');

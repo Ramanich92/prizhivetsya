@@ -1,8 +1,8 @@
 {
-  "version": "v129-no-assets-ux",
+  "version": "v130-no-assets-cultures",
   "updated": "2026-04-28",
-  "status": "all-regions-expanded-no-assets-ux-build",
-  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; добавлены паспорта зон, сравнение зон региона, пояснение рекомендаций и fallback для сборки без assets.",
+  "status": "all-regions-expanded-no-assets-culture-pages-build",
+  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; добавлены паспорта зон, сравнение зон региона, пояснение рекомендаций и fallback для сборки без assets. Добавлен раздел страниц отдельных культур с агрегированными рекомендациями по зонам.",
   "subjectCount": 83,
   "zoneCount": 283,
   "districts": [
@@ -16099,5 +16099,6 @@
     }
   ],
   "searchPlaceAliasCount": 1334,
-  "searchPlaceAliasMinimumPerSubject": 16
+  "searchPlaceAliasMinimumPerSubject": 16,
+  "cultureCount": 61
 }
