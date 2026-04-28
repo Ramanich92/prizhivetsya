@@ -1,4 +1,4 @@
-/* v119: locality picker + split culture tables */
+/* v122: locality picker + split popular/additional culture tables */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -372,7 +372,7 @@
           totalShown += rows.length;
           var sectionCounter = root.querySelector('[data-culture-section-count="'+key+'"]');
           if(sectionCounter) sectionCounter.textContent = 'Показано ' + rows.length + ' из ' + totalRows + ' ' + itemLabel;
-          if(wrap) wrap.hidden = rows.length === 0 && list.length !== 0;
+          if(wrap) wrap.hidden = rows.length === 0;
         });
         if(count) count.textContent = 'Показано ' + totalShown + ' из ' + items.length + ' ' + itemLabel;
         if(empty) empty.hidden = totalShown !== 0;
