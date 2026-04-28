@@ -275,19 +275,15 @@
       });
       return list;
     }
-    function varietyRowsHtml(varieties){
-      if(!varieties || !varieties.length) return '<p class="culture-variety-empty">Сорта пока не добавлены.</p>';
-      return '<div class="culture-variety-grid">' + varieties.map(function(variety){
-        return '<article class="culture-variety-card">'+
-          '<div class="culture-variety-title"><strong>'+escapeTableHtml(variety.name)+'</strong><small>'+escapeTableHtml(variety.type || '')+'</small></div>'+
-          '<span class="rec-badge" data-rec="'+escapeTableHtml(variety.recommendation || '')+'">'+escapeTableHtml(variety.recommendation || '')+'</span>'+
-          '<dl>'+
-            '<div><dt>Где лучше</dt><dd>'+escapeTableHtml(variety.place || '')+'</dd></div>'+
-            '<div><dt>Сроки</dt><dd>'+escapeTableHtml(variety.timing || '')+'</dd></div>'+
-            '<div><dt>Комментарий</dt><dd>'+escapeTableHtml(variety.note || '')+'</dd></div>'+
-          '</dl>'+
-        '</article>';
-      }).join('') + '</div>';
+    function varietyLineHtml(variety, groupId, idx){
+      return '<tr class="culture-variety-line" data-variety-group="'+groupId+'" hidden>'+
+        '<td><span class="culture-variety-name"><b>↳ '+escapeTableHtml(variety.name || '')+'</b><small>'+escapeTableHtml(variety.type || 'сорт / гибрид')+'</small></span></td>'+
+        '<td><span class="category-badge">'+escapeTableHtml(variety.type || 'сорт / гибрид')+'</span></td>'+
+        '<td><span class="rec-badge" data-rec="'+escapeTableHtml(variety.recommendation || '')+'">'+escapeTableHtml(variety.recommendation || '')+'</span></td>'+
+        '<td><span class="place-badge">'+escapeTableHtml(variety.place || '')+'</span></td>'+
+        '<td class="timing-cell">'+escapeTableHtml(variety.timing || '')+'</td>'+
+        '<td>'+escapeTableHtml(variety.note || '')+'</td>'+
+      '</tr>';
     }
     function varietyCountLabel(count){
       if(!count) return 'сорта';
@@ -299,31 +295,34 @@
     function rowHtml(item, index){
       var hasVarieties = item.varieties && item.varieties.length;
       var rowId = 'culture-varieties-' + index;
-      var toggle = '<button type="button" class="culture-toggle" data-culture-toggle="'+rowId+'" aria-expanded="false" aria-controls="'+rowId+'">'+
-        '<span><strong>'+escapeTableHtml(item.name)+'</strong><small>'+escapeTableHtml(item.group || '')+'</small></span>'+
-        '<em>'+varietyCountLabel(hasVarieties ? item.varieties.length : 0)+'</em>'+
-      '</button>';
-      return '<tr class="culture-main-row" data-culture-main-row>'+
-        '<td>'+toggle+'</td>'+
+      var firstCell = hasVarieties
+        ? '<button type="button" class="culture-toggle" data-culture-toggle="'+rowId+'" aria-expanded="false">'+
+            '<span><strong>'+escapeTableHtml(item.name)+'</strong><small>'+escapeTableHtml(item.group || '')+'</small></span>'+
+            '<em>'+varietyCountLabel(item.varieties.length)+'</em>'+
+          '</button>'
+        : '<span class="culture-name"><strong>'+escapeTableHtml(item.name)+'</strong><small>'+escapeTableHtml(item.group || '')+'</small></span>';
+      var mainRow = '<tr class="culture-main-row" data-culture-main-row>'+
+        '<td>'+firstCell+'</td>'+
         '<td><span class="category-badge">'+escapeTableHtml(item.category)+'</span></td>'+
         '<td><span class="rec-badge" data-rec="'+escapeTableHtml(item.recommendation)+'">'+escapeTableHtml(item.recommendation)+'</span></td>'+
         '<td><span class="place-badge">'+escapeTableHtml(item.place)+'</span></td>'+
         '<td class="timing-cell">'+escapeTableHtml(item.timing || '')+'</td>'+
         '<td>'+escapeTableHtml(item.note)+'</td>'+
-      '</tr>'+
-      '<tr class="culture-variety-row" id="'+rowId+'" hidden><td colspan="6">'+
-        '<div class="culture-variety-panel"><div class="culture-variety-panel-head"><strong>Сорта и гибриды: '+escapeTableHtml(item.name)+'</strong><span>Подборка для центральной волжской зоны Ярославской области</span></div>'+varietyRowsHtml(item.varieties)+'</div>'+
-      '</td></tr>';
+      '</tr>';
+      if(!hasVarieties) return mainRow;
+      return mainRow + item.varieties.map(function(variety, varietyIndex){
+        return varietyLineHtml(variety, rowId, varietyIndex);
+      }).join('');
     }
     function bindVarietyToggles(){
       Array.prototype.slice.call(tbody.querySelectorAll('[data-culture-toggle]')).forEach(function(button){
         button.addEventListener('click', function(){
           var id = button.getAttribute('data-culture-toggle');
-          var target = id ? document.getElementById(id) : null;
-          if(!target) return;
+          var rows = id ? Array.prototype.slice.call(tbody.querySelectorAll('[data-variety-group="'+id+'"]')) : [];
+          if(!rows.length) return;
           var open = button.getAttribute('aria-expanded') === 'true';
           button.setAttribute('aria-expanded', open ? 'false' : 'true');
-          target.hidden = open;
+          rows.forEach(function(row){ row.hidden = open; });
         });
       });
     }

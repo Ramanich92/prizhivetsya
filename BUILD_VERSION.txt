@@ -1,1 +1,1 @@
-v115-variety-dropdown-yaroslavl-pilot
+v116-variety-dropdown-table-rows
