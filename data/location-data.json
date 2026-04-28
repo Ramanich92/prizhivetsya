@@ -1,8 +1,8 @@
 {
-  "version": "v128-no-assets-all-regions",
+  "version": "v129-no-assets-ux",
   "updated": "2026-04-28",
-  "status": "all-regions-expanded-no-assets-build",
-  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; для всех регионов сформированы зоны и четыре садово-огородных справочника на каждую зону; изображения не входят в архив.",
+  "status": "all-regions-expanded-no-assets-ux-build",
+  "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; добавлены паспорта зон, сравнение зон региона, пояснение рекомендаций и fallback для сборки без assets.",
   "subjectCount": 83,
   "zoneCount": 283,
   "districts": [

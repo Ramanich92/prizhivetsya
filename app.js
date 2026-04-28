@@ -1,4 +1,4 @@
-/* v126: Yaroslavl pages cleaned from internal hint chips and helper copy */
+/* v129: UX polish, no-assets fallback and table filtering */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -448,4 +448,21 @@
   document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('[data-culture-table]').forEach(renderCultureTable);
   });
+})();
+
+/* v129: fallback when image assets are added later or absent in no-assets builds */
+(function(){
+  function markMissingImage(img){
+    img.classList.add('is-missing');
+    var box = img.closest && img.closest('.region-photo-hero,.zone-photo-hero,.brand,.footer-brand');
+    if(box) box.classList.add('image-missing');
+  }
+  function scanMissingImages(){
+    Array.prototype.slice.call(document.querySelectorAll('img')).forEach(function(img){
+      if(img.complete && img.naturalWidth === 0) markMissingImage(img);
+      img.addEventListener('error', function(){ markMissingImage(img); }, {once:true});
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scanMissingImages);
+  else scanMissingImages();
 })();
