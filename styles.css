@@ -1578,3 +1578,159 @@ a{color:inherit}
 /* v133 planting list */
 .planting-note-action{display:grid;gap:10px;align-items:start}.planting-add-btn,.planting-remove-btn{border:0;border-radius:999px;padding:8px 12px;font-weight:850;cursor:pointer;background:#e7f1df;color:#2d6338;white-space:nowrap;justify-self:start}.planting-add-btn:hover,.planting-remove-btn:hover{background:#d9ebce}.planting-add-btn.is-added{background:#326d3d;color:#fff}.planner-result-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px}.planner-result-actions a{color:#2d6a3a;font-weight:800;text-decoration:none}.planting-add-btn--planner{padding:9px 13px}.planting-main{width:min(1160px,calc(100% - 32px));margin:0 auto;padding:42px 0 72px}.planting-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:24px;align-items:stretch;margin-bottom:24px}.planting-hero>div:first-child,.planting-hero-card,.planting-panel,.planting-empty,.planting-group{background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(247,251,244,.94));border:1px solid rgba(83,124,72,.18);border-radius:28px;box-shadow:0 18px 40px rgba(32,70,46,.08)}.planting-hero>div:first-child{padding:38px}.planting-hero h1{margin:8px 0 14px;font-size:clamp(2rem,4.5vw,4.2rem);line-height:.98;letter-spacing:-.04em;color:#173a28}.planting-hero .lead{max-width:760px;color:#4a604f;font-size:1.08rem;line-height:1.65}.planting-hero-card{padding:30px;display:flex;flex-direction:column;justify-content:center}.planting-hero-card strong{display:block;color:#173a28;font-size:3rem;line-height:1;margin-bottom:8px}.planting-hero-card span{font-weight:900;color:#326d3d;margin-bottom:8px}.planting-hero-card p{color:#506654;line-height:1.6;margin:0}.planting-panel{padding:24px;margin-bottom:24px}.planting-filter-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}.planting-filter-grid label{display:flex;flex-direction:column;gap:7px;font-weight:750;color:#244c34;font-size:.92rem}.planting-filter-grid input,.planting-filter-grid select{width:100%;border:1px solid rgba(65,107,67,.24);border-radius:16px;padding:13px 14px;background:#fff;color:#183928;font:inherit}.planting-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.planting-empty{padding:34px;text-align:center;color:#536856}.planting-empty h2{margin:0 0 8px;color:#173a28}.planting-empty-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.planting-results{display:grid;gap:18px}.planting-summary{color:#48604d;font-weight:850}.planting-groups{display:grid;gap:18px}.planting-group{padding:22px}.planting-group-head{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid rgba(65,107,67,.14);padding-bottom:12px;margin-bottom:14px}.planting-group h2{margin:0;color:#173a28}.planting-card-list{display:grid;gap:12px}.planting-card{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(220px,.5fr);gap:16px;background:#fff;border:1px solid rgba(65,107,67,.12);border-radius:20px;padding:16px}.planting-card h3{margin:0 0 8px;color:#173a28}.planting-card p{margin:10px 0 6px;color:#3f5646;line-height:1.55}.planting-card small{display:block;color:#6a7d6b;line-height:1.45}.planting-card-badges{display:flex;flex-wrap:wrap;gap:6px}.planting-card-side{display:flex;flex-direction:column;align-items:flex-start;gap:9px;border-left:1px solid rgba(65,107,67,.12);padding-left:16px}.planting-card-side a{color:#2d6a3a;font-weight:850;text-decoration:none}.planting-card-side span{color:#6a7d6b;font-size:.92rem;line-height:1.35}.planting-remove-btn{background:#f5e9e1;color:#874425}@media(max-width:900px){.planting-hero,.planting-filter-grid,.planting-card{grid-template-columns:1fr}.planting-hero>div:first-child{padding:30px}.planting-card-side{border-left:0;border-top:1px solid rgba(65,107,67,.12);padding-left:0;padding-top:12px}}@media(max-width:620px){.planting-main{width:min(100% - 20px,1160px);padding-top:24px}.planting-actions .button-primary,.planting-actions .button-soft{width:100%}.planting-add-btn{white-space:normal}}
 @media print{.site-header,.site-footer,.crumbs,.planting-panel,.planting-empty-actions,.planting-card-side a,.planting-remove-btn,.planting-add-btn,.hero-card-art,.zone-topic-card,.clean-filters,.clean-rec-summary,.recommendation-guide-card,.zone-climate-card{display:none!important}body{background:#fff!important;color:#111!important}.planting-main,.region-clean-main,.planner-main,.calendar-main{width:100%!important;margin:0!important;padding:0!important}.planting-hero,.planting-card,.planner-result-card,.calendar-month-card{display:block!important;box-shadow:none!important;border:1px solid #ddd!important;background:#fff!important}.planting-group,.planting-hero>div:first-child,.planting-hero-card{box-shadow:none!important;background:#fff!important;border:1px solid #ddd!important}.planting-card-side{border:0!important;padding:0!important}.planting-card{break-inside:avoid}.planting-hero h1{font-size:32px!important}.zone-photo-hero{min-height:auto!important;background:#fff!important;color:#111!important}.zone-photo-hero__bg,.zone-photo-hero__shade{display:none!important}.zone-photo-hero__content{position:static!important;color:#111!important;padding:0!important}.clean-table-card{box-shadow:none!important;border:1px solid #ddd!important}.table-scroll{overflow:visible!important}.culture-table{font-size:11px!important}.culture-table th,.culture-table td{padding:6px!important}}
+
+
+/* v134: homepage visual polish and no-assets logo/header fixes */
+.brand-text,
+.footer-brand-text{
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+  color:#143425;
+  font-weight:950;
+  letter-spacing:-.055em;
+  line-height:1;
+}
+.brand-text span{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  font-size:clamp(24px,2.2vw,34px);
+}
+.brand-text span::before,
+.footer-brand-text::before{
+  content:"";
+  flex:0 0 auto;
+  width:34px;
+  height:34px;
+  margin-right:10px;
+  border-radius:13px 13px 16px 13px;
+  background:
+    radial-gradient(circle at 58% 34%,#ffffff 0 12%,transparent 13%),
+    linear-gradient(135deg,#54aa63,#167344);
+  box-shadow:inset 0 -8px 18px rgba(13,76,43,.18),0 8px 18px rgba(17,52,36,.10);
+}
+.footer-brand-text{font-size:22px;white-space:nowrap}
+.footer-brand-text::before{width:28px;height:28px;border-radius:11px 11px 13px 11px;margin-right:8px}
+.brand-logo.is-missing,
+.footer-brand img.is-missing{display:none!important}
+.brand.image-missing::after,
+.footer-brand.image-missing::after{content:none!important}
+.site-header-inner{height:auto;min-height:78px;padding:10px 0}
+.topnav{min-width:0}
+.topnav a{white-space:nowrap}
+.home-feature-section{
+  width:var(--content);
+  margin:32px auto 68px;
+}
+.home-feature-head{
+  display:grid;
+  gap:8px;
+  max-width:880px;
+  margin-bottom:18px;
+}
+.home-feature-head .kicker{width:max-content;margin-bottom:4px}
+.home-feature-head h2{
+  margin:0;
+  font-size:clamp(34px,4.2vw,58px);
+  line-height:1;
+  letter-spacing:-.055em;
+  color:#10281e;
+}
+.home-feature-head p{
+  margin:0;
+  color:#506356;
+  max-width:780px;
+  font-size:18px;
+}
+.home-feature-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+}
+.home-feature-card{
+  min-height:286px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:24px;
+  border-radius:30px;
+  border:1px solid rgba(204,219,208,.9);
+  background:linear-gradient(180deg,rgba(255,254,250,.94),rgba(244,250,240,.88));
+  box-shadow:var(--shadow-soft);
+  text-decoration:none;
+  color:inherit;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.home-feature-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(17,134,76,.34);
+  box-shadow:0 20px 46px rgba(17,52,36,.09);
+}
+.home-feature-card--primary{
+  background:
+    radial-gradient(circle at 86% 16%,rgba(255,255,255,.65),transparent 9rem),
+    linear-gradient(135deg,#e7f7e7,#fffefa 56%,#f1f8ed);
+  border-color:#b7d8bd;
+}
+.home-feature-icon{
+  width:52px;
+  height:52px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:20px;
+  background:#e7f3e5;
+  box-shadow:inset 0 0 0 1px rgba(17,134,76,.08);
+  font-size:27px;
+}
+.home-feature-card strong{
+  display:block;
+  color:#143425;
+  font-size:24px;
+  line-height:1.08;
+  letter-spacing:-.035em;
+}
+.home-feature-card p{
+  margin:0;
+  color:#52665b;
+  line-height:1.48;
+  font-size:15px;
+}
+.home-feature-card em{
+  margin-top:auto;
+  color:#0d6f3f;
+  font-style:normal;
+  font-weight:950;
+}
+.home-feature-card em::after{content:" →"}
+.home-culture-teaser,
+.home-planner-link,
+.home-planting-list-link,
+.home-calendar-link{display:none!important}
+.region-photo-hero.image-missing,
+.zone-photo-hero.image-missing{isolation:isolate}
+.region-photo-hero.image-missing .region-photo-hero__shade,
+.zone-photo-hero.image-missing .zone-photo-hero__shade{
+  background:linear-gradient(90deg,rgba(255,254,250,.92),rgba(255,254,250,.72) 48%,rgba(255,254,250,.36));
+}
+@media(max-width:1180px){
+  .site-header-inner{align-items:flex-start;flex-direction:column;gap:10px;padding:12px 0}
+  .topnav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:thin}
+  .home-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .site-header-inner{min-height:0;padding:10px 0 12px}
+  .brand-text span{font-size:27px;min-height:36px}
+  .brand-text span::before{width:30px;height:30px;border-radius:12px;margin-right:8px}
+  .topnav{gap:8px;margin:0 -12px;padding:0 12px 4px;width:calc(100% + 24px)}
+  .topnav a{font-size:13px;padding:8px 12px;background:rgba(255,255,255,.72);border:1px solid rgba(204,219,208,.58)}
+  .home-locality-only .hero{min-height:auto}
+  .locality-main-panel{padding:24px 22px}
+  .locality-manual-panel{padding:24px 22px}
+  .home-feature-section{margin:24px auto 44px}
+  .home-feature-grid{grid-template-columns:1fr;gap:12px}
+  .home-feature-card{min-height:auto;border-radius:24px;padding:20px}
+  .home-feature-head p{font-size:16px}
+  .footer-brand-text{font-size:20px}
+}

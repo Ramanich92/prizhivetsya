@@ -1,4 +1,4 @@
-/* v133: UX polish, culture pages, planner, calendar and planting list */
+/* v134: visual fixes, no-assets polish, culture pages, planner, calendar and planting list */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -491,6 +491,7 @@
 (function(){
   function markMissingImage(img){
     img.classList.add('is-missing');
+    img.setAttribute('aria-hidden','true');
     var box = img.closest && img.closest('.region-photo-hero,.zone-photo-hero,.brand,.footer-brand');
     if(box) box.classList.add('image-missing');
   }
