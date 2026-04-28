@@ -1,1 +1,1 @@
-v124 — Yaroslavl all zones: split guide pages for northwest and south zones
+v126 — Yaroslavl pages: removed remaining hint chips and internal helper copy

@@ -1,4 +1,4 @@
-/* v124: locality picker + split tables + Yaroslavl all-zone guides */
+/* v126: Yaroslavl pages cleaned from internal hint chips and helper copy */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
