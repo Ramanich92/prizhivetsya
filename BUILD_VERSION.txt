@@ -1,1 +1,1 @@
-v122 — Yaroslavl central Volga split popular/additional tables
+v123 — Yaroslavl UX audit fixes: count labels, variant search, notes cleanup, climate cards, refreshed heroes

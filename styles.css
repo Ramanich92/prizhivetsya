@@ -1253,7 +1253,7 @@ a{color:inherit}
 
 
 
-/* --- v122: split culture table into popular and additional sections --- */
+/* --- v123: Yaroslavl audit polish and split culture table sections --- */
 .culture-section{
   margin-top:18px;
   border:1px solid #e2ece4;
@@ -1349,3 +1349,13 @@ a{color:inherit}
   .zone-topic-card--compact .zone-topic-link p{display:block}
   .zone-back-link{margin-top:10px}
 }
+
+
+/* --- v123: short zone notes and search-highlighted variants --- */
+.zone-climate-card{position:relative;z-index:3;width:calc(100% - 72px);margin:18px auto 0}
+.zone-climate-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:12px}
+.zone-climate-note{border:1px solid #deeadf;border-radius:20px;background:linear-gradient(180deg,#fff,#f8fcf6);padding:14px 15px;color:#40564a;line-height:1.45;font-size:14px}
+.zone-climate-note strong{display:block;color:#173226;margin-bottom:4px;font-size:15px}
+.culture-variety-line.is-search-match td{background:#f2faef}
+@media(max-width:980px){.zone-climate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.zone-climate-card{width:calc(100% - 32px)}}
+@media(max-width:620px){.zone-climate-grid{grid-template-columns:1fr}.zone-climate-card{width:100%}}

@@ -1,4 +1,4 @@
-/* v122: locality picker + split popular/additional culture tables */
+/* v123: locality picker + split tables + audit polish */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -233,7 +233,11 @@
     var count = root.querySelector('[data-culture-count]');
     var empty = root.querySelector('[data-culture-empty]');
     var chips = Array.prototype.slice.call(root.querySelectorAll('[data-quick-recommendation]'));
-    var itemLabel = root.getAttribute('data-item-label') || 'культур';
+    var itemLabel = root.getAttribute('data-item-label') || 'позиций';
+
+    function formatShown(current, total){
+      return 'Показано ' + current + ' из ' + total + ' ' + itemLabel;
+    }
 
     function uniqueValues(key){
       var values = [];
@@ -247,6 +251,22 @@
       select.innerHTML = '<option value="">'+label+'</option>' + uniqueValues(key).map(function(value){
         return '<option value="'+escapeTableHtml(value)+'">'+escapeTableHtml(value)+'</option>';
       }).join('');
+    }
+    function refreshQuickChips(){
+      if(!chips.length) return;
+      var stats = {};
+      items.forEach(function(item){
+        var key = item.recommendation || '';
+        if(!key) return;
+        stats[key] = (stats[key] || 0) + 1;
+      });
+      chips.forEach(function(chip){
+        var value = chip.getAttribute('data-quick-recommendation') || '';
+        var n = stats[value] || 0;
+        var strong = chip.querySelector('strong');
+        if(strong) strong.textContent = n;
+        chip.hidden = n === 0;
+      });
     }
     function updateQuickState(){
       var current = rec ? rec.value : '';
@@ -288,22 +308,35 @@
       var lead = typeText ? (typeText.charAt(0).toUpperCase() + typeText.slice(1)) : 'Сортовой ориентир для условий зоны';
       if(!/[.!?]$/.test(lead)) lead += '.';
       var parts = [lead];
-      if(variety.place) parts.push('Подходит для: ' + String(variety.place).toLowerCase() + '.');
       if(variety.recommendation === 'С укрытием / уходом') parts.push('Нужны укрытие или более внимательный уход.');
       else if(variety.recommendation === 'Рискованно') parts.push('Результат сильнее зависит от погоды и ухода.');
       else if(variety.recommendation === 'Рекомендовано') parts.push('Лучше показывает себя при обычном стабильном уходе.');
       return parts.join(' ');
     }
+    function stripPlaceEcho(note){
+      return String(note || '')
+        .replace(/\s*Подходит для:\s*[^.!?]+[.!?]?/gi, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
     function varietyDisplayNote(parentNote, variety){
       var parentNorm = normalizeNoteValue(parentNote);
-      var note = String(variety.note || '').trim();
+      var note = stripPlaceEcho(variety.note);
       if(!note) return buildVarietyNote(variety);
       var varietyNorm = normalizeNoteValue(note);
       if(parentNorm && varietyNorm.indexOf(parentNorm) === 0) return buildVarietyNote(variety);
       return note;
     }
-    function varietyLineHtml(variety, groupId, parentNote){
-      return '<tr class="culture-variety-line" data-variety-group="'+groupId+'" hidden>'+ 
+    function varietyMatchesQuery(variety, query){
+      if(!query) return false;
+      return normalizeTableText([variety.name, variety.type, variety.recommendation, variety.place, variety.timing, variety.note].join(' ')).indexOf(query) !== -1;
+    }
+    function itemHasVarietyMatch(item, query){
+      return !!(query && (item.varieties || []).some(function(variety){ return varietyMatchesQuery(variety, query); }));
+    }
+    function varietyLineHtml(variety, groupId, parentNote, expanded, query){
+      var isMatch = varietyMatchesQuery(variety, query);
+      return '<tr class="culture-variety-line'+(isMatch ? ' is-search-match' : '')+'" data-variety-group="'+groupId+'"'+(expanded ? '' : ' hidden')+'>'+ 
         '<td><span class="culture-variety-name"><b>↳ '+escapeTableHtml(variety.name || '')+'</b><small>'+escapeTableHtml(variety.type || 'сорт / гибрид')+'</small></span></td>'+ 
         '<td><span class="category-badge">'+escapeTableHtml(variety.type || 'сорт / гибрид')+'</span></td>'+ 
         '<td><span class="rec-badge" data-rec="'+escapeTableHtml(variety.recommendation || '')+'">'+escapeTableHtml(variety.recommendation || '')+'</span></td>'+ 
@@ -313,17 +346,18 @@
       '</tr>';
     }
     function varietyCountLabel(count){
-      if(!count) return 'сорта';
+      if(!count) return 'варианты';
       var last = count % 10;
       var lastTwo = count % 100;
-      var word = (last === 1 && lastTwo !== 11) ? 'сорт' : ((last >= 2 && last <= 4 && (lastTwo < 12 || lastTwo > 14)) ? 'сорта' : 'сортов');
+      var word = (last === 1 && lastTwo !== 11) ? 'вариант' : ((last >= 2 && last <= 4 && (lastTwo < 12 || lastTwo > 14)) ? 'варианта' : 'вариантов');
       return count + ' ' + word;
     }
-    function rowHtml(item, index, scope){
+    function rowHtml(item, index, scope, query){
       var hasVarieties = item.varieties && item.varieties.length;
       var rowId = 'culture-varieties-' + (scope || 'all') + '-' + index;
+      var openBySearch = hasVarieties && itemHasVarietyMatch(item, query);
       var firstCell = hasVarieties
-        ? '<button type="button" class="culture-toggle" data-culture-toggle="'+rowId+'" aria-expanded="false">'+
+        ? '<button type="button" class="culture-toggle" data-culture-toggle="'+rowId+'" aria-expanded="'+(openBySearch ? 'true' : 'false')+'">'+
             '<span><strong>'+escapeTableHtml(item.name)+'</strong><small>'+escapeTableHtml(item.group || '')+'</small></span>'+ 
             '<em>'+varietyCountLabel(item.varieties.length)+'</em>'+ 
           '</button>'
@@ -338,7 +372,7 @@
       '</tr>';
       if(!hasVarieties) return mainRow;
       return mainRow + item.varieties.map(function(variety){
-        return varietyLineHtml(variety, rowId, item.note);
+        return varietyLineHtml(variety, rowId, item.note, openBySearch, query);
       }).join('');
     }
     function bindVarietyToggles(container){
@@ -360,6 +394,7 @@
     }
     function render(){
       var list = getList();
+      var query = normalizeTableText(search && search.value);
       if(sectionBodies.length){
         var totalShown = 0;
         sectionBodies.forEach(function(body){
@@ -367,19 +402,19 @@
           var rows = sectionList(list, key);
           var totalRows = sectionList(items, key).length;
           var wrap = body.closest('[data-culture-section]');
-          body.innerHTML = rows.map(function(item, index){ return rowHtml(item, index, key); }).join('');
+          body.innerHTML = rows.map(function(item, index){ return rowHtml(item, index, key, query); }).join('');
           bindVarietyToggles(body);
           totalShown += rows.length;
           var sectionCounter = root.querySelector('[data-culture-section-count="'+key+'"]');
-          if(sectionCounter) sectionCounter.textContent = 'Показано ' + rows.length + ' из ' + totalRows + ' ' + itemLabel;
+          if(sectionCounter) sectionCounter.textContent = formatShown(rows.length, totalRows);
           if(wrap) wrap.hidden = rows.length === 0;
         });
-        if(count) count.textContent = 'Показано ' + totalShown + ' из ' + items.length + ' ' + itemLabel;
+        if(count) count.textContent = formatShown(totalShown, items.length);
         if(empty) empty.hidden = totalShown !== 0;
       }else if(singleBody){
-        singleBody.innerHTML = list.map(function(item, index){ return rowHtml(item, index, 'all'); }).join('');
+        singleBody.innerHTML = list.map(function(item, index){ return rowHtml(item, index, 'all', query); }).join('');
         bindVarietyToggles(singleBody);
-        if(count) count.textContent = 'Показано ' + list.length + ' из ' + items.length + ' ' + itemLabel;
+        if(count) count.textContent = formatShown(list.length, items.length);
         if(empty) empty.hidden = list.length !== 0;
       }
       updateQuickState();
@@ -387,6 +422,7 @@
 
     fillSelect(cat, 'Все', 'category');
     fillSelect(method, 'Все', 'method');
+    refreshQuickChips();
 
     [search, rec, cat, method].forEach(function(control){
       if(!control) return;
