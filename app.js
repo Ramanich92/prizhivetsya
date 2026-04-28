@@ -1,4 +1,4 @@
-/* v107: locality picker + detailed CFO regions */
+/* v114: locality picker + region settlement search aliases */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -30,11 +30,19 @@
       for(const subject of d.subjects || []){
         const s = Object.assign({ federalDistrictId:d.id, federalDistrictName:d.name, federalDistrictShort:d.short }, subject);
         index.push({ type:'subject', title:subject.name, subtitle:d.name, subject:s, zone:(subject.zones || [])[0] || null, place:'', tokens:normalizeText([subject.name,d.name,d.short].join(' ')) });
+        const indexedPlaces = new Set();
         for(const zone of subject.zones || []){
           index.push({ type:'zone', title:zone.name + ' · ' + subject.name, subtitle:d.short + ' · зона / подрегион', subject:s, zone:zone, place:'', tokens:normalizeText([zone.name,subject.name,d.name,d.short].join(' ')) });
           for(const place of zone.places || []){
+            indexedPlaces.add(normalizeText(place));
             index.push({ type:'place', title:place, subtitle:subject.name + ' · ' + zone.name, subject:s, zone:zone, place:place, tokens:normalizeText([place,zone.name,subject.name,d.name,d.short].join(' ')) });
           }
+        }
+        for(const place of subject.searchPlaces || []){
+          const key = normalizeText(place);
+          if(indexedPlaces.has(key)) continue;
+          indexedPlaces.add(key);
+          index.push({ type:'place', title:place, subtitle:subject.name + ' · населённый пункт', subject:s, zone:null, place:place, tokens:normalizeText([place,subject.name,d.name,d.short].join(' ')) });
         }
       }
     }

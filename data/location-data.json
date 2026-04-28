@@ -1,7 +1,7 @@
 {
-  "version": "v107-full-cfo",
-  "updated": "2026-04-27",
-  "status": "cfo-detailed",
+  "version": "v114-region-search-places",
+  "updated": "2026-04-28",
+  "status": "region-search-place-aliases",
   "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; зоны являются рабочим садовым каркасом, не официальным районированием.",
   "subjectCount": 83,
   "zoneCount": 283,
@@ -153,7 +153,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/belgorodskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Белгород",
+            "Старый Оскол",
+            "Губкин",
+            "Шебекино",
+            "Алексеевка",
+            "Валуйки",
+            "Строитель",
+            "Новый Оскол",
+            "Бирюч",
+            "Грайворон",
+            "Короча",
+            "Борисовка",
+            "Чернянка",
+            "Ровеньки",
+            "Прохоровка",
+            "Ивня"
+          ]
         },
         {
           "id": "bryanskaya-oblast",
@@ -319,7 +337,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/bryanskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Брянск",
+            "Клинцы",
+            "Новозыбков",
+            "Дятьково",
+            "Унеча",
+            "Стародуб",
+            "Карачев",
+            "Жуковка",
+            "Сельцо",
+            "Почеп",
+            "Трубчевск",
+            "Фокино",
+            "Сураж",
+            "Мглин",
+            "Севск",
+            "Злынка"
+          ]
         },
         {
           "id": "vladimirskaya-oblast",
@@ -484,7 +520,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/vladimirskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Владимир",
+            "Ковров",
+            "Муром",
+            "Александров",
+            "Гусь-Хрустальный",
+            "Кольчугино",
+            "Вязники",
+            "Киржач",
+            "Юрьев-Польский",
+            "Радужный",
+            "Собинка",
+            "Покров",
+            "Лакинск",
+            "Меленки",
+            "Камешково",
+            "Суздаль"
+          ]
         },
         {
           "id": "voronezhskaya-oblast",
@@ -646,7 +700,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/voronezhskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Воронеж",
+            "Борисоглебск",
+            "Россошь",
+            "Лиски",
+            "Острогожск",
+            "Нововоронеж",
+            "Семилуки",
+            "Павловск",
+            "Бутурлиновка",
+            "Калач",
+            "Поворино",
+            "Богучар",
+            "Эртиль",
+            "Новохопёрск",
+            "Бобров",
+            "Анна"
+          ]
         },
         {
           "id": "ivanovskaya-oblast",
@@ -811,7 +883,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/ivanovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Иваново",
+            "Кинешма",
+            "Шуя",
+            "Вичуга",
+            "Фурманов",
+            "Тейково",
+            "Родники",
+            "Кохма",
+            "Приволжск",
+            "Южа",
+            "Заволжск",
+            "Наволоки",
+            "Комсомольск",
+            "Юрьевец",
+            "Пучеж",
+            "Гаврилов Посад"
+          ]
         },
         {
           "id": "kaluzhskaya-oblast",
@@ -973,7 +1063,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/kaluzhskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Калуга",
+            "Обнинск",
+            "Людиново",
+            "Киров",
+            "Малоярославец",
+            "Балабаново",
+            "Козельск",
+            "Сухиничи",
+            "Кондрово",
+            "Жуков",
+            "Боровск",
+            "Кремёнки",
+            "Ермолино",
+            "Таруса",
+            "Медынь",
+            "Мещовск"
+          ]
         },
         {
           "id": "kostromskaya-oblast",
@@ -1137,7 +1245,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/kostromskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Кострома",
+            "Буй",
+            "Шарья",
+            "Нерехта",
+            "Галич",
+            "Мантурово",
+            "Волгореченск",
+            "Нея",
+            "Макарьев",
+            "Солигалич",
+            "Чухлома",
+            "Кологрив",
+            "Красное-на-Волге",
+            "Судиславль",
+            "Поназырево",
+            "Вохма"
+          ]
         },
         {
           "id": "kurskaya-oblast",
@@ -1299,7 +1425,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/kurskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Курск",
+            "Железногорск",
+            "Курчатов",
+            "Льгов",
+            "Рыльск",
+            "Щигры",
+            "Обоянь",
+            "Дмитриев",
+            "Фатеж",
+            "Суджа",
+            "Золотухино",
+            "Тим",
+            "Медвенка",
+            "Глушково",
+            "Касторное",
+            "Поныри"
+          ]
         },
         {
           "id": "lipetskaya-oblast",
@@ -1465,7 +1609,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/lipetskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Липецк",
+            "Елец",
+            "Грязи",
+            "Лебедянь",
+            "Данков",
+            "Усмань",
+            "Чаплыгин",
+            "Задонск",
+            "Тербуны",
+            "Добринка",
+            "Доброе",
+            "Хлевное",
+            "Становое",
+            "Измалково",
+            "Лев Толстой",
+            "Волово"
+          ]
         },
         {
           "id": "moskovskaya-oblast",
@@ -1687,7 +1849,29 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/moskovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Балашиха",
+            "Подольск",
+            "Химки",
+            "Мытищи",
+            "Королёв",
+            "Люберцы",
+            "Красногорск",
+            "Электросталь",
+            "Коломна",
+            "Одинцово",
+            "Сергиев Посад",
+            "Щёлково",
+            "Домодедово",
+            "Раменское",
+            "Орехово-Зуево",
+            "Долгопрудный",
+            "Пушкино",
+            "Реутов",
+            "Жуковский",
+            "Ногинск"
+          ]
         },
         {
           "id": "moskva",
@@ -1799,7 +1983,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/moskva.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Москва",
+            "Зеленоград",
+            "Троицк",
+            "Щербинка",
+            "Московский",
+            "Коммунарка",
+            "Внуково",
+            "Кокошкино",
+            "Киевский",
+            "Вороново",
+            "Краснопахорское",
+            "Роговское",
+            "Марушкинское",
+            "Первомайское",
+            "Сосенское",
+            "Новофёдоровское"
+          ]
         },
         {
           "id": "orlovskaya-oblast",
@@ -1964,7 +2166,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/orlovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Орёл",
+            "Ливны",
+            "Мценск",
+            "Болхов",
+            "Дмитровск",
+            "Малоархангельск",
+            "Новосиль",
+            "Кромы",
+            "Знаменское",
+            "Хотынец",
+            "Верховье",
+            "Глазуновка",
+            "Долгое",
+            "Колпна",
+            "Покровское",
+            "Залегощь"
+          ]
         },
         {
           "id": "ryazanskaya-oblast",
@@ -2129,7 +2349,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/ryazanskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Рязань",
+            "Касимов",
+            "Скопин",
+            "Сасово",
+            "Ряжск",
+            "Рыбное",
+            "Новомичуринск",
+            "Кораблино",
+            "Михайлов",
+            "Спасск-Рязанский",
+            "Шацк",
+            "Спас-Клепики",
+            "Старожилово",
+            "Пронск",
+            "Сараи",
+            "Милославское"
+          ]
         },
         {
           "id": "smolenskaya-oblast",
@@ -2293,7 +2531,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/smolenskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Смоленск",
+            "Вязьма",
+            "Рославль",
+            "Ярцево",
+            "Сафоново",
+            "Гагарин",
+            "Десногорск",
+            "Дорогобуж",
+            "Рудня",
+            "Ельня",
+            "Починок",
+            "Сычёвка",
+            "Велиж",
+            "Демидов",
+            "Духовщина",
+            "Красный"
+          ]
         },
         {
           "id": "tambovskaya-oblast",
@@ -2460,7 +2716,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/tambovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Тамбов",
+            "Мичуринск",
+            "Рассказово",
+            "Моршанск",
+            "Котовск",
+            "Уварово",
+            "Кирсанов",
+            "Жердевка",
+            "Первомайский",
+            "Сосновка",
+            "Знаменка",
+            "Инжавино",
+            "Мучкапский",
+            "Петровское",
+            "Сампур",
+            "Пичаево"
+          ]
         },
         {
           "id": "tverskaya-oblast",
@@ -2675,7 +2949,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/tverskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Тверь",
+            "Ржев",
+            "Вышний Волочёк",
+            "Торжок",
+            "Кимры",
+            "Конаково",
+            "Удомля",
+            "Бологое",
+            "Осташков",
+            "Кашин",
+            "Калязин",
+            "Лихославль",
+            "Нелидово",
+            "Старица",
+            "Зубцов",
+            "Бежецк"
+          ]
         },
         {
           "id": "tulskaya-oblast",
@@ -2837,7 +3129,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/tulskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Тула",
+            "Новомосковск",
+            "Донской",
+            "Алексин",
+            "Щёкино",
+            "Узловая",
+            "Ефремов",
+            "Богородицк",
+            "Кимовск",
+            "Киреевск",
+            "Суворов",
+            "Ясногорск",
+            "Венёв",
+            "Белёв",
+            "Плавск",
+            "Липки"
+          ]
         },
         {
           "id": "yaroslavskaya-oblast",
@@ -3002,7 +3312,25 @@
           ],
           "federalDistrictId": "cfo",
           "page": "regions/yaroslavskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Ярославль",
+            "Рыбинск",
+            "Тутаев",
+            "Переславль-Залесский",
+            "Углич",
+            "Ростов",
+            "Гаврилов-Ям",
+            "Данилов",
+            "Пошехонье",
+            "Мышкин",
+            "Любим",
+            "Борисоглебский",
+            "Некрасовское",
+            "Семибратово",
+            "Петровское",
+            "Константиновский"
+          ]
         }
       ]
     },
@@ -3163,7 +3491,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/respublika-kareliya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Петрозаводск",
+            "Кондопога",
+            "Костомукша",
+            "Сегежа",
+            "Сортавала",
+            "Медвежьегорск",
+            "Беломорск",
+            "Кемь",
+            "Питкяранта",
+            "Олонец",
+            "Лахденпохья",
+            "Суоярви",
+            "Пудож",
+            "Надвоицы",
+            "Пряжа",
+            "Калевала"
+          ]
         },
         {
           "id": "respublika-komi",
@@ -3313,7 +3659,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/respublika-komi.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Сыктывкар",
+            "Ухта",
+            "Воркута",
+            "Печора",
+            "Усинск",
+            "Инта",
+            "Сосногорск",
+            "Емва",
+            "Микунь",
+            "Вуктыл",
+            "Жешарт",
+            "Выльгорт",
+            "Айкино",
+            "Усть-Кулом",
+            "Объячево",
+            "Троицко-Печорск"
+          ]
         },
         {
           "id": "arhangelskaya-oblast",
@@ -3514,7 +3878,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/arhangelskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Архангельск",
+            "Северодвинск",
+            "Котлас",
+            "Новодвинск",
+            "Коряжма",
+            "Мирный",
+            "Вельск",
+            "Няндома",
+            "Онега",
+            "Каргополь",
+            "Шенкурск",
+            "Мезень",
+            "Сольвычегодск",
+            "Холмогоры",
+            "Плесецк",
+            "Савинский"
+          ]
         },
         {
           "id": "nenetskiy-avtonomnyy-okrug",
@@ -3662,7 +4044,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/nenetskiy-avtonomnyy-okrug.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Нарьян-Мар",
+            "Искателей",
+            "Красное",
+            "Нельмин-Нос",
+            "Тельвиска",
+            "Оксино",
+            "Харута",
+            "Хорей-Вер",
+            "Несь",
+            "Ома",
+            "Индига",
+            "Амдерма",
+            "Варандей",
+            "Бугрино",
+            "Усть-Кара",
+            "Коткино"
+          ]
         },
         {
           "id": "vologodskaya-oblast",
@@ -3818,7 +4218,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/vologodskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Вологда",
+            "Череповец",
+            "Сокол",
+            "Великий Устюг",
+            "Грязовец",
+            "Бабаево",
+            "Вытегра",
+            "Тотьма",
+            "Харовск",
+            "Белозерск",
+            "Устюжна",
+            "Никольск",
+            "Кириллов",
+            "Кадников",
+            "Чагода",
+            "Шексна"
+          ]
         },
         {
           "id": "kaliningradskaya-oblast",
@@ -3972,7 +4390,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/kaliningradskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Калининград",
+            "Советск",
+            "Черняховск",
+            "Балтийск",
+            "Гусев",
+            "Светлый",
+            "Гурьевск",
+            "Зеленоградск",
+            "Пионерский",
+            "Неман",
+            "Светлогорск",
+            "Мамоново",
+            "Полесск",
+            "Багратионовск",
+            "Гвардейск",
+            "Озёрск"
+          ]
         },
         {
           "id": "leningradskaya-oblast",
@@ -4173,7 +4609,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/leningradskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Гатчина",
+            "Выборг",
+            "Всеволожск",
+            "Сосновый Бор",
+            "Тихвин",
+            "Кириши",
+            "Кингисепп",
+            "Луга",
+            "Волхов",
+            "Тосно",
+            "Сланцы",
+            "Кировск",
+            "Отрадное",
+            "Пикалёво",
+            "Сертолово",
+            "Приозерск"
+          ]
         },
         {
           "id": "murmanskaya-oblast",
@@ -4323,7 +4777,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/murmanskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Мурманск",
+            "Апатиты",
+            "Североморск",
+            "Мончегорск",
+            "Кандалакша",
+            "Кировск",
+            "Оленегорск",
+            "Полярный",
+            "Ковдор",
+            "Заполярный",
+            "Полярные Зори",
+            "Кола",
+            "Заозёрск",
+            "Снежногорск",
+            "Гаджиево",
+            "Видяево"
+          ]
         },
         {
           "id": "novgorodskaya-oblast",
@@ -4479,7 +4951,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/novgorodskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Великий Новгород",
+            "Боровичи",
+            "Старая Русса",
+            "Пестово",
+            "Валдай",
+            "Чудово",
+            "Окуловка",
+            "Малая Вишера",
+            "Сольцы",
+            "Холм",
+            "Крестцы",
+            "Демянск",
+            "Парфино",
+            "Шимск",
+            "Батецкий",
+            "Хвойная"
+          ]
         },
         {
           "id": "pskovskaya-oblast",
@@ -4633,7 +5123,25 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/pskovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Псков",
+            "Великие Луки",
+            "Остров",
+            "Невель",
+            "Опочка",
+            "Печоры",
+            "Порхов",
+            "Дно",
+            "Новосокольники",
+            "Себеж",
+            "Гдов",
+            "Пустошка",
+            "Пыталово",
+            "Плюсса",
+            "Струги Красные",
+            "Бежаницы"
+          ]
         },
         {
           "id": "sankt-peterburg",
@@ -4741,7 +5249,26 @@
           ],
           "federalDistrictId": "szfo",
           "page": "regions/sankt-peterburg.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Санкт-Петербург",
+            "Колпино",
+            "Пушкин",
+            "Петергоф",
+            "Кронштадт",
+            "Ломоносов",
+            "Павловск",
+            "Сестрорецк",
+            "Зеленогорск",
+            "Красное Село",
+            "Стрельна",
+            "Парголово",
+            "Левашово",
+            "Металлострой",
+            "Песочный",
+            "Шушары",
+            "Лисий Нос"
+          ]
         }
       ]
     },
@@ -4899,7 +5426,25 @@
           ],
           "federalDistrictId": "yfo",
           "page": "regions/respublika-adygeya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Майкоп",
+            "Адыгейск",
+            "Яблоновский",
+            "Энем",
+            "Тлюстенхабль",
+            "Красногвардейское",
+            "Гиагинская",
+            "Кошехабль",
+            "Ханская",
+            "Дондуковская",
+            "Тульский",
+            "Каменномостский",
+            "Гузерипль",
+            "Хакуринохабль",
+            "Шовгеновский",
+            "Понежукай"
+          ]
         },
         {
           "id": "respublika-kalmykiya",
@@ -5094,7 +5639,25 @@
           ],
           "federalDistrictId": "yfo",
           "page": "regions/respublika-kalmykiya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Элиста",
+            "Лагань",
+            "Городовиковск",
+            "Малые Дербеты",
+            "Яшалта",
+            "Яшкуль",
+            "Ики-Бурул",
+            "Комсомольский",
+            "Троицкое",
+            "Садовое",
+            "Приютное",
+            "Цаган Аман",
+            "Большой Царын",
+            "Кетченеры",
+            "Утта",
+            "Артезиан"
+          ]
         },
         {
           "id": "krasnodarskiy-kray",
@@ -5348,7 +5911,25 @@
           ],
           "federalDistrictId": "yfo",
           "page": "regions/krasnodarskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Краснодар",
+            "Сочи",
+            "Новороссийск",
+            "Армавир",
+            "Ейск",
+            "Анапа",
+            "Геленджик",
+            "Туапсе",
+            "Тихорецк",
+            "Кропоткин",
+            "Славянск-на-Кубани",
+            "Лабинск",
+            "Тимашёвск",
+            "Крымск",
+            "Апшеронск",
+            "Белореченск"
+          ]
         },
         {
           "id": "astrahanskaya-oblast",
@@ -5502,7 +6083,25 @@
           ],
           "federalDistrictId": "yfo",
           "page": "regions/astrahanskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Астрахань",
+            "Ахтубинск",
+            "Знаменск",
+            "Харабали",
+            "Камызяк",
+            "Нариманов",
+            "Красный Яр",
+            "Икряное",
+            "Лиман",
+            "Енотаевка",
+            "Володарский",
+            "Началово",
+            "Чёрный Яр",
+            "Капустин Яр",
+            "Верхний Баскунчак",
+            "Красные Баррикады"
+          ]
         },
         {
           "id": "volgogradskaya-oblast",
@@ -5705,7 +6304,25 @@
           ],
           "federalDistrictId": "yfo",
           "page": "regions/volgogradskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Волгоград",
+            "Волжский",
+            "Камышин",
+            "Михайловка",
+            "Урюпинск",
+            "Фролово",
+            "Калач-на-Дону",
+            "Котельниково",
+            "Суровикино",
+            "Котово",
+            "Жирновск",
+            "Палласовка",
+            "Дубовка",
+            "Ленинск",
+            "Николаевск",
+            "Быково"
+          ]
         },
         {
           "id": "rostovskaya-oblast",
@@ -5907,7 +6524,25 @@
           ],
           "federalDistrictId": "yfo",
           "page": "regions/rostovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Ростов-на-Дону",
+            "Таганрог",
+            "Шахты",
+            "Волгодонск",
+            "Новочеркасск",
+            "Батайск",
+            "Новошахтинск",
+            "Каменск-Шахтинский",
+            "Азов",
+            "Гуково",
+            "Сальск",
+            "Донецк",
+            "Белая Калитва",
+            "Аксай",
+            "Миллерово",
+            "Морозовск"
+          ]
         }
       ]
     },
@@ -6112,7 +6747,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/respublika-dagestan.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Махачкала",
+            "Хасавюрт",
+            "Дербент",
+            "Каспийск",
+            "Буйнакск",
+            "Избербаш",
+            "Кизляр",
+            "Кизилюрт",
+            "Дагестанские Огни",
+            "Южно-Сухокумск",
+            "Бабаюрт",
+            "Карабудахкент",
+            "Тарки",
+            "Ахты",
+            "Ботлих",
+            "Гуниб"
+          ]
         },
         {
           "id": "respublika-ingushetiya",
@@ -6262,7 +6915,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/respublika-ingushetiya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Назрань",
+            "Магас",
+            "Сунжа",
+            "Малгобек",
+            "Карабулак",
+            "Экажево",
+            "Плиево",
+            "Кантышево",
+            "Барсуки",
+            "Сагопши",
+            "Нестеровская",
+            "Орджоникидзевская",
+            "Галашки",
+            "Джейрах",
+            "Троицкая",
+            "Али-Юрт"
+          ]
         },
         {
           "id": "kabardino-balkarskaya-respublika",
@@ -6460,7 +7131,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/kabardino-balkarskaya-respublika.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Нальчик",
+            "Прохладный",
+            "Баксан",
+            "Нарткала",
+            "Майский",
+            "Терек",
+            "Тырныауз",
+            "Чегем",
+            "Залукокоаже",
+            "Кашхатау",
+            "Анзорей",
+            "Урвань",
+            "Кенже",
+            "Исламей",
+            "Эльбрус",
+            "Верхняя Балкария"
+          ]
         },
         {
           "id": "karachaevo-cherkesskaya-respublika",
@@ -6657,7 +7346,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/karachaevo-cherkesskaya-respublika.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Черкесск",
+            "Усть-Джегута",
+            "Карачаевск",
+            "Теберда",
+            "Зеленчукская",
+            "Эркен-Шахар",
+            "Адыге-Хабль",
+            "Хабез",
+            "Учкекен",
+            "Курджиново",
+            "Домбай",
+            "Преградная",
+            "Исправная",
+            "Красный Курган",
+            "Медногорский",
+            "Орджоникидзевский"
+          ]
         },
         {
           "id": "respublika-severnaya-osetiya-alaniya",
@@ -6854,7 +7561,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/respublika-severnaya-osetiya-alaniya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Владикавказ",
+            "Моздок",
+            "Беслан",
+            "Алагир",
+            "Ардон",
+            "Дигора",
+            "Эльхотово",
+            "Чикола",
+            "Октябрьское",
+            "Михайловское",
+            "Заводской",
+            "Гизель",
+            "Верхний Фиагдон",
+            "Фиагдон",
+            "Архонская",
+            "Ногир"
+          ]
         },
         {
           "id": "chechenskaya-respublika",
@@ -7006,7 +7731,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/chechenskaya-respublika.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Грозный",
+            "Урус-Мартан",
+            "Шали",
+            "Гудермес",
+            "Аргун",
+            "Курчалой",
+            "Ачхой-Мартан",
+            "Наурская",
+            "Шатой",
+            "Итум-Кали",
+            "Ведено",
+            "Серноводское",
+            "Толстой-Юрт",
+            "Аллерой",
+            "Автуры",
+            "Цоцин-Юрт"
+          ]
         },
         {
           "id": "stavropolskiy-kray",
@@ -7210,7 +7953,25 @@
           ],
           "federalDistrictId": "skfo",
           "page": "regions/stavropolskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Ставрополь",
+            "Пятигорск",
+            "Кисловодск",
+            "Ессентуки",
+            "Невинномысск",
+            "Минеральные Воды",
+            "Георгиевск",
+            "Михайловск",
+            "Будённовск",
+            "Изобильный",
+            "Светлоград",
+            "Благодарный",
+            "Зеленокумск",
+            "Нефтекумск",
+            "Ипатово",
+            "Новоалександровск"
+          ]
         }
       ]
     },
@@ -7422,7 +8183,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/bashkortostan.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Уфа",
+            "Стерлитамак",
+            "Салават",
+            "Нефтекамск",
+            "Октябрьский",
+            "Туймазы",
+            "Белорецк",
+            "Ишимбай",
+            "Сибай",
+            "Кумертау",
+            "Белебей",
+            "Мелеуз",
+            "Бирск",
+            "Учалы",
+            "Дюртюли",
+            "Янаул"
+          ]
         },
         {
           "id": "respublika-mariy-el",
@@ -7577,7 +8356,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/respublika-mariy-el.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Йошкар-Ола",
+            "Волжск",
+            "Козьмодемьянск",
+            "Звенигово",
+            "Медведево",
+            "Морки",
+            "Сернур",
+            "Советский",
+            "Оршанка",
+            "Новый Торъял",
+            "Килемары",
+            "Параньга",
+            "Мари-Турек",
+            "Юрино",
+            "Красногорский",
+            "Суслонгер"
+          ]
         },
         {
           "id": "respublika-mordoviya",
@@ -7731,7 +8528,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/respublika-mordoviya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Саранск",
+            "Рузаевка",
+            "Ковылкино",
+            "Краснослободск",
+            "Ардатов",
+            "Темников",
+            "Инсар",
+            "Лямбирь",
+            "Торбеево",
+            "Зубова Поляна",
+            "Ромоданово",
+            "Чамзинка",
+            "Комсомольский",
+            "Атяшево",
+            "Большое Игнатово",
+            "Старое Шайгово"
+          ]
         },
         {
           "id": "respublika-tatarstan",
@@ -7936,7 +8751,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/respublika-tatarstan.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Казань",
+            "Набережные Челны",
+            "Нижнекамск",
+            "Альметьевск",
+            "Зеленодольск",
+            "Бугульма",
+            "Елабуга",
+            "Лениногорск",
+            "Чистополь",
+            "Заинск",
+            "Азнакаево",
+            "Нурлат",
+            "Бавлы",
+            "Менделеевск",
+            "Буинск",
+            "Арск"
+          ]
         },
         {
           "id": "udmurtskaya-respublika",
@@ -8090,7 +8923,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/udmurtskaya-respublika.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Ижевск",
+            "Воткинск",
+            "Сарапул",
+            "Глазов",
+            "Можга",
+            "Камбарка",
+            "Ува",
+            "Игра",
+            "Балезино",
+            "Завьялово",
+            "Малая Пурга",
+            "Алнаши",
+            "Кез",
+            "Шаркан",
+            "Якшур-Бодья",
+            "Кизнер"
+          ]
         },
         {
           "id": "chuvashskaya-respublika",
@@ -8244,7 +9095,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/chuvashskaya-respublika.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Чебоксары",
+            "Новочебоксарск",
+            "Канаш",
+            "Алатырь",
+            "Шумерля",
+            "Цивильск",
+            "Козловка",
+            "Мариинский Посад",
+            "Ядрин",
+            "Урмары",
+            "Батырево",
+            "Комсомольское",
+            "Ибреси",
+            "Красноармейское",
+            "Вурнары",
+            "Порецкое"
+          ]
         },
         {
           "id": "permskiy-kray",
@@ -8449,7 +9318,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/permskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Пермь",
+            "Березники",
+            "Соликамск",
+            "Чайковский",
+            "Кунгур",
+            "Лысьва",
+            "Краснокамск",
+            "Чусовой",
+            "Добрянка",
+            "Чернушка",
+            "Кудымкар",
+            "Губаха",
+            "Верещагино",
+            "Оса",
+            "Нытва",
+            "Александровск"
+          ]
         },
         {
           "id": "kirovskaya-oblast",
@@ -8603,7 +9490,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/kirovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Киров",
+            "Кирово-Чепецк",
+            "Слободской",
+            "Вятские Поляны",
+            "Котельнич",
+            "Омутнинск",
+            "Яранск",
+            "Советск",
+            "Сосновка",
+            "Белая Холуница",
+            "Луза",
+            "Зуевка",
+            "Нолинск",
+            "Уржум",
+            "Малмыж",
+            "Мураши"
+          ]
         },
         {
           "id": "nizhegorodskaya-oblast",
@@ -8759,7 +9664,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/nizhegorodskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Нижний Новгород",
+            "Дзержинск",
+            "Арзамас",
+            "Саров",
+            "Бор",
+            "Кстово",
+            "Павлово",
+            "Выкса",
+            "Балахна",
+            "Заволжье",
+            "Богородск",
+            "Кулебаки",
+            "Городец",
+            "Семёнов",
+            "Лысково",
+            "Сергач"
+          ]
         },
         {
           "id": "orenburgskaya-oblast",
@@ -8964,7 +9887,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/orenburgskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Оренбург",
+            "Орск",
+            "Новотроицк",
+            "Бузулук",
+            "Бугуруслан",
+            "Гай",
+            "Сорочинск",
+            "Соль-Илецк",
+            "Медногорск",
+            "Кувандык",
+            "Абдулино",
+            "Ясный",
+            "Акбулак",
+            "Саракташ",
+            "Домбаровский",
+            "Переволоцкий"
+          ]
         },
         {
           "id": "penzenskaya-oblast",
@@ -9118,7 +10059,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/penzenskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Пенза",
+            "Кузнецк",
+            "Заречный",
+            "Каменка",
+            "Сердобск",
+            "Нижний Ломов",
+            "Никольск",
+            "Городище",
+            "Белинский",
+            "Спасск",
+            "Сурск",
+            "Мокшан",
+            "Бессоновка",
+            "Башмаково",
+            "Исса",
+            "Колышлей"
+          ]
         },
         {
           "id": "samarskaya-oblast",
@@ -9323,7 +10282,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/samarskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Самара",
+            "Тольятти",
+            "Сызрань",
+            "Новокуйбышевск",
+            "Чапаевск",
+            "Жигулёвск",
+            "Отрадный",
+            "Кинель",
+            "Похвистнево",
+            "Октябрьск",
+            "Нефтегорск",
+            "Безенчук",
+            "Алексеевка",
+            "Красный Яр",
+            "Большая Черниговка",
+            "Елховка"
+          ]
         },
         {
           "id": "saratovskaya-oblast",
@@ -9526,7 +10503,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/saratovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Саратов",
+            "Энгельс",
+            "Балаково",
+            "Балашов",
+            "Вольск",
+            "Пугачёв",
+            "Ртищево",
+            "Маркс",
+            "Петровск",
+            "Аткарск",
+            "Красноармейск",
+            "Ершов",
+            "Новоузенск",
+            "Калининск",
+            "Хвалынск",
+            "Красный Кут"
+          ]
         },
         {
           "id": "ulyanovskaya-oblast",
@@ -9729,7 +10724,25 @@
           ],
           "federalDistrictId": "pfo",
           "page": "regions/ulyanovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Ульяновск",
+            "Димитровград",
+            "Инза",
+            "Барыш",
+            "Новоульяновск",
+            "Сенгилей",
+            "Карсун",
+            "Новоспасское",
+            "Чердаклы",
+            "Николаевка",
+            "Павловка",
+            "Тереньга",
+            "Сурское",
+            "Цильна",
+            "Большое Нагаткино",
+            "Мулловка"
+          ]
         }
       ]
     },
@@ -9890,7 +10903,25 @@
           ],
           "federalDistrictId": "urfo",
           "page": "regions/kurganskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Курган",
+            "Шадринск",
+            "Шумиха",
+            "Куртамыш",
+            "Катайск",
+            "Далматово",
+            "Петухово",
+            "Макушино",
+            "Щучье",
+            "Каргаполье",
+            "Варгаши",
+            "Кетово",
+            "Мишкино",
+            "Целинное",
+            "Лебяжье",
+            "Половинное"
+          ]
         },
         {
           "id": "sverdlovskaya-oblast",
@@ -10091,7 +11122,25 @@
           ],
           "federalDistrictId": "urfo",
           "page": "regions/sverdlovskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Екатеринбург",
+            "Нижний Тагил",
+            "Каменск-Уральский",
+            "Первоуральск",
+            "Серов",
+            "Новоуральск",
+            "Верхняя Пышма",
+            "Асбест",
+            "Ревда",
+            "Полевской",
+            "Краснотурьинск",
+            "Лесной",
+            "Верхняя Салда",
+            "Качканар",
+            "Ирбит",
+            "Красноуфимск"
+          ]
         },
         {
           "id": "tyumenskaya-oblast",
@@ -10244,7 +11293,25 @@
           ],
           "federalDistrictId": "urfo",
           "page": "regions/tyumenskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Тюмень",
+            "Тобольск",
+            "Ишим",
+            "Ялуторовск",
+            "Заводоуковск",
+            "Голышманово",
+            "Омутинское",
+            "Винзили",
+            "Боровский",
+            "Богандинский",
+            "Уват",
+            "Ярково",
+            "Абатское",
+            "Викулово",
+            "Исетское",
+            "Казанское"
+          ]
         },
         {
           "id": "chelyabinskaya-oblast",
@@ -10448,7 +11515,25 @@
           ],
           "federalDistrictId": "urfo",
           "page": "regions/chelyabinskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Челябинск",
+            "Магнитогорск",
+            "Златоуст",
+            "Миасс",
+            "Копейск",
+            "Озёрск",
+            "Троицк",
+            "Снежинск",
+            "Сатка",
+            "Чебаркуль",
+            "Кыштым",
+            "Южноуральск",
+            "Коркино",
+            "Еманжелинск",
+            "Касли",
+            "Верхний Уфалей"
+          ]
         },
         {
           "id": "hanty-mansiyskiy-avtonomnyy-okrug-yugra",
@@ -10601,7 +11686,25 @@
           ],
           "federalDistrictId": "urfo",
           "page": "regions/hanty-mansiyskiy-avtonomnyy-okrug-yugra.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Сургут",
+            "Нижневартовск",
+            "Нефтеюганск",
+            "Ханты-Мансийск",
+            "Когалым",
+            "Нягань",
+            "Мегион",
+            "Лангепас",
+            "Радужный",
+            "Урай",
+            "Лянтор",
+            "Пыть-Ях",
+            "Югорск",
+            "Советский",
+            "Белоярский",
+            "Покачи"
+          ]
         },
         {
           "id": "yamalo-nenetskiy-avtonomnyy-okrug",
@@ -10751,7 +11854,25 @@
           ],
           "federalDistrictId": "urfo",
           "page": "regions/yamalo-nenetskiy-avtonomnyy-okrug.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Новый Уренгой",
+            "Ноябрьск",
+            "Салехард",
+            "Надым",
+            "Муравленко",
+            "Губкинский",
+            "Лабытнанги",
+            "Тарко-Сале",
+            "Аксарка",
+            "Харп",
+            "Пангоды",
+            "Уренгой",
+            "Пурпе",
+            "Коротчаево",
+            "Сабетта",
+            "Новый Порт"
+          ]
         }
       ]
     },
@@ -10963,7 +12084,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/respublika-altay.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Горно-Алтайск",
+            "Майма",
+            "Кош-Агач",
+            "Турочак",
+            "Чемал",
+            "Онгудай",
+            "Усть-Кан",
+            "Усть-Кокса",
+            "Шебалино",
+            "Чоя",
+            "Улаган",
+            "Акташ",
+            "Кызыл-Озек",
+            "Манжерок",
+            "Иогач",
+            "Артыбаш"
+          ]
         },
         {
           "id": "respublika-tyva",
@@ -11118,7 +12257,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/respublika-tyva.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Кызыл",
+            "Ак-Довурак",
+            "Шагонар",
+            "Чадан",
+            "Туран",
+            "Бай-Хаак",
+            "Сарыг-Сеп",
+            "Каа-Хем",
+            "Эрзин",
+            "Хову-Аксы",
+            "Суг-Аксы",
+            "Кызыл-Мажалык",
+            "Мугур-Аксы",
+            "Самагалтай",
+            "Тээли",
+            "Тоора-Хем"
+          ]
         },
         {
           "id": "respublika-hakasiya",
@@ -11273,7 +12430,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/respublika-hakasiya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Абакан",
+            "Черногорск",
+            "Саяногорск",
+            "Абаза",
+            "Сорск",
+            "Усть-Абакан",
+            "Шира",
+            "Белый Яр",
+            "Аскиз",
+            "Таштып",
+            "Бея",
+            "Копьёво",
+            "Коммунар",
+            "Пригорск",
+            "Майна",
+            "Черёмушки"
+          ]
         },
         {
           "id": "altayskiy-kray",
@@ -11478,7 +12653,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/altayskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Барнаул",
+            "Бийск",
+            "Рубцовск",
+            "Новоалтайск",
+            "Заринск",
+            "Камень-на-Оби",
+            "Славгород",
+            "Алейск",
+            "Яровое",
+            "Белокуриха",
+            "Горняк",
+            "Змеиногорск",
+            "Павловск",
+            "Тальменка",
+            "Кулунда",
+            "Ребриха"
+          ]
         },
         {
           "id": "krasnoyarskiy-kray",
@@ -11682,7 +12875,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/krasnoyarskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Красноярск",
+            "Норильск",
+            "Ачинск",
+            "Канск",
+            "Железногорск",
+            "Минусинск",
+            "Зеленогорск",
+            "Лесосибирск",
+            "Назарово",
+            "Шарыпово",
+            "Дивногорск",
+            "Сосновоборск",
+            "Енисейск",
+            "Боготол",
+            "Иланский",
+            "Ужур"
+          ]
         },
         {
           "id": "irkutskaya-oblast",
@@ -11885,7 +13096,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/irkutskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Иркутск",
+            "Братск",
+            "Ангарск",
+            "Усть-Илимск",
+            "Усолье-Сибирское",
+            "Черемхово",
+            "Шелехов",
+            "Усть-Кут",
+            "Тулун",
+            "Саянск",
+            "Нижнеудинск",
+            "Тайшет",
+            "Вихоревка",
+            "Зима",
+            "Железногорск-Илимский",
+            "Байкальск"
+          ]
         },
         {
           "id": "kemerovskaya-oblast-kuzbass",
@@ -12087,7 +13316,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/kemerovskaya-oblast-kuzbass.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Кемерово",
+            "Новокузнецк",
+            "Прокопьевск",
+            "Междуреченск",
+            "Ленинск-Кузнецкий",
+            "Киселёвск",
+            "Юрга",
+            "Белово",
+            "Анжеро-Судженск",
+            "Осинники",
+            "Мыски",
+            "Мариинск",
+            "Топки",
+            "Таштагол",
+            "Калтан",
+            "Берёзовский"
+          ]
         },
         {
           "id": "novosibirskaya-oblast",
@@ -12243,7 +13490,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/novosibirskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Новосибирск",
+            "Бердск",
+            "Искитим",
+            "Куйбышев",
+            "Барабинск",
+            "Карасук",
+            "Обь",
+            "Татарск",
+            "Тогучин",
+            "Черепаново",
+            "Болотное",
+            "Купино",
+            "Чулым",
+            "Колывань",
+            "Ордынское",
+            "Краснообск"
+          ]
         },
         {
           "id": "omskaya-oblast",
@@ -12399,7 +13664,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/omskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Омск",
+            "Тара",
+            "Калачинск",
+            "Исилькуль",
+            "Называевск",
+            "Тюкалинск",
+            "Любинский",
+            "Черлак",
+            "Большеречье",
+            "Муромцево",
+            "Таврическое",
+            "Русская Поляна",
+            "Павлоградка",
+            "Москаленки",
+            "Марьяновка",
+            "Азово"
+          ]
         },
         {
           "id": "tomskaya-oblast",
@@ -12553,7 +13836,25 @@
           ],
           "federalDistrictId": "sfo",
           "page": "regions/tomskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Томск",
+            "Северск",
+            "Стрежевой",
+            "Асино",
+            "Колпашево",
+            "Кедровый",
+            "Каргасок",
+            "Мельниково",
+            "Тегульдет",
+            "Парабель",
+            "Белый Яр",
+            "Молчаново",
+            "Кожевниково",
+            "Подгорное",
+            "Первомайское",
+            "Зырянское"
+          ]
         }
       ]
     },
@@ -12759,7 +14060,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/respublika-buryatiya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Улан-Удэ",
+            "Северобайкальск",
+            "Кяхта",
+            "Гусиноозёрск",
+            "Закаменск",
+            "Бабушкин",
+            "Таксимо",
+            "Селенгинск",
+            "Онохой",
+            "Каменск",
+            "Хоринск",
+            "Мухоршибирь",
+            "Курумкан",
+            "Баргузин",
+            "Турунтаево",
+            "Кабанск"
+          ]
         },
         {
           "id": "respublika-saha-yakutiya",
@@ -12956,7 +14275,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/respublika-saha-yakutiya.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Якутск",
+            "Нерюнгри",
+            "Мирный",
+            "Ленск",
+            "Алдан",
+            "Удачный",
+            "Вилюйск",
+            "Нюрба",
+            "Покровск",
+            "Олёкминск",
+            "Томмот",
+            "Среднеколымск",
+            "Верхоянск",
+            "Тикси",
+            "Черский",
+            "Жатай"
+          ]
         },
         {
           "id": "zabaykalskiy-kray",
@@ -13156,7 +14493,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/zabaykalskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Чита",
+            "Краснокаменск",
+            "Борзя",
+            "Петровск-Забайкальский",
+            "Нерчинск",
+            "Могоча",
+            "Шилка",
+            "Балей",
+            "Хилок",
+            "Сретенск",
+            "Карымское",
+            "Агинское",
+            "Забайкальск",
+            "Чернышевск",
+            "Первомайский",
+            "Дарасун"
+          ]
         },
         {
           "id": "kamchatskiy-kray",
@@ -13351,7 +14706,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/kamchatskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Петропавловск-Камчатский",
+            "Елизово",
+            "Вилючинск",
+            "Мильково",
+            "Ключи",
+            "Усть-Камчатск",
+            "Палана",
+            "Тигиль",
+            "Эссо",
+            "Соболево",
+            "Усть-Большерецк",
+            "Никольское",
+            "Оссора",
+            "Коряки",
+            "Раздольный",
+            "Пионерский"
+          ]
         },
         {
           "id": "primorskiy-kray",
@@ -13596,7 +14969,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/primorskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Владивосток",
+            "Уссурийск",
+            "Находка",
+            "Артём",
+            "Арсеньев",
+            "Спасск-Дальний",
+            "Большой Камень",
+            "Партизанск",
+            "Лесозаводск",
+            "Дальнегорск",
+            "Дальнереченск",
+            "Фокино",
+            "Лучегорск",
+            "Кавалерово",
+            "Чугуевка",
+            "Славянка"
+          ]
         },
         {
           "id": "habarovskiy-kray",
@@ -13794,7 +15185,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/habarovskiy-kray.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Хабаровск",
+            "Комсомольск-на-Амуре",
+            "Амурск",
+            "Советская Гавань",
+            "Николаевск-на-Амуре",
+            "Бикин",
+            "Вяземский",
+            "Ванино",
+            "Чегдомын",
+            "Солнечный",
+            "Эльбан",
+            "Хор",
+            "Переяславка",
+            "Охотск",
+            "Аян",
+            "Троицкое"
+          ]
         },
         {
           "id": "amurskaya-oblast",
@@ -13946,7 +15355,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/amurskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Благовещенск",
+            "Белогорск",
+            "Свободный",
+            "Тында",
+            "Зея",
+            "Райчихинск",
+            "Шимановск",
+            "Сковородино",
+            "Завитинск",
+            "Циолковский",
+            "Прогресс",
+            "Серышево",
+            "Екатеринославка",
+            "Ивановка",
+            "Тамбовка",
+            "Архара"
+          ]
         },
         {
           "id": "magadanskaya-oblast",
@@ -14096,7 +15523,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/magadanskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Магадан",
+            "Сокол",
+            "Ола",
+            "Палатка",
+            "Сусуман",
+            "Ягодное",
+            "Омсукчан",
+            "Сеймчан",
+            "Усть-Омчуг",
+            "Дукат",
+            "Хасын",
+            "Атка",
+            "Синегорье",
+            "Стекольный",
+            "Талая",
+            "Мяунджа"
+          ]
         },
         {
           "id": "sahalinskaya-oblast",
@@ -14293,7 +15738,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/sahalinskaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Южно-Сахалинск",
+            "Корсаков",
+            "Холмск",
+            "Оха",
+            "Поронайск",
+            "Долинск",
+            "Невельск",
+            "Александровск-Сахалинский",
+            "Углегорск",
+            "Макаров",
+            "Томари",
+            "Анива",
+            "Ноглики",
+            "Смирных",
+            "Тымовское",
+            "Курильск"
+          ]
         },
         {
           "id": "evreyskaya-avtonomnaya-oblast",
@@ -14444,7 +15907,25 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/evreyskaya-avtonomnaya-oblast.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Биробиджан",
+            "Облучье",
+            "Теплоозёрск",
+            "Известковый",
+            "Смидович",
+            "Волочаевка-2",
+            "Николаевка",
+            "Ленинское",
+            "Амурзет",
+            "Бира",
+            "Лондоко-завод",
+            "Приамурский",
+            "Кульдур",
+            "Пашково",
+            "Бабстово",
+            "Валдгейм"
+          ]
         },
         {
           "id": "chukotskiy-avtonomnyy-okrug",
@@ -14593,9 +16074,30 @@
           ],
           "federalDistrictId": "dfo",
           "page": "regions/chukotskiy-avtonomnyy-okrug.html",
-          "status": "detailed"
+          "status": "detailed",
+          "searchPlaces": [
+            "Анадырь",
+            "Билибино",
+            "Певек",
+            "Эгвекинот",
+            "Провидения",
+            "Лаврентия",
+            "Уэлен",
+            "Лорино",
+            "Рыркайпий",
+            "Мыс Шмидта",
+            "Угольные Копи",
+            "Беринговский",
+            "Омолон",
+            "Энурмино",
+            "Алькатваам",
+            "Канчалан",
+            "Марково"
+          ]
         }
       ]
     }
-  ]
+  ],
+  "searchPlaceAliasCount": 1334,
+  "searchPlaceAliasMinimumPerSubject": 16
 }
