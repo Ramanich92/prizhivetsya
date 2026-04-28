@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Sitemap: https://ramanich92.github.io/prizhivetsya/sitemap.xml
