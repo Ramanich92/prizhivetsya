@@ -235,8 +235,15 @@
     var chips = Array.prototype.slice.call(root.querySelectorAll('[data-quick-recommendation]'));
     var itemLabel = root.getAttribute('data-item-label') || 'позиций';
 
+    function pluralizePosition(n){
+      var last = n % 10;
+      var lastTwo = n % 100;
+      if(last === 1 && lastTwo !== 11) return 'позиция';
+      if(last >= 2 && last <= 4 && (lastTwo < 12 || lastTwo > 14)) return 'позиции';
+      return 'позиций';
+    }
     function formatShown(current, total){
-      return 'Показано ' + current + ' из ' + total;
+      return 'Показано ' + current + ' ' + pluralizePosition(current) + ' из ' + total;
     }
 
     function uniqueValues(key){

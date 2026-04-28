@@ -1,7 +1,7 @@
 {
-  "version": "v114-region-search-places",
+  "version": "v127-no-assets-cfo-expanded",
   "updated": "2026-04-28",
-  "status": "region-search-place-aliases",
+  "status": "cfo-expanded-no-assets-build",
   "scope": "83 субъекта без Крыма, Севастополя и аннексированных территорий Украины; зоны являются рабочим садовым каркасом, не официальным районированием.",
   "subjectCount": 83,
   "zoneCount": 283,
