@@ -1251,3 +1251,51 @@ a{color:inherit}
   .culture-variety-line td:first-child{padding-left:18px}
 }
 
+
+
+/* --- v119: split culture table into popular and additional sections --- */
+.culture-section{
+  margin-top:18px;
+  border:1px solid #e2ece4;
+  border-radius:24px;
+  background:#fff;
+  padding:16px;
+  box-shadow:0 10px 28px rgba(17,52,36,.035);
+}
+.culture-section:first-of-type{margin-top:14px}
+.culture-section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:18px;
+  margin:0 0 12px;
+}
+.culture-section-head h3{
+  margin:0 0 5px;
+  color:#143425;
+  font-size:clamp(22px,2.2vw,30px);
+  line-height:1.08;
+  letter-spacing:-.035em;
+}
+.culture-section-head p{
+  margin:0;
+  color:#52655a;
+  max-width:780px;
+  font-size:15px;
+  line-height:1.5;
+}
+.culture-section-head .result-counter{
+  flex:0 0 auto;
+  border:1px solid #dbe8de;
+  border-radius:999px;
+  background:#f7fbf5;
+  padding:8px 12px;
+  font-size:13px;
+  white-space:nowrap;
+}
+.culture-section[hidden]{display:none}
+@media(max-width:720px){
+  .culture-section{padding:12px;border-radius:20px}
+  .culture-section-head{display:block}
+  .culture-section-head .result-counter{display:inline-flex;margin-top:10px}
+}
