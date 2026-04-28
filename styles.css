@@ -1174,3 +1174,83 @@ a{color:inherit}
 @media (max-width:900px){.region-photo-hero{min-height:420px}.region-photo-hero__content{margin:24px 20px;padding:24px}}
 @media(max-width:1180px){.zone-photo-hero{margin-bottom:-34px}.zone-photo-hero__content{max-width:600px;margin:30px 22px 94px;padding:24px}.zone-photo-hero + .clean-table-card{width:calc(100% - 32px)}}
 @media(max-width:720px){.region-photo-hero{min-height:380px;border-radius:24px}.region-photo-hero__content{margin:16px;padding:20px;border-radius:22px}.region-photo-hero__content h1{max-width:11ch;font-size:clamp(36px,11vw,56px)}.zone-photo-hero{min-height:420px;margin-bottom:-22px;border-radius:0 0 24px 24px}.zone-photo-hero__content{max-width:none;margin:20px 16px 72px;padding:20px;border-radius:22px}.zone-photo-hero__content h1{font-size:clamp(34px,11vw,54px)}.zone-photo-hero + .clean-table-card{width:100%}}
+
+
+/* --- v115: раскрывающиеся сорта внутри таблицы культур --- */
+.culture-main-row:has(+ .culture-variety-row:not([hidden])){background:#fbfdf8}
+.culture-toggle{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  font:inherit;
+  text-align:left;
+  cursor:pointer;
+}
+.culture-toggle span{display:block;min-width:0}
+.culture-toggle strong{display:block;font-size:16px;line-height:1.15;color:#173226}
+.culture-toggle small{display:block;color:#6c7a72;font-size:12px;margin-top:4px;line-height:1.35}
+.culture-toggle em{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  border-radius:999px;
+  padding:5px 9px;
+  background:#eef7ee;
+  border:1px solid #dce8de;
+  color:#2f6742;
+  font-style:normal;
+  font-size:12px;
+  font-weight:900;
+  white-space:nowrap;
+}
+.culture-toggle em::after{content:"▾";font-size:12px;line-height:1;transition:transform .16s ease}
+.culture-toggle[aria-expanded="true"] em::after{transform:rotate(180deg)}
+.culture-toggle:hover strong{color:#0d6f3f}
+.culture-variety-row td{padding:0 13px 14px!important;background:#fbfdf8;border-bottom:1px solid #dfeae2}
+.culture-variety-panel{
+  margin:0 0 4px;
+  padding:16px;
+  border:1px solid #dce8de;
+  border-radius:18px;
+  background:linear-gradient(180deg,#ffffff,#f7fbf5);
+  box-shadow:0 12px 24px rgba(17,52,36,.045);
+}
+.culture-variety-panel-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+.culture-variety-panel-head strong{font-size:18px;line-height:1.2;color:#173226}
+.culture-variety-panel-head span{color:#63766a;font-size:13px;text-align:right}
+.culture-variety-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.culture-variety-card{
+  border:1px solid #e2ece5;
+  border-radius:16px;
+  background:#fff;
+  padding:14px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:10px 12px;
+}
+.culture-variety-title strong{display:block;color:#173226;font-size:16px;line-height:1.15}
+.culture-variety-title small{display:block;color:#6c7a72;font-size:12px;margin-top:4px}
+.culture-variety-card .rec-badge{align-self:start;white-space:nowrap}
+.culture-variety-card dl{grid-column:1 / -1;margin:0;display:grid;gap:7px}
+.culture-variety-card div{min-width:0}
+.culture-variety-card dt{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#77877f;font-weight:900;margin:0 0 2px}
+.culture-variety-card dd{margin:0;color:#40564a;line-height:1.4}
+.culture-variety-empty{margin:0;color:#63766a}
+@media(max-width:720px){
+  .culture-variety-panel-head{display:grid;align-items:start}.culture-variety-panel-head span{text-align:left}
+  .culture-variety-grid{grid-template-columns:1fr}
+  .culture-variety-card{grid-template-columns:1fr}
+}
