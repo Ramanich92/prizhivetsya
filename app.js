@@ -1,4 +1,4 @@
-/* v136: planner freeze fix, no-assets polish, culture pages, planner, calendar and planting list */
+/* v137: planting list toggle remove, planner freeze fix, no-assets polish, culture pages, planner and calendar */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -545,7 +545,7 @@
 })();
 
 
-/* v136: local planting list */
+/* v137: local planting list with repeat-click remove */
 (function(){
   var storageKey = 'prizhivetsya:planting-list:v1';
   var recRank = {'Надежно':0,'Надёжно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
@@ -572,9 +572,8 @@
   };}
   function exists(item, items){var k=keyOf(item);return items.some(function(x){return keyOf(x)===k;});}
   function buttonKey(btn){return keyOf(payloadFromButton(btn));}
-  function updateButtons(){var items=read();var keys={};items.forEach(function(item){keys[keyOf(item)]=true;});Array.prototype.slice.call(document.querySelectorAll('[data-planting-add]')).forEach(function(btn){var added=!!keys[buttonKey(btn)], label=added?'В списке':'В список', pressed=added?'true':'false';if(btn.classList.contains('is-added')!==added)btn.classList.toggle('is-added',added);if(btn.textContent!==label)btn.textContent=label;if(btn.getAttribute('aria-pressed')!==pressed)btn.setAttribute('aria-pressed',pressed);});}
-  function listPageHref(){return (pageUrl().indexOf('regions/')===0||pageUrl().indexOf('cultures/')===0?'../':'')+'planting-list.html';}
-  function addItem(btn){var item=payloadFromButton(btn);if(!item.name)return;var items=read();if(exists(item,items)){window.location.href=listPageHref();return;}items.unshift(item);write(items);updateButtons();document.dispatchEvent(new CustomEvent('prizh:planting-list-updated'));btn.classList.add('is-added');btn.textContent='В списке';}
+  function updateButtons(){var items=read();var keys={};items.forEach(function(item){keys[keyOf(item)]=true;});Array.prototype.slice.call(document.querySelectorAll('[data-planting-add]')).forEach(function(btn){var added=!!keys[buttonKey(btn)], label=added?'В списке':'В список', pressed=added?'true':'false', hint=added?'Убрать из списка посадок':'Добавить в список посадок';if(btn.classList.contains('is-added')!==added)btn.classList.toggle('is-added',added);if(btn.textContent!==label)btn.textContent=label;if(btn.getAttribute('aria-pressed')!==pressed)btn.setAttribute('aria-pressed',pressed);if(btn.getAttribute('title')!==hint)btn.setAttribute('title',hint);if(btn.getAttribute('aria-label')!==hint)btn.setAttribute('aria-label',hint);});}
+  function toggleItem(btn){var item=payloadFromButton(btn);if(!item.name)return;var items=read(), k=keyOf(item), next=items.filter(function(x){return keyOf(x)!==k;});if(next.length!==items.length){write(next);updateButtons();document.dispatchEvent(new CustomEvent('prizh:planting-list-updated'));return;}items.unshift(item);write(items);updateButtons();document.dispatchEvent(new CustomEvent('prizh:planting-list-updated'));}
   function textExport(items){return items.map(function(item,i){return (i+1)+'. '+item.name+' — '+item.recommendation+'; '+item.place+'; '+item.timing+'\n   '+item.sourceTitle+'\n   '+item.comment;}).join('\n\n');}
   function initPage(root){var total=root.querySelector('[data-planting-total]'), search=root.querySelector('[data-planting-filter-search]'), rec=root.querySelector('[data-planting-filter-rec]'), cat=root.querySelector('[data-planting-filter-category]'), empty=root.querySelector('[data-planting-empty]'), results=root.querySelector('[data-planting-results]'), summary=root.querySelector('[data-planting-summary]'), groups=root.querySelector('[data-planting-groups]'), printBtn=root.querySelector('[data-planting-print]'), clearBtn=root.querySelector('[data-planting-clear]'), copyBtn=root.querySelector('[data-planting-copy]');
     function fillCategories(items){var current=cat?cat.value:'';var values=[];items.forEach(function(item){if(item.category&&values.indexOf(item.category)===-1)values.push(item.category);});values.sort(function(a,b){return a.localeCompare(b,'ru');});if(cat){cat.innerHTML='<option value="">Все</option>'+values.map(function(v){return '<option>'+esc(v)+'</option>';}).join('');cat.value=values.indexOf(current)!==-1?current:'';}}
@@ -588,7 +587,7 @@
     root.addEventListener('click',function(e){var btn=e.target.closest('[data-planting-remove]');if(!btn)return;var id=btn.getAttribute('data-planting-remove');var items=read().filter(function(item){return item.id!==id;});write(items);render();updateButtons();});
     document.addEventListener('prizh:planting-list-updated',render);render();
   }
-  document.addEventListener('click',function(e){var btn=e.target.closest('[data-planting-add]');if(!btn)return;e.preventDefault();addItem(btn);});
+  document.addEventListener('click',function(e){var btn=e.target.closest('[data-planting-add]');if(!btn)return;e.preventDefault();toggleItem(btn);});
   document.addEventListener('DOMContentLoaded',function(){updateButtons();Array.prototype.slice.call(document.querySelectorAll('[data-planting-list-page]')).forEach(initPage);});
   document.addEventListener('prizh:planting-buttons-rendered',updateButtons);
 })();
