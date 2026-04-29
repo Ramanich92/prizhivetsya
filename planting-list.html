@@ -3,19 +3,19 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Мой список посадок — приживется.ру</title>
- <meta name="description" content="Личный список культур, выбранных в справочниках и подборе приживется.ру. Можно сохранить в браузере, очистить или распечатать.">
+ <title>Мой список посадок и план участка — приживется.ру</title>
+ <meta name="description" content="Личный список культур с заметками, местом посадки, статусом работ, фильтрами, печатью и экспортом TXT/CSV.">
  <link rel="icon" href="favicon.svg" type="image/svg+xml">
- <link rel="stylesheet" href="styles.css?v=147">
+ <link rel="stylesheet" href="styles.css?v=148">
  <link rel="apple-touch-icon" href="icon-192.png">
  <meta name="theme-color" content="#16362a">
  <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/planting-list.html">
  <meta property="og:type" content="website">
  <meta property="og:site_name" content="приживется.ру">
- <meta property="og:title" content="Мой список посадок">
- <meta property="og:description" content="Соберите культуры из региональных справочников и подбора в один удобный список для участка.">
+ <meta property="og:title" content="Мой список посадок и план участка">
+ <meta property="og:description" content="Личный список культур с заметками, местом посадки, статусом работ, фильтрами, печатью и экспортом TXT/CSV.">
 </head>
-<body class="planting-list-page" data-build="v147-no-assets-calendar-list-culture-fix">
+<body class="planting-list-page" data-build="v148-no-assets-seo-nav-planner">
 <header class="site-header">
   <div class="site-header-inner">
     <a class="brand" href="index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="logo-wordmark.png" alt="приживется.ру" width="892" height="168"></a>
@@ -23,7 +23,7 @@
   </div>
 </header>
 <main class="planting-main" data-planting-list-page>
-  <div class="crumbs planting-crumbs"><a href="index.html">Главная</a> / Мой список посадок</div>
+  <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="crumb-sep" aria-hidden="true">/</span><span>Мой список</span></nav>
   <section class="planting-hero">
     <div>
       <span class="kicker">Личный план участка</span>
@@ -37,10 +37,12 @@
     </aside>
   </section>
   <section class="planting-panel" aria-label="Фильтры списка посадок">
-    <div class="planting-filter-grid">
+    <div class="planting-filter-grid planting-filter-grid--v148">
       <label class="planting-search-label">Поиск<input type="search" data-planting-filter-search placeholder="Культура, регион, зона, условие"></label>
       <label>Рекомендация<select data-planting-filter-rec><option value="">Все</option><option>Надёжно</option><option>Рекомендовано</option><option>С укрытием / уходом</option><option>Рискованно</option><option>Проверить по зоне</option></select></label>
       <label>Категория<select data-planting-filter-category><option value="">Все</option></select></label>
+      <label>Место посадки<select data-planting-filter-place><option value="">Все</option><option>грядка</option><option>теплица</option><option>сад</option><option>клумба</option><option>контейнер</option></select></label>
+      <label>Статус<select data-planting-filter-status><option value="">Все</option><option>планирую</option><option>куплено</option><option>посеяно</option><option>высажено</option><option>убрать</option></select></label>
     </div>
     <div class="planting-actions">
       <button class="button-primary" type="button" data-planting-print>Распечатать</button>
@@ -50,7 +52,7 @@
       <a class="button-soft button-link" href="calendar.html">Календарь по списку</a>
       <button class="button-soft" type="button" data-planting-clear>Очистить список</button>
     </div>
-    <p class="planting-panel-note">В карточках списка можно добавить личную заметку: сорт, грядку, количество или задачу на сезон.</p>
+    <p class="planting-panel-note">В карточках списка можно указать место посадки, статус и личную заметку: сорт, грядку, количество или задачу на сезон.</p>
   </section>
   <section class="planting-empty" data-planting-empty>
     <h2>Список пока пуст</h2>
@@ -68,6 +70,6 @@
     <p>Справочник по регионам и культурам России · обновлено 29 апреля 2026</p>
   </div>
 </footer>
-<script src="app.js?v=147" defer></script>
+<script src="app.js?v=148" defer></script>
 </body>
 </html>
