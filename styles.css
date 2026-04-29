@@ -1734,3 +1734,37 @@ a{color:inherit}
   .home-feature-head p{font-size:16px}
   .footer-brand-text{font-size:20px}
 }
+
+
+/* --- v135: restored image logo, difficult plots and calmer navigation --- */
+.brand{flex:0 0 auto;max-width:min(360px,42vw)}
+.brand-logo{display:block;width:min(318px,42vw);height:auto;object-fit:contain}
+.footer-brand img{display:block;width:210px;max-width:48vw;height:auto;object-fit:contain}
+.brand-text,.footer-brand-text{display:none!important}
+.site-header-inner{min-height:74px;gap:20px}
+.topnav{gap:8px;align-items:center}
+.topnav a{padding:9px 13px;border-radius:999px;font-size:14px;line-height:1.2}
+.home-feature-grid:has(.home-feature-card:nth-child(5)){grid-template-columns:repeat(5,minmax(0,1fr))}
+.home-feature-grid--compact,.difficult-next .home-feature-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.home-feature-grid--compact .home-feature-card,.difficult-next .home-feature-card{min-height:190px}
+.difficult-main{width:var(--content);margin:0 auto;padding:42px 0 76px}
+.difficult-hero{position:relative;overflow:hidden;border:1px solid rgba(204,219,208,.92);border-radius:38px;background:radial-gradient(circle at 82% 20%,rgba(127,164,111,.28),transparent 20rem),linear-gradient(135deg,#f7fcf4,#fffefa 62%,#eef8ea);box-shadow:var(--shadow);padding:clamp(30px,5vw,62px);margin-bottom:22px}
+.difficult-hero h1{max-width:900px;margin:8px 0 14px;font-size:clamp(44px,7vw,86px);line-height:.95;letter-spacing:-.065em;color:#10281e}
+.difficult-hero .lead{max-width:850px;color:#42574a}
+.difficult-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.difficult-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.difficult-card{border:1px solid rgba(204,219,208,.9);border-radius:30px;background:rgba(255,254,250,.94);box-shadow:var(--shadow-soft);padding:26px;display:flex;flex-direction:column;gap:16px}
+.difficult-card h2{margin:0;font-size:clamp(25px,2.7vw,36px);line-height:1.05;letter-spacing:-.045em;color:#143425}
+.difficult-problem{margin:0;color:#4e6256;line-height:1.52}
+.difficult-tags{display:grid;gap:10px;margin-top:auto}
+.difficult-tags div{border:1px solid #dfeadf;border-radius:18px;background:#f8fcf6;padding:12px 14px}
+.difficult-tags strong{display:block;margin-bottom:3px;color:#16362a;font-size:14px;text-transform:uppercase;letter-spacing:.055em}
+.difficult-tags span{display:block;color:#4f6357;font-size:15px;line-height:1.45}
+.difficult-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:2px}
+.difficult-links a,.inline-strong-link{display:inline-flex;align-items:center;text-decoration:none;color:#0d6f3f;font-weight:900;border-bottom:1px solid rgba(13,111,63,.25)}
+.difficult-links a::after,.inline-strong-link::after{content:' →'}
+.difficult-next{margin-top:24px}
+@media(max-width:1280px){.home-feature-grid:has(.home-feature-card:nth-child(5)){grid-template-columns:repeat(3,minmax(0,1fr))}.brand{max-width:min(330px,36vw)}.brand-logo{width:min(300px,36vw)}}
+@media(max-width:980px){.site-header-inner{align-items:flex-start;flex-direction:column;gap:10px;padding:12px 0}.brand{max-width:360px}.brand-logo{width:min(320px,70vw)}.topnav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:thin}.difficult-grid{grid-template-columns:1fr}.home-feature-grid:has(.home-feature-card:nth-child(5)),.home-feature-grid--compact,.difficult-next .home-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:720px){.brand-logo{width:min(250px,70vw)}.site-header-inner{min-height:0;padding:10px 0 12px}.topnav{gap:8px;margin:0 -12px;padding:0 12px 4px;width:calc(100% + 24px)}.topnav a{font-size:13px;padding:8px 12px;background:rgba(255,255,255,.72);border:1px solid rgba(204,219,208,.58)}.home-feature-grid:has(.home-feature-card:nth-child(5)),.home-feature-grid--compact,.difficult-next .home-feature-grid{grid-template-columns:1fr!important}.difficult-main{padding:24px 0 48px}.difficult-hero,.difficult-card{border-radius:24px;padding:22px}.difficult-hero h1{font-size:clamp(40px,12vw,58px)}.difficult-hero-actions .btn{width:100%}.footer-brand img{width:190px}}
+@media print{.site-header,.site-footer,.difficult-hero-actions,.home-feature-grid,.difficult-links,.hero,.planner-hero,.calendar-hero,.planting-hero,.zone-photo-hero__bg,.zone-photo-hero__shade{display:none!important}.difficult-main,.planting-main,.calendar-main,.planner-main,.region-clean-main{width:100%!important;margin:0!important;padding:0!important}.difficult-card,.clean-table-card,.calendar-month-card,.planting-card{box-shadow:none!important;border:1px solid #ddd!important;background:#fff!important;break-inside:avoid}.difficult-grid{display:block!important}.difficult-card{margin:0 0 12px!important}.table-scroll{overflow:visible!important}.culture-table{font-size:11px!important}.culture-table th,.culture-table td{padding:6px!important}}
