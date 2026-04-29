@@ -1,4 +1,4 @@
-/* v138: width/adaptive audit, debounced filters, safer list actions, no-assets build */
+/* v139: culture width/hole fix, debounced filters, safer list actions, no-assets build */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();

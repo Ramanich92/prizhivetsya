@@ -1911,3 +1911,23 @@ canvas{max-width:100%;height:auto}
   .region-zone-compare th,
   .region-zone-compare td{padding:6px!important}
 }
+
+/* v139: fix culture page body class collision and keep how-to cards inside page width */
+body.culture-section{
+  margin:0;
+  border:0;
+  border-radius:0;
+  background:inherit;
+  padding:0;
+  box-shadow:none;
+}
+.culture-page{
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.howto-wrap > .howto-card:last-child{
+  margin-top:24px;
+}
