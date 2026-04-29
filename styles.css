@@ -1736,7 +1736,7 @@ a{color:inherit}
 }
 
 
-/* --- v135: restored image logo, difficult plots and calmer navigation --- */
+/* --- restored image logo, difficult plots and calmer navigation --- */
 .brand{flex:0 0 auto;max-width:min(360px,42vw)}
 .brand-logo{display:block;width:min(318px,42vw);height:auto;object-fit:contain}
 .footer-brand img{display:block;width:210px;max-width:48vw;height:auto;object-fit:contain}
@@ -1768,3 +1768,146 @@ a{color:inherit}
 @media(max-width:980px){.site-header-inner{align-items:flex-start;flex-direction:column;gap:10px;padding:12px 0}.brand{max-width:360px}.brand-logo{width:min(320px,70vw)}.topnav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;scrollbar-width:thin}.difficult-grid{grid-template-columns:1fr}.home-feature-grid:has(.home-feature-card:nth-child(5)),.home-feature-grid--compact,.difficult-next .home-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:720px){.brand-logo{width:min(250px,70vw)}.site-header-inner{min-height:0;padding:10px 0 12px}.topnav{gap:8px;margin:0 -12px;padding:0 12px 4px;width:calc(100% + 24px)}.topnav a{font-size:13px;padding:8px 12px;background:rgba(255,255,255,.72);border:1px solid rgba(204,219,208,.58)}.home-feature-grid:has(.home-feature-card:nth-child(5)),.home-feature-grid--compact,.difficult-next .home-feature-grid{grid-template-columns:1fr!important}.difficult-main{padding:24px 0 48px}.difficult-hero,.difficult-card{border-radius:24px;padding:22px}.difficult-hero h1{font-size:clamp(40px,12vw,58px)}.difficult-hero-actions .btn{width:100%}.footer-brand img{width:190px}}
 @media print{.site-header,.site-footer,.difficult-hero-actions,.home-feature-grid,.difficult-links,.hero,.planner-hero,.calendar-hero,.planting-hero,.zone-photo-hero__bg,.zone-photo-hero__shade{display:none!important}.difficult-main,.planting-main,.calendar-main,.planner-main,.region-clean-main{width:100%!important;margin:0!important;padding:0!important}.difficult-card,.clean-table-card,.calendar-month-card,.planting-card{box-shadow:none!important;border:1px solid #ddd!important;background:#fff!important;break-inside:avoid}.difficult-grid{display:block!important}.difficult-card{margin:0 0 12px!important}.table-scroll{overflow:visible!important}.culture-table{font-size:11px!important}.culture-table th,.culture-table td{padding:6px!important}}
+
+/* --- v138: width, mobile table and print polish for no-assets build --- */
+html,
+body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+img,
+svg,
+video,
+canvas{max-width:100%;height:auto}
+.site-header-inner,
+.container,
+.hero-inner,
+.region-clean-wrap,
+.region-overview-wrap,
+.planner-main,
+.calendar-main,
+.planting-main,
+.difficult-main,
+.home-feature-section,
+.culture-main{max-width:100%}
+.site-header{overflow:hidden}
+.topnav{
+  min-width:0;
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+}
+.topnav a{flex:0 0 auto}
+.clean-table-card,
+.culture-section,
+.planner-panel,
+.calendar-panel,
+.planting-panel,
+.difficult-card,
+.home-feature-card,
+.zone-topic-link,
+.clean-region-card,
+.planner-result-card,
+.planting-card,
+.calendar-month-card{min-width:0}
+.table-scroll,
+.clean-table-scroll{
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+}
+.clean-table-meta,
+.culture-toolbar-meta,
+.planting-group-head,
+.zone-calendar-link,
+.planner-result-actions,
+.planting-actions{min-width:0;max-width:100%;flex-wrap:wrap}
+.result-counter,
+.clean-table-head,
+.culture-section-head,
+.planner-badge,
+.place-badge,
+.category-badge,
+.rec-badge,
+.difficult-tags span,
+.zone-topic-link strong,
+.zone-topic-link p,
+.planting-card,
+.planner-result-card,
+.calendar-task-list p{overflow-wrap:anywhere}
+.result-counter{max-width:100%;white-space:normal;text-align:left}
+.culture-section-head .result-counter{white-space:normal}
+.clean-table-head{min-width:0}
+.clean-table-head > *,
+.culture-section-head > *,
+.planting-group-head > *{min-width:0}
+@media(max-width:720px){
+  .topnav{width:100%;margin:0;padding:0 0 5px}
+  .site-header-inner{width:calc(100% - 24px)}
+  .clean-table-meta{display:grid;grid-template-columns:1fr;gap:8px;align-items:start}
+  .clean-table-head{gap:12px}
+  .culture-section-head{display:grid;grid-template-columns:1fr;gap:8px}
+  .culture-section-head .result-counter{display:inline-flex;justify-self:start;margin-top:2px;max-width:100%}
+  .region-zone-compare{min-width:720px}
+  .culture-table-clean{min-width:900px}
+  .zone-topic-card + .clean-table-card{margin-top:14px}
+  .planner-panel,.calendar-panel,.planting-panel{padding:20px}
+  .calendar-task-tag{white-space:normal}
+}
+@media(max-width:480px){
+  :root{--content:calc(100% - 20px)}
+  .clean-hero,.clean-table-card,.culture-section,.planner-hero>div:first-child,.calendar-hero>div:first-child,.planting-hero>div:first-child,.planner-panel,.calendar-panel,.planting-panel{padding:18px;border-radius:22px}
+  .culture-table-clean{min-width:840px;font-size:14px}
+  .culture-table-clean th,
+  .culture-table-clean td{padding:10px 11px}
+  .rec-badge,
+  .category-badge,
+  .place-badge{white-space:normal;line-height:1.15;text-align:center}
+  .planting-note-action{gap:8px}
+}
+@media print{
+  .site-header,
+  .site-footer,
+  .hero,
+  .planner-hero,
+  .calendar-hero,
+  .planting-hero,
+  .zone-photo-hero__bg,
+  .zone-photo-hero__shade,
+  .region-photo-hero__bg,
+  .region-photo-hero__shade,
+  .home-feature-section,
+  .difficult-hero-actions,
+  .planting-panel,
+  .planner-panel,
+  .calendar-panel,
+  .clean-filters,
+  .quick-filter-row,
+  .planting-add-btn,
+  .planting-remove-btn{display:none!important}
+  body{background:#fff!important;color:#111!important;overflow:visible!important}
+  .region-clean-main,
+  .planner-main,
+  .calendar-main,
+  .planting-main,
+  .difficult-main{width:100%!important;margin:0!important;padding:0!important}
+  .clean-table-card,
+  .culture-section,
+  .planner-result-card,
+  .calendar-month-card,
+  .planting-card,
+  .planting-group{box-shadow:none!important;background:#fff!important;border:1px solid #ddd!important;break-inside:avoid}
+  .table-scroll,
+  .clean-table-scroll{overflow:visible!important;border:0!important}
+  .culture-table,
+  .region-zone-compare{min-width:0!important;width:100%!important;font-size:11px!important}
+  .culture-table th,
+  .culture-table td,
+  .region-zone-compare th,
+  .region-zone-compare td{padding:6px!important}
+}

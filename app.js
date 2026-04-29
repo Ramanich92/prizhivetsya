@@ -1,10 +1,18 @@
-/* v137: planting list toggle remove, planner freeze fix, no-assets polish, culture pages, planner and calendar */
+/* v138: width/adaptive audit, debounced filters, safer list actions, no-assets build */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
   }
   function escapeHtml(value){
     return String(value || '').replace(/[&<>"]/g, function(ch){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]); });
+  }
+  function debounce(fn, delay){
+    var timer;
+    return function(){
+      var ctx = this, args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(function(){ fn.apply(ctx, args); }, delay);
+    };
   }
   function findDistrict(data, id){ return (data.districts || []).find(function(d){ return d.id === id; }) || null; }
   function findSubject(data, subjectId){
@@ -218,7 +226,8 @@
       });
       if(count) count.textContent = visible + ' ' + pluralRu(visible, 'культура', 'культуры', 'культур');
     }
-    if(search) search.addEventListener('input', apply);
+    var debouncedApply = debounce(apply, 120);
+    if(search) search.addEventListener('input', debouncedApply);
     if(category) category.addEventListener('change', apply);
     apply();
   }
@@ -236,6 +245,14 @@
     return String(str || '').replace(/[&<>"']/g, function(ch){
       return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];
     });
+  }
+  function debounce(fn, delay){
+    var timer;
+    return function(){
+      var ctx = this, args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(function(){ fn.apply(ctx, args); }, delay);
+    };
   }
   var recommendationRank = {'Надежно':0,'Надёжно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
   function recommendationOrder(value){
@@ -468,9 +485,10 @@
     fillSelect(method, 'Все', 'method');
     refreshQuickChips();
 
+    var debouncedRender = debounce(render, 120);
     [search, rec, cat, method].forEach(function(control){
       if(!control) return;
-      control.addEventListener(control.tagName === 'INPUT' ? 'input' : 'change', render);
+      control.addEventListener(control.tagName === 'INPUT' ? 'input' : 'change', control.tagName === 'INPUT' ? debouncedRender : render);
     });
     chips.forEach(function(chip){
       chip.addEventListener('click', function(){
@@ -513,6 +531,7 @@
   function plural(n,one,few,many){n=Math.abs(Number(n)||0)%100;var n1=n%10;if(n>10&&n<20)return many;if(n1>1&&n1<5)return few;if(n1===1)return one;return many;}
   function opt(v,l){var e=document.createElement('option');e.value=v;e.textContent=l;return e;}
   function setOpts(sel,ph,rows,current){if(!sel)return;sel.innerHTML='';sel.appendChild(opt('',ph));rows.forEach(function(r){sel.appendChild(opt(String(r.value),r.label));});if(current&&Array.prototype.some.call(sel.options,function(o){return o.value===String(current);})){sel.value=String(current);}}
+  function debounce(fn,delay){var timer;return function(){var ctx=this,args=arguments;clearTimeout(timer);timer=setTimeout(function(){fn.apply(ctx,args);},delay);};}
   function initPlantPlanner(root){
     var url=root.getAttribute('data-planner-url')||'data/planner-data.json', subject=root.querySelector('[data-planner-subject]'), zone=root.querySelector('[data-planner-zone]'), guide=root.querySelector('[data-planner-guide]'), category=root.querySelector('[data-planner-category]'), where=root.querySelector('[data-planner-where]'), risk=root.querySelector('[data-planner-risk]'), search=root.querySelector('[data-planner-search]'), popular=root.querySelector('[data-planner-popular]'), apply=root.querySelector('[data-planner-apply]'), reset=root.querySelector('[data-planner-reset]'), start=root.querySelector('[data-planner-start]'), results=root.querySelector('[data-planner-results]'), empty=root.querySelector('[data-planner-empty]'), summary=root.querySelector('[data-planner-summary]'), groups=root.querySelector('[data-planner-result-groups]'), limit=root.querySelector('[data-planner-limit]'), count=root.querySelector('[data-planner-record-count]'), state=null;
     function decode(data){var strings=data.strings||[], recs=(data.records||[]).map(function(r){var z=data.zones[r[1]]||{}, s=data.subjects[z.s]||{};return {name:strings[r[0]]||'',zoneIndex:r[1],subjectIndex:z.s,guideTypeIndex:r[2],guideType:(data.guideTypes||[])[r[2]]||'',guideName:(data.guideNames||[])[r[2]]||'',category:strings[r[3]]||'',recommendationIndex:r[4],recommendation:(data.recommendations||[])[r[4]]||'',where:strings[r[5]]||'',time:strings[r[6]]||'',comment:strings[r[7]]||'',popular:!!r[8],culturePage:strings[r[9]]||'',subject:s,zone:z};});return {subjects:data.subjects||[],zones:data.zones||[],guideTypes:data.guideTypes||[],guideNames:data.guideNames||[],recommendations:data.recommendations||[],records:recs,recordCount:data.recordCount||recs.length};}
@@ -523,7 +542,7 @@
     function guidePage(r){return r.zone&&r.zone.p?r.zone.p.replace(/\.html$/,'-'+r.guideType+'.html'):'';}
     function render(){if(!state)return; if(start)start.hidden=true;if(results)results.hidden=true;if(empty)empty.hidden=true;if(limit)limit.hidden=true;var q=(search&&search.value?search.value:'').trim().toLowerCase();var rows=currentRows();if(category&&category.value)rows=rows.filter(function(r){return r.category===category.value;});if(where&&where.value)rows=rows.filter(function(r){return r.where===where.value;});if(risk&&risk.value)rows=rows.filter(function(r){return String(r.recommendationIndex)===risk.value;});if(popular&&popular.checked)rows=rows.filter(function(r){return r.popular;});if(q)rows=rows.filter(function(r){return [r.name,r.category,r.where,r.time,r.comment,r.subject.n,r.zone.n,r.guideName].join(' ').toLowerCase().indexOf(q)!==-1;});rows.sort(function(a,b){if(a.recommendationIndex!==b.recommendationIndex)return a.recommendationIndex-b.recommendationIndex;return a.name.localeCompare(b.name,'ru');});if(!rows.length){if(empty)empty.hidden=false;return;}var total=rows.length, shown=rows.slice(0,120), by={};shown.forEach(function(r){(by[r.recommendation]||(by[r.recommendation]=[])).push(r);});var html=[];state.recommendations.forEach(function(rec){var arr=by[rec]||[];if(!arr.length)return;html.push('<section class="planner-group"><div class="planner-group-head"><h2>'+esc(rec)+'</h2><span>'+arr.length+' '+plural(arr.length,'позиция','позиции','позиций')+'</span></div><div class="planner-result-list">');arr.forEach(function(r){var gp=guidePage(r), culture=r.culturePage?'<a href="'+esc(r.culturePage)+'">'+esc(r.name)+'</a>':esc(r.name);var add='<button type="button" class="planting-add-btn planting-add-btn--planner" data-planting-add data-planting-name="'+esc(r.name)+'" data-planting-category="'+esc(r.category)+'" data-planting-rec="'+esc(r.recommendation)+'" data-planting-place="'+esc(r.where)+'" data-planting-time="'+esc(r.time||'')+'" data-planting-comment="'+esc(r.comment||'')+'" data-planting-source="'+esc(r.subject.n+' · '+r.zone.n+' · '+r.guideName)+'" data-planting-url="'+esc(gp||'planner.html')+'">В список</button>';
           html.push('<article class="planner-result-card"><div><strong>'+culture+'</strong><small>'+esc(r.subject.n)+' · '+esc(r.zone.n)+' · '+esc(r.guideName)+'</small><div class="planner-badges"><span class="planner-badge">'+esc(r.category)+'</span><span class="planner-badge">'+esc(r.where)+'</span></div></div><div><p>'+esc(r.comment||r.time)+'</p><small>'+esc(r.time)+'</small><div class="planner-result-actions">'+(gp?'<a href="'+esc(gp)+'">Открыть справочник зоны</a>':'')+add+'</div></div></article>');});html.push('</div></section>');});if(groups)groups.innerHTML='<div class="planner-groups">'+html.join('')+'</div>';if(summary)summary.textContent='Найдено '+total+' '+plural(total,'позиция','позиции','позиций')+'.';if(total>shown.length&&limit){limit.hidden=false;limit.textContent='Показаны первые '+shown.length+' позиций. Уточните регион, зону или условия для более точного списка.';}if(results)results.hidden=false;document.dispatchEvent(new CustomEvent('prizh:planting-buttons-rendered'));}
-    fetch(url).then(function(r){if(!r.ok)throw new Error('planner');return r.json();}).then(function(data){state=decode(data);if(count)count.textContent=String(state.recordCount).replace(/\B(?=(\d{3})+(?!\d))/g,' ');setOpts(subject,'Все регионы',state.subjects.map(function(s,i){return {value:i,label:s.n};}), '');setOpts(zone,'Сначала выберите регион',[], '');refreshFilters();[subject,zone,guide,category,where,risk,popular].forEach(function(el){if(el)el.addEventListener('change',function(){if(el===subject)refreshZones();else refreshFilters();render();});});if(search)search.addEventListener('input',render);if(apply)apply.addEventListener('click',render);if(reset)reset.addEventListener('click',function(){[subject,zone,guide,category,where,risk].forEach(function(el){if(el)el.value='';});if(search)search.value='';if(popular)popular.checked=true;refreshZones();if(start)start.hidden=false;if(results)results.hidden=true;if(empty)empty.hidden=true;});if(start)start.hidden=false;}).catch(function(){if(start){start.hidden=false;var h=start.querySelector('h2'),p=start.querySelector('p');if(h)h.textContent='Подбор временно недоступен';if(p)p.textContent='Не удалось загрузить данные подбора.';}});
+    fetch(url).then(function(r){if(!r.ok)throw new Error('planner');return r.json();}).then(function(data){state=decode(data);if(count)count.textContent=String(state.recordCount).replace(/\B(?=(\d{3})+(?!\d))/g,' ');setOpts(subject,'Все регионы',state.subjects.map(function(s,i){return {value:i,label:s.n};}), '');setOpts(zone,'Сначала выберите регион',[], '');refreshFilters();[subject,zone,guide,category,where,risk,popular].forEach(function(el){if(el)el.addEventListener('change',function(){if(el===subject)refreshZones();else refreshFilters();render();});});if(search)search.addEventListener('input',debounce(render,140));if(apply)apply.addEventListener('click',render);if(reset)reset.addEventListener('click',function(){[subject,zone,guide,category,where,risk].forEach(function(el){if(el)el.value='';});if(search)search.value='';if(popular)popular.checked=true;refreshZones();if(start)start.hidden=false;if(results)results.hidden=true;if(empty)empty.hidden=true;});if(start)start.hidden=false;}).catch(function(){if(start){start.hidden=false;var h=start.querySelector('h2'),p=start.querySelector('p');if(h)h.textContent='Подбор временно недоступен';if(p)p.textContent='Не удалось загрузить данные подбора.';}});
   }
   document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-plant-planner]').forEach(initPlantPlanner);});
 })();
@@ -545,7 +564,7 @@
 })();
 
 
-/* v137: local planting list with repeat-click remove */
+/* v138: local planting list with repeat-click remove, safer storage and copy fallback */
 (function(){
   var storageKey = 'prizhivetsya:planting-list:v1';
   var recRank = {'Надежно':0,'Надёжно':0,'Рекомендовано':1,'С укрытием / уходом':2,'Рискованно':3};
@@ -554,7 +573,7 @@
   function rank(v){return Object.prototype.hasOwnProperty.call(recRank, v) ? recRank[v] : 99;}
   function plural(n,one,few,many){n=Math.abs(Number(n)||0)%100;var n1=n%10;if(n>10&&n<20)return many;if(n1>1&&n1<5)return few;if(n1===1)return one;return many;}
   function read(){try{var a=JSON.parse(localStorage.getItem(storageKey)||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
-  function write(items){localStorage.setItem(storageKey, JSON.stringify(items));}
+  function write(items){try{localStorage.setItem(storageKey, JSON.stringify(items));return true;}catch(e){return false;}}
   function pageUrl(){var path=window.location.pathname||'';var file=path.split('/').pop()||'index.html';var prefix='';if(path.indexOf('/regions/')!==-1)prefix='regions/';else if(path.indexOf('/cultures/')!==-1)prefix='cultures/';return prefix+file+(window.location.search||'');}
   function cleanTitle(){return (document.title||'приживется.ру').replace(/\s+—\s+приживется\.ру$/i,'').replace(/\s+—\s+где выращивать$/i,'').trim();}
   function keyOf(item){return [norm(item.name),norm(item.sourceTitle),norm(item.sourceUrl),norm(item.recommendation),norm(item.place)].join('|');}
@@ -575,15 +594,17 @@
   function updateButtons(){var items=read();var keys={};items.forEach(function(item){keys[keyOf(item)]=true;});Array.prototype.slice.call(document.querySelectorAll('[data-planting-add]')).forEach(function(btn){var added=!!keys[buttonKey(btn)], label=added?'В списке':'В список', pressed=added?'true':'false', hint=added?'Убрать из списка посадок':'Добавить в список посадок';if(btn.classList.contains('is-added')!==added)btn.classList.toggle('is-added',added);if(btn.textContent!==label)btn.textContent=label;if(btn.getAttribute('aria-pressed')!==pressed)btn.setAttribute('aria-pressed',pressed);if(btn.getAttribute('title')!==hint)btn.setAttribute('title',hint);if(btn.getAttribute('aria-label')!==hint)btn.setAttribute('aria-label',hint);});}
   function toggleItem(btn){var item=payloadFromButton(btn);if(!item.name)return;var items=read(), k=keyOf(item), next=items.filter(function(x){return keyOf(x)!==k;});if(next.length!==items.length){write(next);updateButtons();document.dispatchEvent(new CustomEvent('prizh:planting-list-updated'));return;}items.unshift(item);write(items);updateButtons();document.dispatchEvent(new CustomEvent('prizh:planting-list-updated'));}
   function textExport(items){return items.map(function(item,i){return (i+1)+'. '+item.name+' — '+item.recommendation+'; '+item.place+'; '+item.timing+'\n   '+item.sourceTitle+'\n   '+item.comment;}).join('\n\n');}
+  function debounce(fn,delay){var timer;return function(){var ctx=this,args=arguments;clearTimeout(timer);timer=setTimeout(function(){fn.apply(ctx,args);},delay);};}
+  function copyText(text){if(navigator.clipboard&&navigator.clipboard.writeText){return navigator.clipboard.writeText(text);}return new Promise(function(resolve,reject){var area=document.createElement('textarea');area.value=text;area.setAttribute('readonly','');area.style.position='fixed';area.style.left='-9999px';document.body.appendChild(area);area.select();try{document.execCommand('copy')?resolve():reject(new Error('copy failed'));}catch(e){reject(e);}finally{document.body.removeChild(area);}});}
   function initPage(root){var total=root.querySelector('[data-planting-total]'), search=root.querySelector('[data-planting-filter-search]'), rec=root.querySelector('[data-planting-filter-rec]'), cat=root.querySelector('[data-planting-filter-category]'), empty=root.querySelector('[data-planting-empty]'), results=root.querySelector('[data-planting-results]'), summary=root.querySelector('[data-planting-summary]'), groups=root.querySelector('[data-planting-groups]'), printBtn=root.querySelector('[data-planting-print]'), clearBtn=root.querySelector('[data-planting-clear]'), copyBtn=root.querySelector('[data-planting-copy]');
     function fillCategories(items){var current=cat?cat.value:'';var values=[];items.forEach(function(item){if(item.category&&values.indexOf(item.category)===-1)values.push(item.category);});values.sort(function(a,b){return a.localeCompare(b,'ru');});if(cat){cat.innerHTML='<option value="">Все</option>'+values.map(function(v){return '<option>'+esc(v)+'</option>';}).join('');cat.value=values.indexOf(current)!==-1?current:'';}}
     function filtered(items){var q=norm(search&&search.value), rv=rec&&rec.value, cv=cat&&cat.value;return items.filter(function(item){if(rv&&item.recommendation!==rv)return false;if(cv&&item.category!==cv)return false;if(q&&norm([item.name,item.category,item.recommendation,item.place,item.timing,item.comment,item.sourceTitle].join(' ')).indexOf(q)===-1)return false;return true;}).sort(function(a,b){return (rank(a.recommendation)-rank(b.recommendation))||a.name.localeCompare(b.name,'ru')||a.sourceTitle.localeCompare(b.sourceTitle,'ru');});}
     function card(item){return '<article class="planting-card"><div class="planting-card-main"><h3>'+esc(item.name)+'</h3><div class="planting-card-badges"><span class="rec-badge" data-rec="'+esc(item.recommendation)+'">'+esc(item.recommendation)+'</span><span class="planner-badge">'+esc(item.category||'Разное')+'</span><span class="planner-badge">'+esc(item.place||'Условия уточняются')+'</span></div><p>'+esc(item.comment||item.timing||'Смотрите исходный справочник для уточнения условий.')+'</p><small>'+esc(item.timing||'Сроки уточняются в справочнике.')+'</small></div><div class="planting-card-side"><a href="'+esc(item.sourceUrl||'#')+'">Открыть источник</a><span>'+esc(item.sourceTitle||'Справочник')+'</span><button type="button" class="planting-remove-btn" data-planting-remove="'+esc(item.id||'')+'">Убрать</button></div></article>';}
     function render(){var items=read();fillCategories(items);var list=filtered(items);if(total)total.textContent=String(items.length);if(!items.length){if(empty)empty.hidden=false;if(results)results.hidden=true;return;}if(empty)empty.hidden=true;if(results)results.hidden=false;if(summary)summary.textContent='Показано '+list.length+' '+plural(list.length,'позиция','позиции','позиций')+' из '+items.length+'.';var by={};list.forEach(function(item){var k=item.recommendation||'Без оценки';(by[k]||(by[k]=[])).push(item);});var order=['Надёжно','Надежно','Рекомендовано','С укрытием / уходом','Рискованно','Без оценки'];var html=[];order.forEach(function(k){var arr=by[k]||[];if(!arr.length)return;html.push('<section class="planting-group"><div class="planting-group-head"><h2>'+esc(k==='Надежно'?'Надёжно':k)+'</h2><span>'+arr.length+' '+plural(arr.length,'позиция','позиции','позиций')+'</span></div><div class="planting-card-list">'+arr.map(card).join('')+'</div></section>');});if(groups)groups.innerHTML=html.join('')||'<section class="planting-empty"><h2>Ничего не найдено</h2><p>Попробуйте изменить поиск или фильтры.</p></section>';}
-    if(search)search.addEventListener('input',render);if(rec)rec.addEventListener('change',render);if(cat)cat.addEventListener('change',render);
+    if(search)search.addEventListener('input',debounce(render,120));if(rec)rec.addEventListener('change',render);if(cat)cat.addEventListener('change',render);
     if(clearBtn)clearBtn.addEventListener('click',function(){if(!read().length)return;if(confirm('Очистить весь список посадок?')){write([]);render();updateButtons();}});
     if(printBtn)printBtn.addEventListener('click',function(){window.print();});
-    if(copyBtn)copyBtn.addEventListener('click',function(){var text=textExport(filtered(read()));if(!text)return;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){copyBtn.textContent='Скопировано';setTimeout(function(){copyBtn.textContent='Скопировать текст';},1600);});}});
+    if(copyBtn)copyBtn.addEventListener('click',function(){var text=textExport(filtered(read()));if(!text)return;copyText(text).then(function(){copyBtn.textContent='Скопировано';setTimeout(function(){copyBtn.textContent='Скопировать текст';},1600);}).catch(function(){copyBtn.textContent='Не удалось скопировать';setTimeout(function(){copyBtn.textContent='Скопировать текст';},1800);});});
     root.addEventListener('click',function(e){var btn=e.target.closest('[data-planting-remove]');if(!btn)return;var id=btn.getAttribute('data-planting-remove');var items=read().filter(function(item){return item.id!==id;});write(items);render();updateButtons();});
     document.addEventListener('prizh:planting-list-updated',render);render();
   }
