@@ -2176,3 +2176,545 @@ main,.site-header,.site-footer{max-width:100%;overflow-x:clip}
 /* v152: season map, conditions hub, culture comparison */
 .home-v152-section,.planner-route-card,.planting-route-panel,.season-hero,.season-actions,.season-empty,.season-results,.conditions-hero,.condition-picker,.culture-compare-panel{width:min(100% - 32px,var(--content-max,1280px));margin:24px auto;padding:28px;border:1px solid rgba(89,128,96,.22);border-radius:28px;background:rgba(255,255,250,.88);box-shadow:0 18px 45px rgba(38,74,49,.08)}
 .season-hero{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:stretch}.season-hero-card{border-radius:24px;padding:24px;background:linear-gradient(135deg,rgba(221,244,219,.95),rgba(255,255,248,.95));border:1px solid rgba(71,124,73,.22)}.season-hero-card strong{display:block;font-size:56px;line-height:1;color:#23613c}.season-hero-card span{font-weight:800}.season-actions{display:flex;flex-wrap:wrap;gap:12px}.season-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:22px}.season-summary-grid article,.season-focus article,.season-route-grid article,.condition-cards article{border-radius:20px;padding:18px;background:#fff;border:1px solid rgba(89,128,96,.18)}.season-summary-grid strong{display:block;font-size:34px;color:#23613c}.season-focus{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}.season-route{margin:24px 0}.season-route-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.season-groups{display:grid;gap:20px}.season-group{border-radius:24px;background:#fff;border:1px solid rgba(89,128,96,.18);padding:20px}.season-group-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:14px}.season-card-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.season-card{border:1px solid rgba(89,128,96,.16);border-radius:18px;padding:16px;background:rgba(249,252,247,.9)}.season-card h3{margin:0 0 8px}.season-card small{display:block;color:#53685c;margin-top:8px}.condition-check-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.condition-check-grid label{padding:12px 14px;border-radius:16px;background:#fff;border:1px solid rgba(89,128,96,.18);font-weight:700}.condition-result{margin-top:18px}.condition-result-card{border-radius:20px;background:#fff;border:1px solid rgba(89,128,96,.18);padding:18px}.condition-cards{width:min(100% - 32px,var(--content-max,1280px));margin:24px auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.condition-cards h2{margin-top:0}.condition-cards a{font-weight:800;color:#22633a}.culture-compare-panel{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(320px,1.1fr);gap:18px}.culture-compare-selects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.culture-compare-selects select{width:100%;border-radius:14px;border:1px solid rgba(89,128,96,.25);padding:12px;background:#fff}.culture-compare-result{grid-column:1/-1;overflow:auto}.culture-compare-table{width:100%;border-collapse:separate;border-spacing:0}.culture-compare-table th,.culture-compare-table td{padding:12px;border-bottom:1px solid rgba(89,128,96,.16);text-align:left;vertical-align:top}.culture-compare-table th{color:#53685c;font-size:13px;text-transform:uppercase;letter-spacing:.04em}.culture-compare-table a{font-weight:800;color:#22633a}@media(max-width:900px){.season-hero,.culture-compare-panel{grid-template-columns:1fr}.season-summary-grid,.season-focus,.season-route-grid,.condition-cards{grid-template-columns:1fr 1fr}.condition-check-grid{grid-template-columns:1fr 1fr}.season-card-list{grid-template-columns:1fr}}@media(max-width:620px){.home-v152-section,.planner-route-card,.planting-route-panel,.season-hero,.season-actions,.season-empty,.season-results,.conditions-hero,.condition-picker,.culture-compare-panel{width:min(100% - 20px,var(--content-max,1280px));padding:20px;border-radius:22px}.season-summary-grid,.season-focus,.season-route-grid,.condition-cards,.condition-check-grid,.culture-compare-selects{grid-template-columns:1fr}.season-hero-card strong{font-size:42px}}@media print{.site-header,.site-footer,.season-actions,.crumbs,.culture-action-buttons{display:none!important}.season-hero,.season-results{box-shadow:none;border:0;margin:0;width:100%;padding:0}.season-card{break-inside:avoid}.season-summary-grid,.season-focus,.season-route-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* --- v153: header cleanup and fixed width for plan/conditions pages --- */
+.topnav{
+  flex-wrap:nowrap;
+  gap:8px;
+}
+.topnav a{
+  white-space:nowrap;
+  padding:9px 14px;
+}
+@media (max-width:1180px){
+  .brand-logo{
+    width:200px;
+    max-width:42vw;
+  }
+  .topnav{
+    gap:6px;
+  }
+  .topnav a{
+    font-size:14px;
+    padding:8px 11px;
+  }
+}
+@media (max-width:980px){
+  .topnav{
+    gap:8px;
+  }
+  .topnav a{
+    font-size:14px;
+    padding:9px 13px;
+  }
+}
+.season-main,
+.conditions-main,
+.beginner-main{
+  width:min(var(--page-max),calc(100% - var(--safe-gutter)*2));
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:24px 0 64px;
+}
+.season-main > .crumbs,
+.conditions-main > .crumbs,
+.beginner-main > .crumbs{
+  width:100%;
+  margin-left:0;
+  margin-right:0;
+}
+.season-main > .season-hero,
+.season-main > .season-actions,
+.season-main > .season-empty,
+.season-main > .season-results,
+.conditions-main > .conditions-hero,
+.conditions-main > .condition-picker,
+.conditions-main > .condition-cards,
+.beginner-main > .beginner-hero,
+.beginner-main > .beginner-section{
+  width:100%;
+  max-width:100%;
+  margin-left:0;
+  margin-right:0;
+}
+.season-results{
+  padding:28px;
+}
+.season-summary-grid,
+.season-focus,
+.season-route-grid,
+.condition-cards,
+.beginner-grid{
+  min-width:0;
+}
+.season-summary-grid article,
+.season-focus article,
+.season-route-grid article,
+.condition-cards article,
+.beginner-card{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.season-hero{
+  grid-template-columns:minmax(0,1fr) minmax(240px,280px);
+}
+.season-actions .button-primary,
+.season-actions .button-soft,
+.season-actions .button-link{
+  flex:0 1 auto;
+}
+@media (max-width:740px){
+  .season-main,
+  .conditions-main,
+  .beginner-main{
+    width:calc(100% - 24px);
+    padding:16px 0 48px;
+  }
+  .season-main > .season-hero,
+  .season-main > .season-actions,
+  .season-main > .season-empty,
+  .season-main > .season-results,
+  .conditions-main > .conditions-hero,
+  .conditions-main > .condition-picker,
+  .conditions-main > .condition-cards,
+  .beginner-main > .beginner-hero,
+  .beginner-main > .beginner-section{
+    margin-top:16px;
+    margin-bottom:16px;
+    padding:20px;
+    border-radius:22px;
+  }
+  .season-actions .button-primary,
+  .season-actions .button-soft,
+  .season-actions .button-link{
+    width:100%;
+    justify-content:center;
+  }
+}
+@media print{
+  .season-main{
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .season-main > .season-hero,
+  .season-main > .season-results{
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+  }
+}
+
+
+/* --- v154: plan polish, route blocks and stable widths --- */
+.flow-stagebar,
+.planner-after-route,
+.planting-workflow,
+.calendar-route-strip,
+.condition-combos,
+.home-v154-route,
+.season-toolbar{
+  width:100%;
+  margin:22px 0;
+  border:1px solid rgba(83,124,72,.18);
+  border-radius:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(247,251,244,.9));
+  box-shadow:0 16px 38px rgba(32,70,46,.07);
+}
+.flow-stagebar{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  padding:18px;
+}
+.flow-stagebar article{
+  min-width:0;
+  border:1px solid rgba(83,124,72,.14);
+  border-radius:22px;
+  background:#fff;
+  padding:16px;
+}
+.flow-stagebar span{
+  display:inline-grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  background:#e5f4e7;
+  color:#0d6f3f;
+  font-weight:950;
+  margin-bottom:10px;
+}
+.flow-stagebar strong,
+.planting-workflow strong,
+.condition-combo-grid strong,
+.home-v154-route-grid strong{
+  display:block;
+  color:#123727;
+  font-size:1.05rem;
+}
+.flow-stagebar p,
+.planting-workflow p,
+.condition-combo-grid p,
+.home-v154-route p,
+.home-v154-route-grid span{
+  margin:.35rem 0 0;
+  color:#53685c;
+  line-height:1.48;
+}
+.planner-after-route{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:26px;
+}
+.planner-after-route h2,
+.planting-workflow h2,
+.condition-combos h2,
+.home-v154-route h2,
+.season-toolbar h2,
+.season-checklist h2{
+  margin:.2rem 0 .45rem;
+  color:#123727;
+  letter-spacing:-.02em;
+}
+.planner-after-route p,
+.season-toolbar p{
+  margin:0;
+  color:#53685c;
+}
+.planner-after-actions,
+.calendar-route-strip{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+}
+.planting-workflow,
+.condition-combos,
+.home-v154-route,
+.season-toolbar{
+  padding:26px;
+}
+.planting-workflow-grid,
+.condition-combo-grid,
+.home-v154-route-grid,
+.season-checklist-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+}
+.planting-workflow-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.planting-workflow-grid article,
+.condition-combo-grid article,
+.season-checklist-grid article{
+  min-width:0;
+  border:1px solid rgba(83,124,72,.15);
+  border-radius:20px;
+  background:#fff;
+  padding:16px;
+  overflow-wrap:anywhere;
+}
+.calendar-route-strip{
+  justify-content:space-between;
+  padding:18px 20px;
+}
+.calendar-route-strip div{
+  min-width:180px;
+  flex:1 1 180px;
+}
+.calendar-route-strip strong{
+  display:block;
+  color:#123727;
+}
+.calendar-route-strip span{
+  display:block;
+  color:#53685c;
+  font-size:.95rem;
+  line-height:1.4;
+}
+.home-v154-route{
+  width:var(--content);
+  max-width:100%;
+  margin:28px auto 54px;
+}
+.home-v154-route-grid{
+  margin-top:18px;
+}
+.home-v154-route-grid a{
+  text-decoration:none;
+  color:inherit;
+  border:1px solid rgba(83,124,72,.15);
+  border-radius:20px;
+  background:#fff;
+  padding:18px;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.home-v154-route-grid a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 24px rgba(32,70,46,.08);
+}
+.season-toolbar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);
+  gap:22px;
+  align-items:end;
+}
+.season-toolbar-controls{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+.season-toolbar label{
+  display:grid;
+  gap:6px;
+  color:#315441;
+  font-weight:850;
+  font-size:.92rem;
+}
+.season-toolbar select{
+  width:100%;
+  border:1px solid rgba(83,124,72,.24);
+  border-radius:14px;
+  padding:11px 12px;
+  background:#fff;
+  color:#123727;
+  font:inherit;
+}
+.season-toolbar .button-soft{
+  min-height:46px;
+}
+.season-checklist{
+  margin:8px 0 24px;
+}
+.season-checklist-grid{
+  margin-top:12px;
+}
+.season-checklist-grid article b{
+  display:block;
+  font-size:2rem;
+  color:#23613c;
+  line-height:1;
+  margin:.55rem 0 .35rem;
+}
+.season-checklist-grid article.is-good{
+  background:linear-gradient(180deg,#ffffff,#f1f8ef);
+}
+.season-filter-empty{
+  border:1px dashed rgba(83,124,72,.32);
+  border-radius:22px;
+  background:#fff;
+  padding:20px;
+  margin:10px 0 22px;
+}
+.season-filter-empty h2{
+  margin:0 0 8px;
+}
+.season-filter-empty p{
+  margin:0;
+  color:#53685c;
+}
+.condition-combos{
+  width:100%;
+}
+.condition-combo-grid{
+  margin-top:16px;
+}
+.condition-combo-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.conditions-main > .condition-combos,
+.planner-main > .flow-stagebar,
+.planner-main > .planner-after-route,
+.planting-main > .planting-workflow,
+.calendar-main > .calendar-route-strip,
+.season-main > .season-toolbar{
+  max-width:100%;
+}
+@media(max-width:1120px){
+  .flow-stagebar,
+  .planting-workflow-grid,
+  .condition-combo-grid,
+  .home-v154-route-grid,
+  .season-checklist-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .season-toolbar{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:760px){
+  .flow-stagebar,
+  .planting-workflow-grid,
+  .condition-combo-grid,
+  .home-v154-route-grid,
+  .season-checklist-grid,
+  .season-toolbar-controls{
+    grid-template-columns:1fr;
+  }
+  .planner-after-route{
+    display:block;
+  }
+  .planner-after-actions{
+    margin-top:16px;
+  }
+  .calendar-route-strip{
+    align-items:stretch;
+  }
+  .calendar-route-strip .btn{
+    width:100%;
+    justify-content:center;
+  }
+  .home-v154-route{
+    width:calc(100% - 24px);
+    border-radius:22px;
+    padding:20px;
+  }
+}
+@media print{
+  .flow-stagebar,
+  .planner-after-route,
+  .planting-workflow,
+  .calendar-route-strip,
+  .condition-combos,
+  .home-v154-route,
+  .season-toolbar,
+  .season-filter-empty{
+    display:none!important;
+  }
+  .season-checklist{
+    break-inside:avoid;
+  }
+}
+
+/* v155: workflow tools */
+.home-v155-tools,
+.season-warnings,
+.season-map,
+.season-shopping,
+.planner-site-check,
+.planting-board,
+.calendar-export-note{
+  width:var(--content);
+  max-width:100%;
+  margin:24px auto;
+  border:1px solid rgba(83,124,72,.17);
+  border-radius:28px;
+  background:linear-gradient(180deg,#fffef9,#f5faf3);
+  box-shadow:0 18px 48px rgba(32,70,46,.07);
+  padding:26px;
+  box-sizing:border-box;
+}
+.home-v155-tools-grid,
+.season-warning-grid,
+.season-map-grid,
+.season-shopping-grid,
+.planting-board-grid,
+.planner-site-check-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:16px;
+}
+.home-v155-tools-grid a,
+.season-warning-grid article,
+.season-map-grid article,
+.season-shopping-grid article,
+.planting-board-grid article,
+.planner-site-check-grid article{
+  min-width:0;
+  border:1px solid rgba(83,124,72,.16);
+  border-radius:20px;
+  background:#fff;
+  padding:16px;
+  color:#123727;
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+.home-v155-tools-grid a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 28px rgba(32,70,46,.08);
+}
+.home-v155-tools-grid strong,
+.season-warning-grid strong,
+.season-map-grid strong,
+.season-shopping-grid strong,
+.planting-board-grid strong,
+.planner-site-check-grid strong{
+  display:block;
+  margin-bottom:6px;
+  color:#0d4d2c;
+}
+.home-v155-tools-grid span,
+.season-warning-grid p,
+.season-map-grid p,
+.season-shopping-grid p,
+.planting-board-grid p,
+.planner-site-check-grid p{
+  color:#53685c;
+  line-height:1.45;
+}
+.season-map-list,
+.season-shopping-list{
+  margin:10px 0 0;
+  padding-left:18px;
+  color:#315441;
+}
+.season-shopping-actions,
+.calendar-export-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:16px;
+}
+.season-warnings .is-alert,
+.planner-site-check .is-alert{
+  border-color:rgba(177,112,35,.28);
+  background:#fffaf0;
+}
+.season-warnings .is-good,
+.planner-site-check .is-good{
+  background:#f1f8ef;
+}
+.calendar-export-note{
+  margin:0 0 18px;
+  width:100%;
+  box-shadow:none;
+}
+.calendar-export-note p{margin:0;color:#53685c}
+.calendar-export-note strong{color:#123727}
+@media(max-width:1120px){
+  .home-v155-tools-grid,
+  .season-warning-grid,
+  .season-map-grid,
+  .season-shopping-grid,
+  .planting-board-grid,
+  .planner-site-check-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:760px){
+  .home-v155-tools,
+  .season-warnings,
+  .season-map,
+  .season-shopping,
+  .planner-site-check,
+  .planting-board{width:calc(100% - 24px);padding:20px;border-radius:22px;}
+  .home-v155-tools-grid,
+  .season-warning-grid,
+  .season-map-grid,
+  .season-shopping-grid,
+  .planting-board-grid,
+  .planner-site-check-grid{grid-template-columns:1fr;}
+}
+@media print{
+  .home-v155-tools,
+  .planner-site-check,
+  .planting-board,
+  .calendar-export-note{display:none!important;}
+  .season-map,
+  .season-shopping,
+  .season-warnings{box-shadow:none;break-inside:avoid;}
+}

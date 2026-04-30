@@ -1,4 +1,4 @@
-/* v150: smart planner, beginner route, season plan, no-assets build */
+/* v155: workflow tools, plan map, shopping list and calendar exports, no-assets build */
 (function(){
   function normalizeText(value){
     return String(value || '').toLowerCase().replace(/ё/g,'е').replace(/[—–-]/g,' ').replace(/\s+/g,' ').trim();
@@ -731,10 +731,190 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
  function chips(obj){return Object.keys(obj).sort(function(a,b){return obj[b]-obj[a]||a.localeCompare(b,'ru')}).map(function(k){return '<span><strong>'+obj[k]+'</strong> '+esc(k)+'</span>'}).join('')}
  function textPlan(items){var lines=['План сезона — приживется.ру',''];items.forEach(function(i,idx){lines.push((idx+1)+'. '+(i.name||'Культура'));lines.push('   Категория: '+(i.category||''));lines.push('   Рекомендация: '+(i.recommendation||''));lines.push('   Место: '+(i.sitePlace||i.place||'не указано'));lines.push('   Статус: '+(i.status||'планирую'));lines.push('   Сроки: '+(i.timing||'уточнить в календаре'));if(i.userNote)lines.push('   Заметка: '+i.userNote);lines.push('')});return lines.join('\n')}
  function copyText(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t);var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();return Promise.resolve()}
- function initSeasonPlan(){var root=q('[data-season-plan-page]');if(!root)return;var total=q('[data-season-total]',root),empty=q('[data-season-empty]',root),results=q('[data-season-results]',root),summary=q('[data-season-summary]',root),focus=q('[data-season-focus]',root),groups=q('[data-season-groups]',root),copy=q('[data-season-copy]',root),print=q('[data-season-print]',root);function render(){var items=read();var active=items.filter(function(i){return (i.status||'планирую')!=='убрать'});if(total)total.textContent=active.length;if(!active.length){if(empty)empty.hidden=false;if(results)results.hidden=true;return}if(empty)empty.hidden=true;if(results)results.hidden=false;var byPlace=countBy(active,function(i){return i.sitePlace||i.place||'грядка'}),byStatus=countBy(active,function(i){return i.status||'планирую'}),bySeason=countBy(active,season),risky=active.filter(function(i){return /риск|укрыт|уход/i.test(i.recommendation||'')});if(summary)summary.innerHTML='<article><strong>'+active.length+'</strong><span>'+plural(active.length,'культура','культуры','культур')+'</span><p>Активный план без позиций со статусом «убрать».</p></article><article><strong>'+Object.keys(byPlace).length+'</strong><span>места посадки</span><p>'+chips(byPlace)+'</p></article><article><strong>'+Object.keys(byStatus).length+'</strong><span>статусы</span><p>'+chips(byStatus)+'</p></article><article><strong>'+risky.length+'</strong><span>требуют внимания</span><p>Проверьте укрытие, теплицу, полив и микроклимат.</p></article>';if(focus)focus.innerHTML='<article><h2>Ближайшие действия</h2><p>Начните с культур со статусом «планирую» и тех, где не указано место посадки.</p></article><article><h2>Что проверить по календарю</h2><p>'+chips(bySeason)+'</p></article><article><h2>Где нужна осторожность</h2><p>'+(risky.slice(0,5).map(function(i){return esc(i.name)}).join(', ')||'Явных рискованных позиций нет.')+'</p></article>';var order=['Весна','Лето','Осень','Зима','Срок уточнить'],buckets={};active.forEach(function(i){var s=season(i);(buckets[s]||(buckets[s]=[])).push(i)});if(groups)groups.innerHTML=order.filter(function(k){return buckets[k]&&buckets[k].length}).map(function(k){return '<section class="season-group"><div class="season-group-head"><h2>'+esc(k)+'</h2><span>'+buckets[k].length+' '+plural(buckets[k].length,'позиция','позиции','позиций')+'</span></div><div class="season-card-list">'+buckets[k].map(function(i){return '<article class="season-card"><h3>'+esc(i.name)+'</h3><p>'+esc(i.comment||i.timing||'Срок уточняется в календаре зоны.')+'</p><small>'+esc(i.category||'')+' · '+esc(i.recommendation||'')+' · '+esc(i.sitePlace||i.place||'место не указано')+' · '+esc(i.status||'планирую')+'</small>'+(i.userNote?'<small>Заметка: '+esc(i.userNote)+'</small>':'')+'</article>'}).join('')+'</div></section>'}).join('')} if(copy)copy.addEventListener('click',function(){copyText(textPlan(read())).then(function(){copy.textContent='Скопировано';setTimeout(function(){copy.textContent='Скопировать план'},1400)})});if(print)print.addEventListener('click',function(){window.print()});document.addEventListener('prizh:planting-list-updated',render);render()}
- var conditionTexts={clay:['Глина требует воздуха и дренажа. Начните с высоких гряд, компоста и культур, которые терпят плотную почву после подготовки.','Капуста, смородина, мята, астильба, флоксы.'],sand:['Песок быстро высыхает. Нужны органика, мульча и регулярный полив, особенно для капусты и молодых плодовых.','Морковь, лук, тимьян, шалфей, картофель при поливе.'],lowland:['В низине холоднее и влажнее. Лучше поднятые гряды, дренаж и культуры, которым не страшна сырость.','Смородина, калина, мята, дербенник, сибирские ирисы.'],wind:['Ветер сушит и охлаждает. Нужны кулисы, сетка, подвязка и мульча.','Лук, картофель, смородина, дерен, спирея.'],shade:['В тени меньше урожай плодовых овощей. Ставку лучше делать на зелень, ягодники при рассеянном свете и декоративные многолетники.','Укроп, петрушка, щавель, ревень, хоста, астильба.'],wet:['Влажное место требует дренажа и проветривания. Не сажайте культуры, которые выпревают у корневой шейки.','Калина, смородина, мята, дербенник, влаголюбивые ирисы.'],dry:['Сухой участок просит мульчи, капельного полива и засухоустойчивых культур.','Тимьян, шалфей, лаванда в тёплой зоне, лук, облепиха.'],short:['Короткое лето требует ранних сортов, рассады и теплицы для теплолюбивых культур.','Редис, зелень, ранний картофель, жимолость, томат через рассаду.'],greenhouse:['Теплица расширяет выбор, но требует проветривания и контроля влажности.','Томат, перец, баклажан, огурец, базилик.'],cover:['Готовность укрывать снижает риск для винограда, теплолюбивых плодовых и капризных многолетников.','Виноград укрывной, розы, часть косточковых и теплолюбивые овощи.']};
+ function initSeasonPlan(){
+  var root=q('[data-season-plan-page]');
+  if(!root)return;
+  var total=q('[data-season-total]',root),
+      empty=q('[data-season-empty]',root),
+      results=q('[data-season-results]',root),
+      summary=q('[data-season-summary]',root),
+      focus=q('[data-season-focus]',root),
+      checklist=q('[data-season-checklist]',root),
+      groups=q('[data-season-groups]',root),
+      filterEmpty=q('[data-season-filter-empty]',root),
+      copy=q('[data-season-copy]',root),
+      print=q('[data-season-print]',root),
+      seasonSel=q('[data-season-filter]',root),
+      placeSel=q('[data-season-place-filter]',root),
+      statusSel=q('[data-season-status-filter]',root),
+      reset=q('[data-season-reset]',root);
+  var currentItems=[];
+  function uniqueVals(items,fn){
+    var seen={},out=[];
+    items.forEach(function(item){
+      var v=fn(item);
+      if(!v)return;
+      v=String(v);
+      if(!seen[v]){seen[v]=true;out.push(v);}
+    });
+    return out.sort(function(a,b){return a.localeCompare(b,'ru');});
+  }
+  function fillSelect(sel,placeholder,vals){
+    if(!sel)return;
+    var old=sel.value;
+    sel.innerHTML='<option value="">'+esc(placeholder)+'</option>'+vals.map(function(v){return '<option value="'+esc(v)+'">'+esc(v)+'</option>';}).join('');
+    if(old && vals.indexOf(old)!==-1)sel.value=old;
+  }
+  function selected(sel){return sel?sel.value:'';}
+  function applyFilters(items){
+    var sf=selected(seasonSel), pf=selected(placeSel), stf=selected(statusSel);
+    return items.filter(function(i){
+      var itemSeason=season(i), itemPlace=i.sitePlace||i.place||'', itemStatus=i.status||'планирую';
+      if(sf && itemSeason!==sf)return false;
+      if(pf && itemPlace!==pf)return false;
+      if(stf && itemStatus!==stf)return false;
+      return true;
+    });
+  }
+  function renderChecklist(items){
+    if(!checklist)return;
+    var noPlace=items.filter(function(i){return !(i.sitePlace||i.place);});
+    var risky=items.filter(function(i){return /риск|укрыт|уход/i.test(i.recommendation||'');});
+    var greenhouse=items.filter(function(i){return /теплиц/i.test([i.sitePlace,i.place,i.where,i.comment,i.timing].join(' '));});
+    var activeStatuses=countBy(items,function(i){return i.status||'планирую'});
+    function card(title,count,text,good){
+      return '<article class="'+(good?'is-good':'')+'"><strong>'+esc(title)+'</strong><b>'+count+'</b><p>'+esc(text)+'</p></article>';
+    }
+    checklist.innerHTML='<span class="kicker">Готовность плана</span><h2>Что проверить перед поездкой на участок</h2><div class="season-checklist-grid">'+
+      card('Место не указано',noPlace.length,noPlace.length?'Уточните грядку, теплицу, сад, клумбу или контейнер.':'У всех позиций есть место посадки.',!noPlace.length)+
+      card('Требуют внимания',risky.length,risky.length?'Сверьте укрытие, микроклимат, полив и сроки.':'В плане нет явных рискованных позиций.',!risky.length)+
+      card('Тепличные позиции',greenhouse.length,greenhouse.length?'Проверьте проветривание, подвязку и график полива.':'Теплица не перегружена по сохранённым данным.',greenhouse.length===0)+
+      card('Статусы',Object.keys(activeStatuses).length,'Обновляйте статусы после закупки, посева и высадки.',Object.keys(activeStatuses).length>1)+
+    '</div>';
+  }
+  function render(){
+    var items=read();
+    var activeAll=items.filter(function(i){return (i.status||'планирую')!=='убрать'});
+    if(total)total.textContent=activeAll.length;
+    fillSelect(seasonSel,'Все сезоны',uniqueVals(activeAll,function(i){return season(i);}));
+    fillSelect(placeSel,'Все места',uniqueVals(activeAll,function(i){return i.sitePlace||i.place||'';}));
+    fillSelect(statusSel,'Все статусы',uniqueVals(activeAll,function(i){return i.status||'планирую';}));
+    if(!activeAll.length){
+      currentItems=[];
+      if(empty)empty.hidden=false;
+      if(results)results.hidden=true;
+      return;
+    }
+    if(empty)empty.hidden=true;
+    if(results)results.hidden=false;
+    var active=applyFilters(activeAll);
+    currentItems=active;
+    var byPlace=countBy(active,function(i){return i.sitePlace||i.place||'место не указано'}),
+        byStatus=countBy(active,function(i){return i.status||'планирую'}),
+        bySeason=countBy(active,season),
+        risky=active.filter(function(i){return /риск|укрыт|уход/i.test(i.recommendation||'');});
+    if(summary)summary.innerHTML='<article><strong>'+active.length+'</strong><span>'+plural(active.length,'культура','культуры','культур')+'</span><p>'+(active.length===activeAll.length?'Показан весь активный план.':'Показана часть плана по выбранным фильтрам.')+'</p></article><article><strong>'+Object.keys(byPlace).length+'</strong><span>места посадки</span><p>'+chips(byPlace)+'</p></article><article><strong>'+Object.keys(byStatus).length+'</strong><span>статусы</span><p>'+chips(byStatus)+'</p></article><article><strong>'+risky.length+'</strong><span>требуют внимания</span><p>Проверьте укрытие, теплицу, полив и микроклимат.</p></article>';
+    if(focus)focus.innerHTML='<article><h2>Ближайшие действия</h2><p>'+(active.length?'Начните с культур со статусом «планирую» и тех, где не указано место посадки.':'По текущим фильтрам позиций нет.')+'</p></article><article><h2>Что проверить по календарю</h2><p>'+(active.length?chips(bySeason):'Сбросьте фильтры или добавьте культуры в список.')+'</p></article><article><h2>Где нужна осторожность</h2><p>'+(risky.slice(0,5).map(function(i){return esc(i.name)}).join(', ')||'Явных рискованных позиций нет.')+'</p></article>';
+    renderChecklist(activeAll);
+    if(filterEmpty)filterEmpty.hidden=!!active.length;
+    var order=['Весна','Лето','Осень','Зима','Срок уточнить'],buckets={};
+    active.forEach(function(i){var s=season(i);(buckets[s]||(buckets[s]=[])).push(i)});
+    if(groups)groups.innerHTML=order.filter(function(k){return buckets[k]&&buckets[k].length}).map(function(k){return '<section class="season-group"><div class="season-group-head"><h2>'+esc(k)+'</h2><span>'+buckets[k].length+' '+plural(buckets[k].length,'позиция','позиции','позиций')+'</span></div><div class="season-card-list">'+buckets[k].map(function(i){return '<article class="season-card"><h3>'+esc(i.name)+'</h3><p>'+esc(i.comment||i.timing||'Срок уточняется в календаре зоны.')+'</p><small>'+esc(i.category||'')+' · '+esc(i.recommendation||'')+' · '+esc(i.sitePlace||i.place||'место не указано')+' · '+esc(i.status||'планирую')+'</small>'+(i.userNote?'<small>Заметка: '+esc(i.userNote)+'</small>':'')+'</article>'}).join('')+'</div></section>'}).join('');
+  }
+  [seasonSel,placeSel,statusSel].forEach(function(sel){if(sel)sel.addEventListener('change',render);});
+  if(reset)reset.addEventListener('click',function(){[seasonSel,placeSel,statusSel].forEach(function(sel){if(sel)sel.value='';});render();});
+  if(copy)copy.addEventListener('click',function(){copyText(textPlan(currentItems)).then(function(){copy.textContent='Скопировано';setTimeout(function(){copy.textContent='Скопировать план'},1400)})});
+  if(print)print.addEventListener('click',function(){window.print()});
+  document.addEventListener('prizh:planting-list-updated',render);
+  render();
+} var conditionTexts={clay:['Глина требует воздуха и дренажа. Начните с высоких гряд, компоста и культур, которые терпят плотную почву после подготовки.','Капуста, смородина, мята, астильба, флоксы.'],sand:['Песок быстро высыхает. Нужны органика, мульча и регулярный полив, особенно для капусты и молодых плодовых.','Морковь, лук, тимьян, шалфей, картофель при поливе.'],lowland:['В низине холоднее и влажнее. Лучше поднятые гряды, дренаж и культуры, которым не страшна сырость.','Смородина, калина, мята, дербенник, сибирские ирисы.'],wind:['Ветер сушит и охлаждает. Нужны кулисы, сетка, подвязка и мульча.','Лук, картофель, смородина, дерен, спирея.'],shade:['В тени меньше урожай плодовых овощей. Ставку лучше делать на зелень, ягодники при рассеянном свете и декоративные многолетники.','Укроп, петрушка, щавель, ревень, хоста, астильба.'],wet:['Влажное место требует дренажа и проветривания. Не сажайте культуры, которые выпревают у корневой шейки.','Калина, смородина, мята, дербенник, влаголюбивые ирисы.'],dry:['Сухой участок просит мульчи, капельного полива и засухоустойчивых культур.','Тимьян, шалфей, лаванда в тёплой зоне, лук, облепиха.'],short:['Короткое лето требует ранних сортов, рассады и теплицы для теплолюбивых культур.','Редис, зелень, ранний картофель, жимолость, томат через рассаду.'],greenhouse:['Теплица расширяет выбор, но требует проветривания и контроля влажности.','Томат, перец, баклажан, огурец, базилик.'],cover:['Готовность укрывать снижает риск для винограда, теплолюбивых плодовых и капризных многолетников.','Виноград укрывной, розы, часть косточковых и теплолюбивые овощи.']};
  function initConditions(){var root=q('[data-condition-guide]');if(!root)return;var out=q('[data-condition-result]',root);function render(){var vals=qa('input[type="checkbox"]:checked',root).map(function(i){return i.value});if(!vals.length){out.innerHTML='<div class="condition-result-card"><strong>Выберите условия участка</strong><p>После выбора появится короткая сводка и ссылка в подбор с отмеченными условиями.</p></div>';return}var qs=vals.map(function(v){return 'condition='+encodeURIComponent(v)}).join('&');out.innerHTML='<div class="condition-result-card"><strong>Сводка по участку</strong><ul>'+vals.map(function(v){var t=conditionTexts[v]||['Условие нужно проверить в подборе.',''];return '<li><b>'+esc((q('input[value="'+v+'"]',root).parentNode.textContent||'').trim())+':</b> '+esc(t[0])+' <em>'+esc(t[1])+'</em></li>'}).join('')+'</ul><p><a class="btn primary" href="planner.html?'+qs+'">Открыть подбор с этими условиями</a></p></div>'}root.addEventListener('change',render);render()}
  function initPlannerParams(){var root=q('[data-plant-planner]');if(!root)return;var params=new URLSearchParams(location.search),vals=params.getAll('condition');if(!vals.length)return;setTimeout(function(){vals.forEach(function(v){var cb=q('[data-planner-condition][value="'+v.replace(/[^a-z-]/g,'')+'"]',root);if(cb)cb.checked=true});var apply=q('[data-planner-apply]',root);if(apply)apply.click()},450)}
  function initCultureCompare(){var root=q('[data-culture-compare]');if(!root)return;var cards=qa('[data-culture-card]').map(function(a){return {name:a.getAttribute('data-name')||a.textContent.trim(),cat:a.getAttribute('data-category')||'',href:a.getAttribute('href')||'',desc:(q('p',a)||{}).textContent||'',stat:(q('small',a)||{}).textContent||''}});var selects=qa('[data-compare-select]',root),result=q('[data-compare-result]',root);selects.forEach(function(sel){cards.forEach(function(c,i){var o=document.createElement('option');o.value=String(i);o.textContent=c.name;sel.appendChild(o)});sel.addEventListener('change',render)});function render(){var chosen=selects.map(function(s){return s.value}).filter(function(v,i,a){return v!==''&&a.indexOf(v)===i}).map(function(v){return cards[Number(v)]});if(!chosen.length){result.innerHTML='<p>Выберите культуры для сравнения.</p>';return}result.innerHTML='<table class="culture-compare-table"><thead><tr><th>Культура</th><th>Категория</th><th>Описание</th><th>Охват по зонам</th></tr></thead><tbody>'+chosen.map(function(c){return '<tr><td><a href="'+esc(c.href)+'">'+esc(c.name)+'</a></td><td>'+esc(c.cat)+'</td><td>'+esc(c.desc)+'</td><td>'+esc(c.stat)+'</td></tr>'}).join('')+'</tbody></table>'}render()}
  document.addEventListener('DOMContentLoaded',function(){initSeasonPlan();initConditions();initPlannerParams();initCultureCompare()})
+})();
+
+/* v155: plan map, shopping list, planner warnings and calendar export */
+(function(){
+  var KEY='prizhivetsya:planting-list:v1';
+  function q(s,r){return (r||document).querySelector(s);}
+  function qa(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+  function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];});}
+  function norm(v){return String(v||'').toLowerCase().replace(/ё/g,'е');}
+  function readList(){try{var a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
+  function active(items){return items.filter(function(i){return (i.status||'планирую')!=='убрать';});}
+  function season(item){var t=norm([item.timing,item.comment,item.userNote,item.sourceTitle].join(' '));if(/феврал|март|апрел|май|рассад|посев|высад/.test(t))return 'Весна';if(/июн|июл|август|полив|мульч|сбор|уход/.test(t))return 'Лето';if(/сент|окт|ноябр|укрыт|зим|убор|подготов/.test(t))return 'Осень';if(/декабр|январ/.test(t))return 'Зима';return 'Срок уточнить';}
+  function by(items,fn){var o={};items.forEach(function(i){var k=fn(i)||'не указано';(o[k]||(o[k]=[])).push(i);});return o;}
+  function plural(n,one,few,many){n=Math.abs(Number(n)||0)%100;var n1=n%10;if(n>10&&n<20)return many;if(n1>1&&n1<5)return few;if(n1===1)return one;return many;}
+  function placeOf(i){return i.sitePlace||i.place||'место не указано';}
+  function material(i){var t=norm([i.name,i.category,i.place,i.comment,i.timing].join(' '));if(/яблон|груш|слив|вишн|череш|абрикос|персик|орех|фундук|виноград|смород|крыжов|малина|жимол|голубик|облепих|калина|ирга|сажен/.test(t))return 'саженцы';if(/картоф|лук|чеснок|клубник|земляник/.test(t))return 'посадочный материал';if(/цвет|декор|лаванд|гортенз|роза|хоста|астильб|флокс|монард|ирис/.test(t))return 'семена или рассада';return 'семена или рассада';}
+  function copyText(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t);var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();return Promise.resolve();}
+  function download(name,text){var blob=new Blob([text],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},800);}
+  function filteredPlanItems(root,items){
+    var sf=(q('[data-season-filter]',root)||{}).value||'', pf=(q('[data-season-place-filter]',root)||{}).value||'', stf=(q('[data-season-status-filter]',root)||{}).value||'';
+    return items.filter(function(i){if(sf&&season(i)!==sf)return false;if(pf&&placeOf(i)!==pf)return false;if(stf&&(i.status||'планирую')!==stf)return false;return true;});
+  }
+  function renderSeasonTools(){
+    var root=q('[data-season-plan-page]'); if(!root)return;
+    var map=q('[data-season-map]',root), shop=q('[data-season-shopping]',root), warn=q('[data-season-warnings]',root);
+    var items=filteredPlanItems(root,active(readList()));
+    if(!items.length){[map,shop,warn].forEach(function(x){if(x)x.innerHTML='';});return;}
+    if(warn){
+      var noPlace=items.filter(function(i){return !i.sitePlace&&!i.place;}), noNote=items.filter(function(i){return !i.userNote;}), risky=items.filter(function(i){return /риск|укрыт|уход/i.test(i.recommendation||'');}), toRemove=readList().filter(function(i){return (i.status||'')==='убрать';});
+      warn.innerHTML='<span class="kicker">Проверка плана</span><h2>Слабые места перед закупкой</h2><div class="season-warning-grid">'+
+      '<article class="'+(noPlace.length?'is-alert':'is-good')+'"><strong>'+noPlace.length+' '+plural(noPlace.length,'позиция','позиции','позиций')+'</strong><p>'+(noPlace.length?'Не указано место посадки. Распределите их по грядке, теплице, саду, клумбе или контейнеру.':'У показанных культур указано место посадки.')+'</p></article>'+
+      '<article class="'+(risky.length?'is-alert':'is-good')+'"><strong>'+risky.length+' '+plural(risky.length,'риск','риска','рисков')+'</strong><p>'+(risky.length?'Проверьте укрытие, микроклимат, полив и сроки для осторожных рекомендаций.':'В текущем виде нет явных рискованных позиций.')+'</p></article>'+
+      '<article><strong>'+noNote.length+' без заметки</strong><p>Заметки помогают не забыть сорт, количество, номер грядки и покупку.</p></article>'+
+      '<article><strong>'+toRemove.length+' к удалению</strong><p>'+(toRemove.length?'Очистите позиции со статусом «убрать», чтобы они не мешали планированию.':'В списке нет позиций со статусом «убрать».')+'</p></article></div>';
+    }
+    if(map){
+      var groups=by(items,placeOf), names=Object.keys(groups).sort(function(a,b){return groups[b].length-groups[a].length||a.localeCompare(b,'ru');});
+      map.innerHTML='<span class="kicker">Карта посадок</span><h2>План по местам участка</h2><div class="season-map-grid">'+names.map(function(k){var arr=groups[k];return '<article><strong>'+esc(k)+' · '+arr.length+'</strong><p>'+arr.slice(0,5).map(function(i){return esc(i.name);}).join(', ')+(arr.length>5?' и ещё '+(arr.length-5):'')+'</p><ul class="season-map-list">'+arr.slice(0,4).map(function(i){return '<li>'+esc(i.name)+' — '+esc(i.status||'планирую')+'</li>';}).join('')+'</ul></article>';}).join('')+'</div>';
+    }
+    if(shop){
+      var buy=items.filter(function(i){var st=i.status||'планирую';return st==='планирую'||st==='';});
+      var groups2=by(buy,material), text=['Список покупок — приживется.ру',''];Object.keys(groups2).forEach(function(k){text.push(k.toUpperCase());groups2[k].forEach(function(i){text.push('- '+(i.name||'Культура')+' — '+placeOf(i)+(i.userNote?' · '+i.userNote:''));});text.push('');});
+      shop.__shoppingText=text.join('\n');
+      shop.innerHTML='<span class="kicker">Закупки</span><h2>Что подготовить до посадок</h2><p>Список строится из позиций со статусом «планирую». Когда семена, рассада или саженцы куплены, смените статус в «Моём списке».</p><div class="season-shopping-grid">'+(Object.keys(groups2).length?Object.keys(groups2).map(function(k){var arr=groups2[k];return '<article><strong>'+esc(k)+' · '+arr.length+'</strong><p>'+arr.slice(0,7).map(function(i){return esc(i.name);}).join(', ')+'</p></article>';}).join(''):'<article class="is-good"><strong>Закупок нет</strong><p>Все показанные позиции уже переведены дальше по статусу.</p></article>')+'</div><div class="season-shopping-actions"><button class="button-soft" type="button" data-season-copy-shopping>Скопировать покупки</button><button class="button-soft" type="button" data-season-download-shopping>Скачать TXT</button></div>';
+    }
+  }
+  function renderPlantingBoard(){
+    var root=q('[data-planting-list-page]'), box=q('[data-planting-board]'); if(!root||!box)return;
+    var items=readList(); if(!items.length){box.innerHTML='';return;}
+    var statuses=['планирую','куплено','посеяно','высажено','убрать'];
+    var g=by(items,function(i){return i.status||'планирую';});
+    box.innerHTML='<span class="kicker">Доска статусов</span><h2>Что уже сделано, а что ждёт действия</h2><div class="planting-board-grid">'+statuses.map(function(st){var arr=g[st]||[];return '<article><strong>'+esc(st)+' · '+arr.length+'</strong><p>'+(arr.slice(0,6).map(function(i){return esc(i.name);}).join(', ')||'Пока нет позиций')+'</p></article>';}).join('')+'</div>';
+  }
+  function renderPlannerSiteCheck(){
+    var root=q('[data-plant-planner]'), box=q('[data-planner-site-check]'); if(!root||!box)return;
+    var vals=qa('[data-planner-condition]:checked',root).map(function(i){return i.value;}), has=function(v){return vals.indexOf(v)!==-1;}, cards=[];
+    if(!vals.length){box.innerHTML='<span class="kicker">Проверка условий</span><h2>Отметьте особенности участка</h2><p>Здесь появятся предупреждения по сочетаниям условий: например глина с низиной, песок с ветром или короткое лето без теплицы.</p>';return;}
+    if((has('clay')&&has('wet'))||(has('clay')&&has('lowland')))cards.push(['Глина + влажность','Нужны поднятые гряды, компост, дренаж и культуры, которые не выпревают у корневой шейки.']);
+    if((has('sand')&&has('wind'))||(has('sand')&&has('dry')))cards.push(['Песок + ветер','Закладывайте мульчу, капельный полив, кулисы и выбирайте засухоустойчивые культуры.']);
+    if(has('shade')&&has('wet'))cards.push(['Тень + сырость','Снижайте загущение, оставляйте проветривание и не ставьте теплолюбивые овощи в главный план.']);
+    if(has('short')&&!has('greenhouse'))cards.push(['Короткое лето без теплицы','Ставку лучше делать на ранние сорта, рассаду, зелень, капусту, картофель и устойчивые ягодники.']);
+    if(has('wind')&&!has('cover'))cards.push(['Ветер без укрытия','Понадобятся кулисы, подвязка, мульча и более осторожный выбор плодовых и высоких культур.']);
+    if(!cards.length)cards.push(['Условия выбраны','Подбор учтёт отмеченные факторы и покажет причины: теплица, укрытие, дренаж, гряда или замена.']);
+    box.innerHTML='<span class="kicker">Проверка условий</span><h2>На что обратить внимание до выбора культуры</h2><div class="planner-site-check-grid">'+cards.map(function(c,i){return '<article class="'+(i?'':'is-alert')+'"><strong>'+esc(c[0])+'</strong><p>'+esc(c[1])+'</p></article>';}).join('')+'</div>';
+  }
+  function visibleCalendarTasks(){
+    var root=q('[data-zone-calendar]'); if(!root)return [];
+    return qa('.calendar-month-card',root).reduce(function(out,card){var m=(q('.calendar-month-head h3',card)||{}).textContent||'';qa('.calendar-task-list li',card).forEach(function(li){out.push({month:m,type:(q('.calendar-task-tag',li)||{}).textContent||'',text:(q('p',li)||{}).textContent||''});});return out;},[]);
+  }
+  function calendarText(){var rows=visibleCalendarTasks(), lines=['Календарь работ — приживется.ру',''];rows.forEach(function(t){lines.push('- '+t.month+' · '+t.type+': '+t.text);});if(!rows.length)lines.push('Нет видимых задач. Сначала выберите регион, зону и нажмите «Показать календарь».');return lines.join('\n');}
+  function setupCalendarExport(){
+    var root=q('[data-zone-calendar]'); if(!root)return;
+    var copy=q('[data-calendar-copy-visible]',root), dl=q('[data-calendar-download-visible]',root), note=q('[data-calendar-export-note]',root);
+    function notify(text){if(note){note.hidden=false;note.innerHTML='<p><strong>'+esc(text)+'</strong></p>';setTimeout(function(){note.hidden=true;},2200);}}
+    if(copy)copy.addEventListener('click',function(){copyText(calendarText()).then(function(){notify('Задачи календаря скопированы.');});});
+    if(dl)dl.addEventListener('click',function(){download('prizhivetsya-calendar-tasks.txt',calendarText());notify('TXT-файл с задачами подготовлен.');});
+  }
+  document.addEventListener('DOMContentLoaded',function(){
+    renderSeasonTools();renderPlantingBoard();renderPlannerSiteCheck();setupCalendarExport();
+    document.addEventListener('prizh:planting-list-updated',function(){setTimeout(function(){renderSeasonTools();renderPlantingBoard();},120);});
+    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(){setTimeout(renderSeasonTools,80);});
+    var plantingRoot=q('[data-planting-list-page]'); if(plantingRoot){plantingRoot.addEventListener('input',function(){setTimeout(renderPlantingBoard,180);});plantingRoot.addEventListener('change',function(){setTimeout(renderPlantingBoard,120);});}
+    var planner=q('[data-plant-planner]'); if(planner)planner.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-planner-condition]'))renderPlannerSiteCheck();});
+    document.addEventListener('click',function(e){var shop=q('[data-season-shopping]');if(!shop)return;if(e.target.matches('[data-season-copy-shopping]')){copyText(shop.__shoppingText||'').then(function(){e.target.textContent='Скопировано';setTimeout(function(){e.target.textContent='Скопировать покупки';},1300);});}if(e.target.matches('[data-season-download-shopping]'))download('prizhivetsya-shopping-list.txt',shop.__shoppingText||'');});
+  });
 })();
