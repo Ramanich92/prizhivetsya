@@ -3,23 +3,23 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Мой список посадок и план участка — приживется.ру</title>
- <meta name="description" content="Личный список культур с заметками, местом посадки, статусом работ, фильтрами, печатью и экспортом TXT/CSV.">
+ <title>Мой план посадок — приживется.ру</title>
+ <meta name="description" content="Личный план посадок: сохраняйте культуры, распределяйте их по месту, сезону и статусу, добавляйте заметки и выгружайте печатный список.">
  <link rel="icon" href="favicon.svg" type="image/svg+xml">
- <link rel="stylesheet" href="styles.css?v=148">
+ <link rel="stylesheet" href="styles.css?v=152">
  <link rel="apple-touch-icon" href="icon-192.png">
  <meta name="theme-color" content="#16362a">
  <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/planting-list.html">
  <meta property="og:type" content="website">
  <meta property="og:site_name" content="приживется.ру">
  <meta property="og:title" content="Мой список посадок и план участка">
- <meta property="og:description" content="Личный список культур с заметками, местом посадки, статусом работ, фильтрами, печатью и экспортом TXT/CSV.">
+ <meta property="og:description" content="Личный план посадок: сохраняйте культуры, распределяйте их по месту, сезону и статусу, добавляйте заметки и выгружайте печатный список.">
 </head>
-<body class="planting-list-page" data-build="v148-no-assets-seo-nav-planner">
+<body class="planting-list-page" data-build="v152-no-assets-season-map">
 <header class="site-header">
   <div class="site-header-inner">
     <a class="brand" href="index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="logo-wordmark.png" alt="приживется.ру" width="892" height="168"></a>
-    <nav class="topnav" aria-label="Основная навигация"><a href="index.html">Регионы</a><a href="cultures/index.html">Культуры</a><a href="planner.html">Подбор</a><a href="calendar.html">Календарь</a><a class="active" href="planting-list.html">Мой список</a><a href="difficult-plots.html">Участки</a><a href="how-to.html">Как пользоваться</a></nav>
+    <nav class="topnav" aria-label="Основная навигация"><a href="index.html">Регионы</a><a href="cultures/index.html">Культуры</a><a href="planner.html">Подбор</a><a href="calendar.html">Календарь</a><a class="active" href="planting-list.html">Мой список</a><a href="season-plan.html">План</a><a href="difficult-plots.html">Участки</a><a href="how-to.html">Как пользоваться</a></nav>
   </div>
 </header>
 <main class="planting-main" data-planting-list-page>
@@ -46,30 +46,32 @@
     </div>
     <div class="planting-actions">
       <button class="button-primary" type="button" data-planting-print>Распечатать</button>
-      <button class="button-soft" type="button" data-planting-copy>Скопировать текст</button>
-      <button class="button-soft" type="button" data-planting-download-txt>Скачать TXT</button>
-      <button class="button-soft" type="button" data-planting-download-csv>Скачать CSV</button>
-      <a class="button-soft button-link" href="calendar.html">Календарь по списку</a>
+      <button class="button-soft" type="button" data-planting-copy>Скопировать план</button>
+      <button class="button-soft" type="button" data-planting-download-txt>Скачать план TXT</button>
+      <button class="button-soft" type="button" data-planting-download-csv>Скачать план CSV</button>
+      <a class="button-soft button-link" href="calendar.html">Календарь по списку</a><a class="button-soft button-link" href="season-plan.html">План сезона</a>
       <button class="button-soft" type="button" data-planting-clear>Очистить список</button>
     </div>
     <p class="planting-panel-note">В карточках списка можно указать место посадки, статус и личную заметку: сорт, грядку, количество или задачу на сезон.</p>
   </section>
-  <section class="planting-empty" data-planting-empty>
+  <section class="planting-route-panel"><span class="kicker">Следующий шаг</span><h2>Проверьте список как план участка</h2><p>После добавления культур откройте «План сезона»: он сгруппирует посадки по месту, статусу и сезону работ.</p><div class="culture-action-buttons"><a class="btn primary" href="season-plan.html">Открыть план сезона</a><a class="btn secondary" href="conditions.html">Проверить условия</a></div></section><section class="planting-empty" data-planting-empty>
     <h2>Список пока пуст</h2>
     <p>Откройте подбор или региональные справочники и нажмите «В список» рядом с подходящей культурой.</p>
     <div class="planting-empty-actions"><a class="btn primary" href="planner.html">Перейти к подбору</a><a class="btn secondary" href="cultures/index.html">Открыть культуры</a></div>
   </section>
   <section class="planting-results" data-planting-results hidden>
     <div class="planting-summary" data-planting-summary></div>
+    <section class="planting-nearest" data-planting-nearest hidden></section>
     <div class="planting-groups" data-planting-groups></div>
   </section>
+<section class="planting-faq"><span class="kicker">План участка</span><h2>Как превратить список в рабочий сезонный план</h2><div class="planting-faq-grid"><article><strong>Разделите культуры по месту</strong><p>Грядка, теплица, сад, клумба и контейнер помогают быстро понять, где будет нагрузка в начале сезона.</p></article><article><strong>Меняйте статус по мере работы</strong><p>Статусы «куплено», «посеяно» и «высажено» делают список похожим на чек-лист, а «убрать» помогает отложить лишнее.</p></article><article><strong>Печатайте только нужное</strong><p>Фильтры влияют на TXT, CSV, копирование и печать, поэтому можно выгрузить отдельный план для теплицы или сада.</p></article></div></section>
 </main>
 <footer class="site-footer">
   <div class="container footer-grid">
     <a class="footer-brand" href="index.html" aria-label="приживется.ру"><img src="logo-wordmark.png" alt="приживется.ру" width="892" height="168"></a>
-    <p>Справочник по регионам и культурам России · обновлено 29 апреля 2026</p>
+    <p>Справочник по регионам и культурам России · обновлено 30 апреля 2026</p>
   </div>
 </footer>
-<script src="app.js?v=148" defer></script>
+<script src="app.js?v=152" defer></script>
 </body>
 </html>
