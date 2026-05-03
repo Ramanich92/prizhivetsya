@@ -1,3 +1,4 @@
-v165-no-assets-linked-season-calendar
-base: prizhivetsya_v164_no_assets.zip
+v166-no-assets-stability
+base: prizhivetsya_v165_no_assets.zip
 assets: excluded
+focus: calendar and list render stability

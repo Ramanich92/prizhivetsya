@@ -636,7 +636,7 @@
     function cal(){if(!state||!zone||zone.value==='')return null;return state.byZone[String(zone.value)]||null;}
     function taskOptions(c){var present={};(c&&c.months||[]).forEach(function(m){(m.works||[]).forEach(function(w){present[taskType(w)]=true;});});return taskOrder.filter(function(t){return !c||present[t];}).map(function(t){return {value:t,label:t.charAt(0).toUpperCase()+t.slice(1)};});}
     function refreshLists(){var c=cal(), months=[];(c&&c.months||[]).forEach(function(m){if(months.indexOf(m.month)===-1)months.push(m.month);});setOpts(month,'Все месяцы',months.map(function(m){return {value:m,label:m};}),month?month.value:'');setOpts(task,'Все типы работ',taskOptions(c),task?task.value:'');}
-    function notifyCalendarRendered(){try{root.dispatchEvent(new CustomEvent('prizh:calendar-rendered',{bubbles:true}));document.dispatchEvent(new CustomEvent('prizh:calendar-rendered'));}catch(e){}}
+    function notifyCalendarRendered(){try{root.dispatchEvent(new CustomEvent('prizh:calendar-rendered',{bubbles:true}));}catch(e){}}
     function emptyMessage(heading,text){if(empty){var h=empty.querySelector('h2'),p=empty.querySelector('p');if(h)h.textContent=heading;if(p)p.textContent=text;empty.hidden=false;}notifyCalendarRendered();}
     function render(){var c=cal();if(start)start.hidden=true;if(result)result.hidden=true;if(empty)empty.hidden=true;if(personal)personal.hidden=true;if(!c){if(start)start.hidden=false;notifyCalendarRendered();return;}var z=state.zones[Number(c.z)]||{}, s=state.subjects[z.s]||{}, mf=month?month.value:'', tf=task?task.value:'', useList=!!(onlyList&&onlyList.checked), items=useList?readPlanting():[], tokens=plantingTokens(items), cards=[], total=0;if(useList&&!tokens.length){emptyMessage('Список посадок пуст','Добавьте культуры в «Мой список», затем календарь покажет задачи, связанные с ними.');return;}(c.months||[]).forEach(function(m){if(mf&&m.month!==mf)return;var works=(m.works||[]).filter(function(w){if(tf&&taskType(w)!==tf)return false;if(useList&&!workMatchesList(w,tokens))return false;return true;});if(!works.length)return;total+=works.length;cards.push('<article class="calendar-month-card"><div class="calendar-month-head"><h3>'+esc(m.month)+'</h3><span>'+works.length+' '+plural(works.length,'задача','задачи','задач')+'</span></div><ul class="calendar-task-list">'+works.map(function(w){return '<li><span class="calendar-task-tag">'+esc(taskType(w))+'</span><p>'+esc(w.text)+'</p></li>';}).join('')+'</ul></article>');});if(!cards.length){emptyMessage('Нет задач по выбранным условиям',useList?'В календаре зоны нет задач, совпадающих с текущим списком посадок. Отключите фильтр по списку или выберите другой месяц.':'Попробуйте выбрать другой месяц или тип работ.');return;}if(title)title.textContent=s.n+' — '+z.n;if(summary)summary.textContent=z.sum||'Календарь учитывает сезон, риски зоны и практику посадок для участка.';if(personal&&useList){personal.textContent='Показаны задачи, связанные с вашим списком: '+items.length+' '+plural(items.length,'культура','культуры','культур')+', '+total+' '+plural(total,'задача','задачи','задач')+'.';personal.hidden=false;}if(season)season.textContent=c.season||'';if(risk)risk.textContent=c.risk||'';if(basis)basis.textContent=c.basis||'';if(care)care.textContent=c.care||'';if(monthsWrap)monthsWrap.innerHTML=cards.join('');if(result)result.hidden=false;notifyCalendarRendered();}
     fetch(url).then(function(r){if(!r.ok)throw new Error('calendar');return r.json();}).then(function(data){state={subjects:data.subjects||[],zones:data.zones||[],calendars:data.calendars||[],byZone:{}};state.calendars.forEach(function(c){state.byZone[String(c.z)]=c;});setOpts(subject,'Выберите регион',state.subjects.map(function(s,i){return {value:i,label:s.n};}),'');setOpts(zone,'Сначала выберите регион',[],'');setOpts(month,'Все месяцы',[],'');setOpts(task,'Все типы работ',taskOptions(null),'');var q=new URLSearchParams(window.location.search).get('zone');if(q){var zi=state.zones.findIndex(function(z){return z.id===q;});if(zi>=0){subject.value=String(state.zones[zi].s);setOpts(zone,'Выберите зону',rowsForSubject(subject.value),String(zi));refreshLists();render();}}if(subject)subject.addEventListener('change',function(){setOpts(zone,'Выберите зону',rowsForSubject(subject.value),'');refreshLists();render();});if(zone)zone.addEventListener('change',function(){refreshLists();render();});if(month)month.addEventListener('change',render);if(task)task.addEventListener('change',render);if(onlyList)onlyList.addEventListener('change',render);if(apply)apply.addEventListener('click',render);if(printBtn)printBtn.addEventListener('click',function(){window.print();});if(reset)reset.addEventListener('click',function(){if(subject)subject.value='';setOpts(zone,'Сначала выберите регион',[],'');setOpts(month,'Все месяцы',[],'');setOpts(task,'Все типы работ',taskOptions(null),'');if(onlyList)onlyList.checked=false;if(start)start.hidden=false;if(result)result.hidden=true;if(empty)empty.hidden=true;if(personal)personal.hidden=true;notifyCalendarRendered();});if(!q&&start){start.hidden=false;notifyCalendarRendered();}}).catch(function(){if(start){start.hidden=false;var h=start.querySelector('h2'),p=start.querySelector('p');if(h)h.textContent='Календарь временно недоступен';if(p)p.textContent='Не удалось загрузить данные календаря.';}});
@@ -1436,8 +1436,8 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
     updatePlannerQuality();updateConditionsQuality();updateListConditionPanel();updateSeasonConditionPanel();updateCalendarConditionPanel();
     var planner=q('[data-plant-planner]'); if(planner) planner.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-planner-condition]'))updatePlannerQuality();});
     var cond=q('[data-condition-guide]'); if(cond) cond.addEventListener('change',function(){setTimeout(updateConditionsQuality,20);});
-    var cal=q('[data-zone-calendar]'); if(cal){cal.addEventListener('change',function(){setTimeout(updateCalendarConditionPanel,120);});cal.addEventListener('prizh:calendar-rendered',function(){setTimeout(updateCalendarConditionPanel,40);});}
-    document.addEventListener('prizh:calendar-rendered',function(){setTimeout(updateCalendarConditionPanel,40);});
+    var calendarConditionTimer=0;function scheduleCalendarCondition(delay){clearTimeout(calendarConditionTimer);calendarConditionTimer=setTimeout(updateCalendarConditionPanel,delay||60);}
+    var cal=q('[data-zone-calendar]'); if(cal){cal.addEventListener('change',function(){scheduleCalendarCondition(100);});cal.addEventListener('prizh:calendar-rendered',function(){scheduleCalendarCondition(40);});}
     document.addEventListener('prizh:planting-list-updated',function(){setTimeout(function(){updateListConditionPanel();updateSeasonConditionPanel();},120);});
   }
   ready(bind);
@@ -1587,13 +1587,21 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   }
   function renderCalendarRoute(){
     var root=q('[data-zone-calendar]'); if(!root)return;
+    if(q('[data-v165-calendar-personal]',root)){var legacy=q('[data-v163-calendar-route]',root);if(legacy&&legacy.parentNode)legacy.parentNode.removeChild(legacy);return;}
     var anchor=q('[data-calendar-next]',root)||q('[data-calendar-result]',root)||q('.calendar-panel',root);
     var box=ensureAfter(anchor,'calendar-v163-route','data-v163-calendar-route'); if(!box)return;
     var items=active(readList()), visible=qa('.calendar-task-list li',root).length, only=q('[data-calendar-my-list]',root), zone=q('[data-calendar-zone]',root), zoneReady=zone&&zone.value!=='';
     box.innerHTML='<div><span class="kicker">Связь с планом</span><h2>Календарь по личному списку</h2><p>'+(items.length?'В списке '+items.length+' культур. После выбора зоны включите личный фильтр, чтобы убрать лишние работы.':'Личный список пуст, поэтому календарь показывает только общие работы зоны.')+'</p></div><div class="calendar-v163-grid"><article><strong>'+items.length+'</strong><span>культур в списке</span></article><article><strong>'+(zoneReady?'выбрана':'не выбрана')+'</strong><span>зона календаря</span></article><article><strong>'+visible+'</strong><span>видимых задач</span></article><article><strong>'+(only&&only.checked?'включён':'выключен')+'</strong><span>фильтр списка</span></article></div><div class="calendar-v163-actions"><a class="btn secondary" href="season-plan.html">Открыть план</a><a class="btn secondary" href="planting-list.html">Проверить список</a></div>';
   }
   function refresh(){injectCultureRoute();renderListRoute();renderSeasonRoute();renderCalendarRoute();}
-  ready(function(){refresh();bindListRoute();document.addEventListener('prizh:planting-list-updated',function(){setTimeout(refresh,100);});document.addEventListener('prizh:calendar-rendered',function(){setTimeout(refresh,80);});['change','click','input'].forEach(function(ev){document.addEventListener(ev,function(e){if(e.target&&e.target.closest('[data-zone-calendar],[data-season-plan-page],[data-planting-list-page]'))setTimeout(refresh,180);});});});
+  var routeRefreshTimer=0;function scheduleRouteRefresh(delay){clearTimeout(routeRefreshTimer);routeRefreshTimer=setTimeout(refresh,delay||90);}
+  ready(function(){
+    refresh();bindListRoute();
+    document.addEventListener('prizh:planting-list-updated',function(){scheduleRouteRefresh(90);});
+    var cal=q('[data-zone-calendar]'); if(cal)cal.addEventListener('prizh:calendar-rendered',function(){scheduleRouteRefresh(90);});
+    var listRoot=q('[data-planting-list-page]'); if(listRoot){listRoot.addEventListener('change',function(){scheduleRouteRefresh(140);});listRoot.addEventListener('input',function(){scheduleRouteRefresh(160);});listRoot.addEventListener('click',function(e){if(e.target&&e.target.closest('[data-v163-list-mode],[data-planting-quick]'))scheduleRouteRefresh(140);});}
+    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot){seasonRoot.addEventListener('change',function(){scheduleRouteRefresh(140);});}
+  });
 })();
 /* v165: linked season plan, personal calendar layer and route helpers without observers */
 (function(){
@@ -1610,6 +1618,7 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   function copyText(text){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(text);var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);return Promise.resolve();}
   function download(name,text){var blob=new Blob([text],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},800);}
   function notify(box,text){if(!box)return;box.hidden=false;box.textContent=text;setTimeout(function(){box.hidden=true;},2200);}
+  var renderTimers={};function scheduleRender(key,fn,delay){clearTimeout(renderTimers[key]);renderTimers[key]=setTimeout(function(){delete renderTimers[key];fn();},delay||90);}
   function ensureAfter(anchor,cls,attr){if(!anchor||!anchor.parentNode)return null;var old=q('['+attr+']');if(old)return old;var box=document.createElement('section');box.className=cls;box.setAttribute(attr,'');anchor.parentNode.insertBefore(box,anchor.nextSibling);return box;}
   function ensureBefore(anchor,cls,attr){if(!anchor||!anchor.parentNode)return null;var old=q('['+attr+']');if(old)return old;var box=document.createElement('section');box.className=cls;box.setAttribute(attr,'');anchor.parentNode.insertBefore(box,anchor);return box;}
   function placeOf(i){return i.sitePlace||i.place||'место не указано';}
@@ -1645,11 +1654,11 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
       if(changed){writeList(items);document.dispatchEvent(new CustomEvent('prizh:planting-list-updated'));}
     });
   }
-  function renderSeasonV165(){
+  function renderSeasonV165(sourceItems){
     var root=q('[data-season-plan-page]'); if(!root)return;
     var anchor=q('.season-toolbar',root)||q('.season-actions',root)||q('.season-hero',root);
     var box=ensureAfter(anchor,'season-v165-board','data-v165-season-board'); if(!box)return;
-    var all=active(readList()), sel=q('[data-season-filter]',root), chosen=root.getAttribute('data-v165-season-current')||(sel&&sel.value?sel.value:'');
+    var all=active(sourceItems||readList()), sel=q('[data-season-filter]',root), chosen=root.getAttribute('data-v165-season-current')||(sel&&sel.value?sel.value:'');
     var shown=chosen?all.filter(function(i){return seasonOf(i)===chosen;}):all;
     var check=seasonalChecklistText(chosen);
     var missing={place:0,note:0,risk:0,calendar:0};
@@ -1671,11 +1680,11 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
       if(e.target.closest('[data-v165-season-print]'))window.print();
     });
   }
-  function renderPlantingPriority(){
+  function renderPlantingPriority(sourceItems){
     var root=q('[data-planting-list-page]'); if(!root)return;
     var anchor=q('.planting-panel',root)||q('.planting-hero',root);
     var box=ensureAfter(anchor,'planting-v165-priority','data-v165-planting-priority'); if(!box)return;
-    var items=active(readList()), noPlace=items.filter(isAutoPlace), noNote=items.filter(function(i){return !String(i.userNote||'').trim();}), risk=items.filter(isRisk), planned=items.filter(function(i){return (i.status||'планирую')==='планирую';});
+    var items=active(sourceItems||readList()), noPlace=items.filter(isAutoPlace), noNote=items.filter(function(i){return !String(i.userNote||'').trim();}), risk=items.filter(isRisk), planned=items.filter(function(i){return (i.status||'планирую')==='планирую';});
     box.innerHTML='<div class="planting-v165-head"><div><span class="kicker">Приоритет списка</span><h2>Что проверить первым</h2><p>Личный список безопаснее вести как рабочий план: сначала место, затем риск, заметка и ближайшие задачи.</p></div><a class="btn primary" href="calendar.html">Открыть ближайшие задачи</a></div><div class="planting-v165-grid"><button type="button" data-v165-list-action="place"><strong>'+noPlace.length+'</strong><span>подтвердить место</span></button><button type="button" data-v165-list-action="risk"><strong>'+risk.length+'</strong><span>проверить риск</span></button><button type="button" data-v165-list-action="note"><strong>'+noNote.length+'</strong><span>добавить заметку</span></button><button type="button" data-v165-list-action="planned"><strong>'+planned.length+'</strong><span>обновить статус</span></button></div><div class="planting-v165-tips"><article><strong>Автоматическое место</strong><p>Если место определено из рекомендации, проверьте его вручную. После ручной смены признак автоматического места снимается.</p></article><article><strong>Без заметок</strong><p>Быстрый фильтр оставляет культуры, где ещё не указаны сорт, номер грядки, количество или действие.</p></article><article><strong>Ближайшие задачи</strong><p>После выбора региона и зоны календарь можно отфильтровать по личному списку.</p></article></div>';
   }
   function bindPlantingPriority(){
@@ -1697,11 +1706,12 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
     var order={'март–апрель':0,'апрель–май':1,'май–июнь':2,'лето':3,'осень':4};
     return out.sort(function(a,b){return (order[a.window]-order[b.window])||a.name.localeCompare(b.name,'ru')||a.type.localeCompare(b.type,'ru');});
   }
-  function renderCalendarPersonalLayer(){
+  function renderCalendarPersonalLayer(sourceItems){
     var root=q('[data-zone-calendar]'); if(!root)return;
+    var legacy=q('[data-v163-calendar-route]',root);if(legacy&&legacy.parentNode)legacy.parentNode.removeChild(legacy);
     var anchor=q('[data-calendar-result]',root)||q('.calendar-panel',root);
     var box=ensureAfter(anchor,'calendar-v165-personal','data-v165-calendar-personal'); if(!box)return;
-    var items=active(readList()), rows=personalCalendarRows(items), zone=q('[data-calendar-zone]',root), zoneReady=!!(zone&&zone.value);
+    var items=active(sourceItems||readList()), rows=personalCalendarRows(items), zone=q('[data-calendar-zone]',root), zoneReady=!!(zone&&zone.value);
     var grouped={};rows.forEach(function(r){(grouped[r.window]||(grouped[r.window]=[])).push(r);});
     var windows=['март–апрель','апрель–май','май–июнь','лето','осень'];
     box.__calendarText=['Календарь по личному списку — приживется.ру','', 'Культур: '+items.length, 'Зона: '+(zoneReady?'выбрана':'не выбрана'), ''].concat(rows.map(function(r){return '- '+r.window+' · '+r.type+': '+r.text;})).join('\n');
@@ -1742,14 +1752,13 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   function bindCultureChecklist(){
     document.addEventListener('click',function(e){var btn=e.target.closest('[data-v165-culture-copy]');if(!btn)return;var box=btn.closest('[data-v165-care-checklist]'),note=q('[data-v165-culture-note]',box);copyText((box&&box.__careText)||'').then(function(){notify(note,'Чек-лист культуры скопирован.');});});
   }
-  function refreshAll(){migrateAutoPlace();renderSeasonV165();renderPlantingPriority();renderCalendarPersonalLayer();renderPlannerOverload();renderCultureChecklist();}
+  function refreshAll(){migrateAutoPlace();var items=readList();renderSeasonV165(items);renderPlantingPriority(items);renderCalendarPersonalLayer(items);renderPlannerOverload();renderCultureChecklist();}
   ready(function(){
     refreshAll();bindSeasonV165();bindPlantingPriority();bindCalendarPersonalLayer();bindCultureChecklist();syncManualPlaceChange();
-    var planner=q('[data-plant-planner]'); if(planner){planner.addEventListener('change',function(){setTimeout(renderPlannerOverload,80);});planner.addEventListener('input',function(){setTimeout(renderPlannerOverload,120);});}
-    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-season-filter]'))seasonRoot.setAttribute('data-v165-season-current',e.target.value||'');setTimeout(renderSeasonV165,120);});
-    var planting=q('[data-planting-list-page]'); if(planting){planting.addEventListener('input',function(){setTimeout(renderPlantingPriority,180);});planting.addEventListener('change',function(){setTimeout(renderPlantingPriority,140);});}
-    var cal=q('[data-zone-calendar]'); if(cal){cal.addEventListener('change',function(){setTimeout(renderCalendarPersonalLayer,100);});cal.addEventListener('prizh:calendar-rendered',function(){setTimeout(renderCalendarPersonalLayer,60);});}
-    document.addEventListener('prizh:calendar-rendered',function(){setTimeout(renderCalendarPersonalLayer,60);});
-    document.addEventListener('prizh:planting-list-updated',function(){setTimeout(refreshAll,160);});
+    var planner=q('[data-plant-planner]'); if(planner){planner.addEventListener('change',function(){scheduleRender('planner-overload',renderPlannerOverload,80);});planner.addEventListener('input',function(){scheduleRender('planner-overload',renderPlannerOverload,120);});}
+    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-season-filter]'))seasonRoot.setAttribute('data-v165-season-current',e.target.value||'');scheduleRender('season-v165',function(){renderSeasonV165(readList());},120);});
+    var planting=q('[data-planting-list-page]'); if(planting){planting.addEventListener('input',function(){scheduleRender('planting-v165',function(){renderPlantingPriority(readList());},180);});planting.addEventListener('change',function(){scheduleRender('planting-v165',function(){renderPlantingPriority(readList());},140);});}
+    var cal=q('[data-zone-calendar]'); if(cal){cal.addEventListener('change',function(){scheduleRender('calendar-personal',function(){renderCalendarPersonalLayer(readList());},90);});cal.addEventListener('prizh:calendar-rendered',function(){scheduleRender('calendar-personal',function(){renderCalendarPersonalLayer(readList());},50);});}
+    document.addEventListener('prizh:planting-list-updated',function(){scheduleRender('v165-all',refreshAll,140);});
   });
 })();
