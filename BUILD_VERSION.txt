@@ -1,1 +1,3 @@
-v162-no-assets-culture-decision
+v165-no-assets-linked-season-calendar
+base: prizhivetsya_v164_no_assets.zip
+assets: excluded

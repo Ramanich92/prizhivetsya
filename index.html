@@ -1,212 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ru">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>приживется.ру — что посадить в регионе, зоне и на сложном участке</title>
- <meta name="description" content="Подбор культур для регионов России: выберите местность, уточните природную зону, условия участка, сроки работ и сохраните растения в личный список.">
- <link rel="icon" href="favicon.svg" type="image/svg+xml">
- <link rel="stylesheet" href="styles.css?v=162">
- <link rel="manifest" href="site.webmanifest">
- <link rel="apple-touch-icon" href="icon-192.png">
- <meta name="theme-color" content="#16362a">
- <link rel="canonical" href="https://ramanich92.github.io/prizhivetsya/index.html">
- <meta property="og:type" content="website">
- <meta property="og:site_name" content="приживется.ру">
- <meta property="og:title" content="приживется.ру — что посадить в регионе, зоне и на сложном участке">
- <meta property="og:description" content="Подбор культур для регионов России: выберите местность, уточните природную зону, условия участка, сроки работ и сохраните растения в личный список.">
- <meta property="og:url" content="https://ramanich92.github.io/prizhivetsya/index.html">
- <meta property="og:image" content="https://ramanich92.github.io/prizhivetsya/icon-512.png">
- <meta name="twitter:card" content="summary_large_image">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>приживется.ру — что посадить в регионе, зоне и на сложном участке</title>
+<meta content="Подбор культур для регионов России: выберите местность, уточните природную зону, условия участка, сроки работ и сохраните растения в личный список." name="description"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css?v=165" rel="stylesheet"/>
+<link href="site.webmanifest" rel="manifest"/>
+<link href="icon-192.png" rel="apple-touch-icon"/>
+<meta content="#16362a" name="theme-color"/>
+<link href="https://ramanich92.github.io/prizhivetsya/index.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="приживется.ру" property="og:site_name"/>
+<meta content="приживется.ру — что посадить в регионе, зоне и на сложном участке" property="og:title"/>
+<meta content="Подбор культур для регионов России: выберите местность, уточните природную зону, условия участка, сроки работ и сохраните растения в личный список." property="og:description"/>
+<meta content="https://ramanich92.github.io/prizhivetsya/index.html" property="og:url"/>
+<meta content="https://ramanich92.github.io/prizhivetsya/icon-512.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"приживется.ру","url":"https://ramanich92.github.io/prizhivetsya/","description":"Справочник культур по регионам, зонам и условиям участка."}</script>
 </head>
 <body class="home-locality-only">
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand" href="index.html" aria-label="приживется.ру — на главную"><img class="brand-logo" src="logo-wordmark.png" alt="приживется.ру" width="892" height="168"></a>
-    <nav class="topnav" aria-label="Основная навигация"><a class="active" href="index.html">Регионы</a><a href="cultures/index.html">Культуры</a><a href="planner.html">Подбор</a><a href="calendar.html">Календарь</a><a href="planting-list.html">Мой список</a><a href="season-plan.html">План</a><a href="difficult-plots.html">Участки</a><a href="how-to.html">Как пользоваться</a></nav>
-  </div>
+<div class="site-header-inner">
+<a aria-label="приживется.ру — на главную" class="brand" href="index.html"><img alt="приживется.ру" class="brand-logo" height="168" src="logo-wordmark.png" width="892"/></a>
+<nav aria-label="Основная навигация" class="topnav"><a class="active" href="index.html">Регионы</a><a href="cultures/index.html">Культуры</a><a href="planner.html">Подбор</a><a href="calendar.html">Календарь</a><a href="planting-list.html">Мой список</a><a href="season-plan.html">План</a><a href="difficult-plots.html">Участки</a><a href="how-to.html">Как пользоваться</a></nav>
+</div>
 </header>
 <main>
-<section class="hero hero-locality" data-locality-picker data-location-data-url="data/location-data.json">
-  <div class="hero-inner locality-hero-grid">
-    <div class="panel hero-main-panel locality-main-panel">
-      <span class="kicker">Выбор региона</span>
-      <h1>Что приживётся именно у вас?</h1>
-      <p class="lead">Справочник культур по регионам России. Выберите регион, город или район — и узнайте, что лучше растёт в вашем климате.</p>
-      <div class="locality-search" role="search">
-        <label for="locality-search-input">Найти местность</label>
-        <div class="locality-search-row">
-          <div class="search-control">
-            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-            <input id="locality-search-input" type="search" data-lp-search placeholder="Введите регион, город или район" autocomplete="off">
-          </div>
-          <button class="btn primary" type="button" data-lp-open-selected>Подобрать</button>
-        </div>
-        <div class="locality-suggestions" data-lp-suggestions aria-live="polite"></div>
-      </div>
-      <div class="hero-card-art" aria-hidden="true">
-        <svg viewBox="0 0 420 420" role="presentation">
-          <path class="art-map" d="M236 41c35 7 65 32 82 63 18 31 22 68 8 101-15 35-47 61-82 76-34 15-70 18-103 2-35-16-61-52-65-90-4-39 15-80 46-107 31-28 75-52 114-45Z"/>
-          <path class="art-field" d="M42 304c72-34 143-48 215-42 55 5 100 22 137 51"/>
-          <path class="art-field" d="M18 341c82-40 159-57 231-51 56 4 105 22 147 54"/>
-          <g class="art-pin">
-            <path d="M238 261s-56-55-56-99a56 56 0 1 1 112 0c0 44-56 99-56 99Z"/>
-            <circle cx="238" cy="161" r="18"/>
-          </g>
-          <g class="art-sprout">
-            <path d="M237 142c-3-39-22-66-58-82"/>
-            <path d="M239 143c16-35 43-55 80-60"/>
-            <path d="M229 105c-34 1-58-14-72-46 36-2 60 13 72 46Z"/>
-            <path d="M251 107c37-10 66-2 87 24-36 12-65 4-87-24Z"/>
-          </g>
-          <g class="art-roots">
-            <path d="M238 260c-2 38-1 68-13 100"/>
-            <path d="M238 286c-22 18-41 37-56 61"/>
-            <path d="M238 299c22 15 40 34 54 58"/>
-            <path d="M224 334c-18 4-33 13-45 27"/>
-            <path d="M250 330c17 3 32 12 45 27"/>
-          </g>
-        </svg>
-      </div>
-    </div>
-    <aside class="panel locality-manual-panel" aria-label="Ручной выбор региона">
-      <span class="kicker">Ручной выбор</span>
-      <h2>Не нашли в поиске?</h2>
-      <p>Выберите федеральный округ, субъект и природную зону.</p>
-      <div class="locality-form">
-        <label>Федеральный округ<select data-lp-district></select></label>
-        <label>Субъект РФ<select data-lp-subject></select></label>
-        <label>Зона / подрегион<select data-lp-zone></select></label>
-      </div>
-      <div class="locality-choice" data-lp-choice></div>
-      <button class="btn primary locality-submit" type="button" data-lp-open-manual>Перейти к региону</button>
-    </aside>
-  </div>
+<section class="hero hero-locality" data-locality-picker="" data-location-data-url="data/location-data.json">
+<div class="hero-inner locality-hero-grid">
+<div class="panel hero-main-panel locality-main-panel">
+<span class="kicker">Выбор региона</span>
+<h1>Что приживётся именно у вас?</h1>
+<p class="lead">Справочник культур по регионам России. Выберите регион, город или район — и узнайте, что лучше растёт в вашем климате.</p>
+<div class="locality-search" role="search">
+<label for="locality-search-input">Найти местность</label>
+<div class="locality-search-row">
+<div class="search-control">
+<svg aria-hidden="true" class="search-icon" viewbox="0 0 24 24"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"></path><circle cx="12" cy="9" fill="none" r="2.5" stroke="currentColor" stroke-width="2"></circle></svg>
+<input autocomplete="off" data-lp-search="" id="locality-search-input" placeholder="Введите регион, город или район" type="search"/>
+</div>
+<button class="btn primary" data-lp-open-selected="" type="button">Подобрать</button>
+</div>
+<div aria-live="polite" class="locality-suggestions" data-lp-suggestions=""></div>
+</div>
+<div aria-hidden="true" class="hero-card-art">
+<svg role="presentation" viewbox="0 0 420 420">
+<path class="art-map" d="M236 41c35 7 65 32 82 63 18 31 22 68 8 101-15 35-47 61-82 76-34 15-70 18-103 2-35-16-61-52-65-90-4-39 15-80 46-107 31-28 75-52 114-45Z"></path>
+<path class="art-field" d="M42 304c72-34 143-48 215-42 55 5 100 22 137 51"></path>
+<path class="art-field" d="M18 341c82-40 159-57 231-51 56 4 105 22 147 54"></path>
+<g class="art-pin">
+<path d="M238 261s-56-55-56-99a56 56 0 1 1 112 0c0 44-56 99-56 99Z"></path>
+<circle cx="238" cy="161" r="18"></circle>
+</g>
+<g class="art-sprout">
+<path d="M237 142c-3-39-22-66-58-82"></path>
+<path d="M239 143c16-35 43-55 80-60"></path>
+<path d="M229 105c-34 1-58-14-72-46 36-2 60 13 72 46Z"></path>
+<path d="M251 107c37-10 66-2 87 24-36 12-65 4-87-24Z"></path>
+</g>
+<g class="art-roots">
+<path d="M238 260c-2 38-1 68-13 100"></path>
+<path d="M238 286c-22 18-41 37-56 61"></path>
+<path d="M238 299c22 15 40 34 54 58"></path>
+<path d="M224 334c-18 4-33 13-45 27"></path>
+<path d="M250 330c17 3 32 12 45 27"></path>
+</g>
+</svg>
+</div>
+</div>
+<aside aria-label="Ручной выбор региона" class="panel locality-manual-panel">
+<span class="kicker">Ручной выбор</span>
+<h2>Не нашли в поиске?</h2>
+<p>Выберите федеральный округ, субъект и природную зону.</p>
+<div class="locality-form">
+<label>Федеральный округ<select data-lp-district=""></select></label>
+<label>Субъект РФ<select data-lp-subject=""></select></label>
+<label>Зона / подрегион<select data-lp-zone=""></select></label>
+</div>
+<div class="locality-choice" data-lp-choice=""></div>
+<button class="btn primary locality-submit" data-lp-open-manual="" type="button">Перейти к региону</button>
+</aside>
+</div>
 </section>
-
-<section class="home-feature-section" aria-labelledby="home-feature-title">
-  <div class="home-feature-head">
-    <span class="kicker">Что можно сделать дальше</span>
-    <h2 id="home-feature-title">От выбора региона — к плану посадок</h2>
-    <p>Начните с региона, затем уточните условия участка, проверьте сроки и сохраните подходящие культуры в личный список.</p>
-  </div>
-  <div class="home-feature-grid">
-    <a class="home-feature-card home-feature-card--primary" href="planner.html">
-      <span class="home-feature-icon" aria-hidden="true">🌱</span>
-      <strong>Подобрать растения</strong>
-      <p>Выберите регион, зону, условия участка и уровень риска — сайт покажет подходящие культуры из справочников.</p>
-      <em>Открыть подбор</em>
-    </a>
-    <a class="home-feature-card" href="planting-list.html">
-      <span class="home-feature-icon" aria-hidden="true">🧺</span>
-      <strong>Мой список посадок</strong>
-      <p>Сохраняйте культуры из таблиц и подбора, а затем распечатайте короткий план для участка.</p>
-      <em>Открыть список</em>
-    </a>
-    <a class="home-feature-card" href="calendar.html">
-      <span class="home-feature-icon" aria-hidden="true">🗓️</span>
-      <strong>Календарь работ</strong>
-      <p>Проверьте сроки посева, высадки, полива, укрытий и подготовки к зиме с учётом выбранной зоны.</p>
-      <em>Открыть календарь</em>
-    </a>
-    <a class="home-feature-card" href="cultures/index.html">
-      <span class="home-feature-icon" aria-hidden="true">🍎</span>
-      <strong>Страницы культур</strong>
-      <p>Посмотрите, где томаты, яблони, виноград, смородина и другие культуры надёжны или требуют укрытия.</p>
-      <em>Открыть культуры</em>
-    </a>
-    <a class="home-feature-card" href="beginner.html">
-      <span class="home-feature-icon" aria-hidden="true">🌿</span>
-      <strong>Что посадить новичку</strong>
-      <p>Быстрый старт для первого сезона: простые культуры, осторожные замены и переход к личному плану.</p>
-      <em>Открыть маршрут</em>
-    </a>
-  </div>
+<section aria-labelledby="home-feature-title" class="home-feature-section">
+<div class="home-feature-head">
+<span class="kicker">Что можно сделать дальше</span>
+<h2 id="home-feature-title">От выбора региона — к плану посадок</h2>
+<p>Начните с региона, затем уточните условия участка, проверьте сроки и сохраните подходящие культуры в личный список.</p>
+</div>
+<div class="home-feature-grid">
+<a class="home-feature-card home-feature-card--primary" href="planner.html">
+<span aria-hidden="true" class="home-feature-icon">🌱</span>
+<strong>Подобрать растения</strong>
+<p>Выберите регион, зону, условия участка и уровень риска — сайт покажет подходящие культуры из справочников.</p>
+<em>Открыть подбор</em>
+</a>
+<a class="home-feature-card" href="planting-list.html">
+<span aria-hidden="true" class="home-feature-icon">🧺</span>
+<strong>Мой список посадок</strong>
+<p>Сохраняйте культуры из таблиц и подбора, а затем распечатайте короткий план для участка.</p>
+<em>Открыть список</em>
+</a>
+<a class="home-feature-card" href="calendar.html">
+<span aria-hidden="true" class="home-feature-icon">🗓️</span>
+<strong>Календарь работ</strong>
+<p>Проверьте сроки посева, высадки, полива, укрытий и подготовки к зиме с учётом выбранной зоны.</p>
+<em>Открыть календарь</em>
+</a>
+<a class="home-feature-card" href="cultures/index.html">
+<span aria-hidden="true" class="home-feature-icon">🍎</span>
+<strong>Страницы культур</strong>
+<p>Посмотрите, где томаты, яблони, виноград, смородина и другие культуры надёжны или требуют укрытия.</p>
+<em>Открыть культуры</em>
+</a>
+<a class="home-feature-card" href="beginner.html">
+<span aria-hidden="true" class="home-feature-icon">🌿</span>
+<strong>Что посадить новичку</strong>
+<p>Быстрый старт для первого сезона: простые культуры, осторожные замены и переход к личному плану.</p>
+<em>Открыть маршрут</em>
+</a>
+</div>
+</section><section aria-labelledby="home-v165-route-title" class="home-v165-route" data-v165-home-route="">
+<div class="home-feature-head"><span class="kicker">Единый маршрут</span><h2 id="home-v165-route-title">Список, план и календарь работают как один маршрут</h2><p>Сначала подберите культуры, затем сохраните их в личный список, разложите по сезону и сверьте с календарём зоны.</p></div>
+<div class="home-v165-route-grid">
+<a href="planner.html"><strong>1. Подбор</strong><span>условия участка и уровень риска</span></a>
+<a href="planting-list.html"><strong>2. Мой список</strong><span>место, статус и заметки</span></a>
+<a href="season-plan.html"><strong>3. План сезона</strong><span>чек-листы и окна работ</span></a>
+<a href="calendar.html"><strong>4. Календарь</strong><span>задачи зоны и личный слой</span></a>
+</div>
 </section>
-
-<section class="home-v148-section home-start-steps" aria-labelledby="home-steps-title">
-  <div class="home-feature-head"><span class="kicker">Начните с трёх шагов</span><h2 id="home-steps-title">От местности к понятному списку посадок</h2><p>Сначала определите климатическую зону, затем отфильтруйте культуры по условиям своего участка и сохраните подходящие варианты.</p></div>
-  <div class="home-v148-grid home-v148-grid--steps">
-    <article><strong>1</strong><h3>Выберите регион</h3><p>Поиск находит субъект, город или район и помогает перейти к ближайшей природно-садовой зоне.</p></article>
-    <article><strong>2</strong><h3>Уточните зону</h3><p>Зоны различаются длиной сезона, влажностью, ветром, почвами и риском возвратных заморозков.</p></article>
-    <article><strong>3</strong><h3>Сохраните культуры</h3><p>Подходящие растения можно добавить в «Мой список», подписать место посадки, статус и личные заметки.</p></article>
-  </div>
+<section aria-labelledby="home-steps-title" class="home-v148-section home-start-steps">
+<div class="home-feature-head"><span class="kicker">Начните с трёх шагов</span><h2 id="home-steps-title">От местности к понятному списку посадок</h2><p>Сначала определите климатическую зону, затем отфильтруйте культуры по условиям своего участка и сохраните подходящие варианты.</p></div>
+<div class="home-v148-grid home-v148-grid--steps">
+<article><strong>1</strong><h3>Выберите регион</h3><p>Поиск находит субъект, город или район и помогает перейти к ближайшей природно-садовой зоне.</p></article>
+<article><strong>2</strong><h3>Уточните зону</h3><p>Зоны различаются длиной сезона, влажностью, ветром, почвами и риском возвратных заморозков.</p></article>
+<article><strong>3</strong><h3>Сохраните культуры</h3><p>Подходящие растения можно добавить в «Мой список», подписать место посадки, статус и личные заметки.</p></article>
+</div>
 </section>
-<section class="home-v148-section" aria-labelledby="home-can-pick-title">
-  <div class="home-feature-head"><span class="kicker">Что можно подобрать</span><h2 id="home-can-pick-title">Культуры, сроки и решения для участка</h2></div>
-  <div class="home-chip-grid"><a href="planner.html">овощи</a><a href="planner.html">ягоды</a><a href="planner.html">плодовые</a><a href="planner.html">цветы</a><a href="planner.html">полезные растения</a><a href="difficult-plots.html">сложные участки</a><a href="calendar.html">календарь</a><a href="beginner.html">для новичка</a></div>
+<section aria-labelledby="home-can-pick-title" class="home-v148-section">
+<div class="home-feature-head"><span class="kicker">Что можно подобрать</span><h2 id="home-can-pick-title">Культуры, сроки и решения для участка</h2></div>
+<div class="home-chip-grid"><a href="planner.html">овощи</a><a href="planner.html">ягоды</a><a href="planner.html">плодовые</a><a href="planner.html">цветы</a><a href="planner.html">полезные растения</a><a href="difficult-plots.html">сложные участки</a><a href="calendar.html">календарь</a><a href="beginner.html">для новичка</a></div>
 </section>
-<section class="home-v148-section home-v148-split" aria-labelledby="home-hard-title">
-  <div><span class="kicker">Если участок сложный</span><h2 id="home-hard-title">Почва и микроклимат меняют рекомендацию</h2><p>Низина, глина, песок, ветер, тень и влажное место могут сделать надёжную культуру более требовательной. Подбор учитывает эти условия и подсказывает, когда лучше выбрать замену.</p><a class="btn" href="difficult-plots.html">Открыть сложные участки</a></div>
-  <div class="home-chip-grid home-chip-grid--compact"><a href="planner.html">глина</a><a href="planner.html">песок</a><a href="planner.html">низина</a><a href="planner.html">ветер</a><a href="planner.html">тень</a><a href="planner.html">влажное место</a></div>
+<section aria-labelledby="home-hard-title" class="home-v148-section home-v148-split">
+<div><span class="kicker">Если участок сложный</span><h2 id="home-hard-title">Почва и микроклимат меняют рекомендацию</h2><p>Низина, глина, песок, ветер, тень и влажное место могут сделать надёжную культуру более требовательной. Подбор учитывает эти условия и подсказывает, когда лучше выбрать замену.</p><a class="btn" href="difficult-plots.html">Открыть сложные участки</a></div>
+<div class="home-chip-grid home-chip-grid--compact"><a href="planner.html">глина</a><a href="planner.html">песок</a><a href="planner.html">низина</a><a href="planner.html">ветер</a><a href="planner.html">тень</a><a href="planner.html">влажное место</a></div>
 </section>
-<section class="home-v148-section" aria-labelledby="home-popular-title">
-  <div class="home-feature-head"><span class="kicker">Популярные культуры</span><h2 id="home-popular-title">Частые посадки для проверки по зонам</h2></div>
-  <div class="home-popular-grid"><a href="cultures/tomat.html">Томат</a><a href="cultures/ogurets.html">Огурец</a><a href="cultures/kartofel.html">Картофель</a><a href="cultures/yablonya.html">Яблоня</a><a href="cultures/smorodina-chernaya.html">Смородина</a><a href="cultures/zemlyanika-sadovaya.html">Клубника</a><a href="cultures/lavanda.html">Лаванда</a><a href="cultures/gortenziya.html">Гортензия</a><a href="cultures/rukkola.html">Руккола</a><a href="cultures/hosta.html">Хоста</a></div>
+<section aria-labelledby="home-popular-title" class="home-v148-section">
+<div class="home-feature-head"><span class="kicker">Популярные культуры</span><h2 id="home-popular-title">Частые посадки для проверки по зонам</h2></div>
+<div class="home-popular-grid"><a href="cultures/tomat.html">Томат</a><a href="cultures/ogurets.html">Огурец</a><a href="cultures/kartofel.html">Картофель</a><a href="cultures/yablonya.html">Яблоня</a><a href="cultures/smorodina-chernaya.html">Смородина</a><a href="cultures/zemlyanika-sadovaya.html">Клубника</a><a href="cultures/lavanda.html">Лаванда</a><a href="cultures/gortenziya.html">Гортензия</a><a href="cultures/rukkola.html">Руккола</a><a href="cultures/hosta.html">Хоста</a></div>
 </section>
-<section class="section home-today" aria-labelledby="home-today-title">
-  <span class="kicker">С чего начать сегодня</span>
-  <h2 id="home-today-title">Четыре спокойных шага без перегруза</h2>
-  <div class="home-today-grid">
-    <a class="home-today-card" href="planner.html"><strong>Подобрать культуры</strong><span>регион, зона, почва и микроклимат</span></a>
-    <a class="home-today-card" href="conditions.html"><strong>Проверить участок</strong><span>глина, песок, тень, ветер и низина</span></a>
-    <a class="home-today-card" href="planting-list.html"><strong>Собрать список</strong><span>место посадки, статус и заметки</span></a>
-    <a class="home-today-card" href="season-plan.html"><strong>Открыть план</strong><span>сводка, покупки, печать и календарь</span></a>
-  </div>
+<section aria-labelledby="home-today-title" class="section home-today">
+<span class="kicker">С чего начать сегодня</span>
+<h2 id="home-today-title">Четыре спокойных шага без перегруза</h2>
+<div class="home-today-grid">
+<a class="home-today-card" href="planner.html"><strong>Подобрать культуры</strong><span>регион, зона, почва и микроклимат</span></a>
+<a class="home-today-card" href="conditions.html"><strong>Проверить участок</strong><span>глина, песок, тень, ветер и низина</span></a>
+<a class="home-today-card" href="planting-list.html"><strong>Собрать список</strong><span>место посадки, статус и заметки</span></a>
+<a class="home-today-card" href="season-plan.html"><strong>Открыть план</strong><span>сводка, покупки, печать и календарь</span></a>
+</div>
 </section>
-<section class="home-v152-section home-season-route" aria-labelledby="home-season-route-title"><div class="home-feature-head"><span class="kicker">Новый маршрут</span><h2 id="home-season-route-title">Соберите посадки в план сезона</h2><p>После подбора сохраните культуры, распределите их по грядкам, теплице, саду или клумбе и откройте сводку сезона перед поездкой на участок.</p></div><div class="home-feature-grid home-feature-grid--compact"><a class="home-feature-card" href="season-plan.html"><strong>План сезона</strong><p>Сводка культур по местам, статусам и сезонам с печатью.</p><em>Открыть план</em></a><a class="home-feature-card" href="conditions.html"><strong>Условия участка</strong><p>Быстрый выбор культур для глины, песка, тени, ветра и низины.</p><em>Проверить условия</em></a><a class="home-feature-card" href="beginner.html"><strong>Первый сезон</strong><p>Безопасный набор культур для старта и переход к личному списку.</p><em>Начать проще</em></a></div></section><section class="home-v154-route">
-  <div>
-    <span class="kicker">Маршрут сезона</span>
-    <h2>От выбора места до готового плана</h2>
-    <p>Сайт удобнее использовать как цепочку: подобрать культуры, сохранить их, распределить по участку и сверить сроки работ.</p>
-  </div>
-  <div class="home-v154-route-grid">
-    <a href="planner.html"><strong>Подбор</strong><span>регион, зона и условия</span></a>
-    <a href="planting-list.html"><strong>Мой список</strong><span>место, статус и заметки</span></a>
-    <a href="season-plan.html"><strong>План сезона</strong><span>сводка и печать</span></a>
-    <a href="calendar.html"><strong>Календарь</strong><span>работы по зоне</span></a>
-  </div>
-</section><section class="home-v155-tools" aria-labelledby="home-v155-tools-title">
-  <div class="home-feature-head">
-    <span class="kicker">Инструменты сезона</span>
-    <h2 id="home-v155-tools-title">Проверьте план перед закупкой и посадками</h2>
-    <p>После сохранения культур сайт помогает увидеть слабые места плана: где не указана грядка, что требует теплицы, какие позиции ещё нужно купить и какие работы перенести в календарь.</p>
-  </div>
-  <div class="home-v155-tools-grid">
-    <a href="season-plan.html"><strong>Карта посадок</strong><span>культуры по грядке, теплице, саду, клумбе и контейнерам</span></a>
-    <a href="season-plan.html"><strong>Список покупок</strong><span>семена, рассада, саженцы и посадочный материал из личного плана</span></a>
-    <a href="calendar.html"><strong>Экспорт работ</strong><span>скопируйте или скачайте видимые задачи календаря</span></a>
-    <a href="planner.html"><strong>Проверка условий</strong><span>подсказки по сочетаниям глины, низины, песка, ветра и тени</span></a>
-  </div>
+<section aria-labelledby="home-season-route-title" class="home-v152-section home-season-route"><div class="home-feature-head"><span class="kicker">Новый маршрут</span><h2 id="home-season-route-title">Соберите посадки в план сезона</h2><p>После подбора сохраните культуры, распределите их по грядкам, теплице, саду или клумбе и откройте сводку сезона перед поездкой на участок.</p></div><div class="home-feature-grid home-feature-grid--compact"><a class="home-feature-card" href="season-plan.html"><strong>План сезона</strong><p>Сводка культур по местам, статусам и сезонам с печатью.</p><em>Открыть план</em></a><a class="home-feature-card" href="conditions.html"><strong>Условия участка</strong><p>Быстрый выбор культур для глины, песка, тени, ветра и низины.</p><em>Проверить условия</em></a><a class="home-feature-card" href="beginner.html"><strong>Первый сезон</strong><p>Безопасный набор культур для старта и переход к личному списку.</p><em>Начать проще</em></a></div></section><section class="home-v154-route">
+<div>
+<span class="kicker">Маршрут сезона</span>
+<h2>От выбора места до готового плана</h2>
+<p>Сайт удобнее использовать как цепочку: подобрать культуры, сохранить их, распределить по участку и сверить сроки работ.</p>
+</div>
+<div class="home-v154-route-grid">
+<a href="planner.html"><strong>Подбор</strong><span>регион, зона и условия</span></a>
+<a href="planting-list.html"><strong>Мой список</strong><span>место, статус и заметки</span></a>
+<a href="season-plan.html"><strong>План сезона</strong><span>сводка и печать</span></a>
+<a href="calendar.html"><strong>Календарь</strong><span>работы по зоне</span></a>
+</div>
+</section><section aria-labelledby="home-v155-tools-title" class="home-v155-tools">
+<div class="home-feature-head">
+<span class="kicker">Инструменты сезона</span>
+<h2 id="home-v155-tools-title">Проверьте план перед закупкой и посадками</h2>
+<p>После сохранения культур сайт помогает увидеть слабые места плана: где не указана грядка, что требует теплицы, какие позиции ещё нужно купить и какие работы перенести в календарь.</p>
+</div>
+<div class="home-v155-tools-grid">
+<a href="season-plan.html"><strong>Карта посадок</strong><span>культуры по грядке, теплице, саду, клумбе и контейнерам</span></a>
+<a href="season-plan.html"><strong>Список покупок</strong><span>семена, рассада, саженцы и посадочный материал из личного плана</span></a>
+<a href="calendar.html"><strong>Экспорт работ</strong><span>скопируйте или скачайте видимые задачи календаря</span></a>
+<a href="planner.html"><strong>Проверка условий</strong><span>подсказки по сочетаниям глины, низины, песка, ветра и тени</span></a>
+</div>
 </section>
-<section class="home-section home-v159-week-panel" aria-label="Маршрут ближайшей недели">
-  <span class="kicker">Ближайшая неделя</span>
-  <h2>Проверьте участок без перегруза</h2>
-  <p>Небольшой маршрут помогает не распыляться: сначала условия, затем культуры, список и календарные работы.</p>
-  <div class="home-v159-week-grid">
-    <a href="conditions.html"><strong>1</strong><span>оценить почву, тень, ветер и влагу</span></a>
-    <a href="planner.html"><strong>2</strong><span>подобрать культуры под выбранные условия</span></a>
-    <a href="planting-list.html"><strong>3</strong><span>подтвердить место и статус посадок</span></a>
-    <a href="calendar.html"><strong>4</strong><span>сверить ближайшие работы по зоне</span></a>
-  </div>
+<section aria-label="Маршрут ближайшей недели" class="home-section home-v159-week-panel">
+<span class="kicker">Ближайшая неделя</span>
+<h2>Проверьте участок без перегруза</h2>
+<p>Небольшой маршрут помогает не распыляться: сначала условия, затем культуры, список и календарные работы.</p>
+<div class="home-v159-week-grid">
+<a href="conditions.html"><strong>1</strong><span>оценить почву, тень, ветер и влагу</span></a>
+<a href="planner.html"><strong>2</strong><span>подобрать культуры под выбранные условия</span></a>
+<a href="planting-list.html"><strong>3</strong><span>подтвердить место и статус посадок</span></a>
+<a href="calendar.html"><strong>4</strong><span>сверить ближайшие работы по зоне</span></a>
+</div>
 </section>
-<section class="home-section home-v160-quality-panel" aria-label="Проверка качества плана">
-  <span class="kicker">Проверка качества</span>
-  <h2>Перед добавлением культуры проверьте три вещи</h2>
-  <div class="home-v160-quality-grid">
-    <a href="conditions.html"><strong>Место</strong><span>свет, ветер, влажность, глина или песок</span></a>
-    <a href="planner.html"><strong>Зона</strong><span>срок сезона и риск возвратных заморозков</span></a>
-    <a href="season-plan.html"><strong>План</strong><span>место посадки, статус, закупки и календарь</span></a>
-  </div>
+<section aria-label="Проверка качества плана" class="home-section home-v160-quality-panel">
+<span class="kicker">Проверка качества</span>
+<h2>Перед добавлением культуры проверьте три вещи</h2>
+<div class="home-v160-quality-grid">
+<a href="conditions.html"><strong>Место</strong><span>свет, ветер, влажность, глина или песок</span></a>
+<a href="planner.html"><strong>Зона</strong><span>срок сезона и риск возвратных заморозков</span></a>
+<a href="season-plan.html"><strong>План</strong><span>место посадки, статус, закупки и календарь</span></a>
+</div>
 </section>
 </main>
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <a class="footer-brand" href="index.html" aria-label="приживется.ру"><img src="logo-wordmark.png" alt="приживется.ру" width="892" height="168"></a>
-    <p>Справочник по регионам и культурам России · обновлено 1 мая 2026</p>
-  </div>
+<div class="container footer-grid">
+<a aria-label="приживется.ру" class="footer-brand" href="index.html"><img alt="приживется.ру" height="168" src="logo-wordmark.png" width="892"/></a>
+<p>Справочник по регионам и культурам России · обновлено 1 мая 2026</p>
+</div>
 </footer>
-<script src="app.js?v=162" defer></script>
+<script defer="" src="app.js?v=165"></script>
 </body>
 </html>
