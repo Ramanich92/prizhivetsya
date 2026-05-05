@@ -1,4 +1,1 @@
-v166-no-assets-stability
-base: prizhivetsya_v165_no_assets.zip
-assets: excluded
-focus: calendar and list render stability
+v167-no-assets-stability-layout

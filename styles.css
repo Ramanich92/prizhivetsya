@@ -3671,3 +3671,47 @@ table{max-width:100%}
   .home-v165-route-grid,.season-v165-grid,.planting-v165-grid,.calendar-v165-grid,.planner-v165-grid,.culture-v165-grid,.condition-extra-grid,.season-v165-windows>div,.season-v165-personal>div,.planting-v165-tips,.season-v165-missing div,.calendar-v165-status{grid-template-columns:1fr;}
   .season-v165-filter button,.season-v165-actions .button-soft,.calendar-v165-actions .button-soft{width:100%;text-align:center;}
 }
+
+
+/* v167: stable widths and mobile overflow guard */
+*,*::before,*::after{box-sizing:border-box;}
+html,body{max-width:100%;overflow-x:hidden;}
+body{min-width:0;}
+img,svg,video,canvas{max-width:100%;height:auto;}
+a,button,input,select,textarea{max-width:100%;}
+.site-header,.site-main,.site-footer,.hero,.hero-inner,.container,.page-shell,.section,.content-card,.card,.tool-card,
+.region-grid,.culture-grid,.planner-groups,.planner-result-list,.planner-result-card,.calendar-month-card,.calendar-task-list,
+.planting-card-list,.planting-card,.season-card-list,.season-card,.zone-next-step-grid,.route-card-grid,
+.home-v165-route,.home-v165-route-grid,.season-v165-board,.season-v165-grid,.season-v165-windows,.season-v165-personal,
+.planting-v165-priority,.planting-v165-grid,.planting-v165-tips,.calendar-v165-personal,.calendar-v165-grid,
+.planner-v165-overload,.planner-v165-grid,.culture-v165-care,.culture-v165-grid,.conditions-v165-priority,.condition-extra-grid{min-width:0;max-width:100%;}
+[class*="grid"],[class*="list"],[class*="cards"],[class*="toolbar"],[class*="actions"],.top-nav,.nav-links,.planner-result-actions,.calendar-actions,.planting-actions,.season-toolbar{min-width:0;max-width:100%;}
+.planner-result-card,.planting-card,.season-card,.calendar-month-card,.home-v165-route-grid a,.calendar-v165-grid article,.season-v165-personal article,.planting-v165-tips article{overflow-wrap:anywhere;word-break:normal;}
+.planner-result-actions,.planner-v165-links,.season-v165-actions,.calendar-v165-actions,.planting-actions,.calendar-actions,.season-toolbar{display:flex;flex-wrap:wrap;align-items:center;}
+.table-wrap,.culture-table-wrap,.guide-table-wrap,.region-table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{max-width:100%;}
+@media (max-width:760px){
+  .planner-result-card,.calendar-month-card,.planting-card,.season-card{width:100%;}
+  .planner-result-actions>a,.planner-result-actions>button,.planting-actions>* ,.calendar-actions>* ,.season-toolbar>*{flex:1 1 220px;}
+  .top-nav,.nav-links{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+}
+@media (max-width:420px){
+  .home-v165-route,.season-v165-board,.planting-v165-priority,.calendar-v165-personal,.planner-v165-overload,.culture-v165-care,.conditions-v165-priority{margin-left:10px;margin-right:10px;padding-left:16px;padding-right:16px;}
+  .button-soft,.btn,button{white-space:normal;}
+}
+
+/* v167: align late-stage route panels to the same content rail */
+.home-v165-route,
+.season-v165-board,
+.planting-v165-priority,
+.calendar-v165-personal,
+.planner-v165-overload,
+.culture-v165-care,
+.conditions-v165-priority,
+.zone-next-step-panel,
+.planting-nearest,
+.calendar-next,
+.season-v163-route,
+.list-v163-route,
+.calendar-v163-route{width:min(1160px,calc(100% - 32px));margin-left:auto;margin-right:auto;}
+@media (max-width:560px){.home-v165-route,.season-v165-board,.planting-v165-priority,.calendar-v165-personal,.planner-v165-overload,.culture-v165-care,.conditions-v165-priority,.zone-next-step-panel,.planting-nearest,.calendar-next,.season-v163-route,.list-v163-route,.calendar-v163-route{width:min(100% - 20px,1160px);}}

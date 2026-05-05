@@ -548,7 +548,7 @@
     function refreshFilters(){var rows=currentRows();setOpts(guide,'Все разделы',state.guideNames.map(function(n,i){return {value:i,label:n};}),guide?guide.value:'');setOpts(category,'Все категории',unique(rows,function(r){return r.category;}),category?category.value:'');setOpts(where,'Все условия',unique(rows,function(r){return r.where;}),where?where.value:'');setOpts(risk,'Любой уровень риска',state.recommendations.map(function(n,i){return {value:i,label:n};}),risk?risk.value:'');}
     function guidePage(r){return r.zone&&r.zone.p?r.zone.p.replace(/\.html$/,'-'+r.guideType+'.html'):'';}
     function selectedConditions(){return conditions.filter(function(ch){return ch.checked;}).map(function(ch){return ch.value;});}
-    function rowText(r){return norm([r.name,r.category,r.where,r.time,r.comment,r.subject&&r.subject.n,r.zone&&r.zone.n,r.guideName].join(' '));}
+    function rowText(r){if(r._rowText)return r._rowText;r._rowText=norm([r.name,r.category,r.where,r.time,r.comment,r.subject&&r.subject.n,r.zone&&r.zone.n,r.guideName].join(' '));return r._rowText;}
     function scoreRow(r,conds){
       var score=Number(r.recommendationIndex); if(!isFinite(score)) score=3;
       var text=rowText(r), reasons=[];
@@ -602,7 +602,8 @@
       if(risk&&risk.value)rows=rows.filter(function(r){return String(r.recommendationIndex)===risk.value;});
       if(popular&&popular.checked)rows=rows.filter(function(r){return r.popular;});
       if(q)rows=rows.filter(function(r){return rowText(r).indexOf(q)!==-1;});
-      rows=rows.map(function(r){var sc=scoreRow(r,conds);var copy={};for(var k in r){copy[k]=r[k];}copy.tier=sc.tier;copy.reasons=sc.reasons;return copy;});
+      if(conds.length){rows=rows.map(function(r){var sc=scoreRow(r,conds);var copy={};for(var k in r){copy[k]=r[k];}copy.tier=sc.tier;copy.reasons=sc.reasons;return copy;});}
+      else {rows=rows.map(function(r){var copy={};for(var k in r){copy[k]=r[k];}copy.tier=Number(r.recommendationIndex)||0;copy.reasons=[];return copy;});}
       rows.sort(function(a,b){return (a.tier-b.tier)||(a.recommendationIndex-b.recommendationIndex)||a.name.localeCompare(b.name,'ru');});
       if(!rows.length){if(empty)empty.hidden=false;return;}
       var total=rows.length, shown=rows.slice(0,140), by={};shown.forEach(function(r){(by[r.tier]||(by[r.tier]=[])).push(r);});
@@ -610,7 +611,7 @@
       if(groups)groups.innerHTML='<div class="planner-groups">'+html.join('')+'</div>';
       if(summary)summary.textContent='Найдено '+total+' '+plural(total,'позиция','позиции','позиций')+(conds.length?' с учётом условий участка.':'.');
       if(total>shown.length&&limit){limit.hidden=false;limit.textContent='Показаны первые '+shown.length+' позиций. Уточните регион, зону или условия для более точного списка.';}
-      if(results)results.hidden=false;document.dispatchEvent(new CustomEvent('prizh:planting-buttons-rendered'));
+      if(results)results.hidden=false;setTimeout(function(){document.dispatchEvent(new CustomEvent('prizh:planting-buttons-rendered'));},0);
     }
     fetch(url).then(function(r){if(!r.ok)throw new Error('planner');return r.json();}).then(function(data){state=decode(data);if(count)count.textContent=String(state.recordCount).replace(/\B(?=(\d{3})+(?!\d))/g,' ');setOpts(subject,'Все регионы',state.subjects.map(function(s,i){return {value:i,label:s.n};}), '');setOpts(zone,'Сначала выберите регион',[], '');refreshFilters();[subject,zone,guide,category,where,risk,popular].forEach(function(el){if(el)el.addEventListener('change',function(){if(el===subject)refreshZones();else refreshFilters();render();});});conditions.forEach(function(ch){ch.addEventListener('change',render);});if(search)search.addEventListener('input',debounce(render,160));if(apply)apply.addEventListener('click',render);if(reset)reset.addEventListener('click',function(){[subject,zone,guide,category,where,risk].forEach(function(el){if(el)el.value='';});conditions.forEach(function(ch){ch.checked=false;});if(search)search.value='';if(popular)popular.checked=true;refreshZones();if(start)start.hidden=false;if(results)results.hidden=true;if(empty)empty.hidden=true;});if(start)start.hidden=false;}).catch(function(){if(start){start.hidden=false;var h=start.querySelector('h2'),p=start.querySelector('p');if(h)h.textContent='Подбор временно недоступен';if(p)p.textContent='Не удалось загрузить данные подбора.';}});
   }
@@ -716,9 +717,10 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   function season(item){var t=norm([item.timing,item.comment,item.userNote,item.status].join(' '));if(/март|апрел|май|весн|рассад|посев/.test(t))return 'весна';if(/июн|июл|август|лет|полив|сбор/.test(t))return 'лето';if(/сент|окт|ноябр|осен|зим|укрыт/.test(t))return 'осень';if(/декабр|январ|феврал/.test(t))return 'зима';return 'срок уточнить';}
   function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];});}
   function renderPlantingNearest(){var root=q('[data-planting-list-page]'), box=q('[data-planting-nearest]');if(!root||!box)return;var items=readList().filter(function(i){return (i.status||'планирую')!=='убрать';}).slice(0,6);if(!items.length){box.hidden=true;box.innerHTML='';return;}box.hidden=false;box.innerHTML='<div class="planting-nearest-head"><div><span class="kicker">Ближайший план</span><h2>Что держать под рукой</h2></div><a href="calendar.html">Сверить календарь</a></div><div class="planting-nearest-grid">'+items.map(function(i){return '<article><strong>'+esc(i.name)+'</strong><span>'+esc(season(i))+' · '+esc(i.sitePlace||'грядка')+' · '+esc(i.status||'планирую')+'</span><p>'+esc(i.timing||i.comment||'Уточните срок в справочнике зоны.')+'</p></article>';}).join('')+'</div>';}
-  function setupPlantingNearest(){var root=q('[data-planting-list-page]');if(!root)return;renderPlantingNearest();document.addEventListener('prizh:planting-list-updated',function(){setTimeout(renderPlantingNearest,80);});root.addEventListener('input',function(){setTimeout(renderPlantingNearest,220);});root.addEventListener('change',function(){setTimeout(renderPlantingNearest,120);});}
+  var v167Timers={};function scheduleV167(key,fn,delay){clearTimeout(v167Timers[key]);v167Timers[key]=setTimeout(function(){delete v167Timers[key];fn();},delay||90);}
+  function setupPlantingNearest(){var root=q('[data-planting-list-page]');if(!root)return;renderPlantingNearest();document.addEventListener('prizh:planting-list-updated',function(){scheduleV167('planting-nearest',renderPlantingNearest,90);});root.addEventListener('input',function(e){if(e.target&&e.target.closest('[data-planting-note]'))scheduleV167('planting-nearest',renderPlantingNearest,260);});root.addEventListener('change',function(e){if(e.target&&e.target.closest('[data-planting-place],[data-planting-status],[data-planting-filter-rec],[data-planting-filter-category],[data-planting-filter-place],[data-planting-filter-status]'))scheduleV167('planting-nearest',renderPlantingNearest,140);});}
   function renderCalendarNext(){var box=q('[data-calendar-next]'), root=q('[data-zone-calendar]');if(!box||!root)return;var tasks=qa('.calendar-month-card',root).reduce(function(out,card){var month=(q('.calendar-month-head h3',card)||{}).textContent||'';qa('.calendar-task-list li',card).forEach(function(li){out.push({month:month,type:(q('.calendar-task-tag',li)||{}).textContent||'',text:(q('p',li)||{}).textContent||''});});return out;},[]).slice(0,6);if(!tasks.length){box.hidden=true;box.innerHTML='';return;}box.hidden=false;box.innerHTML='<div class="calendar-next-head"><div><span class="kicker">Ближайшие работы</span><h2>С чего начать в выбранной зоне</h2></div><a href="planting-list.html">Открыть мой список</a></div><div class="calendar-next-grid">'+tasks.map(function(t){return '<article><strong>'+esc(t.month)+'</strong><span>'+esc(t.type)+'</span><p>'+esc(t.text)+'</p></article>';}).join('')+'</div>';}
-  function setupCalendarNext(){var root=q('[data-zone-calendar]');if(!root)return;['click','change'].forEach(function(ev){root.addEventListener(ev,function(){setTimeout(renderCalendarNext,180);});});setTimeout(renderCalendarNext,500);}
+  function setupCalendarNext(){var root=q('[data-zone-calendar]');if(!root)return;root.addEventListener('prizh:calendar-rendered',function(){scheduleV167('calendar-next',renderCalendarNext,70);});scheduleV167('calendar-next',renderCalendarNext,500);}
   document.addEventListener('DOMContentLoaded',function(){setupPlanner();setupPlantingNearest();setupCalendarNext();});
 })();
 
@@ -918,8 +920,9 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   document.addEventListener('DOMContentLoaded',function(){
     renderSeasonTools();renderPlantingBoard();renderPlannerSiteCheck();setupCalendarExport();
     document.addEventListener('prizh:planting-list-updated',function(){setTimeout(function(){renderSeasonTools();renderPlantingBoard();},120);});
-    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(){setTimeout(renderSeasonTools,80);});
-    var plantingRoot=q('[data-planting-list-page]'); if(plantingRoot){plantingRoot.addEventListener('input',function(){setTimeout(renderPlantingBoard,180);});plantingRoot.addEventListener('change',function(){setTimeout(renderPlantingBoard,120);});}
+    var v167ToolTimers={};function scheduleTool(key,fn,delay){clearTimeout(v167ToolTimers[key]);v167ToolTimers[key]=setTimeout(function(){delete v167ToolTimers[key];fn();},delay||90);}
+    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('select,input'))scheduleTool('season-tools',renderSeasonTools,90);});
+    var plantingRoot=q('[data-planting-list-page]'); if(plantingRoot){plantingRoot.addEventListener('input',function(e){if(e.target&&e.target.closest('[data-planting-note],[data-planting-filter-search]'))scheduleTool('planting-board',renderPlantingBoard,220);});plantingRoot.addEventListener('change',function(e){if(e.target&&e.target.closest('[data-planting-place],[data-planting-status],select'))scheduleTool('planting-board',renderPlantingBoard,140);});}
     var planner=q('[data-plant-planner]'); if(planner)planner.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-planner-condition]'))renderPlannerSiteCheck();});
     document.addEventListener('click',function(e){var shop=q('[data-season-shopping]');if(!shop)return;if(e.target.matches('[data-season-copy-shopping]')){copyText(shop.__shoppingText||'').then(function(){e.target.textContent='Скопировано';setTimeout(function(){e.target.textContent='Скопировать покупки';},1300);});}if(e.target.matches('[data-season-download-shopping]'))download('prizhivetsya-shopping-list.txt',shop.__shoppingText||'');});
   });
@@ -1053,13 +1056,14 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
     renderPlantingPlaceBoard();
     updateSeasonProgress();
     injectZoneNextStep();
+    var v167PolishTimers={};function schedulePolish(key,fn,delay){clearTimeout(v167PolishTimers[key]);v167PolishTimers[key]=setTimeout(function(){delete v167PolishTimers[key];fn();},delay||90);}
     var planner=q('[data-plant-planner]');
-    if(planner){planner.addEventListener('change',function(){setTimeout(updatePlannerSelectedSummary,80);});planner.addEventListener('input',function(){setTimeout(updatePlannerSelectedSummary,120);});}
+    if(planner){planner.addEventListener('change',function(e){if(e.target&&e.target.matches('select,input'))schedulePolish('planner-summary',updatePlannerSelectedSummary,90);});planner.addEventListener('input',function(e){if(e.target&&e.target.matches('[data-planner-search]'))schedulePolish('planner-summary',updatePlannerSelectedSummary,180);});}
     var planting=q('[data-planting-list-page]');
-    if(planting){planting.addEventListener('change',function(){setTimeout(renderPlantingPlaceBoard,120);});planting.addEventListener('input',function(){setTimeout(renderPlantingPlaceBoard,180);});}
+    if(planting){planting.addEventListener('change',function(e){if(e.target&&e.target.closest('[data-planting-place],[data-planting-status],select'))schedulePolish('planting-place-board',renderPlantingPlaceBoard,140);});planting.addEventListener('input',function(e){if(e.target&&e.target.closest('[data-planting-note],[data-planting-filter-search]'))schedulePolish('planting-place-board',renderPlantingPlaceBoard,240);});}
     var seasonRoot=q('[data-season-plan-page]');
-    if(seasonRoot){seasonRoot.addEventListener('change',function(){setTimeout(updateSeasonProgress,160);});}
-    document.addEventListener('prizh:planting-list-updated',function(){setTimeout(function(){renderPlantingPlaceBoard();updateSeasonProgress();},160);});
+    if(seasonRoot){seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('select,input'))schedulePolish('season-progress',updateSeasonProgress,170);});}
+    document.addEventListener('prizh:planting-list-updated',function(){schedulePolish('planting-season-combined',function(){renderPlantingPlaceBoard();updateSeasonProgress();},170);});
   });
 })();
 
@@ -1599,8 +1603,8 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
     refresh();bindListRoute();
     document.addEventListener('prizh:planting-list-updated',function(){scheduleRouteRefresh(90);});
     var cal=q('[data-zone-calendar]'); if(cal)cal.addEventListener('prizh:calendar-rendered',function(){scheduleRouteRefresh(90);});
-    var listRoot=q('[data-planting-list-page]'); if(listRoot){listRoot.addEventListener('change',function(){scheduleRouteRefresh(140);});listRoot.addEventListener('input',function(){scheduleRouteRefresh(160);});listRoot.addEventListener('click',function(e){if(e.target&&e.target.closest('[data-v163-list-mode],[data-planting-quick]'))scheduleRouteRefresh(140);});}
-    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot){seasonRoot.addEventListener('change',function(){scheduleRouteRefresh(140);});}
+    var listRoot=q('[data-planting-list-page]'); if(listRoot){listRoot.addEventListener('change',function(e){if(e.target&&e.target.closest('[data-planting-place],[data-planting-status],select'))scheduleRouteRefresh(150);});listRoot.addEventListener('input',function(e){if(e.target&&e.target.closest('[data-planting-note],[data-planting-filter-search]'))scheduleRouteRefresh(220);});listRoot.addEventListener('click',function(e){if(e.target&&e.target.closest('[data-v163-list-mode],[data-planting-quick]'))scheduleRouteRefresh(150);});}
+    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot){seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('select,input'))scheduleRouteRefresh(150);});}
   });
 })();
 /* v165: linked season plan, personal calendar layer and route helpers without observers */
@@ -1612,6 +1616,7 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];});}
   function norm(v){return String(v||'').toLowerCase().replace(/ё/g,'е').replace(/[^a-zа-я0-9]+/gi,' ').replace(/\s+/g,' ').trim();}
   function readList(){try{var a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
+  var cachedList=null;function clearListCache(){cachedList=null;}function getCachedList(){if(!cachedList)cachedList=readList();return cachedList;}
   function writeList(items){try{if(!items.length)localStorage.removeItem(KEY);else localStorage.setItem(KEY,JSON.stringify(items));return true;}catch(e){return false;}}
   function active(items){return (items||[]).filter(function(i){return (i.status||'планирую')!=='убрать';});}
   function plural(n,one,few,many){n=Math.abs(Number(n)||0)%100;var n1=n%10;if(n>10&&n<20)return many;if(n1>1&&n1<5)return few;if(n1===1)return one;return many;}
@@ -1752,13 +1757,15 @@ if(search)search.dispatchEvent(new Event('input',{bubbles:true}));clickApply(roo
   function bindCultureChecklist(){
     document.addEventListener('click',function(e){var btn=e.target.closest('[data-v165-culture-copy]');if(!btn)return;var box=btn.closest('[data-v165-care-checklist]'),note=q('[data-v165-culture-note]',box);copyText((box&&box.__careText)||'').then(function(){notify(note,'Чек-лист культуры скопирован.');});});
   }
-  function refreshAll(){migrateAutoPlace();var items=readList();renderSeasonV165(items);renderPlantingPriority(items);renderCalendarPersonalLayer(items);renderPlannerOverload();renderCultureChecklist();}
+  function refreshAll(){migrateAutoPlace();clearListCache();var items=getCachedList();renderSeasonV165(items);renderPlantingPriority(items);renderCalendarPersonalLayer(items);renderPlannerOverload();renderCultureChecklist();}
   ready(function(){
     refreshAll();bindSeasonV165();bindPlantingPriority();bindCalendarPersonalLayer();bindCultureChecklist();syncManualPlaceChange();
     var planner=q('[data-plant-planner]'); if(planner){planner.addEventListener('change',function(){scheduleRender('planner-overload',renderPlannerOverload,80);});planner.addEventListener('input',function(){scheduleRender('planner-overload',renderPlannerOverload,120);});}
-    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-season-filter]'))seasonRoot.setAttribute('data-v165-season-current',e.target.value||'');scheduleRender('season-v165',function(){renderSeasonV165(readList());},120);});
-    var planting=q('[data-planting-list-page]'); if(planting){planting.addEventListener('input',function(){scheduleRender('planting-v165',function(){renderPlantingPriority(readList());},180);});planting.addEventListener('change',function(){scheduleRender('planting-v165',function(){renderPlantingPriority(readList());},140);});}
-    var cal=q('[data-zone-calendar]'); if(cal){cal.addEventListener('change',function(){scheduleRender('calendar-personal',function(){renderCalendarPersonalLayer(readList());},90);});cal.addEventListener('prizh:calendar-rendered',function(){scheduleRender('calendar-personal',function(){renderCalendarPersonalLayer(readList());},50);});}
-    document.addEventListener('prizh:planting-list-updated',function(){scheduleRender('v165-all',refreshAll,140);});
+    var seasonRoot=q('[data-season-plan-page]'); if(seasonRoot)seasonRoot.addEventListener('change',function(e){if(e.target&&e.target.matches('[data-season-filter]'))seasonRoot.setAttribute('data-v165-season-current',e.target.value||'');clearListCache();scheduleRender('season-v165',function(){renderSeasonV165(getCachedList());},130);});
+    var planting=q('[data-planting-list-page]'); if(planting){planting.addEventListener('input',function(e){if(e.target&&e.target.closest('[data-planting-note],[data-planting-filter-search]')){clearListCache();scheduleRender('planting-v165',function(){renderPlantingPriority(getCachedList());},240);}});planting.addEventListener('change',function(e){if(e.target&&e.target.closest('[data-planting-place],[data-planting-status],select')){clearListCache();scheduleRender('planting-v165',function(){renderPlantingPriority(getCachedList());},150);}});}
+    var cal=q('[data-zone-calendar]'); if(cal){cal.addEventListener('prizh:calendar-rendered',function(){clearListCache();scheduleRender('calendar-personal',function(){renderCalendarPersonalLayer(getCachedList());},70);});}
+    document.addEventListener('prizh:planting-list-updated',function(){clearListCache();scheduleRender('v165-all',refreshAll,160);});
   });
 })();
+
+/* v167: lighter event scheduling and layout overflow guards are applied in shared code and CSS. */
